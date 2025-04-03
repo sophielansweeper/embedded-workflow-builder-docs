@@ -37,8 +37,26 @@ npm install
 This project avoids using phrases like "Prismatic" "integration builder" or "instance".
 You have words you use internally to describe your company and the workflow builder.
 
-Copy the file `site-config.ts.example` to `site-config.ts` and fill in your values for each field.
-This project will replace your company's name and other details into markdown files.
+Copy the directory `site-config.example` to `site-config` and fill in your values for each field in `site-config/site-config.ts`.
+Your company's name and other details will replace placeholders in documentation markdown files.
+
+### Add your own favicon and logo (optional)
+
+Save your own favicon (`.ico` file) to `static/img/favicon.ico`.
+
+(optional) If you would like to have your own logo in the navbar alongside your site title, save a square SVG logo to `static/img/` and include `navbar.logo` in your `siteConfig` configuration.
+For example,
+
+```typescript
+siteConfig = {
+  navbar: {
+    logo: {
+      src: "img/acme-logo.png",
+      alt: "Acme logo",
+    },
+  },
+};
+```
 
 ### Extend Docusaurus (optional)
 
@@ -68,7 +86,7 @@ To compile this project to static HTML/CSS/JS, run
 npm run build
 ```
 
-This will create a new directory, `dist/` which will contain your built project.
+This will create a new directory, `build/` which will contain your built project.
 You can upload the artifacts of this directory to a web server of your choice.
 
 To view the built artifact in a browser, run
@@ -77,4 +95,4 @@ To view the built artifact in a browser, run
 npm run serve
 ```
 
-This will serve the contents of `dist/` locally.
+This will serve the contents of `build/` locally.
