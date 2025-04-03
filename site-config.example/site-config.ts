@@ -3,8 +3,13 @@ import type { SiteConfig } from "@site/src/site-config-types";
 const siteConfig: SiteConfig = {
   company: {
     name: "Acme",
+    possessive: "Acme's",
   },
-  site: {
+  workflowBuilder: {
+    name: "Workflow Builder",
+    flow: "Flow",
+  },
+  docsSite: {
     url: "https://docs.acme.com",
     baseUrl: "/docs",
   },

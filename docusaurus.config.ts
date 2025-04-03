@@ -8,16 +8,17 @@
 
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
+import merge from "lodash.merge";
 import { themes as prismThemes } from "prism-react-renderer";
 import siteConfig from "./site-config/site-config";
-import merge from "lodash.merge";
+import dynamicPhrases from "./src/dynamicPhrases";
 
 const config: Config = {
   title: `${siteConfig.company.name} Workflow Builder`,
   tagline: `Connect ${siteConfig.company.name} to the other apps you use`,
   favicon: "img/favicon.ico",
-  url: siteConfig.site.url,
-  baseUrl: siteConfig.site.baseUrl,
+  url: siteConfig.docsSite.url,
+  baseUrl: siteConfig.docsSite.baseUrl,
   onBrokenLinks: "throw", // Throw errors during the build process when links are broken
   onBrokenMarkdownLinks: "throw",
   onBrokenAnchors: "throw",
@@ -44,6 +45,10 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  markdown: {
+    format: "mdx",
+    preprocessor: dynamicPhrases,
+  },
   future: {
     experimental_faster: true,
   },
