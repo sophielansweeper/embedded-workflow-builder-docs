@@ -12,6 +12,7 @@ import merge from "lodash.merge";
 import { themes as prismThemes } from "prism-react-renderer";
 import siteConfig from "./site-config/site-config";
 import dynamicPhrases from "./src/dynamicPhrases";
+import path from "node:path";
 
 const config: Config = {
   title: `${siteConfig.company.name} Workflow Builder`,
@@ -30,7 +31,10 @@ const config: Config = {
     [
       "classic",
       {
-        docs: { routeBasePath: "/", sidebarPath: "./sidebars.ts" },
+        docs: {
+          routeBasePath: "/",
+          sidebarPath: "./sidebars.ts",
+        },
         blog: false,
         theme: { customCss: "./site-config/custom.css" },
       } satisfies Preset.Options,
@@ -46,9 +50,10 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
   markdown: {
-    format: "mdx",
+    format: "md",
     preprocessor: dynamicPhrases,
   },
+  plugins: [path.resolve(__dirname, "src/plugins/connectors/index.ts")],
   future: {
     experimental_faster: true,
   },

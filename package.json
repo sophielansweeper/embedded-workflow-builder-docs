@@ -10,6 +10,10 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "format-markdown": "prettier --log-level error --write \"docs/**/*.md\"",
+    "generate-public-connector-docs": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --public-connectors && npm run format-markdown",
+    "generate-public-connector-docs-from-manifest": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --public-connectors --from-manifest && npm run format-markdown",
+    "generate-private-connector-docs": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --private-connector && npm run format-markdown",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
@@ -17,19 +21,24 @@
   "dependencies": {
     "@docusaurus/core": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
+    "@mdx-js/react": "^3.1.0",
+    "clsx": "^2.1.1",
     "lodash.merge": "^4.6.2",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@docusaurus/faster": "^3.7.0",
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
-    "typescript": "~5.6.2"
+    "change-case": "^5.4.4",
+    "cli-progress": "^3.12.0",
+    "graphql-request": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "prettier": "^3.5.3",
+    "typescript": "~5.8.3"
   },
   "browserslist": {
     "production": [
