@@ -1,10 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import cliProgress from "cli-progress";
+import type { TypedDocument } from "graffle";
 import { createPrismaticApiClient } from "./graphqlClient";
 import { type Component, GET_PUBLIC_COMPONENTS } from "./queries";
 
-interface PublicComponentsResponse {
+interface GetPublicConnectorsParams {
+  fromManifest: boolean;
+}
+
+type Document = TypedDocument.String<{
   components: {
     pageInfo: {
       hasNextPage: boolean;
@@ -13,11 +18,7 @@ interface PublicComponentsResponse {
     totalCount: number;
     nodes: Component[];
   };
-}
-
-interface GetPublicConnectorsParams {
-  fromManifest: boolean;
-}
+}>;
 
 export async function getPublicConnectors({
   fromManifest,
@@ -43,10 +44,9 @@ export async function getPublicConnectors({
   progressBar.start(1, 0);
 
   do {
-    const result = await prismaticApiClient.request<PublicComponentsResponse>(
-      GET_PUBLIC_COMPONENTS,
-      { cursor }
-    );
+    const result = await prismaticApiClient
+      .gql<Document>(GET_PUBLIC_COMPONENTS)
+      .send({ cursor });
     connectors.push(...result.components.nodes);
     progressBar.setTotal(result.components.totalCount);
     progressBar.update(connectors.length);

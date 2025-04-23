@@ -1,5 +1,3 @@
-import { gql } from "graphql-request";
-
 export interface Component {
   key: string;
   label: string;
@@ -54,7 +52,7 @@ interface Input {
   language?: string;
 }
 
-const componentFragment = gql`
+const componentFragment = `
   fragment Component_component on Component {
     key
     label
@@ -151,7 +149,7 @@ const componentFragment = gql`
   }
 `;
 
-export const GET_PUBLIC_COMPONENTS = gql`
+export const GET_PUBLIC_COMPONENTS = `
   query getPublicComponents($cursor: String) {
     components(
       public: true
@@ -172,7 +170,7 @@ export const GET_PUBLIC_COMPONENTS = gql`
   ${componentFragment}
 `;
 
-export const GET_PRIVATE_COMPONENT = gql`
+export const GET_PRIVATE_COMPONENT = `
   query getPrivateComponent($componentKey: String) {
     components(public: false, key: $componentKey) {
       nodes {

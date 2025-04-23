@@ -38,7 +38,8 @@
     "@docusaurus/types": "3.7.0",
     "change-case": "^5.4.4",
     "cli-progress": "^3.12.0",
-    "graphql-request": "^7.1.2",
+    "graffle": "^8.0.0-next.161",
+    "graphql": "^16.10.0",
     "handlebars": "^4.7.8",
     "prettier": "^3.5.3",
     "typescript": "~5.8.3"
