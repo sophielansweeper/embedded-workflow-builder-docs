@@ -1,9 +1,11 @@
 import type { CommanderStatic } from "commander";
-import { getPublicConnectors } from "./getPublicConnectors";
 import fs from "node:fs";
 import handlebars from "handlebars";
 import path from "node:path";
 import { kebabCase } from "change-case";
+import { getPrivateConnector } from "./getPrivateConnector";
+import { getPublicConnectors } from "./getPublicConnectors";
+import type { Component } from "./queries";
 
 handlebars.registerHelper("cleanDefaultForTable", (value: string) => {
   if (!value) return;
@@ -19,6 +21,23 @@ handlebars.registerPartial(
     encoding: "utf-8",
   })
 );
+
+const writeConnectorDocsFile = (
+  connector: Component,
+  connectorTemplate: HandlebarsTemplateDelegate<unknown>
+) =>
+  fs.writeFileSync(
+    path.join(
+      __dirname,
+      "..",
+      "..",
+      "..",
+      "docs",
+      "connectors",
+      `${kebabCase(connector.label)}.md`
+    ),
+    connectorTemplate(connector)
+  );
 
 async function generateConnectorDocs({
   publicConnectors,
@@ -38,20 +57,17 @@ async function generateConnectorDocs({
     );
     for (const connector of connectors) {
       if (connector.key !== "customHttp") {
-        fs.writeFileSync(
-          path.join(
-            __dirname,
-            "..",
-            "..",
-            "..",
-            "docs",
-            "connectors",
-            `${kebabCase(connector.label)}.md`
-          ),
-          connectorTemplate(connector)
-        );
+        writeConnectorDocsFile(connector, connectorTemplate);
       }
     }
+  }
+  if (privateConnector) {
+    writeConnectorDocsFile(
+      await getPrivateConnector({
+        componentKey: privateConnector,
+      }),
+      connectorTemplate
+    );
   }
 }
 
