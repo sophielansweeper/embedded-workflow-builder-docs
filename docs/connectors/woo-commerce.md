@@ -281,12 +281,17 @@ Returns the information and metadata of a Sales Report
 
 Returns a list of all active customers
 
-| Input            | Comments                                                     | Default |
-| ---------------- | ------------------------------------------------------------ | ------- |
-| Connection       | The connection to be used.                                   |         |
-| Results Per Page | Provide an integer for the amount of items to be returned.   |         |
-| Page Number      | Provide an integer for the page number.                      |         |
-| Page Offset      | Provide an integer for the page offset since the first page. |         |
+| Input            | Comments                                                                     | Default |
+| ---------------- | ---------------------------------------------------------------------------- | ------- |
+| Connection       | The connection to be used.                                                   |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
+| Results Per Page | Provide an integer for the amount of items to be returned.                   |         |
+| Page Number      | Provide an integer for the page number.                                      |         |
+| Page Offset      | Provide an integer for the page offset since the first page.                 |         |
+| Search           | Search for a specific string.                                                |         |
+| Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
+| After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
 
 ### List Orders
 
@@ -301,28 +306,40 @@ Returns a list of all orders
 | Search           | Search for a specific string.                                                |         |
 | Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
 | After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
 
 ### List Product Categories
 
 Returns a list of all product categories
 
-| Input            | Comments                                                     | Default |
-| ---------------- | ------------------------------------------------------------ | ------- |
-| Connection       | The connection to be used.                                   |         |
-| Results Per Page | Provide an integer for the amount of items to be returned.   |         |
-| Page Number      | Provide an integer for the page number.                      |         |
-| Page Offset      | Provide an integer for the page offset since the first page. |         |
+| Input            | Comments                                                                     | Default |
+| ---------------- | ---------------------------------------------------------------------------- | ------- |
+| Connection       | The connection to be used.                                                   |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
+| Results Per Page | Provide an integer for the amount of items to be returned.                   |         |
+| Page Number      | Provide an integer for the page number.                                      |         |
+| Page Offset      | Provide an integer for the page offset since the first page.                 |         |
+| Search           | Search for a specific string.                                                |         |
+| Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
+| After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
 
 ### List Products
 
 Returns a list of all active products
 
-| Input            | Comments                                                     | Default |
-| ---------------- | ------------------------------------------------------------ | ------- |
-| Connection       | The connection to be used.                                   |         |
-| Results Per Page | Provide an integer for the amount of items to be returned.   |         |
-| Page Number      | Provide an integer for the page number.                      |         |
-| Page Offset      | Provide an integer for the page offset since the first page. |         |
+| Input            | Comments                                                                     | Default |
+| ---------------- | ---------------------------------------------------------------------------- | ------- |
+| Connection       | The connection to be used.                                                   |         |
+| Results Per Page | Provide an integer for the amount of items to be returned.                   |         |
+| Page Number      | Provide an integer for the page number.                                      |         |
+| Page Offset      | Provide an integer for the page offset since the first page.                 |         |
+| Search           | Search for a specific string.                                                |         |
+| Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
+| After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
 
 ### List Refunds
 
@@ -338,17 +355,24 @@ Returns a list of all refunds on an existing order
 | Search           | Search for a specific string.                                                |         |
 | Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
 | After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
 
 ### List Reports
 
 Returns a list of all reports
 
-| Input            | Comments                                                     | Default |
-| ---------------- | ------------------------------------------------------------ | ------- |
-| Connection       | The connection to be used.                                   |         |
-| Results Per Page | Provide an integer for the amount of items to be returned.   |         |
-| Page Number      | Provide an integer for the page number.                      |         |
-| Page Offset      | Provide an integer for the page offset since the first page. |         |
+| Input            | Comments                                                                     | Default |
+| ---------------- | ---------------------------------------------------------------------------- | ------- |
+| Connection       | The connection to be used.                                                   |         |
+| Fetch All        | If true, all pages will be fetched.                                          | false   |
+| After            | Limit response to resources published after a given ISO8601 compliant date.  |         |
+| Before           | Limit response to resources published before a given ISO8601 compliant date. |         |
+| Page Number      | Provide an integer for the page number.                                      |         |
+| Results Per Page | Provide an integer for the amount of items to be returned.                   |         |
+| Page Offset      | Provide an integer for the page offset since the first page.                 |         |
+| Search           | Search for a specific string.                                                |         |
+| Extra Parameters | Extra parameters to be passed to the request.                                |         |
 
 ### Raw Request
 

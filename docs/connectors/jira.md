@@ -51,19 +51,17 @@ Add a comment to an existing issue
 | Comment        | Provide a string value for the comment.                                                                       |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Values         | The names of the fields and their values to use when creating/updating a record                               |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                          | false   |
 
 ### Add Issue Attachment
 
 Add a file attachment to an issue
 
-| Input         | Comments                                                     | Default |
-| ------------- | ------------------------------------------------------------ | ------- |
-| Connection    |                                                              |         |
-| Issue ID      | Provide the ID of the Issue.                                 |         |
-| File          | The file to upload - either string contents or a binary file |         |
-| File Name     | The name of the file to upload                               |         |
-| Debug Request | Enabling this flag will log out the current request.         | false   |
+| Input      | Comments                                                     | Default |
+| ---------- | ------------------------------------------------------------ | ------- |
+| Connection |                                                              |         |
+| Issue ID   | Provide the ID of the Issue.                                 |         |
+| File       | The file to upload - either string contents or a binary file |         |
+| File Name  | The name of the file to upload                               |         |
 
 ### Create Issue
 
@@ -87,7 +85,6 @@ Create an issue within a given project
 | Fix Versions        | Provide JSON data for the fix versions. Your object must have a property 'id'                                                                                                                                                      |                                                                                                                                                                                                                                 |
 | Dynamic Fields      | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                                                                                                                      |                                                                                                                                                                                                                                 |
 | Values              | The names of the fields and their values to use when creating/updating a record                                                                                                                                                    |                                                                                                                                                                                                                                 |
-| Debug Request       | Enabling this flag will log out the current request.                                                                                                                                                                               | false                                                                                                                                                                                                                           |
 
 ### Create User
 
@@ -103,7 +100,6 @@ Create a new user record
 | Display Name   | Provide a string value for the display name to assign to the new user.                                        |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Values         | The names of the fields and their values to use when creating/updating a record                               |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                          | false   |
 
 ### Create Version
 
@@ -122,7 +118,6 @@ Create a new version
 | Project ID     | Provide the ID or Name of the Project.                                                                        |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Values         | The names of the fields and their values to use when creating/updating a record                               |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                          | false   |
 
 ### Create Webhook
 
@@ -133,38 +128,34 @@ Create a webhook to send data from Jira to an instance URL
 | Connection      |                                                                                                                                                                                                                                                                                      |         |
 | Webhook URL     | Reference a flow's URL from the trigger payload                                                                                                                                                                                                                                      |         |
 | Webhook Details | Webhook Details payload to be sent into Jira's OAuth2 Webhook API or Jira's REST API; must match structure of `webhooks` property for Register Dynamic Webhook endpoint: https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-webhooks/#api-rest-api-3-webhook-post |         |
-| Debug Request   | Enabling this flag will log out the current request.                                                                                                                                                                                                                                 | false   |
 
 ### Delete Comment
 
 Delete a comment from an issue
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Comment ID    | Provide the Comment ID.                              |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
+| Comment ID | Provide the Comment ID.      |         |
 
 ### Delete Issue
 
 Delete an issue by id
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
 
 ### Delete Webhook
 
 Delete a webhook by ID
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Webhook ID    | THe ID of the webhook to remove                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                        | Default |
+| ---------- | ------------------------------- | ------- |
+| Connection |                                 |         |
+| Webhook ID | The ID of the webhook to remove |         |
 
 ### Download Issue Attachments
 
@@ -175,111 +166,100 @@ Download the attachments data connected to an issue
 | Connection     |                                                                                                        |         |
 | Issue ID       | Providing an Issue ID will return all attachments of an Issue.                                         |         |
 | Attachment IDs | The IDs of the attachments to download. If this field is provided, the issue id input will be ignored. |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                   | false   |
 
 ### Find Issue
 
 Find Issue by attribute
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search Type   | Attribute to search                                  |         |
-| Search Value  | Value to search for                                  |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input        | Comments            | Default |
+| ------------ | ------------------- | ------- |
+| Connection   |                     |         |
+| Search Type  | Attribute to search |         |
+| Search Value | Value to search for |         |
 
 ### Find Project
 
 Find Project by attribute
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search Type   | Attribute to search                                  |         |
-| Search Value  | Value to search for                                  |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input        | Comments            | Default |
+| ------------ | ------------------- | ------- |
+| Connection   |                     |         |
+| Search Type  | Attribute to search |         |
+| Search Value | Value to search for |         |
 
 ### Find User
 
 Find User by attribute
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search Value  | Value to search for                                  |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input        | Comments            | Default |
+| ------------ | ------------------- | ------- |
+| Connection   |                     |         |
+| Search Value | Value to search for |         |
 
 ### Get Board
 
 Get information and metadata of a board by Id
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Board ID      | Provide the ID of the Board.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Board ID   | Provide the ID of the Board. |         |
 
 ### Get Comments
 
 Get all the comments on a given issue
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
 
 ### Get Current User
 
 Get the information and metadata of the current user
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### Get Issue
 
 Get the information and metadata of an issue
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
 
 ### Get Project
 
 Get the information and metadata of a project
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Project ID    | Provide the ID or Name of the Project.               |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                               | Default |
+| ---------- | -------------------------------------- | ------- |
+| Connection |                                        |         |
+| Project ID | Provide the ID or Name of the Project. |         |
 
 ### Get Status List
 
 Returns a status list
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Project ID    | Provide the ID or Name of the Project.                                           |         |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Project ID  | Provide the ID or Name of the Project.                                           |         |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
 
 ### Get User
 
 Get information and metadata about an user by id
 
-| Input         | Comments                                                                                                                | Default |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                         |         |
-| Account ID    | Provide the Account ID of the account to use.                                                                           |         |
-| Expand        | The response may contain a list under the \_expandable property; you can specify any of its values separated by commas. |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                    | false   |
+| Input      | Comments                                                                                                                | Default |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                         |         |
+| Account ID | Provide the Account ID of the account to use.                                                                           |         |
+| Expand     | The response may contain a list under the \_expandable property; you can specify any of its values separated by commas. |         |
 
 ### Get Version
 
@@ -290,161 +270,147 @@ Get the information and metadata of an existing version
 | Connection |                                |         |
 | Version ID | Provide the ID of the Version. |         |
 
-### List Assignable Users
+### List Assignable Users for Project
 
-Returns a list of users assignable to projects & issues
+Returns a list of users assignable to the given project
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Project Key   | Provide a string value for the key of the project.                               |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Project Key | Provide a string value for the key of the project.                               |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
 
 ### List Boards
 
 Retrieve a list of existing boards
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Filter        | The filter applied to the list of dashboards.                                    |         |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Filter      | The filter applied to the list of dashboards.                                    | my      |
 
 ### List Board Sprints
 
 List all sprints within a board
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Board ID      | Provide the ID of the Board.                                                     |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Board ID    | Provide the ID of the Board.                                                     |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
 
 ### List Issue Attachments
 
 Returns a list of issue attachments
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Issue ID   | Provide the ID of the Issue. |         |
+| Connection |                              |         |
 
 ### List Issue Custom Fields
 
 List all configured issue fields
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Issue Fields
 
 List all non-custom issue fields
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Issue Link Types
 
 List all available issue link types
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Issues
 
 Returns a list of issues
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
 
 ### List Issue Transitions
 
 Returns a list of issue transitions
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
 
 ### List Issue Types
 
 Returns a list of issue types
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Issue Worklogs
 
 Returns a list of issue worklogs
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Issue ID   | Provide the ID of the Issue. |         |
 
 ### List Priorities
 
 Returns a list of all priorities
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
 
 ### List Projects
 
 Retrieve a list of all projects
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
 
 ### List Versions
 
 Returns a list of all versions
 
-| Input         | Comments                                                                         | Default |
-| ------------- | -------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                  |         |
-| Project ID    | Provide the ID or Name of the Project.                                           |         |
-| Max Results   | Provide a value for the maximum amount of results to be returned in the request. |         |
-| Start At      | Provide the index of the first item to return (to start from)                    | 0       |
-| Debug Request | Enabling this flag will log out the current request.                             | false   |
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Project ID  | Provide the ID or Name of the Project.                                           |         |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
 
 ### List Webhooks
 
 List all webhooks configured, including those for other integrations
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                           | Default |
+| ---------- | ---------------------------------- | ------- |
+| Connection |                                    |         |
+| Fetch All  | Turn this On to fetch all results. | false   |
 
 ### Query
 
@@ -475,7 +441,6 @@ Send raw HTTP request to Jira
 | Header                  | A list of headers to send with the request.                                                                                                                                                                                                                                                     |                            |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                                                                                                        | json                       |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                                                                                                             |                            |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                                                                                                            | false                      |
 | Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                                                                                                             | 0                          |
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                                                                                | false                      |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                                                                             | 0                          |
@@ -485,53 +450,48 @@ Send raw HTTP request to Jira
 
 Refresh webhook expiration by ID
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Webhook ID    | THe ID of the webhook to remove                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                     | Default |
+| ---------- | ---------------------------- | ------- |
+| Connection |                              |         |
+| Webhook ID | ID of the webhook to refresh |         |
 
 ### Search Issues
 
 Returns a list of issues that match the given string of text
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search        | Provide a string value to search on.                 |         |
-| Project Key   | Provide a string value for the key of the project.   |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input       | Comments                                           | Default |
+| ----------- | -------------------------------------------------- | ------- |
+| Connection  |                                                    |         |
+| Search      | Provide a string value to search on.               |         |
+| Project Key | Provide a string value for the key of the project. |         |
 
 ### Search Projects
 
 Returns a list of projects that match the given string of text
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search        | Provide a string value to search on.                 |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                             | Default |
+| ---------- | ------------------------------------ | ------- |
+| Connection |                                      |         |
+| Search     | Provide a string value to search on. |         |
 
 ### Search Users
 
 Returns a single user that matches the given string of text
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Search        | Provide a string value to search on.                 |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                             | Default |
+| ---------- | ------------------------------------ | ------- |
+| Connection |                                      |         |
+| Search     | Provide a string value to search on. |         |
 
 ### Transition Issue
 
 Transition an existing issue by Id
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Issue ID      | Provide the ID of the Issue.                         |         |
-| Transition ID | Provide the ID of the Transition.                    |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input         | Comments                          | Default |
+| ------------- | --------------------------------- | ------- |
+| Connection    |                                   |         |
+| Issue ID      | Provide the ID of the Issue.      |         |
+| Transition ID | Provide the ID of the Transition. |         |
 
 ### Update Comment
 
@@ -545,7 +505,6 @@ Update the contents and metadata of an existing comment.
 | Comment        | Provide a string value for the comment.                                                                       |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Values         | The names of the fields and their values to use when creating/updating a record                               |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                          | false   |
 
 ### Update Issue
 
@@ -570,7 +529,6 @@ Update an existing issue within a given project
 | Versions            | Provide JSON data for the versions. You must supply a JSON array with an object containing an Id.                                                                                                                                  |                                                                                                                                                                                                                                 |
 | Dynamic Fields      | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                                                                                                                      |                                                                                                                                                                                                                                 |
 | Values              | The names of the fields and their values to use when creating/updating a record                                                                                                                                                    |                                                                                                                                                                                                                                 |
-| Debug Request       | Enabling this flag will log out the current request.                                                                                                                                                                               | false                                                                                                                                                                                                                           |
 
 ### Update Version
 
@@ -590,7 +548,6 @@ Update an existing version by Id
 | Project ID     | Provide the ID or Name of the Project.                                                                        |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Values         | The names of the fields and their values to use when creating/updating a record                               |         |
-| Debug Request  | Enabling this flag will log out the current request.                                                          | false   |
 
 ## Data Sources
 
@@ -603,15 +560,47 @@ A map of a list of fields to Jira Issue Fields.
 | Connection         |          |         |
 | Only Custom Fields |          | false   |
 
+### Select Board
+
+Select a board
+
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+| Filter      | The filter applied to the list of dashboards.                                    | my      |
+
+### Select Board Version
+
+Select a board version
+
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Board ID    | Provide the ID of the Board.                                                     |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+
+### Select Issue
+
+Select an issue
+
+| Input       | Comments                                                                         | Default |
+| ----------- | -------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                  |         |
+| Start At    | Provide the index of the first item to return (to start from)                    | 0       |
+| Max Results | Provide a value for the maximum amount of results to be returned in the request. |         |
+
 ### Select Issue Type
 
 Select an issue type
 
-| Input             | Comments                                            | Default |
-| ----------------- | --------------------------------------------------- | ------- |
-| Connection        |                                                     |         |
-| Project ID(s)     | Provide one or more Project IDs.                    |         |
-| Issue Type Return | Select whether to return the Issue Type ID or Name. | false   |
+| Input             | Comments                                                                                                    | Default |
+| ----------------- | ----------------------------------------------------------------------------------------------------------- | ------- |
+| Connection        |                                                                                                             |         |
+| Project ID(s)     | Provide one or more Project IDs.                                                                            |         |
+| Issue Type Return | Select whether to return the Issue Type ID or Name. Use false to return the ID and true to return the Name. | false   |
 
 ### Select Issue Types
 
@@ -621,6 +610,14 @@ Select one or many Issue Types
 | ------------- | -------------------------------- | ------- |
 | Connection    |                                  |         |
 | Project ID(s) | Provide one or more Project IDs. |         |
+
+### Select Priority
+
+Select a priority
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### Select Project
 
@@ -633,6 +630,14 @@ Select a project
 ### Select Projects
 
 Select one or many projects
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Webhook
+
+Select a webhook
 
 | Input      | Comments | Default |
 | ---------- | -------- | ------- |

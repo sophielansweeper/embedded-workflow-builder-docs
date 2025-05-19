@@ -18,6 +18,21 @@ Use this connection to connect to a sandbox ad account.
 | ------------ | ------------------------------------- | ------- |
 | Access Token | A valid access token for Meta Ads API |         |
 
+### Meta Ads Client Credentials
+
+Client Credentials connectivity for Meta Ads. This connection is required to get an APP Token, which is required to use some of the Meta APIs.
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+
+| Input         | Comments                                                                                                                                                         | Default                                                                                                                              |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorize URL | Provide a valid authURL for Meta Ads                                                                                                                             | https://www.facebook.com/v22.0/dialog/oauth                                                                                          |
+| Token URL     | Provide a valid Meta Ads version to complete the Token URL                                                                                                       | https://graph.facebook.com/v22.0/oauth/access_token                                                                                  |
+| App Id        | Provide the App Id that was generated from your Meta Ads App.                                                                                                    |                                                                                                                                      |
+| App Secret    | Provide the App Secret that was generated from your Meta Ads App.                                                                                                |                                                                                                                                      |
+| Scopes        | Provide a valid list of scopes. A list per use case is provided on the Meta Ads docs: https://developers.facebook.com/docs/marketing-api/overview/authorization/ | ads_read ads_management pages_show_list groups_access_member_info leads_retrieval page_events pages_read_user_content public_profile |
+
 ### Meta Ads Oauth 2.0
 
 Oauth 2.0 connectivity for Meta Ads.
@@ -40,6 +55,32 @@ Use this connection to connect to a sandbox ad account.
 | Input         | Comments                               | Default |
 | ------------- | -------------------------------------- | ------- |
 | Sandbox Token | A valid sandbox token for Meta Ads API |         |
+
+## Triggers
+
+### Ad Account Trigger
+
+Receive data from the Ad Account in real time with webhook subscriptions.
+
+| Input                     | Comments                                                                                          | Default |
+| ------------------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version             | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Verify Token              | The verify token for the webhook.                                                                 |         |
+| Ad Account Fields         | The fields to be subscribed to.                                                                   |         |
+| Dynamic Ad Account Fields | The fields to be subscribed to.                                                                   |         |
+| Connection                | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
+
+### Page Trigger
+
+Receive data from the Page in real time with webhook subscriptions.
+
+| Input               | Comments                                                                                          | Default |
+| ------------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version       | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Verify Token        | The verify token for the webhook.                                                                 |         |
+| Page Fields         | The fields to be subscribed to.                                                                   |         |
+| Dynamic Page Fields | The fields to be subscribed to.                                                                   |         |
+| Connection          | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
 
 ## Actions
 
@@ -87,6 +128,19 @@ Creates a new ad.
 | Source Ad Id            | ID of the source Ad, if applicable.                                                                                                                                                                             |         |
 | Graph Version           | Provide the version of the Graph API to use. Defaults to 22.                                                                                                                                                    | 22      |
 | Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                            | false   |
+
+### Create Ad Account Webhook
+
+Create a new ad account webhook for the current application.
+
+| Input                     | Comments                                                                                          | Default |
+| ------------------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version             | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Verify Token              | The verify token for the webhook.                                                                 |         |
+| Callback Url              | The URL to send the webhook to.                                                                   |         |
+| Ad Account Fields         | The fields to be subscribed to.                                                                   |         |
+| Dynamic Ad Account Fields | The fields to be subscribed to.                                                                   |         |
+| Connection                | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
 
 ### Create Campaign
 
@@ -149,6 +203,19 @@ Create multiple conversion events for a pixel. Requires the Conversions API Acce
 | Graph Version | Provide the version of the Graph API to use. Defaults to 22.                                                                                           | 22      |
 | Debug Request | Enabling this flag will log out the current request.                                                                                                   | false   |
 
+### Create Page Webhook
+
+Create a new page webhook for the current application.
+
+| Input               | Comments                                                                                          | Default |
+| ------------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version       | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Verify Token        | The verify token for the webhook.                                                                 |         |
+| Callback Url        | The URL to send the webhook to.                                                                   |         |
+| Page Fields         | The fields to be subscribed to.                                                                   |         |
+| Dynamic Page Fields | The fields to be subscribed to.                                                                   |         |
+| Connection          | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
+
 ### Delete Ad
 
 Delete the information and metadata of a given ad.
@@ -159,6 +226,16 @@ Delete the information and metadata of a given ad.
 | Ad Id         | Ad ID to delete.                                             |         |
 | Graph Version | Provide the version of the Graph API to use. Defaults to 22. | 22      |
 | Debug Request | Enabling this flag will log out the current request.         | false   |
+
+### Delete Webhook
+
+Delete a webhook for the current application.
+
+| Input         | Comments                                                                                          | Default |
+| ------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Object        | The webhook associated with the object will be deleted.                                           |         |
+| Connection    | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
 
 ### Get Ad
 
@@ -355,6 +432,15 @@ List all campaigns in an ad account.
 | After         | Provide the token for the item after the current one.                |         |
 | Graph Version | Provide the version of the Graph API to use. Defaults to 22.         | 22      |
 | Debug Request | Enabling this flag will log out the current request.                 | false   |
+
+### List Webhooks
+
+List all webhooks for the current application.
+
+| Input         | Comments                                                                                          | Default |
+| ------------- | ------------------------------------------------------------------------------------------------- | ------- |
+| Graph Version | Provide the version of the Graph API to use. Defaults to 22.                                      | 22      |
+| Connection    | This connection must be a Meta Ads Client Credentials connection to be able to use webhooks APIs. |         |
 
 ### Raw Request
 

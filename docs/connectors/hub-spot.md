@@ -60,7 +60,6 @@ Checks for new and updated custom records.
 | Search Limit         | The number of records to return. The maximum value is 200.                                                                                                                                                                    | 10      |
 | Fetch All            | Turn this ON to get more than 200 results. Note that this can be a large amount of data.                                                                                                                                      | false   |
 | Timeout              | The maximum time a client will await a request                                                                                                                                                                                |         |
-| Debug Request        | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                                       | false   |
 
 ### New and Updated Records
 
@@ -76,7 +75,6 @@ Checks for new and updated records.
 | Search Limit         | The number of records to return. The maximum value is 200.                                                                                                                                                                    | 10      |
 | Fetch All            | Turn this ON to get more than 200 results. Note that this can be a large amount of data.                                                                                                                                      | false   |
 | Timeout              | The maximum time a client will await a request                                                                                                                                                                                |         |
-| Debug Request        | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                                       | false   |
 
 ### Webhook
 
@@ -100,42 +98,38 @@ Remove the associations between two provided objects
 | To Id               | Provide a value for the unique identifier of the second object                                                                                                                                                |         |
 | Type Of Association | Provide a value for the type of association to perform. You can get the set of available values for this input by making a step using the "List Association Types"                                            |         |
 | Timeout             | The maximum time a client will await a request                                                                                                                                                                |         |
-| Debug Request       | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                       | false   |
 | Connection          |                                                                                                                                                                                                               |         |
 
 ### Archive Batch Contacts
 
 Archive a batch of contacts by ID
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Contact Ids   | A list of contact IDs.                                                                                  |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input       | Comments                                       | Default |
+| ----------- | ---------------------------------------------- | ------- |
+| Contact Ids | A list of contact IDs.                         |         |
+| Timeout     | The maximum time a client will await a request |         |
+| Connection  |                                                |         |
 
 ### Archive Batch Engagement
 
 Archives a batch of selected engagements by their IDs.
 
-| Input             | Comments                                                                                                | Default |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection        |                                                                                                         |         |
-| Engagement Object | Select an engagement object.                                                                            |         |
-| Engagement Ids    | A list of engagement IDs.                                                                               |         |
-| Timeout           | The maximum time a client will await a request                                                          |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input             | Comments                                       | Default |
+| ----------------- | ---------------------------------------------- | ------- |
+| Connection        |                                                |         |
+| Engagement Object | Select an engagement object.                   |         |
+| Engagement Ids    | A list of engagement IDs.                      |         |
+| Timeout           | The maximum time a client will await a request |         |
 
 ### Cancel Import
 
 Cancels an active import.
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Import Id     | Provide the unique identifier of the import.                                                            |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Import Id  | Provide the unique identifier of the import.   |         |
+| Timeout    | The maximum time a client will await a request |         |
 
 ### Create Association
 
@@ -149,7 +143,6 @@ Create an association between the objects identified in the step
 | To Id               | Provide a value for the unique identifier of the second object                                                                                                                                                |         |
 | Type Of Association | Provide a value for the type of association to perform. You can get the set of available values for this input by making a step using the "List Association Types"                                            |         |
 | Timeout             | The maximum time a client will await a request                                                                                                                                                                |         |
-| Debug Request       | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                       | false   |
 | Connection          |                                                                                                                                                                                                               |         |
 
 ### Create Batch Contacts
@@ -161,19 +154,17 @@ Create a batch of contacts
 | Connection     |                                                                                                                 |         |
 | Batch Contacts | An array of contact objects to create. See https://developers.hubspot.com/docs/api/crm/contacts for properties. |         |
 | Timeout        | The maximum time a client will await a request                                                                  |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.         | false   |
 
 ### Create Batch Engagement
 
 Creates a batch of selected engagements.
 
-| Input             | Comments                                                                                                                                                                                                             | Default |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection        |                                                                                                                                                                                                                      |         |
-| Engagement Object | Select an engagement object.                                                                                                                                                                                         |         |
-| Batch Engagements | An array of engagement objects to create. Each engagement object must contain the required properties for the specified engagement type. See https://developers.hubspot.com/docs/api/crm/tasks for more information. |         |
-| Timeout           | The maximum time a client will await a request                                                                                                                                                                       |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                              | false   |
+| Input             | Comments                                       | Default |
+| ----------------- | ---------------------------------------------- | ------- |
+| Connection        |                                                |         |
+| Engagement Object | Select an engagement object.                   |         |
+| Batch Engagements | An array of engagements.                       |         |
+| Timeout           | The maximum time a client will await a request |         |
 
 ### Create Company
 
@@ -191,7 +182,6 @@ Create a new company
 | Values         | The names of the fields and their values to use when creating/updating a record.                              |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Timeout        | The maximum time a client will await a request                                                                |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.       | false   |
 | Connection     |                                                                                                               |         |
 
 ### Create Contact
@@ -209,7 +199,6 @@ Create a new contact
 | Values         | The names of the fields and their values to use when creating/updating a record.                                                                                              |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                                                                 |         |
 | Timeout        | The maximum time a client will await a request                                                                                                                                |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                       | false   |
 | Connection     |                                                                                                                                                                               |         |
 
 ### Create Custom Object
@@ -228,7 +217,6 @@ Creates new custom object schema
 | Associated Objects           | Associations defined for this object type.                                                                                               | <code>["000xxx"]</code> |
 | Name                         | A unique name for this object. For internal use only.                                                                                    |                         |
 | Timeout                      | The maximum time a client will await a request                                                                                           |                         |
-| Debug Request                | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                  | false                   |
 | Values                       | The names of the fields and their values to use when creating/updating a record.                                                         |                         |
 | Dynamic Fields               | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                            |                         |
 
@@ -249,7 +237,6 @@ Create a new deal
 | Values         | The names of the fields and their values to use when creating/updating a record.                                                                                                                      |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                                                                                         |         |
 | Timeout        | The maximum time a client will await a request                                                                                                                                                        |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                               | false   |
 | Connection     |                                                                                                                                                                                                       |         |
 
 ### Create Engagement
@@ -263,7 +250,6 @@ Create a communication, email, call, meeting, note, postal mail or task engageme
 | Associations      | To create and associate a task with existing records.                                                                                                                    |         |
 | Properties        | A properties object, attributes depend on the engagement type. For possible properties for each engagement type go to https://developers.hubspot.com/docs/api/crm/tasks. |         |
 | Timeout           | The maximum time a client will await a request                                                                                                                           |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                  | false   |
 
 ### Create Line Item
 
@@ -280,7 +266,6 @@ Create a new line item
 | Values                         | The names of the fields and their values to use when creating/updating a record.                                                      |         |
 | Dynamic Fields                 | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                         |         |
 | Timeout                        | The maximum time a client will await a request                                                                                        |         |
-| Debug Request                  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                               | false   |
 | Connection                     |                                                                                                                                       |         |
 
 ### Create Product
@@ -298,7 +283,6 @@ Create a new product
 | Values                      | The names of the fields and their values to use when creating/updating a record.                                                      |         |
 | Dynamic Fields              | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                         |         |
 | Timeout                     | The maximum time a client will await a request                                                                                        |         |
-| Debug Request               | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                               | false   |
 | Connection                  |                                                                                                                                       |         |
 
 ### Create Webhook
@@ -312,107 +296,97 @@ Create a webhook in HubSpot
 | Property Name | The internal name of the property to monitor for changes. Only applies when eventType is propertyChange. |         |
 | Active        | Determines if the subscription is active or paused. Defaults to false.                                   | false   |
 | Timeout       | The maximum time a client will await a request                                                           |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.  | false   |
 
 ### Delete all Instanced Webhooks
 
 Delete all webhooks created by this instance in HubSpot
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Timeout    | The maximum time a client will await a request |         |
 
 ### Delete Company
 
 Delete an existing company by Id
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Company Id    | Provide a value for the unique identifier of the company.                                               |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                                  | Default |
+| ---------- | --------------------------------------------------------- | ------- |
+| Company Id | Provide a value for the unique identifier of the company. |         |
+| Timeout    | The maximum time a client will await a request            |         |
+| Connection |                                                           |         |
 
 ### Delete Contact
 
 Delete a contact by Id
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Contact Id    | Provide a string value for the unique identifier of the contact.                                        |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                                         | Default |
+| ---------- | ---------------------------------------------------------------- | ------- |
+| Contact Id | Provide a string value for the unique identifier of the contact. |         |
+| Timeout    | The maximum time a client will await a request                   |         |
+| Connection |                                                                  |         |
 
 ### Delete Custom Object
 
 Removes custom object schema
 
-| Input                   | Comments                                                                                                | Default |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection              |                                                                                                         |         |
-| Object Type             | Provide a string value for the type of object                                                           |         |
-| Timeout                 | The maximum time a client will await a request                                                          |         |
-| Debug Request           | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Return Archived Results | Whether to return only results that have been archived.                                                 | false   |
+| Input                   | Comments                                                | Default |
+| ----------------------- | ------------------------------------------------------- | ------- |
+| Connection              |                                                         |         |
+| Object Type             | Provide a string value for the type of object           |         |
+| Timeout                 | The maximum time a client will await a request          |         |
+| Return Archived Results | Whether to return only results that have been archived. | false   |
 
 ### Delete Deal
 
 Delete a deal by its Id
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Deal Id       | Provide the unique identifier of the deal                                                               |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Deal Id    | Provide the unique identifier of the deal      |         |
+| Timeout    | The maximum time a client will await a request |         |
+| Connection |                                                |         |
 
 ### Delete Engagement
 
 Deletes an engagement by its ID.
 
-| Input             | Comments                                                                                                | Default |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection        |                                                                                                         |         |
-| Engagement Object | Select an engagement object.                                                                            |         |
-| Engagement Id     | The unique identifier of the engagement. A taskId, meetingId, etc.                                      |         |
-| Timeout           | The maximum time a client will await a request                                                          |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input             | Comments                                                           | Default |
+| ----------------- | ------------------------------------------------------------------ | ------- |
+| Connection        |                                                                    |         |
+| Engagement Object | Select an engagement object.                                       |         |
+| Engagement Id     | The unique identifier of the engagement. A taskId, meetingId, etc. |         |
+| Timeout           | The maximum time a client will await a request                     |         |
 
 ### Delete Line Item
 
 Delete an existing line item by Id
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Line Item Id  | Provide the unique identifier of the line item.                                                         |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input        | Comments                                        | Default |
+| ------------ | ----------------------------------------------- | ------- |
+| Line Item Id | Provide the unique identifier of the line item. |         |
+| Timeout      | The maximum time a client will await a request  |         |
+| Connection   |                                                 |         |
 
 ### Delete Product
 
 Delete a product by Id
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Product Id    | Provide the unique identifier of the product.                                                           |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Product Id | Provide the unique identifier of the product.  |         |
+| Timeout    | The maximum time a client will await a request |         |
+| Connection |                                                |         |
 
 ### Delete Webhook
 
 Delete a webhook by ID in HubSpot
 
-| Input           | Comments                                                                                                | Default |
-| --------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection      |                                                                                                         |         |
-| Subscription ID | The ID of the subscription to delete                                                                    |         |
-| Timeout         | The maximum time a client will await a request                                                          |         |
-| Debug Request   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input           | Comments                                       | Default |
+| --------------- | ---------------------------------------------- | ------- |
+| Connection      |                                                |         |
+| Subscription ID | The ID of the subscription to delete           |         |
+| Timeout         | The maximum time a client will await a request |         |
 
 ### Export CRM Data
 
@@ -431,49 +405,45 @@ Begins exporting CRM data for the portal as specified in the request body.
 | Public CRM Search Request (Only for PublicExportViewRequest) | Indicates which data should be exported based on certain property values and search queries.                                                                                                                                                                |         |
 | Associated Object Type                                       | The name or ID of an associated object to include in the export. If you include an associated object, the export will contain the associated record IDs of that object and the records' primary display property value.                                     |         |
 | Timeout                                                      | The maximum time a client will await a request                                                                                                                                                                                                              |         |
-| Debug Request                                                | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                                                                     | false   |
 
 ### Get an Import
 
 Get a complete summary of an import record, including any updates.
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Import Id     | Provide the unique identifier of the import.                                                            |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Import Id  | Provide the unique identifier of the import.   |         |
+| Timeout    | The maximum time a client will await a request |         |
 
 ### Get Batch Contacts
 
 Read a batch of contacts by internal ID, or unique property values.
 
-| Input                   | Comments                                                                                                | Default |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection              |                                                                                                         |         |
-| Properties With History | A list of properties to read by.                                                                        |         |
-| Property                | A list of properties to read by.                                                                        |         |
-| Id Property             | An ID property to search by                                                                             |         |
-| Contact Ids             | A list of contact IDs.                                                                                  |         |
-| Return Archived Results | Whether to return only results that have been archived.                                                 | false   |
-| Timeout                 | The maximum time a client will await a request                                                          |         |
-| Debug Request           | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input                   | Comments                                                | Default |
+| ----------------------- | ------------------------------------------------------- | ------- |
+| Connection              |                                                         |         |
+| Properties With History | A list of properties to read by.                        |         |
+| Property                | A list of properties to read by.                        |         |
+| Id Property             | An ID property to search by                             |         |
+| Contact Ids             | A list of contact IDs.                                  |         |
+| Return Archived Results | Whether to return only results that have been archived. | false   |
+| Timeout                 | The maximum time a client will await a request          |         |
 
 ### Get Company
 
 Retrieve the information or metadata of a company by Id, domain, or name
 
-| Input                           | Comments                                                                                                | Default |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Company Id                      | Provide a value for the unique identifier of the company.                                               |         |
-| Company Name                    | Provide a string value for the name of the company                                                      |         |
-| Domain                          | Provide a string value for the domain of the company                                                    |         |
-| Additional Properties To Return | For each item, provide a property you would like to be returned in the response.                        |         |
-| Associations List               | For each item, provide an object type to retrieve the associated Ids for.                               |         |
-| Return Archived Results         | Whether to return only results that have been archived.                                                 | false   |
-| Timeout                         | The maximum time a client will await a request                                                          |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection                      |                                                                                                         |         |
+| Input                           | Comments                                                                         | Default |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Company Id                      | Provide a value for the unique identifier of the company.                        |         |
+| Company Name                    | Provide a string value for the name of the company                               |         |
+| Domain                          | Provide a string value for the domain of the company                             |         |
+| Additional Properties To Return | For each item, provide a property you would like to be returned in the response. |         |
+| Associations List               | For each item, provide an object type to retrieve the associated Ids for.        |         |
+| Return Archived Results         | Whether to return only results that have been archived.                          | false   |
+| Timeout                         | The maximum time a client will await a request                                   |         |
+| Connection                      |                                                                                  |         |
 
 ### Get Contact
 
@@ -487,44 +457,40 @@ Get the information and metadata of a contact by Id or Email
 | Associations List               | For each item, provide an object type to retrieve the associated Ids for.                                                                                                     |         |
 | Return Archived Results         | Whether to return only results that have been archived.                                                                                                                       | false   |
 | Timeout                         | The maximum time a client will await a request                                                                                                                                |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                       | false   |
 | Connection                      |                                                                                                                                                                               |         |
 
 ### Get Current User
 
 Return information about the current session's user.
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Timeout    | The maximum time a client will await a request |         |
+| Connection |                                                |         |
 
 ### Get Custom Object
 
 Retrieves a specific custom object
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Object Type   | Provide a string value for the type of object                                                           |         |
+| Input       | Comments                                       | Default |
+| ----------- | ---------------------------------------------- | ------- |
+| Connection  |                                                |         |
+| Timeout     | The maximum time a client will await a request |         |
+| Object Type | Provide a string value for the type of object  |         |
 
 ### Get Deal
 
 Retrieve information and metadata about a deal by its Id or name
 
-| Input                           | Comments                                                                                                | Default |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Deal Id                         | Provide the unique identifier of the deal                                                               |         |
-| Deal Name                       | Provide a string value for the name of the deal                                                         |         |
-| Additional Properties To Return | For each item, provide a property you would like to be returned in the response.                        |         |
-| Associations List               | For each item, provide an object type to retrieve the associated Ids for.                               |         |
-| Return Archived Results         | Whether to return only results that have been archived.                                                 | false   |
-| Timeout                         | The maximum time a client will await a request                                                          |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection                      |                                                                                                         |         |
+| Input                           | Comments                                                                         | Default |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Deal Id                         | Provide the unique identifier of the deal                                        |         |
+| Deal Name                       | Provide a string value for the name of the deal                                  |         |
+| Additional Properties To Return | For each item, provide a property you would like to be returned in the response. |         |
+| Associations List               | For each item, provide an object type to retrieve the associated Ids for.        |         |
+| Return Archived Results         | Whether to return only results that have been archived.                          | false   |
+| Timeout                         | The maximum time a client will await a request                                   |         |
+| Connection                      |                                                                                  |         |
 
 ### Get Engagement
 
@@ -541,37 +507,34 @@ Get a communication, email, call, meeting, note, postal mail or task engagement 
 | Return Archived Results         | Whether to return only results that have been archived.                                                                                                     | false   |
 | Id Property                     | The name of a property whose values are unique for this object type.                                                                                        |         |
 | Timeout                         | The maximum time a client will await a request                                                                                                              |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                     | false   |
 
 ### Get Line Item
 
 Retrieve the information and metadata of a line item by Id
 
-| Input                           | Comments                                                                                                | Default |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Line Item Id                    | Provide the unique identifier of the line item.                                                         |         |
-| Name                            | Provide a string value for the name of the line item.                                                   |         |
-| Additional Properties To Return | For each item, provide a property you would like to be returned in the response.                        |         |
-| Associations List               | For each item, provide an object type to retrieve the associated Ids for.                               |         |
-| Return Archived Results         | Whether to return only results that have been archived.                                                 | false   |
-| Timeout                         | The maximum time a client will await a request                                                          |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection                      |                                                                                                         |         |
+| Input                           | Comments                                                                         | Default |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Line Item Id                    | Provide the unique identifier of the line item.                                  |         |
+| Name                            | Provide a string value for the name of the line item.                            |         |
+| Additional Properties To Return | For each item, provide a property you would like to be returned in the response. |         |
+| Associations List               | For each item, provide an object type to retrieve the associated Ids for.        |         |
+| Return Archived Results         | Whether to return only results that have been archived.                          | false   |
+| Timeout                         | The maximum time a client will await a request                                   |         |
+| Connection                      |                                                                                  |         |
 
 ### Get Product
 
 Retrieve the information and metadata of a product by Id or name
 
-| Input                           | Comments                                                                                                | Default |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Product Id                      | Provide the unique identifier of the product.                                                           |         |
-| Product Name                    | Provide the name of the product.                                                                        |         |
-| Additional Properties To Return | For each item, provide a property you would like to be returned in the response.                        |         |
-| Associations List               | For each item, provide an object type to retrieve the associated Ids for.                               |         |
-| Return Archived Results         | Whether to return only results that have been archived.                                                 | false   |
-| Timeout                         | The maximum time a client will await a request                                                          |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Connection                      |                                                                                                         |         |
+| Input                           | Comments                                                                         | Default |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Product Id                      | Provide the unique identifier of the product.                                    |         |
+| Product Name                    | Provide the name of the product.                                                 |         |
+| Additional Properties To Return | For each item, provide a property you would like to be returned in the response. |         |
+| Associations List               | For each item, provide an object type to retrieve the associated Ids for.        |         |
+| Return Archived Results         | Whether to return only results that have been archived.                          | false   |
+| Timeout                         | The maximum time a client will await a request                                   |         |
+| Connection                      |                                                                                  |         |
 
 ### Import CRM Data
 
@@ -588,17 +551,15 @@ Import CRM records and activities into your HubSpot account, such as contacts, c
 | Marketable Contact Import       | Whether the contacts being imported are marketable. If not provided, the default value is true.                                                                                                                                                                                                                                                                                                  | true           |
 | Create Contact List From Import | An optional field to create a static list of the contacts from your import. To create a list from your file, use the value true.                                                                                                                                                                                                                                                                 | false          |
 | Timeout                         | The maximum time a client will await a request                                                                                                                                                                                                                                                                                                                                                   |                |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                                                                                                                                                                                                          | false          |
 
 ### List Active Imports
 
 Returns a paged list of active imports for this account.
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Timeout    | The maximum time a client will await a request |         |
 
 ### List Association Types
 
@@ -610,7 +571,6 @@ Retrieve a list of all association types available between two objects
 | From Object Type | The type of the "from" object. Choose from "Contacts", "Companies", "Deals", "Tickets", "Calls", "Quotes", "Line_items", "Meetings", "Products", "Feedback_submissions", or a custom object you have defined. |         |
 | To Object Type   | The type of the "to" object. Choose from "Contacts", "Companies", "Deals", "Tickets", "Calls", "Quotes", "Line_items", "Meetings", "Products", "Feedback_submissions", or a custom object you have defined.   |         |
 | Timeout          | The maximum time a client will await a request                                                                                                                                                                |         |
-| Debug Request    | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                       | false   |
 
 ### List Companies
 
@@ -626,7 +586,6 @@ Retrieve a list of all companies
 | Fetch All                       | Fetch all records.                                                                                      | false   |
 | Limit                           | Provide a number for the maximum amount of items that will be returned by the search.                   |         |
 | Start After                     | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
 
 ### List Contacts
 
@@ -642,19 +601,17 @@ Retrieve a list of all contacts
 | Fetch All                       | Fetch all records.                                                                                      | false   |
 | Limit                           | Provide a number for the maximum amount of items that will be returned by the search.                   |         |
 | Start After                     | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
 
 ### List Custom Objects
 
 Retrieve all custom objects
 
-| Input                           | Comments                                                                                                | Default |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection                      |                                                                                                         |         |
-| Timeout                         | The maximum time a client will await a request                                                          |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Return Archived Results         | Whether to return only results that have been archived.                                                 | false   |
-| Additional Properties To Return | For each item, provide a property you would like to be returned in the response.                        |         |
+| Input                           | Comments                                                                         | Default |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Connection                      |                                                                                  |         |
+| Timeout                         | The maximum time a client will await a request                                   |         |
+| Return Archived Results         | Whether to return only results that have been archived.                          | false   |
+| Additional Properties To Return | For each item, provide a property you would like to be returned in the response. |         |
 
 ### List Deals
 
@@ -670,7 +627,6 @@ Retrieve a list of all deals
 | Fetch All                       | Fetch all records.                                                                                      | false   |
 | Limit                           | Provide a number for the maximum amount of items that will be returned by the search.                   |         |
 | Start After                     | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
 
 ### List Engagements
 
@@ -682,7 +638,6 @@ List engagement objects from HubSpot CRM, including communications, emails, call
 | Engagement Object    | Select an engagement object.                                                                                                     |         |
 | Properties To Return | Properties to be returned in the response. If the specified property is not present on the requested object, it will be ignored. |         |
 | Timeout              | The maximum time a client will await a request                                                                                   |         |
-| Debug Request        | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                          | false   |
 
 ### List Line Items
 
@@ -698,7 +653,6 @@ Retrieve a list of all line items
 | Fetch All                       | Fetch all records.                                                                                      | false   |
 | Limit                           | Provide a number for the maximum amount of items that will be returned by the search.                   |         |
 | Start After                     | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
 
 ### List Products
 
@@ -714,28 +668,25 @@ Retrieve a list of all products
 | Fetch All                       | Fetch all records.                                                                                      | false   |
 | Limit                           | Provide a number for the maximum amount of items that will be returned by the search.                   |         |
 | Start After                     | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Debug Request                   | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
 
 ### List Properties
 
 Retrieve a list of all configured object properties.
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Object Type   | Provide a string value for the type of object                                                           |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input       | Comments                                       | Default |
+| ----------- | ---------------------------------------------- | ------- |
+| Connection  |                                                |         |
+| Object Type | Provide a string value for the type of object  |         |
+| Timeout     | The maximum time a client will await a request |         |
 
 ### List Webhooks
 
 List all webhooks for a server
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                         |         |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Timeout    | The maximum time a client will await a request |         |
 
 ### Raw Request
 
@@ -754,7 +705,6 @@ Send raw HTTP request to HubSpot
 | Header                  | A list of headers to send with the request.                                                                                                                                                                                          |         |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                                             | json    |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                                                  |         |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                                                 | false   |
 | Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                                                  | 0       |
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                     | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                  | 0       |
@@ -770,7 +720,6 @@ Get the Ids of the objects associated with those specified in the step
 | To Object Type   | The type of the "to" object. Choose from "Contacts", "Companies", "Deals", "Tickets", "Calls", "Quotes", "Line_items", "Meetings", "Products", "Feedback_submissions", or a custom object you have defined.   |         |
 | To Id            | Provide a value for the unique identifier of the second object                                                                                                                                                |         |
 | Timeout          | The maximum time a client will await a request                                                                                                                                                                |         |
-| Debug Request    | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                       | false   |
 | Connection       |                                                                                                                                                                                                               |         |
 
 ### Search
@@ -786,7 +735,6 @@ Use the search endpoints to filter, sort, and search objects, records, and engag
 | Search Limit      | The number of records to return. The maximum value is 200.                                                                                                                                                                    | 10      |
 | Fetch All         | Turn this ON to get more than 200 results. Note that this can be a large amount of data.                                                                                                                                      | false   |
 | Timeout           | The maximum time a client will await a request                                                                                                                                                                                |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                                       | false   |
 
 ### Search Deals
 
@@ -800,7 +748,6 @@ Returns a list of deals that match the given properties
 | Limit         | Provide a number for the maximum amount of items that will be returned by the search.                                                                            |         |
 | Start After   | Specify the pagination token that's returned by a previous request to retrieve the next page of results                                                          |         |
 | Timeout       | The maximum time a client will await a request                                                                                                                   |         |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                          | false   |
 | Connection    |                                                                                                                                                                  |         |
 
 ### Update Batch Contacts
@@ -812,7 +759,6 @@ Update a batch of contacts
 | Connection     |                                                                                                                 |         |
 | Batch Contacts | An array of contact objects to update. See https://developers.hubspot.com/docs/api/crm/contacts for properties. |         |
 | Timeout        | The maximum time a client will await a request                                                                  |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.         | false   |
 
 ### Update Batch Engagement
 
@@ -824,7 +770,6 @@ Updates a batch of selected engagements.
 | Engagement Object | Select an engagement object.                                                                                                                                                                                         |         |
 | Batch Engagements | An array of engagement objects to update. Each engagement object must contain the required properties for the specified engagement type. See https://developers.hubspot.com/docs/api/crm/tasks for more information. |         |
 | Timeout           | The maximum time a client will await a request                                                                                                                                                                       |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                                              | false   |
 
 ### Update Company
 
@@ -843,7 +788,6 @@ Update the information and metadata of an existing company
 | Values         | The names of the fields and their values to use when creating/updating a record.                              |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Timeout        | The maximum time a client will await a request                                                                |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.       | false   |
 | Connection     |                                                                                                               |         |
 
 ### Update Contact
@@ -862,7 +806,6 @@ Update the information and metadata of an existing contact
 | Values         | The names of the fields and their values to use when creating/updating a record.                              |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |         |
 | Timeout        | The maximum time a client will await a request                                                                |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.       | false   |
 | Connection     |                                                                                                               |         |
 
 ### Update Custom Object
@@ -878,7 +821,6 @@ Updates an object's schema
 | Required Properties                                    | The names of properties that should be required when creating an object of this type.                         | <code>["000xxx"]</code> |
 | Searchable Properties                                  | Names of properties that will be indexed for this object type in by HubSpot's product search.                 | <code>["000xxx"]</code> |
 | Timeout                                                | The maximum time a client will await a request                                                                |                         |
-| Debug Request                                          | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.       | false                   |
 | Values                                                 | The names of the fields and their values to use when creating/updating a record.                              |                         |
 | Dynamic Fields                                         | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. |                         |
 
@@ -900,7 +842,6 @@ Update the information or metadata of an existing deal
 | Values         | The names of the fields and their values to use when creating/updating a record.                                                                                                                      |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                                                                                         |         |
 | Timeout        | The maximum time a client will await a request                                                                                                                                                        |         |
-| Debug Request  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                                               | false   |
 | Connection     |                                                                                                                                                                                                       |         |
 
 ### Update Engagement
@@ -915,7 +856,6 @@ Update a communication, email, call, meeting, note, postal mail or task engageme
 | Properties        | A properties object to update, attributes depend on the engagement type. For possible properties for each engagement type go to https://developers.hubspot.com/docs/api/crm/tasks. |         |
 | Id Property       | The name of a property whose values are unique for this object type.                                                                                                               |         |
 | Timeout           | The maximum time a client will await a request                                                                                                                                     |         |
-| Debug Request     | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                                                                            | false   |
 
 ### Update Line Item
 
@@ -933,7 +873,6 @@ Update an the information and metadata of an existing line item
 | Values                         | The names of the fields and their values to use when creating/updating a record.                                                      |         |
 | Dynamic Fields                 | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                         |         |
 | Timeout                        | The maximum time a client will await a request                                                                                        |         |
-| Debug Request                  | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                               | false   |
 | Connection                     |                                                                                                                                       |         |
 
 ### Update Product
@@ -952,27 +891,90 @@ Update the information and metadata of an existing product
 | Values                      | The names of the fields and their values to use when creating/updating a record.                                                      |         |
 | Dynamic Fields              | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable.                         |         |
 | Timeout                     | The maximum time a client will await a request                                                                                        |         |
-| Debug Request               | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API.                               | false   |
 | Connection                  |                                                                                                                                       |         |
 
 ### Validate Connection
 
 Returns a boolean value that specifies whether the provided Connection is valid
 
-| Input         | Comments                                                                                                | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| Debug Request | Flipping this flag will enable the logging of the entire request, before it is sent to the HubSpot API. | false   |
-| Timeout       | The maximum time a client will await a request                                                          |         |
-| Connection    |                                                                                                         |         |
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Timeout    | The maximum time a client will await a request |         |
+| Connection |                                                |         |
 
 ## Data Sources
 
 ### Object Selection
 
-A list of HubSpot objects
+A list of HubSpot objects.
 
 | Input                  | Comments                                      | Default |
 | ---------------------- | --------------------------------------------- | ------- |
 | HubSpot Connection     |                                               |         |
 | Objects to Select      | The objects to include in the selection list. |         |
 | Include Custom Objects |                                               | false   |
+
+### Select Company
+
+Select a company from the list of companies.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Contact
+
+Select a contact from the list of contacts.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Deal
+
+Select a deal from the list of deals.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Engagement
+
+Select an engagement from the list of engagements.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Line Item
+
+Select a line item from the list of line items.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Product
+
+Select a product from the list of products.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Property
+
+Select a property from the list of properties.
+
+| Input       | Comments                                      | Default |
+| ----------- | --------------------------------------------- | ------- |
+| Connection  |                                               |         |
+| Object Type | Provide a string value for the type of object |         |
+
+### Select Webhook
+
+Select a webhook from the list of webhooks.
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |

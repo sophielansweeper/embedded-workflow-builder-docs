@@ -65,17 +65,15 @@ Archive an existing conversation
 | ------------------ | ------------------------------------------- | ------- |
 | Channel Name or ID | The name or static ID of the Slack channel. |         |
 | Connection         | The connection to use                       |         |
-| Debug              | When true, the payload will be logged.      | false   |
 
 ### Close Conversation
 
 Close an existing conversation
 
-| Input             | Comments                               | Default |
-| ----------------- | -------------------------------------- | ------- |
-| Conversation Name | The name of the Slack conversation.    |         |
-| Connection        | The connection to use                  |         |
-| Debug             | When true, the payload will be logged. | false   |
+| Input             | Comments                            | Default |
+| ----------------- | ----------------------------------- | ------- |
+| Conversation Name | The name of the Slack conversation. |         |
+| Connection        | The connection to use               |         |
 
 ### Conversation Exists
 
@@ -85,7 +83,6 @@ Returns true if the conversation already exists
 | ------------------ | ------------------------------------------- | ------- |
 | Channel Name or ID | The name or static ID of the Slack channel. |         |
 | Connection         | The connection to use                       |         |
-| Debug              | When true, the payload will be logged.      | false   |
 
 ### Create Conversation
 
@@ -97,7 +94,6 @@ Create a new conversation
 | Is Private        | This flag will determine if the Slack conversation is private. | false   |
 | Team Id           | The Id of the Slack team.                                      |         |
 | Connection        | The connection to use                                          |         |
-| Debug             | When true, the payload will be logged.                         | false   |
 
 ### Delete a pending scheduled message
 
@@ -108,7 +104,6 @@ Delete the content and metadata of a pending scheduled message from a queue
 | Message Id | A unique identifier of a message or thread to reply to (thread_ts) |         |
 | Channel ID | The static ID of the Slack channel.                                |         |
 | Connection | The connection to use                                              |         |
-| Debug      | When true, the payload will be logged.                             | false   |
 
 ### Delete message
 
@@ -119,7 +114,6 @@ Delete the content and metadata of an existing message
 | Message Id | A unique identifier of a message or thread to reply to (thread_ts) |         |
 | Channel ID | The static ID of the Slack channel.                                |         |
 | Connection | The connection to use                                              |         |
-| Debug      | When true, the payload will be logged.                             | false   |
 
 ### Get Conversation History
 
@@ -136,7 +130,6 @@ Get the history of a conversation
 | Latest               | Only messages before this Unix timestamp will be included in results. Default is current time.             |         |
 | Oldest               | Only messages after this Unix timestamp will be included in results                                        |         |
 | Connection           | The connection to use                                                                                      |         |
-| Debug                | When true, the payload will be logged.                                                                     | false   |
 
 ### Get User By Email
 
@@ -146,7 +139,6 @@ Get a user's information by email
 | ---------- | --------------------------------------------------------- | ------- |
 | Email      | Provide a string value for the email address of the user. |         |
 | Connection | The connection to use                                     |         |
-| Debug      | When true, the payload will be logged.                    | false   |
 
 ### Get User By ID
 
@@ -156,7 +148,6 @@ Get a user's information by ID
 | ---------- | --------------------------------------------------------------------------------------------- | ------- |
 | User Id    | Provide a string value for the unique identifier of the user you want to send the message to. |         |
 | Connection | The connection to use                                                                         |         |
-| Debug      | When true, the payload will be logged.                                                        | false   |
 
 ### Invite User To Conversation
 
@@ -167,7 +158,6 @@ Invite a user to an existing conversation
 | Channel Name or ID | The name or static ID of the Slack channel.                                                   |         |
 | User Id            | Provide a string value for the unique identifier of the user you want to send the message to. |         |
 | Connection         | The connection to use                                                                         |         |
-| Debug              | When true, the payload will be logged.                                                        | false   |
 
 ### Leave Conversations
 
@@ -177,7 +167,6 @@ Leave an existing conversation
 | ------------------ | ------------------------------------------- | ------- |
 | Channel Name or ID | The name or static ID of the Slack channel. |         |
 | Connection         | The connection to use                       |         |
-| Debug              | When true, the payload will be logged.      | false   |
 
 ### List Conversation Members
 
@@ -190,7 +179,6 @@ List all members of a conversation
 | Limit              | Provide a numerical limit to the amount of results returned.   |         |
 | Cursor             | Provide a cursor pointing to the page you would like to access |         |
 | Connection         | The connection to use                                          |         |
-| Debug              | When true, the payload will be logged.                         | false   |
 
 ### List Conversations
 
@@ -208,7 +196,6 @@ List all conversations
 | Include private channels?               |                                                                                    | false   |
 | Include multi-party IM (mpim) channels? |                                                                                    | false   |
 | Include IM channels?                    |                                                                                    | false   |
-| Debug                                   | When true, the payload will be logged.                                             | false   |
 
 ### List Files
 
@@ -219,7 +206,6 @@ List all available files
 | Connection | The connection to use                                          |         |
 | Fetch All  | Make the action handle pagination, returning all results.      | false   |
 | Cursor     | Provide a cursor pointing to the page you would like to access |         |
-| Debug      | When true, the payload will be logged.                         | false   |
 
 ### List Scheduled Messages
 
@@ -240,7 +226,6 @@ List Users
 | Cursor     | Provide a cursor pointing to the page you would like to access |         |
 | Team Id    | The Id of the Slack team.                                      |         |
 | Connection | The connection to use                                          |         |
-| Debug      | When true, the payload will be logged.                         | false   |
 
 ### List Users Conversations
 
@@ -254,7 +239,6 @@ List Users Conversations
 | Cursor     | Provide a cursor pointing to the page you would like to access                                |         |
 | Team Id    | The Id of the Slack team.                                                                     |         |
 | Connection | The connection to use                                                                         |         |
-| Debug      | When true, the payload will be logged.                                                        | false   |
 
 ### Open Views
 
@@ -265,7 +249,6 @@ Open a view for a user.
 | View       | A view payload (https://api.slack.com/reference/surfaces/views). This must be a JSON-encoded string. | <code>{<br /> "type": "modal",<br /> "title": {<br /> "type": "plain*text",<br /> "text": "Modal title"<br /> },<br /> "blocks": [<br /> {<br /> "type": "section",<br /> "text": {<br /> "type": "mrkdwn",<br /> "text": "It's Block Kit...but \_in a modal*"<br /> },<br /> "block_id": "section1",<br /> "accessory": {<br /> "type": "button",<br /> "text": {<br /> "type": "plain_text",<br /> "text": "Click me"<br /> },<br /> "action_id": "button_abc",<br /> "value": "Button value",<br /> "style": "danger"<br /> }<br /> },<br /> {<br /> "type": "input",<br /> "label": {<br /> "type": "plain_text",<br /> "text": "Input label"<br /> },<br /> "element": {<br /> "type": "plain_text_input",<br /> "action_id": "input1",<br /> "placeholder": {<br /> "type": "plain_text",<br /> "text": "Type in here"<br /> },<br /> "multiline": false<br /> },<br /> "optional": false<br /> }<br /> ],<br /> "close": {<br /> "type": "plain_text",<br /> "text": "Cancel"<br /> },<br /> "submit": {<br /> "type": "plain_text",<br /> "text": "Save"<br /> },<br /> "private_metadata": "Shhhhhhhh",<br /> "callback_id": "view_identifier_12"<br />}</code> |
 | Trigger ID | Exchange a trigger to post to the user.                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Connection | The connection to use                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Debug      | When true, the payload will be logged.                                                               | false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### Post Block Message
 
@@ -279,7 +262,6 @@ Post a message to a slack channel
 | Bot Username       | The username of the bot the message will be sent from. This requires the 'chat:write.customize' scope.                                                                       |                                                                                                                                                                          |
 | Connection         | The connection to use                                                                                                                                                        |                                                                                                                                                                          |
 | Message Id         | A unique identifier of a message or thread to reply to (thread_ts)                                                                                                           |                                                                                                                                                                          |
-| Debug              | When true, the payload will be logged.                                                                                                                                       | false                                                                                                                                                                    |
 
 ### Post Ephemeral Message
 
@@ -292,7 +274,6 @@ Post an ephemeral message to a user or channel
 | Bot Username       | The username of the bot the message will be sent from. This requires the 'chat:write.customize' scope. |         |
 | Message            | The message to send the Slack channel.                                                                 |         |
 | Connection         | The connection to use                                                                                  |         |
-| Debug              | When true, the payload will be logged.                                                                 | false   |
 
 ### Post Message
 
@@ -305,7 +286,6 @@ Post a message to a slack channel
 | Bot Username       | The username of the bot the message will be sent from. This requires the 'chat:write.customize' scope. |         |
 | Connection         | The connection to use                                                                                  |         |
 | Message Id         | A unique identifier of a message or thread to reply to (thread_ts)                                     |         |
-| Debug              | When true, the payload will be logged.                                                                 | false   |
 
 ### Publish View
 
@@ -316,7 +296,6 @@ Publish a static view for a User.
 | View       | A view payload (https://api.slack.com/reference/surfaces/views). This must be a JSON-encoded string. | <code>{<br /> "type": "modal",<br /> "title": {<br /> "type": "plain*text",<br /> "text": "Modal title"<br /> },<br /> "blocks": [<br /> {<br /> "type": "section",<br /> "text": {<br /> "type": "mrkdwn",<br /> "text": "It's Block Kit...but \_in a modal*"<br /> },<br /> "block_id": "section1",<br /> "accessory": {<br /> "type": "button",<br /> "text": {<br /> "type": "plain_text",<br /> "text": "Click me"<br /> },<br /> "action_id": "button_abc",<br /> "value": "Button value",<br /> "style": "danger"<br /> }<br /> },<br /> {<br /> "type": "input",<br /> "label": {<br /> "type": "plain_text",<br /> "text": "Input label"<br /> },<br /> "element": {<br /> "type": "plain_text_input",<br /> "action_id": "input1",<br /> "placeholder": {<br /> "type": "plain_text",<br /> "text": "Type in here"<br /> },<br /> "multiline": false<br /> },<br /> "optional": false<br /> }<br /> ],<br /> "close": {<br /> "type": "plain_text",<br /> "text": "Cancel"<br /> },<br /> "submit": {<br /> "type": "plain_text",<br /> "text": "Save"<br /> },<br /> "private_metadata": "Shhhhhhhh",<br /> "callback_id": "view_identifier_12"<br />}</code> |
 | User Id    | Provide a string value for the unique identifier of the user you want to send the message to.        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Connection | The connection to use                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Debug      | When true, the payload will be logged.                                                               | false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### Push Views
 
@@ -327,7 +306,6 @@ Push a view onto the stack of a root view.
 | View       | A view payload (https://api.slack.com/reference/surfaces/views). This must be a JSON-encoded string. | <code>{<br /> "type": "modal",<br /> "title": {<br /> "type": "plain*text",<br /> "text": "Modal title"<br /> },<br /> "blocks": [<br /> {<br /> "type": "section",<br /> "text": {<br /> "type": "mrkdwn",<br /> "text": "It's Block Kit...but \_in a modal*"<br /> },<br /> "block_id": "section1",<br /> "accessory": {<br /> "type": "button",<br /> "text": {<br /> "type": "plain_text",<br /> "text": "Click me"<br /> },<br /> "action_id": "button_abc",<br /> "value": "Button value",<br /> "style": "danger"<br /> }<br /> },<br /> {<br /> "type": "input",<br /> "label": {<br /> "type": "plain_text",<br /> "text": "Input label"<br /> },<br /> "element": {<br /> "type": "plain_text_input",<br /> "action_id": "input1",<br /> "placeholder": {<br /> "type": "plain_text",<br /> "text": "Type in here"<br /> },<br /> "multiline": false<br /> },<br /> "optional": false<br /> }<br /> ],<br /> "close": {<br /> "type": "plain_text",<br /> "text": "Cancel"<br /> },<br /> "submit": {<br /> "type": "plain_text",<br /> "text": "Save"<br /> },<br /> "private_metadata": "Shhhhhhhh",<br /> "callback_id": "view_identifier_12"<br />}</code> |
 | Trigger ID | Exchange a trigger to post to the user.                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Connection | The connection to use                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Debug      | When true, the payload will be logged.                                                               | false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### Raw Request
 
@@ -346,7 +324,6 @@ Send raw HTTP request to Slack
 | Header                  | A list of headers to send with the request.                                                                                                                                                       |         |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                          | json    |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                               |         |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                              | false   |
 | Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                               | 0       |
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.  | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                               | 0       |
@@ -356,12 +333,11 @@ Send raw HTTP request to Slack
 
 Rename an existing conversation
 
-| Input                 | Comments                               | Default |
-| --------------------- | -------------------------------------- | ------- |
-| Conversation Name     | The name of the Slack conversation.    |         |
-| New Conversation Name | The name of the Slack conversation.    |         |
-| Connection            | The connection to use                  |         |
-| Debug                 | When true, the payload will be logged. | false   |
+| Input                 | Comments                            | Default |
+| --------------------- | ----------------------------------- | ------- |
+| Conversation Name     | The name of the Slack conversation. |         |
+| New Conversation Name | The name of the Slack conversation. |         |
+| Connection            | The connection to use               |         |
 
 ### Search All
 
@@ -377,7 +353,6 @@ Searches for messages and files matching a query.
 | Highlight      | Pass a value of true to enable query highlight markers.                                                      | false   |
 | Team Id        | Encoded team id to search in, required if org token is used                                                  |         |
 | Connection     | The connection to use                                                                                        |         |
-| Debug          | When true, the payload will be logged.                                                                       | false   |
 
 ### Search Files
 
@@ -393,7 +368,6 @@ Searches for files matching a query.
 | Sort Direction | The direction to sort the results. For example, desc will sort the results in descending order.              | desc    |
 | Team Id        | Encoded team id to search in, required if org token is used                                                  |         |
 | Connection     | The connection to use                                                                                        |         |
-| Debug          | When true, the payload will be logged.                                                                       | false   |
 
 ### Search Messages
 
@@ -409,7 +383,6 @@ Searches for messages matching a query.
 | Sort Direction | The direction to sort the results. For example, desc will sort the results in descending order.              | desc    |
 | Team Id        | Encoded team id to search in, required if org token is used                                                  |         |
 | Connection     | The connection to use                                                                                        |         |
-| Debug          | When true, the payload will be logged.                                                                       | false   |
 
 ### Set Conversation Purpose
 
@@ -420,7 +393,6 @@ Set the purpose of an existing conversation
 | Channel Name or ID   | The name or static ID of the Slack channel.                       |         |
 | Connection           | The connection to use                                             |         |
 | Conversation Purpose | Provide a string value for the purpose of the given conversation. |         |
-| Debug                | When true, the payload will be logged.                            | false   |
 
 ### Set Conversation Topic
 
@@ -432,7 +404,6 @@ Set the purpose of an existing conversation
 | Channel Name or ID | The name or static ID of the Slack channel.                                                   |         |
 | User Id            | Provide a string value for the unique identifier of the user you want to send the message to. |         |
 | Conversation Topic | Provide a string value for the topic of the given conversation.                               |         |
-| Debug              | When true, the payload will be logged.                                                        | false   |
 
 ### Slack Block Message From Webhook
 
@@ -443,7 +414,6 @@ Post a block formatted message to a Slack channel from a webhook URL
 | Connection  | The connection to use                                                                                                                                                        |                                                                                                                                                                          |
 | Alt Message | This message will override if your block cannot be sent                                                                                                                      |                                                                                                                                                                          |
 | Blocks      | A JSON array containing blocks (objects) that make up the desired message. Use Slack's Block Kit Builder (https://app.slack.com/block-kit-builder/) to build block messages. | <code>{<br /> "blocks": [<br /> {<br /> "type": "section",<br /> "text": {<br /> "type": "plain_text",<br /> "text": "Hello world"<br /> }<br /> }<br /> ]<br />}</code> |
-| Debug       | When true, the payload will be logged.                                                                                                                                       | false                                                                                                                                                                    |
 
 ### Slack Message From Webhook
 
@@ -453,7 +423,6 @@ Post a message to a Slack channel from a webhook URL
 | ---------- | -------------------------------------- | ------- |
 | Connection | The connection to use                  |         |
 | Message    | The message to send the Slack channel. |         |
-| Debug      | When true, the payload will be logged. | false   |
 
 ### Update Message
 
@@ -465,7 +434,6 @@ Update the contents of an existing message
 | Message Id | A unique identifier of a message or thread to reply to (thread_ts) |         |
 | Channel ID | The static ID of the Slack channel.                                |         |
 | Connection | The connection to use                                              |         |
-| Debug      | When true, the payload will be logged.                             | false   |
 
 ### Update Views
 
@@ -477,7 +445,6 @@ Update an existing view.
 | View ID     | A unique identifier of the view to be updated. Either view_id or external_id is required.            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | External ID | A unique identifier of the view to be updated. Either view_id or external_id is required.            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Connection  | The connection to use                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Debug       | When true, the payload will be logged.                                                               | false                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### Upload File
 
@@ -492,7 +459,6 @@ Upload a new file to a slack conversation
 | Channels        | Provide a comma separated list of channel IDs that the file will be shared in.                                           |         |
 | Initial Comment | The message text introducing the file in the specified channels when uploaded                                            |         |
 | Thread Reply    | Provide another message's ts value to upload this file as a reply. Never use a reply's ts value, use the parent instead. |         |
-| Debug           | When true, the payload will be logged.                                                                                   | false   |
 
 ## Data Sources
 

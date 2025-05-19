@@ -29,6 +29,10 @@ Receive and validate webhook requests from Stripe for webhooks you configure. Co
 | Webhook Events | For each item, provide a string value that represents which event you want to track. For more information, see https://docs.stripe.com/api/events/types. |         |
 | Connection     |                                                                                                                                                          |         |
 
+### Webhook (Deprecated)
+
+Receive and validate webhook requests from Stripe for webhooks you configure.
+
 ## Actions
 
 ### Attach Card
@@ -125,6 +129,23 @@ Create a new card
 | Metadata               | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. |         |
 | Timeout                | The maximum time a client will await a response.                                                                                                                                                                        |         |
 | Connection             |                                                                                                                                                                                                                         |         |
+
+### Create Checkout Session
+
+Create a new Stripe Checkout Session
+
+| Input               | Comments                                                                                                                                                                  | Default |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Mode                | The mode of the Checkout Session                                                                                                                                          | payment |
+| Line Items          | JSON array of line items to be purchased.                                                                                                                                 |         |
+| Email               | The email of the customer to create the checkout session for.                                                                                                             |         |
+| Customer Id         | The ID of the customer to create the checkout session for.                                                                                                                |         |
+| Client Reference ID | A unique string to reference the Checkout Session. This can be a customer ID, a cart ID, or similar, and can be used to reconcile the session with your internal systems. |         |
+| Success URL         | The URL the customer will be directed to after the payment is successful                                                                                                  |         |
+| Cancel URL          | The URL the customer will be directed to if they decide to cancel payment                                                                                                 |         |
+| Body Params         | More parameters to pass to the request.                                                                                                                                   |         |
+| Timeout             | The maximum time a client will await a response.                                                                                                                          |         |
+| Connection          |                                                                                                                                                                           |         |
 
 ### Create Customer
 
@@ -231,12 +252,12 @@ Create a new product
 | Product Type    | Provide a string value for the type of the product                                                                                                                                                                                        |         |
 | Product URL     | A URL of a publicly-accessible webpage for this product. May only be set if type=good.                                                                                                                                                    |         |
 | Shippable       | Whether this product is able to be shipped (i.e., physical goods).                                                                                                                                                                        | false   |
-| Product Caption | A short one-line description of the product, meant to be displayable to the customer. May only be set if type=good.                                                                                                                       |         |
 | Active          | This flag will specify if the object is currently active in your platform.                                                                                                                                                                | false   |
 | Description     | Provide a value for the description of the invoice.                                                                                                                                                                                       |         |
 | Product Images  | For each list item, provide a URL for the image of the product                                                                                                                                                                            |         |
 | Metadata        | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them.                   |         |
 | Values          | The names of optional fields and their values to use when creating/updating a record. For example, if you have a custom configured field that is not represented as an input, here you are able to specify its key and assign it a value. |         |
+| Product Caption | (DEPRECATED) A short one-line description of the product, meant to be displayable to the customer. May only be set if type=good.                                                                                                          |         |
 | Timeout         | The maximum time a client will await a response.                                                                                                                                                                                          |         |
 | Connection      |                                                                                                                                                                                                                                           |         |
 
@@ -253,9 +274,9 @@ Create a new subscription
 | Payment Method Id | Provide a value for the unique identifier of the payment.                                                                                                                                                                                                                      |         |
 | Cancel At         | A timestamp at which the subscription should cancel. If set to a date before the current period ends, this will cause a proration if prorations have been enabled using proration_behavior. If set during a future period, this will always cause a proration for that period. |         |
 | Days Until Due    | Provide a value for the days until the payment is due                                                                                                                                                                                                                          |         |
-| Coupon            | Provide a value for the unique identifier of the coupon for the invoice.                                                                                                                                                                                                       |         |
 | Values            | The names of optional fields and their values to use when creating/updating a record. For example, if you have a custom configured field that is not represented as an input, here you are able to specify its key and assign it a value.                                      |         |
 | Metadata          | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them.                                                        |         |
+| Coupon            | (DEPRECATED) Provide a value for the unique identifier of the coupon for the invoice.                                                                                                                                                                                          |         |
 | Timeout           | The maximum time a client will await a response.                                                                                                                                                                                                                               |         |
 | Connection        |                                                                                                                                                                                                                                                                                |         |
 
@@ -339,6 +360,16 @@ Detach a card from a customer
 | Payment Method Id | Provide a value for the unique identifier of the payment. |         |
 | Connection        |                                                           |         |
 
+### Expire Checkout Session
+
+Expire a Stripe Checkout Session
+
+| Input      | Comments                                         | Default |
+| ---------- | ------------------------------------------------ | ------- |
+| Session ID | The ID of the checkout session to expire         |         |
+| Timeout    | The maximum time a client will await a response. |         |
+| Connection |                                                  |         |
+
 ### Get Balance Transaction
 
 Retrieves the balance transaction with the given ID.
@@ -368,6 +399,16 @@ Retrieves the details of a charge that has previously been created.
 | Timeout    | The maximum time a client will await a response. |         |
 | Connection |                                                  |         |
 | Charge ID  |                                                  |         |
+
+### Get Checkout Session
+
+Retrieve a Stripe Checkout Session
+
+| Input      | Comments                                         | Default |
+| ---------- | ------------------------------------------------ | ------- |
+| Session ID | The ID of the checkout session to expire         |         |
+| Timeout    | The maximum time a client will await a response. |         |
+| Connection |                                                  |         |
 
 ### Get Customer
 
@@ -499,6 +540,32 @@ Returns a list of all charges
 | Limit          | Provide an integer value for the maximum amount of results that will be returned.                                                                                                                                                                                                               |         |
 | Starting After | A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list. |         |
 | Connection     |                                                                                                                                                                                                                                                                                                 |         |
+
+### List Checkout Session Line Items
+
+List all Stripe Checkout Session Line Items
+
+| Input          | Comments                                                                                                                                                                                                                                                                                            | Default |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Session ID     | The ID of the checkout session to expire                                                                                                                                                                                                                                                            |         |
+| Limit          | Provide an integer value for the maximum amount of results that will be returned.                                                                                                                                                                                                                   |         |
+| Starting After | A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.     |         |
+| Ending Before  | A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list. |         |
+| Timeout        | The maximum time a client will await a response.                                                                                                                                                                                                                                                    |         |
+| Connection     |                                                                                                                                                                                                                                                                                                     |         |
+
+### List Checkout Sessions
+
+List all Stripe Checkout Sessions
+
+| Input          | Comments                                                                                                                                                                                                                                                                                            | Default |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Fetch All      | When true, will retrieve all results.                                                                                                                                                                                                                                                               | false   |
+| Limit          | Provide an integer value for the maximum amount of results that will be returned.                                                                                                                                                                                                                   |         |
+| Starting After | A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.     |         |
+| Ending Before  | A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list. |         |
+| Timeout        | The maximum time a client will await a response.                                                                                                                                                                                                                                                    |         |
+| Connection     |                                                                                                                                                                                                                                                                                                     |         |
 
 ### List Customers
 
@@ -685,6 +752,17 @@ Updates the specified charge by setting the values of the parameters passed.
 | Fraud Details  | A set of key-value pairs you can attach to a charge giving information about its riskiness.                                                                                                                             |         |
 | Transfer Group | A string that identifies this transaction as part of a group.                                                                                                                                                           |         |
 
+### Update Checkout Session
+
+Update a Stripe Checkout Session
+
+| Input      | Comments                                                                                                                                                                                                                | Default |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Session ID | The ID of the checkout session to expire                                                                                                                                                                                |         |
+| Metadata   | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. |         |
+| Timeout    | The maximum time a client will await a response.                                                                                                                                                                        |         |
+| Connection |                                                                                                                                                                                                                         |         |
+
 ### Update Customer
 
 Create a new customer object
@@ -793,12 +871,12 @@ Update an existing product
 | Product Name    | Provide a string value for the name of the product                                                                                                                                                                                        |         |
 | Product URL     | A URL of a publicly-accessible webpage for this product. May only be set if type=good.                                                                                                                                                    |         |
 | Shippable       | Whether this product is able to be shipped (i.e., physical goods).                                                                                                                                                                        | false   |
-| Product Caption | A short one-line description of the product, meant to be displayable to the customer. May only be set if type=good.                                                                                                                       |         |
 | Active          | This flag will specify if the object is currently active in your platform.                                                                                                                                                                | false   |
 | Description     | Provide a value for the description of the invoice.                                                                                                                                                                                       |         |
 | Product Images  | For each list item, provide a URL for the image of the product                                                                                                                                                                            |         |
 | Metadata        | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them.                   |         |
 | Values          | The names of optional fields and their values to use when creating/updating a record. For example, if you have a custom configured field that is not represented as an input, here you are able to specify its key and assign it a value. |         |
+| Product Caption | (DEPRECATED) A short one-line description of the product, meant to be displayable to the customer. May only be set if type=good.                                                                                                          |         |
 | Timeout         | The maximum time a client will await a response.                                                                                                                                                                                          |         |
 | Connection      |                                                                                                                                                                                                                                           |         |
 
@@ -813,9 +891,9 @@ Update an existing subscription
 | Quantity          | Provide a string value for quantity of the items in the subscription.                                                                                                                                                                                                          |         |
 | Collection Method | Provide a value for the collection method of the invoice.                                                                                                                                                                                                                      |         |
 | Cancel At         | A timestamp at which the subscription should cancel. If set to a date before the current period ends, this will cause a proration if prorations have been enabled using proration_behavior. If set during a future period, this will always cause a proration for that period. |         |
-| Coupon            | Provide a value for the unique identifier of the coupon for the invoice.                                                                                                                                                                                                       |         |
 | Values            | The names of optional fields and their values to use when creating/updating a record. For example, if you have a custom configured field that is not represented as an input, here you are able to specify its key and assign it a value.                                      |         |
 | Metadata          | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them.                                                        |         |
+| Coupon            | (DEPRECATED) Provide a value for the unique identifier of the coupon for the invoice.                                                                                                                                                                                          |         |
 | Timeout           | The maximum time a client will await a response.                                                                                                                                                                                                                               |         |
 | Connection        |                                                                                                                                                                                                                                                                                |         |
 

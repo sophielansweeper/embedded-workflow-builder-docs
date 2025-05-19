@@ -134,6 +134,14 @@ Split a string into a list of strings on a separator character
 | Text      | This is the text to manipulate                     |         |
 | Separator | The separator to use to split or concatenate text. |         |
 
+### String Length
+
+Get the length of a string
+
+| Input | Comments                       | Default |
+| ----- | ------------------------------ | ------- |
+| Text  | This is the text to manipulate |         |
+
 ### Upper Case
 
 Convert the input string to UPPER CASE

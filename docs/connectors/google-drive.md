@@ -17,37 +17,34 @@ OAuth2 Connection
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 
-| Input         | Comments                                                                                                | Default                               |
-| ------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| Scopes        | Space delimited listing of scopes. https://developers.google.com/identity/protocols/oauth2/scopes#drive | https://www.googleapis.com/auth/drive |
-| Client ID     | The Google Drive app's Client Identifier.                                                               |                                       |
-| Client Secret | The Google Drive app's Client Secret.                                                                   |                                       |
+| Input         | Comments                                                                                                | Default                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Scopes        | Space delimited listing of scopes. https://developers.google.com/identity/protocols/oauth2/scopes#drive | https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.activity.readonly |
+| Client ID     | The Google Drive app's Client Identifier.                                                               |                                                                                               |
+| Client Secret | The Google Drive app's Client Secret.                                                                   |                                                                                               |
 
 ## Triggers
 
 ### Drive Activity
 
-Checks for new and updated files in any folder on a configured schedule.
+Checks for Google Drive activity. By default yields activity on personal 'My Drive'. For activity on a shared drive, specify a shared drive's folder's 'Folder ID'.
 
 | Input                  | Comments                                                                                                                       | Default |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------- |
 | Trigger Events         | The event types the trigger will poll.                                                                                         |         |
-| Connection             | The Connection to use for authorization.                                                                                       |         |
 | File ID                | Return activities for this Drive item.                                                                                         |         |
-| Folder ID              | Return activities for this Drive folder, plus all children and descendants.                                                    |         |
-| Page Token             | Specify the pagination token that's returned by a previous request to retrieve the next page of results                        |         |
-| Filter                 | The filtering for items returned from this query request.                                                                      |         |
+| Folder or Drive ID     | Return activities for this Drive or folder, plus all children and descendants. You may supply an array of drive or folder IDs. |         |
 | Consolidation Strategy | Details on how to consolidate related actions that make up the activity. If not set, then related actions aren't consolidated. |         |
-| Fetch All              | Whether to fetch all results or just the first page. Defaults to false.                                                        | false   |
+| Connection             | The Connection to use for authorization.                                                                                       |         |
 
 ### New and Updated Files
 
-Checks for new and updated files in any folder on a configured schedule.
+Checks for new and updated files in a specified drive (or all drives, if omitted) on a configured schedule.
 
-| Input      | Comments                                                                                                             | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                             |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. |         |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
 
 ### Push Notification Webhook
 
@@ -92,12 +89,12 @@ Create a directory file
 
 Create a webhook to receive notifications of changes with a Google Drive
 
-| Input           | Comments                                                                                                                                                   | Default |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection      | The Connection to use for authorization.                                                                                                                   |         |
-| Drive ID        | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives.                                       |         |
-| Endpoint        | The URL to send notifications to                                                                                                                           |         |
-| Expiration Time | The time at which the webhook will expire as a UNIX timestamp in milliseconds. Defaults to 1 hour from now, and can be set to a maximum of 1 day from now. |         |
+| Input           | Comments                                                                                                                                                         | Default |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection      | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID        | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
+| Endpoint        | The URL to send notifications to                                                                                                                                 |         |
+| Expiration Time | The time at which the webhook will expire as a UNIX timestamp in milliseconds. Defaults to 1 hour from now, and can be set to a maximum of 1 day from now.       |         |
 
 ### Create Webhook for File or Folder
 
@@ -179,10 +176,10 @@ Gets a file's metadata and content by ID.
 
 List changes made to files in your Google Drive since the last time this step ran (up to 1000)
 
-| Input      | Comments                                                                                                             | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                             |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. |         |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
 
 ### List Drives
 
@@ -196,14 +193,14 @@ List all drives
 
 Lists all available files and directories
 
-| Input      | Comments                                                                                                                                           | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                                                           |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives.                               |         |
-| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                    | 20      |
-| Page Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results                                            |         |
-| Fields     | Provide a comma separated list of values to be returned in the response.                                                                           | \*      |
-| Query      | Provide a query to be used in the request. Refer to the Google documentation for examples: https://developers.google.com/drive/api/v3/search-files |         |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
+| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                                  | 20      |
+| Page Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results                                                          |         |
+| Fields     | Provide a comma separated list of values to be returned in the response.                                                                                         | \*      |
+| Query      | Provide a query to be used in the request. Refer to the Google documentation for examples: https://developers.google.com/drive/api/v3/search-files               |         |
 
 ### List File's Export Types
 
@@ -218,14 +215,14 @@ List the available export types of a file by ID.
 
 Lists all available directories
 
-| Input      | Comments                                                                                                             | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                             |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. |         |
-| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.      | 20      |
-| Page Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results              |         |
-| Fields     | Provide a comma separated list of values to be returned in the response.                                             | \*      |
-| Folder ID  | A unique opaque ID for each folder.                                                                                  |         |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
+| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                                  | 20      |
+| Page Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results                                                          |         |
+| Fields     | Provide a comma separated list of values to be returned in the response.                                                                                         | \*      |
+| Folder ID  | A unique opaque ID for each folder.                                                                                                                              |         |
 
 ### Move File
 
@@ -245,7 +242,7 @@ Query past activity in Google Drive.
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------- |
 | Connection             | The Connection to use for authorization.                                                                                       |         |
 | File ID                | Return activities for this Drive item.                                                                                         |         |
-| Folder ID              | Return activities for this Drive folder, plus all children and descendants.                                                    |         |
+| Folder or Drive ID     | Return activities for this Drive or folder, plus all children and descendants.                                                 |         |
 | Page Token             | Specify the pagination token that's returned by a previous request to retrieve the next page of results                        |         |
 | Filter                 | The filtering for items returned from this query request.                                                                      |         |
 | Consolidation Strategy | Details on how to consolidate related actions that make up the activity. If not set, then related actions aren't consolidated. |         |
@@ -320,21 +317,21 @@ Updates a file's content by file id
 
 Lists all available files
 
-| Input      | Comments                                                                                                                                           | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                                                           |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives.                               |         |
-| Query      | Provide a query to be used in the request. Refer to the Google documentation for examples: https://developers.google.com/drive/api/v3/search-files |         |
-| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                    | 20      |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
+| Query      | Provide a query to be used in the request. Refer to the Google documentation for examples: https://developers.google.com/drive/api/v3/search-files               |         |
+| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                                  | 20      |
 
 ### List Folders
 
 Lists all available directories
 
-| Input      | Comments                                                                                                             | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                             |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. |         |
+| Input      | Comments                                                                                                                                                         | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection | The Connection to use for authorization.                                                                                                                         |         |
+| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
 
 ### Select Drive
 

@@ -1219,3 +1219,75 @@ A subset of Salesforce Record Types.
 | Include All Custom Record Types     | When true, will include all Custom Record Types, even those not included in Record Type Name Filter.                            | true    |
 | Include Only Top Level Record Types | When true, will include only Record Types that are top-level, meaning not subtypes of other Types                               | false   |
 | Show Triggerable Only               | If true, only triggerable objects are returned. If false, all objects are returned.                                             | false   |
+
+### Select Bulk Job
+
+A picklist of bulk jobs.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Contact
+
+A picklist of contacts.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Customer
+
+A picklist of customers.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Lead
+
+A picklist of leads.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Opportunity
+
+A picklist of opportunities.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Profile
+
+A picklist of profiles.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select Record Type
+
+A picklist of record types.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |
+
+### Select User
+
+A picklist of users.
+
+| Input      | Comments                       | Default |
+| ---------- | ------------------------------ | ------- |
+| Version    | Salesforce API Version Number. | 63.0    |
+| Connection |                                |         |

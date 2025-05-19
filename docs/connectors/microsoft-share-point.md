@@ -193,13 +193,13 @@ List all drives within any given SharePoint site
 
 List all the files from a Drive
 
-| Input      | Comments                                             | Default |
-| ---------- | ---------------------------------------------------- | ------- |
-| Connection |                                                      |         |
-| Drive      | Provide the unique identifier of a SharePoint drive. |         |
-| Page Limit | Enter a number amount for the page size.             |         |
-| Page Token | Enter the token for the desired page.                |         |
-| Fetch All  | Set to true to retrieve all results.                 | false   |
+| Input      | Comments                                                                 | Default |
+| ---------- | ------------------------------------------------------------------------ | ------- |
+| Connection |                                                                          |         |
+| Drive      | Provide the unique identifier of a SharePoint drive.                     |         |
+| Page Limit | Enter a number amount for the page size.                                 |         |
+| Page Token | Enter the token for the desired page.                                    |         |
+| Fetch All  | If true, it will return all the files from the drive and the subfolders. | false   |
 
 ### List Files in Drive (Deprecated)
 
@@ -312,11 +312,10 @@ Send raw HTTP request to Microsoft Sharepoint
 | Header                  | A list of headers to send with the request.                                                                                                                                                                                                  |         |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                                                     | json    |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                                                          |         |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                                                         | false   |
-| Retry Delay (ms)        | The delay in milliseconds between retries.                                                                                                                                                                                                   | 0       |
-| Retry On All Errors     | If true, retries on all erroneous responses regardless of type.                                                                                                                                                                              | false   |
-| Max Retry Count         | The maximum number of retries to attempt.                                                                                                                                                                                                    | 0       |
-| Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries.                                                                                                                                                             | false   |
+| Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                                                          | 0       |
+| Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                             | false   |
+| Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                          | 0       |
+| Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                                                                | false   |
 
 ### Update File
 
@@ -357,19 +356,19 @@ Upload a file to the specified drive or folder's drive
 
 A picklist of files in a given directory
 
-| Input      | Comments                                                                                                                                                               | Default                  |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| Connection |                                                                                                                                                                        |                          |
-| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /groups/{groupId}/drives |
+| Input      | Comments                                                                                                                                                                                                                     | Default                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Connection |                                                                                                                                                                                                                              |                         |
+| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. Replace {siteId} or {driveId} with relevant ID value. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /me/drive/root/children |
 
 ### List Folders from Source
 
 A picklist of folders in a given directory
 
-| Input      | Comments                                                                                                                                                               | Default                  |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| Connection |                                                                                                                                                                        |                          |
-| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /groups/{groupId}/drives |
+| Input      | Comments                                                                                                                                                                                                                     | Default                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Connection |                                                                                                                                                                                                                              |                         |
+| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. Replace {siteId} or {driveId} with relevant ID value. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /me/drive/root/children |
 
 ### List Sites from Sharepoint
 

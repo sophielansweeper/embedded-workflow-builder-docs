@@ -1,16 +1,18 @@
 ---
 title: OpenAI Connector
 sidebar_label: OpenAI
-description: Interact with OpenAI models, including Chat GPT and DALL·E
+description: Interact with OpenAI's models including GPT-4, GPT-3.5 Turbo, and DALL·E 3
 ---
 
 ## Description
 
-Interact with OpenAI models, including Chat GPT and DALL·E
+Interact with OpenAI&#x27;s models including GPT-4, GPT-3.5 Turbo, and DALL·E 3
 
 ## Connections
 
 ### OpenAI API Key
+
+Connect to OpenAI using an API key
 
 | Input        | Comments                                                                         | Default |
 | ------------ | -------------------------------------------------------------------------------- | ------- |
@@ -26,12 +28,12 @@ Create a completion for the chat message
 | Input             | Comments                                                                                                                                                                                                                                    | Default                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Connection        |                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Model             |                                                                                                                                                                                                                                             | gpt-3.5-turbo                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Model             | Select an OpenAI model to use for the request. The list of available models will be fetched from your OpenAI account.                                                                                                                       | gpt-3.5-turbo                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Messages          |                                                                                                                                                                                                                                             | <code>[<br /> {<br /> "role": "system",<br /> "content": "You are a helpful assistant."<br /> },<br /> {<br /> "role": "user",<br /> "content": "Who won the world series in 2020?"<br /> },<br /> {<br /> "role": "assistant",<br /> "content": "The Los Angeles Dodgers won the World Series in 2020."<br /> },<br /> {<br /> "role": "user",<br /> "content": "Where was it played?"<br /> }<br />]</code> |
 | Temperature       | What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.                                                        | 1                                                                                                                                                                                                                                                                                                                                                                                                             |
 | top_p             | An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. | 1                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Number of choices | How many chat completion choices to generate for each input message.                                                                                                                                                                        | 1                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Timeout (ms)      | The maximum amount of time (in MS) to wait for a response.                                                                                                                                                                                  | 2000                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Timeout (ms)      | The maximum amount of time (in MS) to wait for a response.                                                                                                                                                                                  | 10000                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ### Create Image
 
@@ -43,17 +45,28 @@ Create image(s) given a prompt
 | Prompt           | A text description of the desired image(s). The maximum length is 1000 characters. |           |
 | Number of Images | The number of images to generate. Must be between 1 and 10.                        | 1         |
 | Image Size       | The size of the generated images. Must be one of 256x256, 512x512, or 1024x1024.   | 1024x1024 |
-| Timeout (ms)     | The maximum amount of time (in MS) to wait for a response.                         | 2000      |
+| Timeout (ms)     | The maximum amount of time (in MS) to wait for a response.                         | 10000     |
+
+### Create Response
+
+Create a response using the responses endpoint
+
+| Input        | Comments                                                                                                              | Default |
+| ------------ | --------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection   |                                                                                                                       |         |
+| Model        | Select an OpenAI model to use for the request. The list of available models will be fetched from your OpenAI account. | gpt-4.1 |
+| Input        | The input text to process                                                                                             |         |
+| Timeout (ms) | The maximum amount of time (in MS) to wait for a response.                                                            | 10000   |
 
 ### Get Model by ID
 
 Get model by ID
 
-| Input        | Comments                                                   | Default |
-| ------------ | ---------------------------------------------------------- | ------- |
-| Connection   |                                                            |         |
-| Model        |                                                            |         |
-| Timeout (ms) | The maximum amount of time (in MS) to wait for a response. | 2000    |
+| Input        | Comments                                                                                                              | Default |
+| ------------ | --------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection   |                                                                                                                       |         |
+| Model        | Select an OpenAI model to use for the request. The list of available models will be fetched from your OpenAI account. |         |
+| Timeout (ms) | The maximum amount of time (in MS) to wait for a response.                                                            | 10000   |
 
 ### List Models
 
@@ -62,7 +75,7 @@ List all available models
 | Input        | Comments                                                   | Default |
 | ------------ | ---------------------------------------------------------- | ------- |
 | Connection   |                                                            |         |
-| Timeout (ms) | The maximum amount of time (in MS) to wait for a response. | 2000    |
+| Timeout (ms) | The maximum amount of time (in MS) to wait for a response. | 10000   |
 
 ### Raw Request
 
@@ -86,3 +99,14 @@ Send raw HTTP request to OpenAI
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                        | false      |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                     | 0          |
 | Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                                                           | false      |
+
+## Data Sources
+
+### List Models
+
+Lists the currently available models, and provides basic information about each one such as the owner and availability.
+
+| Input        | Comments                                                   | Default |
+| ------------ | ---------------------------------------------------------- | ------- |
+| Connection   |                                                            |         |
+| Timeout (ms) | The maximum amount of time (in MS) to wait for a response. | 10000   |

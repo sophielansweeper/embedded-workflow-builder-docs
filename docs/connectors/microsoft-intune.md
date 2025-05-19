@@ -25,6 +25,20 @@ Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 | Client ID     | Get this value from your App Registration in the Azure Portal |                                                                                                                                                                                                                                                                                                          |
 | Client Secret | Get this value from your App Registration in the Azure Portal |                                                                                                                                                                                                                                                                                                          |
 
+### OAuth 2.0 (Client Credentials)
+
+OAuth 2.0 Client Credentials Connectivity for Microsoft Intune
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+
+| Input         | Comments                                                      | Default                                                                  |
+| ------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Token URL     | The OAuth 2.0 Token URL for Microsoft Intune                  | https://login.microsoftonline.com/**<YOUR_TENANT_ID>**/oauth2/v2.0/token |
+| Scopes        | Microsoft Intune Scopes.                                      | https://graph.microsoft.com/.default                                     |
+| Client ID     | Get this value from your App Registration in the Azure Portal |                                                                          |
+| Client Secret | Get this value from your App Registration in the Azure Portal |                                                                          |
+
 ## Triggers
 
 ### Resource Trigger
@@ -44,12 +58,11 @@ Get notified to this flow when the specified resource changes.
 
 Add a member to a security or Microsoft 365 group.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Group Id      | The unique identifier of a MS365 or Security group.  |         |
-| Member Ids    | The unique identifiers of members.                   |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                                            | Default |
+| ---------- | --------------------------------------------------- | ------- |
+| Connection |                                                     |         |
+| Group Id   | The unique identifier of a MS365 or Security group. |         |
+| Member Ids | The unique identifiers of members.                  |         |
 
 ### Assign Device Compliance Policy
 
@@ -62,7 +75,6 @@ Assign a device compliance policy by ID.
 | Assign Id                   | Key of the entity.                                                |         |
 | Target                      | The device compliance policy assignment target                    |         |
 | Collection Id               | Unique Identifier for the target collection.                      |         |
-| Debug Request               | Enabling this flag will log out the current request.              | false   |
 
 ### Assign Mobile App
 
@@ -76,7 +88,6 @@ Assign a mobile app to a group.
 | Intent        | The intent of the assignment for the managed app. A 'Required' option will force the app to be installed on the device. An 'Available' option will make the app available for the user to install. An 'Uninstall' option will remove the app from the device. An 'Available Without Enrollment' option will make the app available for the user to install without enrolling the device. |         |
 | Target        | The mobile app assignment target                                                                                                                                                                                                                                                                                                                                                         |         |
 | Settings      | The mobile app assignment settings                                                                                                                                                                                                                                                                                                                                                       |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                                                                                     | false   |
 
 ### Create Group
 
@@ -93,7 +104,6 @@ Create a group.
 | Assigned Labels  | The list of sensitivity label pairs (label ID, label name) associated with a group |         |
 | Visibility       | The display name for the group                                                     |         |
 | Body Fields      | Extra fields to include in the request body.                                       |         |
-| Debug Request    | Enabling this flag will log out the current request.                               | false   |
 
 ### Create Managed App
 
@@ -115,7 +125,6 @@ Create a new App object.
 | Developer                    | The name of the company or Individual that developed the app. This information will be visible to people signed into the admin center.                                                                                                                                                                                                                                                                                                                                                                                               |         |
 | Notes                        | Add additional notes about the app. Notes will be visible to people signed in to the admin center.                                                                                                                                                                                                                                                                                                                                                                                                                                   |         |
 | Specific Platform Properties | The specific properties for the app to be created, generic properties like '@odata.type', 'displayName', 'description', etc. are alredy covered by the other inputs. This input should be a JSON object with the specific properties for the app to be created. Check the Microsoft Graph API documentation for the correct properties for the app type you are creating. Documentation for an Office Suite app can be found here https://learn.microsoft.com/en-us/graph/api/intune-apps-officesuiteapp-create?view=graph-rest-beta |         |
-| Debug Request                | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | false   |
 
 ### Create Mobile App Assignment
 
@@ -128,7 +137,6 @@ Create a mobile app assignment.
 | Intent        | The intent of the assignment for the managed app. A 'Required' option will force the app to be installed on the device. An 'Available' option will make the app available for the user to install. An 'Uninstall' option will remove the app from the device. An 'Available Without Enrollment' option will make the app available for the user to install without enrolling the device. |         |
 | Target        | The mobile app assignment target                                                                                                                                                                                                                                                                                                                                                         |         |
 | Settings      | The mobile app assignment settings                                                                                                                                                                                                                                                                                                                                                       |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                                                                                     | false   |
 
 ### Create Subscription
 
@@ -143,7 +151,6 @@ Create a subscription.
 | Expiration Date Time       | Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.                                                                      |         |
 | Lifecycle Notification URL | Required for Teams resources if the expirationDateTime value is more than 1 hour from now; optional otherwise. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. |         |
 | Body Fields                | Extra fields to include in the request body.                                                                                                                                                                                                                    |         |
-| Debug Request              | Enabling this flag will log out the current request.                                                                                                                                                                                                            | false   |
 
 ### Create User
 
@@ -159,48 +166,43 @@ Create a new user.
 | User Principal Name                | The user principal name of the user.                                                                                                                                                                                                                                                                                   |         |
 | Domain                             | The domain for the user, this must be an existing domain in the tenant, you can list them using the 'List Domains' action.                                                                                                                                                                                             |         |
 | Additional Properties              | Additional properties that are not covered by the other inputs. This should be a JSON object and will be merged with the other inputs. You can get additional properties from the Microsoft Graph API documentation https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#json-representation |         |
-| Debug Request                      | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                   | false   |
 
 ### Delete Group
 
 Delete a single group.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Group Id      | The ID of the group delete.                          |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                    | Default |
+| ---------- | --------------------------- | ------- |
+| Connection |                             |         |
+| Group Id   | The ID of the group delete. |         |
 
 ### Delete Group Member
 
 Delete a member from a security or Microsoft 365 group.
 
-| Input         | Comments                                                               | Default |
-| ------------- | ---------------------------------------------------------------------- | ------- |
-| Connection    |                                                                        |         |
-| Group Id      | The unique identifier of the group that you want to assign the app to. |         |
-| Member Id     | The unique identifier of a member.                                     |         |
-| Debug Request | Enabling this flag will log out the current request.                   | false   |
+| Input      | Comments                                                               | Default |
+| ---------- | ---------------------------------------------------------------------- | ------- |
+| Connection |                                                                        |         |
+| Group Id   | The unique identifier of the group that you want to assign the app to. |         |
+| Member Id  | The unique identifier of a member.                                     |         |
 
 ### Delete Managed App
 
 Deletes an App.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Mobile App ID | The ID of the app to delete.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input         | Comments                     | Default |
+| ------------- | ---------------------------- | ------- |
+| Connection    |                              |         |
+| Mobile App ID | The ID of the app to delete. |         |
 
 ### Delete Managed Device
 
 Deletes a Managed Device.
 
-| Input             | Comments                                             | Default |
-| ----------------- | ---------------------------------------------------- | ------- |
-| Connection        |                                                      |         |
-| Managed Device Id | Unique Identifier for the device to delete.          |         |
-| Debug Request     | Enabling this flag will log out the current request. | false   |
+| Input             | Comments                                    | Default |
+| ----------------- | ------------------------------------------- | ------- |
+| Connection        |                                             |         |
+| Managed Device Id | Unique Identifier for the device to delete. |         |
 
 ### Delete Mobile App Assignment
 
@@ -211,47 +213,42 @@ Delete a single mobile app assignment.
 | Connection               |                                                         |         |
 | Mobile App Id            | The ID of the mobile app to delete the assignment from. |         |
 | Mobile App Assignment Id | The ID of the mobile app assignment to delete.          |         |
-| Debug Request            | Enabling this flag will log out the current request.    | false   |
 
 ### Delete Subscription by Id
 
 Delete a single subscription by its ID.
 
-| Input           | Comments                                             | Default |
-| --------------- | ---------------------------------------------------- | ------- |
-| Connection      |                                                      |         |
-| Subscription ID | The ID of the subscription to delete.                |         |
-| Debug Request   | Enabling this flag will log out the current request. | false   |
+| Input           | Comments                              | Default |
+| --------------- | ------------------------------------- | ------- |
+| Connection      |                                       |         |
+| Subscription ID | The ID of the subscription to delete. |         |
 
 ### Delete Subscriptions from an Endpoint
 
 Delete all subscriptions from an endpoint.
 
-| Input            | Comments                                             | Default |
-| ---------------- | ---------------------------------------------------- | ------- |
-| Connection       |                                                      |         |
-| Notification URL | The URL from which to delete all subscriptions.      |         |
-| Debug Request    | Enabling this flag will log out the current request. | false   |
+| Input            | Comments                                        | Default |
+| ---------------- | ----------------------------------------------- | ------- |
+| Connection       |                                                 |         |
+| Notification URL | The URL from which to delete all subscriptions. |         |
 
 ### Delete User
 
 Deletes a User.
 
-| Input         | Comments                                                                                  | Default |
-| ------------- | ----------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                           |         |
-| User Id       | Unique Identifier for the user to delete. This can be the user's id or userPrincipalName. |         |
-| Debug Request | Enabling this flag will log out the current request.                                      | false   |
+| Input      | Comments                                                                                  | Default |
+| ---------- | ----------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                           |         |
+| User Id    | Unique Identifier for the user to delete. This can be the user's id or userPrincipalName. |         |
 
 ### Get Detected App
 
 Read properties and relationships of the Detected Apps object.
 
-| Input           | Comments                                             | Default |
-| --------------- | ---------------------------------------------------- | ------- |
-| Connection      |                                                      |         |
-| Detected App Id | Unique Identifier for the detected app to retrieve.  |         |
-| Debug Request   | Enabling this flag will log out the current request. | false   |
+| Input           | Comments                                            | Default |
+| --------------- | --------------------------------------------------- | ------- |
+| Connection      |                                                     |         |
+| Detected App Id | Unique Identifier for the detected app to retrieve. |         |
 
 ### Get Device Compliance Policy
 
@@ -261,7 +258,6 @@ Get a device compliance policy by ID.
 | --------------------------- | --------------------------------------------------------------- | ------- |
 | Connection                  |                                                                 |         |
 | Device Compliance Policy Id | Unique Identifier for the device compliance policy to retrieve. |         |
-| Debug Request               | Enabling this flag will log out the current request.            | false   |
 
 ### Get Device Compliance Policy Setting State Summary
 
@@ -271,17 +267,15 @@ Retrieve a device compliance policy setting state summary by its ID.
 | ------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
 | Connection                                        |                                                                                       |         |
 | Device Compliance Policy Setting State Summary Id | Unique Identifier for the device compliance policy setting state summary to retrieve. |         |
-| Debug Request                                     | Enabling this flag will log out the current request.                                  | false   |
 
 ### Get Device Configuration
 
 Get the device configurations.
 
-| Input                   | Comments                                             | Default |
-| ----------------------- | ---------------------------------------------------- | ------- |
-| Connection              |                                                      |         |
-| Device Configuration Id | Unique Identifier for the device to retrieve.        |         |
-| Debug Request           | Enabling this flag will log out the current request. | false   |
+| Input                   | Comments                                      | Default |
+| ----------------------- | --------------------------------------------- | ------- |
+| Connection              |                                               |         |
+| Device Configuration Id | Unique Identifier for the device to retrieve. |         |
 
 ### Get Directory Audit
 
@@ -291,47 +285,42 @@ Get a specific Microsoft Entra audit log item.
 | ------------------ | ------------------------------------------------------------------------- | ------- |
 | Connection         |                                                                           |         |
 | Microsoft Entra Id | The unique identifier for the Microsoft Entra audit log item to retrieve. |         |
-| Debug Request      | Enabling this flag will log out the current request.                      | false   |
 
 ### Get Group
 
 Retrieve a single group.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Group Id      | The ID of the group retrieve.                        |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                      | Default |
+| ---------- | ----------------------------- | ------- |
+| Connection |                               |         |
+| Group Id   | The ID of the group retrieve. |         |
 
 ### Get Managed App
 
 Read properties and relationships of an App object.
 
-| Input         | Comments                                                                                      | Default |
-| ------------- | --------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                               |         |
-| App Id        | The unique identifier of a managed app. You can get this from the 'List Managed Apps' action. |         |
-| Debug Request | Enabling this flag will log out the current request.                                          | false   |
+| Input      | Comments                                                                                      | Default |
+| ---------- | --------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                               |         |
+| App Id     | The unique identifier of a managed app. You can get this from the 'List Managed Apps' action. |         |
 
 ### Get Managed Device
 
 Read properties and relationships of the Managed Device object.
 
-| Input             | Comments                                             | Default |
-| ----------------- | ---------------------------------------------------- | ------- |
-| Connection        |                                                      |         |
-| Managed Device Id | Unique Identifier for the device to retrieve.        |         |
-| Debug Request     | Enabling this flag will log out the current request. | false   |
+| Input             | Comments                                      | Default |
+| ----------------- | --------------------------------------------- | ------- |
+| Connection        |                                               |         |
+| Managed Device Id | Unique Identifier for the device to retrieve. |         |
 
 ### Get Mobile App
 
 Retrieve a single mobile app.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Mobile App Id | Unique Identifier for the mobile app to get.         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input         | Comments                                     | Default |
+| ------------- | -------------------------------------------- | ------- |
+| Connection    |                                              |         |
+| Mobile App Id | Unique Identifier for the mobile app to get. |         |
 
 ### Get Mobile App Assignment
 
@@ -342,178 +331,165 @@ Retrieve a single mobile app assignment.
 | Connection               |                                                         |         |
 | Mobile App Id            | Unique Identifier for the mobile app to get.            |         |
 | Mobile App Assignment Id | Unique Identifier for the mobile app assignment to get. |         |
-| Debug Request            | Enabling this flag will log out the current request.    | false   |
 
 ### Get Subscription
 
 Retrieve a single subscription.
 
-| Input           | Comments                                             | Default |
-| --------------- | ---------------------------------------------------- | ------- |
-| Connection      |                                                      |         |
-| Subscription ID | The ID of the subscription to retrieve.              |         |
-| Debug Request   | Enabling this flag will log out the current request. | false   |
+| Input           | Comments                                | Default |
+| --------------- | --------------------------------------- | ------- |
+| Connection      |                                         |         |
+| Subscription ID | The ID of the subscription to retrieve. |         |
 
 ### Get User
 
 Read properties and relationships of the User object.
 
-| Input         | Comments                                                                               | Default |
-| ------------- | -------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                        |         |
-| User Id       | Unique Identifier for the user to get. This can be the user's id or userPrincipalName. |         |
-| Select        | Filters properties (columns).                                                          |         |
-| Debug Request | Enabling this flag will log out the current request.                                   | false   |
+| Input      | Comments                                                                               | Default |
+| ---------- | -------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                        |         |
+| User Id    | Unique Identifier for the user to get. This can be the user's id or userPrincipalName. |         |
+| Select     | Filters properties (columns).                                                          |         |
 
 ### List Detected Apps
 
 List properties and relationships of the Detected Apps objects.
 
-| Input         | Comments                                                                                                                           | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                                    |         |
-| Filter        | Filters results (rows).                                                                                                            |         |
-| Select        | Filters properties (columns).                                                                                                      |         |
-| Expand        | Retrieves related resources.                                                                                                       |         |
-| Order By      | Orders results.                                                                                                                    |         |
-| Top           | Sets the page size of results.                                                                                                     |         |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false   |
-| Search        | Returns results based on search criteria.                                                                                          |         |
-| Format        | Returns the results in the specified media format.                                                                                 |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
+| Input      | Comments                                                                                                                           | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                                    |         |
+| Filter     | Filters results (rows).                                                                                                            |         |
+| Select     | Filters properties (columns).                                                                                                      |         |
+| Expand     | Retrieves related resources.                                                                                                       |         |
+| Order By   | Orders results.                                                                                                                    |         |
+| Top        | Sets the page size of results.                                                                                                     |         |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false   |
+| Search     | Returns results based on search criteria.                                                                                          |         |
+| Format     | Returns the results in the specified media format.                                                                                 |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
 
 ### List Device Compliance Policies
 
 List all device compliance policies.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Device Compliance Policy Setting State Summaries
 
 Retrieve a list of device compliance policy setting state summaries.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Device Configurations
 
 List all device configurations.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
 
 ### List Directory Audits
 
 Retrieve a list of directory audits.
 
-| Input         | Comments                                                                      | Default |
-| ------------- | ----------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                               |         |
-| Fetch All     | Set to true to retrieve all results.                                          | false   |
-| Filter        | Filters results (rows).                                                       |         |
-| Order By      | Orders results.                                                               |         |
-| Top           | Sets the page size of results.                                                |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages. |         |
-| Debug Request | Enabling this flag will log out the current request.                          | false   |
+| Input      | Comments                                                                      | Default |
+| ---------- | ----------------------------------------------------------------------------- | ------- |
+| Connection |                                                                               |         |
+| Fetch All  | Set to true to retrieve all results.                                          | false   |
+| Filter     | Filters results (rows).                                                       |         |
+| Order By   | Orders results.                                                               |         |
+| Top        | Sets the page size of results.                                                |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages. |         |
 
 ### List Domains
 
 Retrieve a list of domain objects.
 
-| Input         | Comments                                                                                                                           | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                                    |         |
-| Filter        | Filters results (rows).                                                                                                            |         |
-| Select        | Filters properties (columns).                                                                                                      |         |
-| Expand        | Retrieves related resources.                                                                                                       |         |
-| Order By      | Orders results.                                                                                                                    |         |
-| Top           | Sets the page size of results.                                                                                                     |         |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false   |
-| Search        | Returns results based on search criteria.                                                                                          |         |
-| Format        | Returns the results in the specified media format.                                                                                 |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
+| Input      | Comments                                                                                                                           | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                                    |         |
+| Filter     | Filters results (rows).                                                                                                            |         |
+| Select     | Filters properties (columns).                                                                                                      |         |
+| Expand     | Retrieves related resources.                                                                                                       |         |
+| Order By   | Orders results.                                                                                                                    |         |
+| Top        | Sets the page size of results.                                                                                                     |         |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false   |
+| Search     | Returns results based on search criteria.                                                                                          |         |
+| Format     | Returns the results in the specified media format.                                                                                 |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
 
 ### List Group Members
 
 List all members of a security or Microsoft 365 group.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Group Id      | The unique identifier of a MS365 or Security group.  |         |
-| Filter        | Filters results (rows).                              |         |
-| Count         | Retrieves the total count of matching resources.     | false   |
-| Select        | Filters properties (columns).                        |         |
-| Search        | Returns results based on search criteria.            |         |
-| Top           | Sets the page size of results.                       |         |
-| Expand        | Retrieves related resources.                         |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                                            | Default |
+| ---------- | --------------------------------------------------- | ------- |
+| Connection |                                                     |         |
+| Group Id   | The unique identifier of a MS365 or Security group. |         |
+| Filter     | Filters results (rows).                             |         |
+| Count      | Retrieves the total count of matching resources.    | false   |
+| Select     | Filters properties (columns).                       |         |
+| Search     | Returns results based on search criteria.           |         |
+| Top        | Sets the page size of results.                      |         |
+| Expand     | Retrieves related resources.                        |         |
 
 ### List Groups
 
 List all groups.
 
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Fetch All     | Set to true to retrieve all results.                 | false   |
-| Count         | Retrieves the total count of matching resources.     | false   |
-| Expand        | Retrieves related resources.                         |         |
-| Filter        | Filters results (rows).                              |         |
-| Order By      | Orders results.                                      |         |
-| Search        | Returns results based on search criteria.            |         |
-| Select        | Filters properties (columns).                        |         |
-| Top           | Sets the page size of results.                       |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
+| Input      | Comments                                         | Default |
+| ---------- | ------------------------------------------------ | ------- |
+| Connection |                                                  |         |
+| Fetch All  | Set to true to retrieve all results.             | false   |
+| Count      | Retrieves the total count of matching resources. | false   |
+| Expand     | Retrieves related resources.                     |         |
+| Filter     | Filters results (rows).                          |         |
+| Order By   | Orders results.                                  |         |
+| Search     | Returns results based on search criteria.        |         |
+| Select     | Filters properties (columns).                    |         |
+| Top        | Sets the page size of results.                   |         |
 
 ### List Managed Apps
 
 List all managed apps in Intune.
 
-| Input         | Comments                                                                                                                           | Default                                                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Connection    |                                                                                                                                    |                                                                                                                                              |
-| Filter        | Filters results (rows).                                                                                                            | (microsoft.graph.managedApp/appAvailability eq null or microsoft.graph.managedApp/appAvailability eq 'lineOfBusiness' or isAssigned eq true) |
-| Select        | Filters properties (columns).                                                                                                      |                                                                                                                                              |
-| Expand        | Retrieves related resources.                                                                                                       |                                                                                                                                              |
-| Order By      | Orders results.                                                                                                                    |                                                                                                                                              |
-| Top           | Sets the page size of results.                                                                                                     |                                                                                                                                              |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |                                                                                                                                              |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false                                                                                                                                        |
-| Search        | Returns results based on search criteria.                                                                                          |                                                                                                                                              |
-| Format        | Returns the results in the specified media format.                                                                                 |                                                                                                                                              |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |                                                                                                                                              |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false                                                                                                                                        |
+| Input      | Comments                                                                                                                           | Default                                                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Connection |                                                                                                                                    |                                                                                                                                              |
+| Filter     | Filters results (rows).                                                                                                            | (microsoft.graph.managedApp/appAvailability eq null or microsoft.graph.managedApp/appAvailability eq 'lineOfBusiness' or isAssigned eq true) |
+| Select     | Filters properties (columns).                                                                                                      |                                                                                                                                              |
+| Expand     | Retrieves related resources.                                                                                                       |                                                                                                                                              |
+| Order By   | Orders results.                                                                                                                    |                                                                                                                                              |
+| Top        | Sets the page size of results.                                                                                                     |                                                                                                                                              |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |                                                                                                                                              |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false                                                                                                                                        |
+| Search     | Returns results based on search criteria.                                                                                          |                                                                                                                                              |
+| Format     | Returns the results in the specified media format.                                                                                 |                                                                                                                                              |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |                                                                                                                                              |
 
 ### List Managed Devices
 
 List properties and relationships of the Managed Device objects.
 
-| Input         | Comments                                                                                                                           | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                                    |         |
-| Filter        | Filters results (rows).                                                                                                            |         |
-| Select        | Filters properties (columns).                                                                                                      |         |
-| Expand        | Retrieves related resources.                                                                                                       |         |
-| Order By      | Orders results.                                                                                                                    |         |
-| Top           | Sets the page size of results.                                                                                                     |         |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false   |
-| Search        | Returns results based on search criteria.                                                                                          |         |
-| Format        | Returns the results in the specified media format.                                                                                 |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
+| Input      | Comments                                                                                                                           | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                                    |         |
+| Filter     | Filters results (rows).                                                                                                            |         |
+| Select     | Filters properties (columns).                                                                                                      |         |
+| Expand     | Retrieves related resources.                                                                                                       |         |
+| Order By   | Orders results.                                                                                                                    |         |
+| Top        | Sets the page size of results.                                                                                                     |         |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false   |
+| Search     | Returns results based on search criteria.                                                                                          |         |
+| Format     | Returns the results in the specified media format.                                                                                 |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
 
 ### List Mobile App Assignments
 
@@ -534,72 +510,67 @@ List all assignments for a mobile app.
 | Search        | Returns results based on search criteria.                                                                                          |         |
 | Format        | Returns the results in the specified media format.                                                                                 |         |
 | Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
 
 ### List Mobile Apps
 
 Retrieve a list of mobile apps.
 
-| Input         | Comments                                                                                                                           | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                                    |         |
-| Fetch All     | Set to true to retrieve all results.                                                                                               | false   |
-| Filter        | Filters results (rows).                                                                                                            |         |
-| Select        | Filters properties (columns).                                                                                                      |         |
-| Expand        | Retrieves related resources.                                                                                                       |         |
-| Order By      | Orders results.                                                                                                                    |         |
-| Top           | Sets the page size of results.                                                                                                     |         |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false   |
-| Search        | Returns results based on search criteria.                                                                                          |         |
-| Format        | Returns the results in the specified media format.                                                                                 |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
+| Input      | Comments                                                                                                                           | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                                    |         |
+| Fetch All  | Set to true to retrieve all results.                                                                                               | false   |
+| Filter     | Filters results (rows).                                                                                                            |         |
+| Select     | Filters properties (columns).                                                                                                      |         |
+| Expand     | Retrieves related resources.                                                                                                       |         |
+| Order By   | Orders results.                                                                                                                    |         |
+| Top        | Sets the page size of results.                                                                                                     |         |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false   |
+| Search     | Returns results based on search criteria.                                                                                          |         |
+| Format     | Returns the results in the specified media format.                                                                                 |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
 
 ### List Software Update Status Summary
 
 List the status summary of a software update.
 
-| Input         | Comments                                                                      | Default |
-| ------------- | ----------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                               |         |
-| Fetch All     | Set to true to retrieve all results.                                          | false   |
-| Select        | Filters properties (columns).                                                 |         |
-| Expand        | Retrieves related resources.                                                  |         |
-| Search        | Returns results based on search criteria.                                     |         |
-| Format        | Returns the results in the specified media format.                            |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages. |         |
-| Debug Request | Enabling this flag will log out the current request.                          | false   |
+| Input      | Comments                                                                      | Default |
+| ---------- | ----------------------------------------------------------------------------- | ------- |
+| Connection |                                                                               |         |
+| Fetch All  | Set to true to retrieve all results.                                          | false   |
+| Select     | Filters properties (columns).                                                 |         |
+| Expand     | Retrieves related resources.                                                  |         |
+| Search     | Returns results based on search criteria.                                     |         |
+| Format     | Returns the results in the specified media format.                            |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages. |         |
 
 ### List Subscriptions
 
 List all Subscriptions.
 
-| Input         | Comments                                                                      | Default |
-| ------------- | ----------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                               |         |
-| Fetch All     | Set to true to retrieve all results.                                          | false   |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages. |         |
-| Debug Request | Enabling this flag will log out the current request.                          | false   |
+| Input      | Comments                                                                      | Default |
+| ---------- | ----------------------------------------------------------------------------- | ------- |
+| Connection |                                                                               |         |
+| Fetch All  | Set to true to retrieve all results.                                          | false   |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages. |         |
 
 ### List Users
 
 Retrieve a list of user objects.
 
-| Input         | Comments                                                                                                                           | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                                    |         |
-| Filter        | Filters results (rows).                                                                                                            |         |
-| Select        | Filters properties (columns).                                                                                                      |         |
-| Expand        | Retrieves related resources.                                                                                                       |         |
-| Order By      | Orders results.                                                                                                                    |         |
-| Top           | Sets the page size of results.                                                                                                     |         |
-| Skip          | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
-| Count         | Retrieves the total count of matching resources.                                                                                   | false   |
-| Search        | Returns results based on search criteria.                                                                                          |         |
-| Format        | Returns the results in the specified media format.                                                                                 |         |
-| Skip Token    | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                               | false   |
+| Input      | Comments                                                                                                                           | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                                    |         |
+| Filter     | Filters results (rows).                                                                                                            |         |
+| Select     | Filters properties (columns).                                                                                                      |         |
+| Expand     | Retrieves related resources.                                                                                                       |         |
+| Order By   | Orders results.                                                                                                                    |         |
+| Top        | Sets the page size of results.                                                                                                     |         |
+| Skip       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with $top to manually page results. |         |
+| Count      | Retrieves the total count of matching resources.                                                                                   | false   |
+| Search     | Returns results based on search criteria.                                                                                          |         |
+| Format     | Returns the results in the specified media format.                                                                                 |         |
+| Skip Token | Retrieves the next page of results from result sets that span multiple pages.                                                      |         |
 
 ### Raw Request
 
@@ -629,21 +600,19 @@ Send raw HTTP request to Microsoft Intune API
 
 Reprocess all group-based license assignments for the user.
 
-| Input         | Comments                                                                                                            | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                                                     |         |
-| User Id       | Unique Identifier for the user to reprocess the license assignment. This can be the user's id or userPrincipalName. |         |
-| Debug Request | Enabling this flag will log out the current request.                                                                | false   |
+| Input      | Comments                                                                                                            | Default |
+| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                                     |         |
+| User Id    | Unique Identifier for the user to reprocess the license assignment. This can be the user's id or userPrincipalName. |         |
 
 ### Retire Managed Device
 
 Retire a device from Intune management upon employee offboarding.
 
-| Input             | Comments                                             | Default |
-| ----------------- | ---------------------------------------------------- | ------- |
-| Connection        |                                                      |         |
-| Managed Device Id | Unique Identifier for the device to retire.          |         |
-| Debug Request     | Enabling this flag will log out the current request. | false   |
+| Input             | Comments                                    | Default |
+| ----------------- | ------------------------------------------- | ------- |
+| Connection        |                                             |         |
+| Managed Device Id | Unique Identifier for the device to retire. |         |
 
 ### Update Group
 
@@ -660,7 +629,6 @@ Update a single group.
 | Assigned Labels  | The list of sensitivity label pairs (label ID, label name) associated with a group             |         |
 | Visibility       | The display name for the group                                                                 |         |
 | Body Fields      | Extra fields to include in the request body.                                                   |         |
-| Debug Request    | Enabling this flag will log out the current request.                                           | false   |
 
 ### Update Managed App
 
@@ -683,7 +651,6 @@ Update an App object.
 | Developer                    | Update the developer of the app. This information will be visible to users in Company Portal.​                                                                                                                                                                                                                                                                                                                                                                                                                                       |         |
 | Notes                        | Update any notes about the app. This information will be visible to people signed into the admin center.​                                                                                                                                                                                                                                                                                                                                                                                                                            |         |
 | Specific Platform Properties | The specific properties for the app to be updated, generic properties like '@odata.type', 'displayName', 'description', etc. are alredy covered by the other inputs. This input should be a JSON object with the specific properties for the app to be updated. Check the Microsoft Graph API documentation for the correct properties for the app type you are updating. Documentation for an Office Suite app can be found here https://learn.microsoft.com/en-us/graph/api/intune-apps-officesuiteapp-update?view=graph-rest-beta |         |
-| Debug Request                | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | false   |
 
 ### Update Managed Device
 
@@ -696,7 +663,6 @@ Update the properties of a Managed Device object.
 | Managed Device Name | Update the automatically generated name to identify a device.                                                                                      |         |
 | Notes               | Updated notes for the device. Intended to be used for additional information about the device.                                                     |         |
 | Extra Fields        | Additional fields to update on the device. This is an object that can contain any additional fields that might not be covered by the other inputs. |         |
-| Debug Request       | Enabling this flag will log out the current request.                                                                                               | false   |
 
 ### Update Mobile App Assignment
 
@@ -710,7 +676,6 @@ Update a mobile app assignment.
 | Intent                   | The intent of the assignment for the managed app. A 'Required' option will force the app to be installed on the device. An 'Available' option will make the app available for the user to install. An 'Uninstall' option will remove the app from the device. An 'Available Without Enrollment' option will make the app available for the user to install without enrolling the device. |         |
 | Target                   | The mobile app assignment target                                                                                                                                                                                                                                                                                                                                                         |         |
 | Settings                 | The mobile app assignment settings                                                                                                                                                                                                                                                                                                                                                       |         |
-| Debug Request            | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                                                                                     | false   |
 
 ### Update Software Update Status Summary
 
@@ -734,7 +699,6 @@ Update the status summary of a software update.
 | Unknown User Count          | The number of users that have an unknown status with the software update.   |         |
 | Conflict User Count         | The number of users that have a conflict with the software update.          |         |
 | Not Applicable User Count   | The number of users that are not applicable for the software update.        |         |
-| Debug Request               | Enabling this flag will log out the current request.                        | false   |
 
 ### Update Subscription
 
@@ -746,7 +710,6 @@ Update a single subscription.
 | Subscription ID      | The ID of the subscription to update.                                                                                                                                                      |         |
 | Notification URL     | The URL to send notifications to.                                                                                                                                                          |         |
 | Expiration Date Time | Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. |         |
-| Debug Request        | Enabling this flag will log out the current request.                                                                                                                                       | false   |
 
 ### Update User
 
@@ -764,17 +727,15 @@ Update the properties of a User object.
 | Last Name             | The updated last name of the user.                                                                                                                                                                                                                                                                                               |         |
 | Job Title             | The updated job title of the user.                                                                                                                                                                                                                                                                                               |         |
 | Additional Properties | Additional properties to update that are not covered by the other inputs. This should be a JSON object and will be merged with the other inputs. You can get additional properties from the Microsoft Graph API documentation https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0#json-representation |         |
-| Debug Request         | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                             | false   |
 
 ### Wipe Device
 
 Remotely wipe a compromised or lost device.
 
-| Input             | Comments                                             | Default |
-| ----------------- | ---------------------------------------------------- | ------- |
-| Connection        |                                                      |         |
-| Managed Device Id | Unique Identifier for the device to wipe.            |         |
-| Debug Request     | Enabling this flag will log out the current request. | false   |
+| Input             | Comments                                  | Default |
+| ----------------- | ----------------------------------------- | ------- |
+| Connection        |                                           |         |
+| Managed Device Id | Unique Identifier for the device to wipe. |         |
 
 ## Data Sources
 
