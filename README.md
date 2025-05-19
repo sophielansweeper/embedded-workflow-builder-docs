@@ -6,6 +6,13 @@ They can do this without leaving your app.
 
 This repository contains documentation that you can white-label, deploy, and present to your customers.
 
+## Deployment options
+
+You have two options for deploying documentation:
+
+1. If you want to deploy built HTML/CSS/JS artifacts to a web server, follow the [setup](#setup) instructions below. This project uses [Docusaurus](https://docusaurus.io/docs/) to transform Markdown into static web assets your customers can use.
+2. If you want to consume the markdown files and screenshots into your own content management system, copy `docs/*` files to your content management system. All content is written using vanilla Markdown syntax, and should be compatible with CMSs that support Markdown. Ensure you replace phrases found in docs (like `%COMPANY%` with your company's name) - you can refer to `src/site-config-types.ts` for a list of `Phrases` that should be replace.
+
 ## Setup
 
 ### Prerequisites
@@ -34,10 +41,10 @@ npm install
 
 ### White-label phrases
 
-This project avoids using phrases like "Prismatic" "integration builder" or "instance".
+This project avoids using phrases like "Prismatic", "integration builder" or "instance".
 You have words you use internally to describe your company and the workflow builder.
 
-Copy the directory `site-config.example` to `site-config` and fill in your values for each field in `site-config/site-config.ts`.
+Copy the directory `site-config.example` to `site-config` and fill in your values for each field in `site-config/index.ts`.
 Your company's name and other details will replace placeholders in documentation markdown files.
 
 ### Add your own favicon and logo (optional)
@@ -65,10 +72,10 @@ You can read about all of your configuration options [here](https://docusaurus.i
 
 You may want to extend the default Docusaurus config (maybe add an [Algolia](https://docusaurus.io/docs/search#using-algolia-docsearch) search bar, or [navbar or footer menu items](https://docusaurus.io/docs/api/docusaurus-config#themeConfig)).
 
-To avoid merge conflicts, please do not edit `docusaurus.config.ts`.
-Instead, add additional Docusaurus configuration to your `site-config.ts` file under `docusaurusConfig`.
+To avoid merge conflicts, please do not edit `docusaurus.config.ts` directly.
+Instead, add additional Docusaurus configuration to your `site-config/index.ts` file under `docusaurusConfig`.
 
-Values in your `site-config.ts` file will be merged with, and override, default values set in `docusaurus.config.ts`.
+Values in your `site-config/index.ts` file will be merged with, and override, default values set in `docusaurus.config.ts`.
 
 ## Run
 

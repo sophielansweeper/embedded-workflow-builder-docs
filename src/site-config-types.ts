@@ -1,32 +1,54 @@
 /**
- * This defines types for a site-config file.
+ * This defines types for a site-config/index.ts file.
  * See README.md
  */
 
 import type { Config as DocusaurusConfig } from "@docusaurus/types";
 import type { ColorModeConfig, Footer, Navbar } from "@docusaurus/theme-common";
 
+/**
+ * A list of phrases that will replace placeholders in markdown
+ */
+interface Phrases {
+  /**
+   * Your company's name
+   * @example Acme Inc
+   */
+  "%COMPANY%": string;
+  /**
+   * Possessive version of your company's name
+   * @example Acme Inc's
+   */
+  "%COMPANY_POSESSIVE%": string;
+  /**
+   * The core product you build
+   * @example Widget Tracker
+   */
+  "%COMPANY_CORE_PRODUCT%": string;
+  /**
+   * What you call the embedded workflow builder internally
+   * @example iConnect Engine
+   */
+  "%EMBEDDED_WORKFLOW_BUILDER%": string;
+  /**
+   * What you call a single workflow that your customers build
+   * @example iConnect flow
+   */
+  "%WORKFLOW%": string;
+  /**
+   * What you call multiple workflows that your customers build
+   * @example iConnect flows
+   */
+  "%WORKFLOW_PLURAL%": string;
+}
+
 export interface SiteConfig {
-  /** Information about your company to put into documentation */
-  company: {
-    /** Your company's name */
-    name: string;
-    /** Possessive version of your company's name. e.g. `Acme's` */
-    possessive: string;
-  };
-  /** Information about your embedded workflow builder offering */
-  workflowBuilder: {
-    /** What you call your embedded workflow builder */
-    name: string;
-    /** What you call a single flow */
-    flow: string;
-  };
   /**
    * If docs will exist at https://docs.acme.com/path/to/docs, set
    * url to `https://docs.acme.com` and baseUrl to `/path/to/docs`
    */
   docsSite: {
-    /** The base URL of your docs site. e.g. https://docs.acme.com */
+    /** The base URL of your docs site. example:  https://docs.acme.com */
     url: string;
     /** The path where your site is hosted. If your docs wille xist in https://docs.acme.com/path/to/docs, enter `/path/to/docs` */
     baseUrl: `/${string}`;
@@ -40,5 +62,14 @@ export interface SiteConfig {
   /** Support light mode, dark mode, or both */
   colorMode: ColorModeConfig;
 
+  /**
+   * Phrases, like company name, product name, etc, that will replace
+   * placeholder strings in docs
+   */
+  phrases: Phrases;
+
+  /**
+   * Additional Docusaurus configuration. See https://docusaurus.io/docs/configuration
+   */
   docusaurusConfig?: Partial<DocusaurusConfig>;
 }

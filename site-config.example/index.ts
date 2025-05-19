@@ -1,17 +1,17 @@
 import type { SiteConfig } from "@site/src/site-config-types";
 
 const siteConfig: SiteConfig = {
-  company: {
-    name: "Acme",
-    possessive: "Acme's",
-  },
-  workflowBuilder: {
-    name: "Workflow Builder",
-    flow: "Flow",
-  },
   docsSite: {
     url: "https://docs.acme.com",
     baseUrl: "/docs",
+  },
+  phrases: {
+    "%COMPANY%": "Acme Inc",
+    "%COMPANY_POSESSIVE%": "Acme Inc's",
+    "%COMPANY_CORE_PRODUCT%": "Widget ERP",
+    "%EMBEDDED_WORKFLOW_BUILDER%": "Workflow Builder",
+    "%WORKFLOW%": "workflow",
+    "%WORKFLOW_PLURAL%": "workflows",
   },
   navbar: {
     title: "Acme Docs",

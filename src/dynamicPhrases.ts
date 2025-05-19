@@ -3,22 +3,36 @@
  * user-defined phrases
  */
 
-import type { MarkdownPreprocessor } from "@docusaurus/types/src/config";
-import siteConfig from "../site-config/site-config";
+import type {
+  MarkdownPreprocessor,
+  ParseFrontMatter,
+} from "@docusaurus/types/src/config";
+import siteConfig from "../site-config";
 
-const phrasesToReplace = {
-  "%COMPANY_NAME_POSSESSIVE": siteConfig.company.possessive,
-  "%COMPANY_NAME": siteConfig.company.name,
-  "%WORKFLOW_BUILDER": siteConfig.workflowBuilder.name,
-  "%SINGLE_WORKFLOW": siteConfig.workflowBuilder.flow,
-};
-
-const dynamicPhrases: MarkdownPreprocessor = ({ filePath, fileContent }) => {
+export const contentProcessPhrases: MarkdownPreprocessor = ({
+  fileContent,
+}) => {
   let content = fileContent;
-  for (const [key, replacementValue] of Object.entries(phrasesToReplace)) {
-    content = content.replace(key, replacementValue);
+  for (const [key, replacementValue] of Object.entries(siteConfig.phrases)) {
+    content = content.replaceAll(key, replacementValue);
   }
   return content;
 };
 
-export default dynamicPhrases;
+const frontMatterKeys = ["title", "description"];
+
+export const frontMatterProcessPhrases: ParseFrontMatter = async (params) => {
+  const result = await params.defaultParseFrontMatter(params);
+  for (const [replacementKey, replacementValue] of Object.entries(
+    siteConfig.phrases
+  )) {
+    for (const frontMatterKey of frontMatterKeys) {
+      if (typeof result.frontMatter[frontMatterKey] === "string") {
+        result.frontMatter[frontMatterKey] = result.frontMatter[
+          frontMatterKey
+        ].replaceAll(replacementKey, replacementValue);
+      }
+    }
+  }
+  return result;
+};
