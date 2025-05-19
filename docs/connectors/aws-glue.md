@@ -4,8 +4,7 @@ sidebar_label: AWS Glue
 description: Manage AWS Glue crawlers, jobs and triggers
 ---
 
-## Description
-
+![AWS Glue](./assets/aws-glue.png#connector-icon)
 Manage AWS Glue crawlers, jobs and triggers
 
 ## Connections

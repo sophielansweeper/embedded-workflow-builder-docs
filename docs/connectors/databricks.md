@@ -4,8 +4,7 @@ sidebar_label: Databricks
 description: Manage compute, workflow jobs, ML models, SQL queries and more within a Databricks workspace.
 ---
 
-## Description
-
+![Databricks](./assets/databricks.png#connector-icon)
 Manage compute, workflow jobs, ML models, SQL queries and more within a Databricks workspace.
 
 ## Connections

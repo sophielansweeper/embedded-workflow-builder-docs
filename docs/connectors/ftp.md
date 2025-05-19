@@ -4,8 +4,7 @@ sidebar_label: FTP
 description: Manage files and directories on an FTP server
 ---
 
-## Description
-
+![FTP](./assets/ftp.png#connector-icon)
 Manage files and directories on an FTP server
 
 ## Connections

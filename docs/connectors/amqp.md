@@ -4,8 +4,7 @@ sidebar_label: AMQP
 description: Send and receive messages on an AMQP-based message broker
 ---
 
-## Description
-
+![AMQP](./assets/amqp.png#connector-icon)
 Send and receive messages on an AMQP-based message broker
 
 ## Connections

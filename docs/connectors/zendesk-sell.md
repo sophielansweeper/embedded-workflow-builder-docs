@@ -4,8 +4,7 @@ sidebar_label: Zendesk Sell
 description: Zendesk Sell is a sales force automation program.
 ---
 
-## Description
-
+![Zendesk Sell](./assets/zendesk-sell.png#connector-icon)
 Zendesk Sell is a sales force automation program.
 
 ## Connections

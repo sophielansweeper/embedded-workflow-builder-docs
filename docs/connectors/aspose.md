@@ -4,8 +4,7 @@ sidebar_label: Aspose
 description: Aspose is a robust file manipulation service that can manage various document and image file formats. Use the Aspose component to create, edit, process, and convert file formats from several languages, and several platforms.
 ---
 
-## Description
-
+![Aspose](./assets/aspose.png#connector-icon)
 Aspose is a robust file manipulation service that can manage various document and image file formats. Use the Aspose component to create, edit, process, and convert file formats from several languages, and several platforms.
 
 ## Connections

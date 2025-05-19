@@ -4,8 +4,7 @@ sidebar_label: Adobe Commerce Magento
 description: Adobe Commerce (Magento) is an open-source e-commerce platform. Use the Adobe Commerce component to manage your Products, Orders, Customers, and Transactions.
 ---
 
-## Description
-
+![Adobe Commerce Magento](./assets/adobe-commerce-magento.png#connector-icon)
 Adobe Commerce (Magento) is an open-source e-commerce platform. Use the Adobe Commerce component to manage your Products, Orders, Customers, and Transactions.
 
 ## Connections

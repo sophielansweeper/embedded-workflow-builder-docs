@@ -4,8 +4,7 @@ sidebar_label: Google Drive
 description: Manage files in Google Drive
 ---
 
-## Description
-
+![Google Drive](./assets/google-drive.png#connector-icon)
 Manage files in Google Drive
 
 ## Connections

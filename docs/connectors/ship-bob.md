@@ -4,8 +4,7 @@ sidebar_label: ShipBob
 description: Shipbob offers an end to end fulfillment services for Ecommerce vendors.
 ---
 
-## Description
-
+![ShipBob](./assets/shipbob.png#connector-icon)
 Shipbob offers an end to end fulfillment services for Ecommerce vendors.
 
 ## Connections

@@ -4,8 +4,7 @@ sidebar_label: Xero
 description: Manage invoices, items, accounts, payments and more objects from your Xero account.
 ---
 
-## Description
-
+![Xero](./assets/xero.png#connector-icon)
 Manage invoices, items, accounts, payments and more objects from your Xero account.
 
 ## Connections

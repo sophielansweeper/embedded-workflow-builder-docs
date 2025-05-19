@@ -4,8 +4,7 @@ sidebar_label: ShipStation
 description: ShipStation is an ecommerce shipping software solution.
 ---
 
-## Description
-
+![ShipStation](./assets/shipstation.png#connector-icon)
 ShipStation is an ecommerce shipping software solution.
 
 ## Connections

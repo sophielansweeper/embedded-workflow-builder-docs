@@ -4,8 +4,7 @@ sidebar_label: Sage 200
 description: Sage 200 is an online business management solution designed to help businesses manage their finances, customers, and business insight in one solution.
 ---
 
-## Description
-
+![Sage 200](./assets/sage-200.png#connector-icon)
 Sage 200 is an online business management solution designed to help businesses manage their finances, customers, and business insight in one solution.
 
 ## Connections

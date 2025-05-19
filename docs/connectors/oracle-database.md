@@ -4,8 +4,7 @@ sidebar_label: Oracle Database
 description: Query and manage data in an OracleDB database
 ---
 
-## Description
-
+![Oracle Database](./assets/oracledb.png#connector-icon)
 Query and manage data in an OracleDB database
 
 ## Connections

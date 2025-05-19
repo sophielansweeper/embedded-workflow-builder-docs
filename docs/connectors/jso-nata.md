@@ -4,8 +4,7 @@ sidebar_label: JSONata
 description: Transform data using the JSONata query and transformation language
 ---
 
-## Description
-
+![JSONata](./assets/jsonata.png#connector-icon)
 Transform data using the JSONata query and transformation language
 
 ## Actions

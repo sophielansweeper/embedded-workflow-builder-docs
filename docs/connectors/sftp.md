@@ -4,8 +4,7 @@ sidebar_label: SFTP
 description: Read, write, move and delete files on an SFTP server
 ---
 
-## Description
-
+![SFTP](./assets/sftp.png#connector-icon)
 Read, write, move and delete files on an SFTP server
 
 ## Connections

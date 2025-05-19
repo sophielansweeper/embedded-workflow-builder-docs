@@ -4,8 +4,7 @@ sidebar_label: BambooHR
 description: Manage Employees in BambooHR
 ---
 
-## Description
-
+![BambooHR](./assets/bamboohr.png#connector-icon)
 Manage Employees in BambooHR
 
 ## Connections

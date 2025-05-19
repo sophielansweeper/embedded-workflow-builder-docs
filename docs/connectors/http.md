@@ -4,8 +4,7 @@ sidebar_label: HTTP
 description: Make HTTP requests to URLs such as REST APIs, Webhooks, etc
 ---
 
-## Description
-
+![HTTP](./assets/http.png#connector-icon)
 Make HTTP requests to URLs such as REST APIs, Webhooks, etc
 
 ## Connections

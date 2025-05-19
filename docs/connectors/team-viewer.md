@@ -4,8 +4,7 @@ sidebar_label: TeamViewer
 description: Connect to TeamViewer to automate your remote support tasks.
 ---
 
-## Description
-
+![TeamViewer](./assets/teamviewer.png#connector-icon)
 Connect to TeamViewer to automate your remote support tasks.
 
 ## Connections

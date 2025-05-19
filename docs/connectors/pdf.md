@@ -4,8 +4,7 @@ sidebar_label: PDF
 description: Search and extract data from PDF documents
 ---
 
-## Description
-
+![PDF](./assets/pdf.png#connector-icon)
 Search and extract data from PDF documents
 
 ## Actions

@@ -4,8 +4,7 @@ sidebar_label: Sage Intacct
 description: Use the Sage Intacct component to manage Invoices, Payments, Vendors, and more.
 ---
 
-## Description
-
+![Sage Intacct](./assets/sage-intacct.png#connector-icon)
 Use the Sage Intacct component to manage Invoices, Payments, Vendors, and more.
 
 ## Connections

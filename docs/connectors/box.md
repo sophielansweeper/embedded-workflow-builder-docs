@@ -4,8 +4,7 @@ sidebar_label: Box
 description: Manage files stored in Box
 ---
 
-## Description
-
+![Box](./assets/box.png#connector-icon)
 Manage files stored in Box
 
 ## Connections

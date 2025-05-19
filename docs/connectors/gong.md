@@ -4,8 +4,7 @@ sidebar_label: Gong
 description: Captures customer interactions then delivers insights at scale, empowering teams to make decisions based on data instead of opinions. Use the Gong Component to manage calls, users, libraries, and more.
 ---
 
-## Description
-
+![Gong](./assets/gong.png#connector-icon)
 Captures customer interactions then delivers insights at scale, empowering teams to make decisions based on data instead of opinions. Use the Gong Component to manage calls, users, libraries, and more.
 
 ## Connections

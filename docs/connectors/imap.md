@@ -4,8 +4,7 @@ sidebar_label: IMAP
 description: Interact with your IMAP email account
 ---
 
-## Description
-
+![IMAP](./assets/imap.png#connector-icon)
 Interact with your IMAP email account
 
 ## Connections

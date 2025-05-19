@@ -4,8 +4,7 @@ sidebar_label: New Relic
 description: Easily manage metrics, logs, and events
 ---
 
-## Description
-
+![New Relic](./assets/new-relic.png#connector-icon)
 Easily manage metrics, logs, and events
 
 ## Connections

@@ -4,8 +4,7 @@ sidebar_label: ClickUp
 description: Use the ClickUp component to manage users, projects, and teams in your ClickUp workspace.
 ---
 
-## Description
-
+![ClickUp](./assets/click-up.png#connector-icon)
 Use the ClickUp component to manage users, projects, and teams in your ClickUp workspace.
 
 ## Connections

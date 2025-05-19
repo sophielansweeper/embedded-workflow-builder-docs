@@ -4,8 +4,7 @@ sidebar_label: Redis
 description: Manage items in a Redis database
 ---
 
-## Description
-
+![Redis](./assets/redis.png#connector-icon)
 Manage items in a Redis database
 
 ## Connections

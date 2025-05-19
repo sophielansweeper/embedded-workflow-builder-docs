@@ -4,8 +4,7 @@ sidebar_label: Google Cloud Storage
 description: Manage files in a Google Cloud Platform (GCP) Cloud Storage bucket
 ---
 
-## Description
-
+![Google Cloud Storage](./assets/google-cloud-storage.png#connector-icon)
 Manage files in a Google Cloud Platform (GCP) Cloud Storage bucket
 
 ## Connections

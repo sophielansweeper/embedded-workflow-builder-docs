@@ -4,8 +4,7 @@ sidebar_label: Bill
 description: Use the Bill component to manage Bank Accounts, Invoices, Bills, and more.
 ---
 
-## Description
-
+![Bill](./assets/bill.png#connector-icon)
 Use the Bill component to manage Bank Accounts, Invoices, Bills, and more.
 
 ## Connections

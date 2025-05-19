@@ -4,8 +4,7 @@ sidebar_label: Firebase
 description: Create, read, update, and delete documents in a Firebase Cloud Firestore database collection.
 ---
 
-## Description
-
+![Firebase](./assets/firebase.png#connector-icon)
 Create, read, update, and delete documents in a Firebase Cloud Firestore database collection.
 
 ## Connections

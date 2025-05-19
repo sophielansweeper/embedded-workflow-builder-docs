@@ -4,8 +4,7 @@ sidebar_label: Google Analytics - GA4
 description: Manage Google Analytics GA4 accounts and data
 ---
 
-## Description
-
+![Google Analytics - GA4](./assets/google-analytics-ga4.png#connector-icon)
 Manage Google Analytics GA4 accounts and data
 
 ## Connections

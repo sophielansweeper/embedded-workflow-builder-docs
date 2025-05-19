@@ -4,8 +4,7 @@ sidebar_label: Meta Ads
 description: Interact with ads and adsets in your Meta Ads account.
 ---
 
-## Description
-
+![Meta Ads](./assets/facebook-marketing.png#connector-icon)
 Interact with ads and adsets in your Meta Ads account.
 
 ## Connections

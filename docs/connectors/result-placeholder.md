@@ -4,8 +4,7 @@ sidebar_label: Result Placeholder
 description: Generate a step output
 ---
 
-## Description
-
+![Result Placeholder](./assets/result-placeholder.png#connector-icon)
 Generate a step output
 
 ## Actions

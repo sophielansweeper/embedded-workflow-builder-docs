@@ -4,8 +4,7 @@ sidebar_label: Microsoft Outlook
 description: Read and manage Microsoft Outlook calendars and email
 ---
 
-## Description
-
+![Microsoft Outlook](./assets/ms-outlook.png#connector-icon)
 Read and manage Microsoft Outlook calendars and email
 
 ## Connections

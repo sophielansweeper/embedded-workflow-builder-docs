@@ -4,7 +4,7 @@
  */
 import { Graffle } from "graffle";
 
-export const createPrismaticApiClient = () => {
+export const getPrismaticConnection = () => {
   const { PRISMATIC_API_KEY, PRISMATIC_URL } = process.env;
 
   const API_ENDPOINT = PRISMATIC_URL
@@ -14,6 +14,16 @@ export const createPrismaticApiClient = () => {
   if (!PRISMATIC_API_KEY) {
     throw new Error("You must set a PRISMATIC_API_KEY environment variable.");
   }
+
+  return {
+    PRISMATIC_API_KEY,
+    PRISMATIC_URL: PRISMATIC_URL || "https://app.prismatic.io",
+    API_ENDPOINT,
+  };
+};
+
+export const createPrismaticApiClient = () => {
+  const { PRISMATIC_API_KEY, API_ENDPOINT } = getPrismaticConnection();
 
   return Graffle.create().transport({
     url: API_ENDPOINT,

@@ -4,8 +4,7 @@ sidebar_label: SMTP
 description: Send emails through an SMTP server
 ---
 
-## Description
-
+![SMTP](./assets/smtp.png#connector-icon)
 Send emails through an SMTP server
 
 ## Connections

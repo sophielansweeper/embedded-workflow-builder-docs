@@ -4,8 +4,7 @@ sidebar_label: Pipedrive
 description: Manage leads, companies, activities, and more on the Pipedrive platform
 ---
 
-## Description
-
+![Pipedrive](./assets/pipedrive.png#connector-icon)
 Manage leads, companies, activities, and more on the Pipedrive platform
 
 ## Connections

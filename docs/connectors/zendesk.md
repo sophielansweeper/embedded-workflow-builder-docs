@@ -4,8 +4,7 @@ sidebar_label: Zendesk
 description: Manage Tickets and users in Zendesk
 ---
 
-## Description
-
+![Zendesk](./assets/zendesk.png#connector-icon)
 Manage Tickets and users in Zendesk
 
 ## Connections

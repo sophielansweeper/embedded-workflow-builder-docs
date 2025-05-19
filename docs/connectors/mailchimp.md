@@ -4,8 +4,7 @@ sidebar_label: Mailchimp
 description: Interact with email campaign lists and e-commerce resources.
 ---
 
-## Description
-
+![Mailchimp](./assets/mailchimp.png#connector-icon)
 Interact with email campaign lists and e-commerce resources.
 
 ## Connections

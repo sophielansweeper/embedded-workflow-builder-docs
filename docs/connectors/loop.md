@@ -4,8 +4,7 @@ sidebar_label: Loop
 description: Repeat a set of steps by iterating over items in a dataset or a fixed number of iterations
 ---
 
-## Description
-
+![Loop](./assets/loop.png#connector-icon)
 Repeat a set of steps by iterating over items in a dataset or a fixed number of iterations
 
 ## Actions

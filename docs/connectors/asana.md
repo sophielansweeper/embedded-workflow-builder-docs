@@ -4,8 +4,7 @@ sidebar_label: Asana
 description: Manage users, projects, and teams in your Asana workspace
 ---
 
-## Description
-
+![Asana](./assets/asana.png#connector-icon)
 Manage users, projects, and teams in your Asana workspace
 
 ## Connections

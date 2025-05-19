@@ -4,8 +4,7 @@ sidebar_label: Jira
 description: Manage Jira issues, comments, projects and users
 ---
 
-## Description
-
+![Jira](./assets/atlassian-jira.png#connector-icon)
 Manage Jira issues, comments, projects and users
 
 ## Connections

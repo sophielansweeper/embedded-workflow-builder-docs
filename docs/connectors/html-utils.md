@@ -4,8 +4,7 @@ sidebar_label: HTML Utils
 description: Helpful HTML-related functions for building HTML documents and HTML-based emails.
 ---
 
-## Description
-
+![HTML Utils](./assets/html-utils.png#connector-icon)
 Helpful HTML-related functions for building HTML documents and HTML-based emails.
 
 ## Actions

@@ -4,8 +4,7 @@ sidebar_label: Microsoft Teams
 description: Manage the teams, groups, channels, and messages associated with your Microsoft Teams account
 ---
 
-## Description
-
+![Microsoft Teams](./assets/ms-teams.png#connector-icon)
 Manage the teams, groups, channels, and messages associated with your Microsoft Teams account
 
 ## Connections

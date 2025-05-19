@@ -4,8 +4,7 @@ sidebar_label: Smartsheet
 description: Interact with the Smartsheet API
 ---
 
-## Description
-
+![Smartsheet](./assets/smartsheet.png#connector-icon)
 Interact with the Smartsheet API
 
 ## Connections

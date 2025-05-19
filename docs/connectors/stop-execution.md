@@ -4,8 +4,7 @@ sidebar_label: Stop Execution
 description: Stop the execution of an instance
 ---
 
-## Description
-
+![Stop Execution](./assets/stop-execution.png#connector-icon)
 Stop the execution of an instance
 
 ## Actions

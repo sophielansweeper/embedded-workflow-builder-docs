@@ -4,8 +4,7 @@ sidebar_label: Intercom
 description: Manage companies, contacts and tags on the Intercom platform
 ---
 
-## Description
-
+![Intercom](./assets/intercom.png#connector-icon)
 Manage companies, contacts and tags on the Intercom platform
 
 ## Connections

@@ -4,8 +4,7 @@ sidebar_label: Amazon SNS
 description: Manage subscriptions, topics, and messages within Amazon (AWS) SNS
 ---
 
-## Description
-
+![Amazon SNS](./assets/aws-sns.png#connector-icon)
 Manage subscriptions, topics, and messages within Amazon (AWS) SNS
 
 ## Connections

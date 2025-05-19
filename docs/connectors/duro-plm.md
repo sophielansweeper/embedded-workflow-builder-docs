@@ -4,8 +4,7 @@ sidebar_label: Duro PLM
 description: Manage Products, Components, Change Orders, and more with Duro.
 ---
 
-## Description
-
+![Duro PLM](./assets/duro-plm.png#connector-icon)
 Manage Products, Components, Change Orders, and more with Duro.
 
 ## Connections

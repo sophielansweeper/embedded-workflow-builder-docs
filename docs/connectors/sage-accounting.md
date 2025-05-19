@@ -4,8 +4,7 @@ sidebar_label: Sage Accounting
 description: Manage contacts and others connected to your Sage account.
 ---
 
-## Description
-
+![Sage Accounting](./assets/sage.png#connector-icon)
 Manage contacts and others connected to your Sage account.
 
 ## Connections

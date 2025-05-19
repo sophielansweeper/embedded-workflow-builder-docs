@@ -4,8 +4,7 @@ sidebar_label: Calendly
 description: Calendly is an industry leading scheduling solution for businesses. Use the Calendly component to manage the scheduling of events; attendee availability; and retrieve pertinent data on users and attendees.
 ---
 
-## Description
-
+![Calendly](./assets/calendly.png#connector-icon)
 Calendly is an industry leading scheduling solution for businesses. Use the Calendly component to manage the scheduling of events; attendee availability; and retrieve pertinent data on users and attendees.
 
 ## Connections

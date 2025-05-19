@@ -4,8 +4,7 @@ sidebar_label: MQTT
 description: Interact with an MQTT Queue
 ---
 
-## Description
-
+![MQTT](./assets/mqtt.png#connector-icon)
 Interact with an MQTT Queue
 
 ## Connections

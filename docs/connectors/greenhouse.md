@@ -4,8 +4,7 @@ sidebar_label: Greenhouse
 description: Interact with the Greenhouse API
 ---
 
-## Description
-
+![Greenhouse](./assets/greenhouse.png#connector-icon)
 Interact with the Greenhouse API
 
 ## Connections

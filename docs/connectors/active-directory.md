@@ -4,8 +4,7 @@ sidebar_label: Active Directory
 description: Connect to an Active Directory server.
 ---
 
-## Description
-
+![Active Directory](./assets/ldap.png#connector-icon)
 Connect to an Active Directory server.
 
 ## Connections

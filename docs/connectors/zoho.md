@@ -4,8 +4,7 @@ sidebar_label: Zoho
 description: Manage records, users, and more in your Zoho CRM and Books apps
 ---
 
-## Description
-
+![Zoho](./assets/zoho.png#connector-icon)
 Manage records, users, and more in your Zoho CRM and Books apps
 
 ## Connections

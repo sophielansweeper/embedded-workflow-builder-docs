@@ -4,8 +4,7 @@ sidebar_label: Zip
 description: Provides utility methods for working with zip files
 ---
 
-## Description
-
+![Zip](./assets/zip.png#connector-icon)
 Provides utility methods for working with zip files
 
 ## Actions

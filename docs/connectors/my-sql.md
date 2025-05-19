@@ -4,8 +4,7 @@ sidebar_label: MySQL
 description: Query and manage data in a MySQL Database
 ---
 
-## Description
-
+![MySQL](./assets/mysql.png#connector-icon)
 Query and manage data in a MySQL Database
 
 ## Connections

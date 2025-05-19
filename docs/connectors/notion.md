@@ -4,8 +4,7 @@ sidebar_label: Notion
 description: Manage Notion pages, databases, and users
 ---
 
-## Description
-
+![Notion](./assets/notion.png#connector-icon)
 Manage Notion pages, databases, and users
 
 ## Connections

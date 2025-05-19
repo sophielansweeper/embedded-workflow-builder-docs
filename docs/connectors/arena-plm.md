@@ -4,8 +4,7 @@ sidebar_label: Arena PLM
 description: Interact with items and resources in Arena PLM
 ---
 
-## Description
-
+![Arena PLM](./assets/arena-plm.png#connector-icon)
 Interact with items and resources in Arena PLM
 
 ## Connections

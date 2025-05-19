@@ -4,8 +4,7 @@ sidebar_label: Hash
 description: Compute hashes of strings using common hash functions
 ---
 
-## Description
-
+![Hash](./assets/hash.png#connector-icon)
 Compute hashes of strings using common hash functions
 
 ## Triggers

@@ -4,8 +4,7 @@ sidebar_label: Microsoft OneDrive
 description: Interact with files and drives inside your Microsoft OneDrive tenant
 ---
 
-## Description
-
+![Microsoft OneDrive](./assets/ms-onedrive.png#connector-icon)
 Interact with files and drives inside your Microsoft OneDrive tenant
 
 ## Connections

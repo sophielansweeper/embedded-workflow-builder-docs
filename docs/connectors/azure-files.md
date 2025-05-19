@@ -4,8 +4,7 @@ sidebar_label: Azure Files
 description: Manage files and folders within Azure Files
 ---
 
-## Description
-
+![Azure Files](./assets/azure-files.png#connector-icon)
 Manage files and folders within Azure Files
 
 ## Connections

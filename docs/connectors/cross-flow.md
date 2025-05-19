@@ -4,8 +4,7 @@ sidebar_label: Cross Flow
 description: The Cross Flow component includes triggers and actions for flow to flow invocations.
 ---
 
-## Description
-
+![Cross Flow](./assets/cross-flow.png#connector-icon)
 The Cross Flow component includes triggers and actions for flow to flow invocations.
 
 ## Triggers

@@ -4,8 +4,7 @@ sidebar_label: Microsoft Entra ID
 description: Microsoft Entra ID (Formerly Azure Active Directory) is a cloud-based identity and access management service from Microsoft that helps employees sign in and access resources. Use the Microsoft Entra ID component to manage your users, groups, and applications.
 ---
 
-## Description
-
+![Microsoft Entra ID](./assets/ms-entra-id.png#connector-icon)
 Microsoft Entra ID (Formerly Azure Active Directory) is a cloud-based identity and access management service from Microsoft that helps employees sign in and access resources. Use the Microsoft Entra ID component to manage your users, groups, and applications.
 
 ## Connections

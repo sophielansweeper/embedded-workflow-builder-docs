@@ -4,8 +4,7 @@ sidebar_label: Log
 description: Write out a log message
 ---
 
-## Description
-
+![Log](./assets/log.png#connector-icon)
 Write out a log message
 
 ## Actions

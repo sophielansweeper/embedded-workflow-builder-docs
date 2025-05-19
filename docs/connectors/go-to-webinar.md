@@ -4,8 +4,7 @@ sidebar_label: GoTo Webinar
 description: GoTo Webinar is a platform for hosting, managing, and attending live or pre-recorded webinars.
 ---
 
-## Description
-
+![GoTo Webinar](./assets/gotowebinar.png#connector-icon)
 GoTo Webinar is a platform for hosting, managing, and attending live or pre-recorded webinars.
 
 ## Connections

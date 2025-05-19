@@ -4,8 +4,7 @@ sidebar_label: Code
 description: Author and run your own code
 ---
 
-## Description
-
+![Code](./assets/code.png#connector-icon)
 Author and run your own code
 
 ## Connections

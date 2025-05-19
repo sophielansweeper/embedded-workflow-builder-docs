@@ -4,8 +4,7 @@ sidebar_label: Bynder
 description: Bynder is a leading digital asset management software that allows users to easily create, find, and use content, such as documents, graphics, and videos.
 ---
 
-## Description
-
+![Bynder](./assets/bynder.png#connector-icon)
 Bynder is a leading digital asset management software that allows users to easily create, find, and use content, such as documents, graphics, and videos.
 
 ## Connections

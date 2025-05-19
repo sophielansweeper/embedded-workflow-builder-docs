@@ -4,8 +4,7 @@ sidebar_label: Square
 description: Square offers a suite of commerce products for retail stores.
 ---
 
-## Description
-
+![Square](./assets/square.png#connector-icon)
 Square offers a suite of commerce products for retail stores.
 
 ## Connections

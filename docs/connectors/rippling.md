@@ -4,8 +4,7 @@ sidebar_label: Rippling
 description: Rippling makes it easy to manage your company's Payroll, Benefits, HR, and IT—all in one, modern platform
 ---
 
-## Description
-
+![Rippling](./assets/rippling.png#connector-icon)
 Rippling makes it easy to manage your company&#x27;s Payroll, Benefits, HR, and IT—all in one, modern platform
 
 ## Connections

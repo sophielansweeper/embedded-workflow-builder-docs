@@ -41,6 +41,7 @@
     "graffle": "^8.0.0-next.161",
     "graphql": "^16.10.0",
     "handlebars": "^4.7.8",
+    "jimp": "^1.6.0",
     "prettier": "^3.5.3",
     "typescript": "~5.8.3"
   },

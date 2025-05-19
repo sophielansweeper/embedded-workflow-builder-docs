@@ -4,8 +4,7 @@ sidebar_label: Amazon S3
 description: Manage files within an Amazon (AWS) S3 bucket
 ---
 
-## Description
-
+![Amazon S3](./assets/aws-s3.png#connector-icon)
 Manage files within an Amazon (AWS) S3 bucket
 
 ## Connections

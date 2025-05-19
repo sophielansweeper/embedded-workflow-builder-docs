@@ -4,8 +4,7 @@ sidebar_label: Slack
 description: Send messages to Slack channels and users
 ---
 
-## Description
-
+![Slack](./assets/slack.png#connector-icon)
 Send messages to Slack channels and users
 
 ## Connections

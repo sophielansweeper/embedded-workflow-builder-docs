@@ -4,8 +4,7 @@ sidebar_label: Amazon DynamoDB
 description: Create, update, fetch, or delete items in an Amazon (AWS) DynamoDB database
 ---
 
-## Description
-
+![Amazon DynamoDB](./assets/aws-dynamodb.png#connector-icon)
 Create, update, fetch, or delete items in an Amazon (AWS) DynamoDB database
 
 ## Connections

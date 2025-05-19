@@ -4,8 +4,7 @@ sidebar_label: Google Sheets
 description: Create, read, and modify Google Spreadsheets
 ---
 
-## Description
-
+![Google Sheets](./assets/google-sheets.png#connector-icon)
 Create, read, and modify Google Spreadsheets
 
 ## Connections

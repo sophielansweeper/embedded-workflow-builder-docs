@@ -4,8 +4,7 @@ sidebar_label: Azure Event Grid
 description: Azure Event Grid is an event routing service that can be used to build event driven applications by distributing events from various sources to subscribers.
 ---
 
-## Description
-
+![Azure Event Grid](./assets/azure-event-grid.png#connector-icon)
 Azure Event Grid is an event routing service that can be used to build event driven applications by distributing events from various sources to subscribers.
 
 ## Connections

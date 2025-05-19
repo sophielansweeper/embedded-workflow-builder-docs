@@ -4,8 +4,7 @@ sidebar_label: Typeform
 description: Typeform is an online form builder that enables users to create interactive and engaging surveys, forms, and quizzes.
 ---
 
-## Description
-
+![Typeform](./assets/typeform.png#connector-icon)
 Typeform is an online form builder that enables users to create interactive and engaging surveys, forms, and quizzes.
 
 ## Connections

@@ -4,8 +4,7 @@ sidebar_label: Adobe Analytics
 description: Manage companies, report suites, metrics, dimensions and more within Adobe Analytics.
 ---
 
-## Description
-
+![Adobe Analytics](./assets/adobe-analytics.png#connector-icon)
 Manage companies, report suites, metrics, dimensions and more within Adobe Analytics.
 
 ## Connections

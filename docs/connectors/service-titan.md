@@ -4,8 +4,7 @@ sidebar_label: ServiceTitan
 description: ServiceTitan is a comprehensive field service management solution that helps businesses manage their operations, workforce, and customer service.
 ---
 
-## Description
-
+![ServiceTitan](./assets/servicetitan.png#connector-icon)
 ServiceTitan is a comprehensive field service management solution that helps businesses manage their operations, workforce, and customer service.
 
 ## Connections

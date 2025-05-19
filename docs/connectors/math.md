@@ -4,8 +4,7 @@ sidebar_label: Math
 description: Perform common math operations on numbers or lists of numbers
 ---
 
-## Description
-
+![Math](./assets/math.png#connector-icon)
 Perform common math operations on numbers or lists of numbers
 
 ## Actions

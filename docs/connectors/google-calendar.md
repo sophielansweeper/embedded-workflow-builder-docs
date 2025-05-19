@@ -4,8 +4,7 @@ sidebar_label: Google Calendar
 description: Manage calendars and events in Google Calendar
 ---
 
-## Description
-
+![Google Calendar](./assets/google-calendar.png#connector-icon)
 Manage calendars and events in Google Calendar
 
 ## Connections

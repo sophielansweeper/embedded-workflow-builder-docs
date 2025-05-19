@@ -4,8 +4,7 @@ sidebar_label: Microsoft Bing Ads
 description: Manage Microsoft Bing Ad Customer Services
 ---
 
-## Description
-
+![Microsoft Bing Ads](./assets/ms-bing-ads.png#connector-icon)
 Manage Microsoft Bing Ad Customer Services
 
 ## Connections

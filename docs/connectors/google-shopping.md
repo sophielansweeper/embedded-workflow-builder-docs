@@ -4,8 +4,7 @@ sidebar_label: Google Shopping
 description: The Google Content API for Shopping can be used to manage and automate Google Merchant Center account management.
 ---
 
-## Description
-
+![Google Shopping](./assets/google-content-shopping.png#connector-icon)
 The Google Content API for Shopping can be used to manage and automate Google Merchant Center account management.
 
 ## Connections

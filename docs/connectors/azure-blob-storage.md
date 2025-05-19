@@ -4,8 +4,7 @@ sidebar_label: Azure Blob Storage
 description: Manage files and folders within Azure Blob Storage
 ---
 
-## Description
-
+![Azure Blob Storage](./assets/azure-blob.png#connector-icon)
 Manage files and folders within Azure Blob Storage
 
 ## Connections

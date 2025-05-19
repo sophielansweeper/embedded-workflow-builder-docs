@@ -4,8 +4,7 @@ sidebar_label: Persist Data
 description: Persist small amounts of data that will be available later in the execution or in subsequent executions of the Instance
 ---
 
-## Description
-
+![Persist Data](./assets/persist-data.png#connector-icon)
 Persist small amounts of data that will be available later in the execution or in subsequent executions of the Instance
 
 ## Actions

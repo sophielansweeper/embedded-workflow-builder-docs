@@ -4,8 +4,7 @@ sidebar_label: Adobe Acrobat Sign
 description: Adobe Acrobat Sign is an e-signature management solution. Use the Adobe Acrobat Sign component to send, sign, track, and manage the signature process.
 ---
 
-## Description
-
+![Adobe Acrobat Sign](./assets/adobe-acrobat-sign.png#connector-icon)
 Adobe Acrobat Sign is an e-signature management solution. Use the Adobe Acrobat Sign component to send, sign, track, and manage the signature process.
 
 ## Connections

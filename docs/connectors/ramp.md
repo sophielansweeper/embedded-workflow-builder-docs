@@ -4,8 +4,7 @@ sidebar_label: Ramp
 description: Ramp is a spend management platform focused on automating accounts payable and procurement processes. Use the Ramp component to manage transactions related to vendors, bills, reimbursements and more.
 ---
 
-## Description
-
+![Ramp](./assets/ramp.png#connector-icon)
 Ramp is a spend management platform focused on automating accounts payable and procurement processes. Use the Ramp component to manage transactions related to vendors, bills, reimbursements and more.
 
 ## Connections

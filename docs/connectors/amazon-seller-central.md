@@ -4,8 +4,7 @@ sidebar_label: Amazon Seller Central
 description: Amazon Seller Central is the portal for accessing your Amazon seller account. Use the Amazon Seller Central component to manage your catalog, orders, and shipping information.
 ---
 
-## Description
-
+![Amazon Seller Central](./assets/amazon-seller-central.png#connector-icon)
 Amazon Seller Central is the portal for accessing your Amazon seller account. Use the Amazon Seller Central component to manage your catalog, orders, and shipping information.
 
 ## Connections

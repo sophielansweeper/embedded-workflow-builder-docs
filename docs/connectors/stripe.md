@@ -4,8 +4,7 @@ sidebar_label: Stripe
 description: Manage objects connected to your Stripe platform
 ---
 
-## Description
-
+![Stripe](./assets/stripe.png#connector-icon)
 Manage objects connected to your Stripe platform
 
 ## Connections

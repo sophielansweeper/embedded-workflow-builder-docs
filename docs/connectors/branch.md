@@ -4,8 +4,7 @@ sidebar_label: Branch
 description: Choose which step to execute next based on a condition or value
 ---
 
-## Description
-
+![Branch](./assets/branch.png#connector-icon)
 Choose which step to execute next based on a condition or value
 
 ## Actions

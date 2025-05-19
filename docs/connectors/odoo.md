@@ -4,8 +4,7 @@ sidebar_label: Odoo
 description: Manage records in an Odoo database
 ---
 
-## Description
-
+![Odoo](./assets/odoo.png#connector-icon)
 Manage records in an Odoo database
 
 ## Connections

@@ -4,8 +4,7 @@ sidebar_label: Prismatic
 description: Interact with the Prismatic internal API
 ---
 
-## Description
-
+![Prismatic](./assets/prismatic.png#connector-icon)
 Interact with the Prismatic internal API
 
 ## Connections

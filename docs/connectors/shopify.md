@@ -4,8 +4,7 @@ sidebar_label: Shopify
 description: Manage customers, products, and orders in your Shopify platform
 ---
 
-## Description
-
+![Shopify](./assets/shopify.png#connector-icon)
 Manage customers, products, and orders in your Shopify platform
 
 ## Connections

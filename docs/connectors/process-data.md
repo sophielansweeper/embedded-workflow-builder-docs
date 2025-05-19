@@ -4,8 +4,7 @@ sidebar_label: Process Data
 description: Process data sets
 ---
 
-## Description
-
+![Process Data](./assets/process-data.png#connector-icon)
 Process data sets
 
 ## Actions

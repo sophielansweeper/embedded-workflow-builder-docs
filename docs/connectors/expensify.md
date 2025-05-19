@@ -4,8 +4,7 @@ sidebar_label: Expensify
 description: Expensify provides an industry leading expense management system. Use the Expensify component to programmatically download expense report data for analysis or insertion into your accounting package, provision accounts for new hires, and much more.
 ---
 
-## Description
-
+![Expensify](./assets/Expensify.png#connector-icon)
 Expensify provides an industry leading expense management system. Use the Expensify component to programmatically download expense report data for analysis or insertion into your accounting package, provision accounts for new hires, and much more.
 
 ## Connections

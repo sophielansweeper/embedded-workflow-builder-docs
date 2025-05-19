@@ -4,8 +4,7 @@ sidebar_label: Zoom
 description: Easily manage users, meetings, and webinars in your Zoom account
 ---
 
-## Description
-
+![Zoom](./assets/zoom.png#connector-icon)
 Easily manage users, meetings, and webinars in your Zoom account
 
 ## Connections

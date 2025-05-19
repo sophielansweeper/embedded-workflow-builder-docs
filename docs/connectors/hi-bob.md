@@ -4,8 +4,7 @@ sidebar_label: HiBob
 description: HiBob is an HR platform for people management, performance, and engagement.
 ---
 
-## Description
-
+![HiBob](./assets/hibob.png#connector-icon)
 HiBob is an HR platform for people management, performance, and engagement.
 
 ## Connections

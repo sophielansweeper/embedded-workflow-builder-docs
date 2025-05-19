@@ -4,8 +4,7 @@ sidebar_label: Monday
 description: Manage boards, tasks and workflows within Monday.
 ---
 
-## Description
-
+![Monday](./assets/monday.png#connector-icon)
 Manage boards, tasks and workflows within Monday.
 
 ## Connections

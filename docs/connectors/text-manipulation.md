@@ -4,8 +4,7 @@ sidebar_label: Text Manipulation
 description: Perform common operations on strings and arrays of strings
 ---
 
-## Description
-
+![Text Manipulation](./assets/text-manipulation.png#connector-icon)
 Perform common operations on strings and arrays of strings
 
 ## Actions

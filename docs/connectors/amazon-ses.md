@@ -4,8 +4,7 @@ sidebar_label: Amazon SES
 description: Send Emails through Amazon (AWS) SES
 ---
 
-## Description
-
+![Amazon SES](./assets/aws-ses.png#connector-icon)
 Send Emails through Amazon (AWS) SES
 
 ## Connections

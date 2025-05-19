@@ -4,8 +4,7 @@ sidebar_label: Salesforce
 description: Query, create, update or delete Salesforce records
 ---
 
-## Description
-
+![Salesforce](./assets/salesforce.png#connector-icon)
 Query, create, update or delete Salesforce records
 
 ## Connections

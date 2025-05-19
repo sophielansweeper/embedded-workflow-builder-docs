@@ -4,8 +4,7 @@ sidebar_label: Schedule Trigger
 description: The schedule trigger allows you to invoke a flow on a recurring custom schedule.
 ---
 
-## Description
-
+![Schedule Trigger](./assets/schedule-triggers.png#connector-icon)
 The schedule trigger allows you to invoke a flow on a recurring custom schedule.
 
 ## Triggers

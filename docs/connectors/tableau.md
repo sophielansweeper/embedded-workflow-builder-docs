@@ -4,8 +4,7 @@ sidebar_label: Tableau
 description: Manage projects and workbooks in your Tableau site
 ---
 
-## Description
-
+![Tableau](./assets/tableau.png#connector-icon)
 Manage projects and workbooks in your Tableau site
 
 ## Connections

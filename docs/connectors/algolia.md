@@ -4,8 +4,7 @@ sidebar_label: Algolia
 description: Algolia is an advanced AI search platform.
 ---
 
-## Description
-
+![Algolia](./assets/algolia.png#connector-icon)
 Algolia is an advanced AI search platform.
 
 ## Connections

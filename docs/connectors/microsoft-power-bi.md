@@ -4,8 +4,7 @@ sidebar_label: Microsoft Power BI
 description: Interact with and modify Power BI datasets
 ---
 
-## Description
-
+![Microsoft Power BI](./assets/ms-power-bi.png#connector-icon)
 Interact with and modify Power BI datasets
 
 ## Connections

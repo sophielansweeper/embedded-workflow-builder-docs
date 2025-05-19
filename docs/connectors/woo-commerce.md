@@ -4,8 +4,7 @@ sidebar_label: WooCommerce
 description: Easily manage your customers, orders, and products in your WooCommerce platform
 ---
 
-## Description
-
+![WooCommerce](./assets/woo-commerce.png#connector-icon)
 Easily manage your customers, orders, and products in your WooCommerce platform
 
 ## Connections

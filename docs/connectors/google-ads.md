@@ -4,8 +4,7 @@ sidebar_label: Google Ads
 description: Manage Google Ad and Local Ad campaigns
 ---
 
-## Description
-
+![Google Ads](./assets/google-ads.png#connector-icon)
 Manage Google Ad and Local Ad campaigns
 
 ## Connections

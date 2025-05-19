@@ -6,6 +6,7 @@ import { kebabCase } from "change-case";
 import { getPrivateConnector } from "./getPrivateConnector";
 import { getPublicConnectors } from "./getPublicConnectors";
 import type { Component } from "./queries";
+import { fetchConnectorIcon } from "./fetchConnectorIcon";
 
 handlebars.registerHelper("cleanDefaultForTable", (value: string) => {
   if (!value) return;
@@ -57,11 +58,13 @@ async function generateConnectorDocs({
     );
     for (const connector of connectors) {
       if (connector.key !== "customHttp") {
+        fetchConnectorIcon(connector);
         writeConnectorDocsFile(connector, connectorTemplate);
       }
     }
   }
   if (privateConnector) {
+    fetchConnectorIcon(privateConnector);
     writeConnectorDocsFile(
       await getPrivateConnector({
         componentKey: privateConnector,

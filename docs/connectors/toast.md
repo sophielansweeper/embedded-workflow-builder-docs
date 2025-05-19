@@ -4,8 +4,7 @@ sidebar_label: Toast
 description: Use the Toast component to manage Employees, Jobs, Cash Entries, and more.
 ---
 
-## Description
-
+![Toast](./assets/toast.png#connector-icon)
 Use the Toast component to manage Employees, Jobs, Cash Entries, and more.
 
 ## Connections

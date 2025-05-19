@@ -4,8 +4,7 @@ sidebar_label: Airtable
 description: Manage records, tables and bases in Airtable
 ---
 
-## Description
-
+![Airtable](./assets/airtable.png#connector-icon)
 Manage records, tables and bases in Airtable
 
 ## Connections

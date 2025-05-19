@@ -4,8 +4,7 @@ sidebar_label: Domo
 description: The Domo platform includes a world class data warehouse, robust data pipeline functionality, and visualization engine.
 ---
 
-## Description
-
+![Domo](./assets/domo.png#connector-icon)
 The Domo platform includes a world class data warehouse, robust data pipeline functionality, and visualization engine.
 
 ## Connections

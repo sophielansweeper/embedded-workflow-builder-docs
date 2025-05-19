@@ -4,8 +4,7 @@ sidebar_label: Liquid Template
 description: Transform data using a provided Liquid Template
 ---
 
-## Description
-
+![Liquid Template](./assets/liquid-template.png#connector-icon)
 Transform data using a provided Liquid Template
 
 ## Actions

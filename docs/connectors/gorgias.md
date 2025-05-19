@@ -4,8 +4,7 @@ sidebar_label: Gorgias
 description: Gorgias is a customer support platform designed to help e-commerce businesses manage customer inquiries and support tickets efficiently.
 ---
 
-## Description
-
+![Gorgias](./assets/gorgias.png#connector-icon)
 Gorgias is a customer support platform designed to help e-commerce businesses manage customer inquiries and support tickets efficiently.
 
 ## Connections

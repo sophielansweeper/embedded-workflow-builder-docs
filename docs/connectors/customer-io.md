@@ -4,8 +4,7 @@ sidebar_label: Customer.io
 description: Manage customers on the Customer.io platform
 ---
 
-## Description
-
+![Customer.io](./assets/customer-io.png#connector-icon)
 Manage customers on the Customer.io platform
 
 ## Connections

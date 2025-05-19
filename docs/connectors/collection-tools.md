@@ -4,8 +4,7 @@ sidebar_label: Collection Tools
 description: Common collection operations
 ---
 
-## Description
-
+![Collection Tools](./assets/collection-tools.png#connector-icon)
 Common collection operations
 
 ## Actions
