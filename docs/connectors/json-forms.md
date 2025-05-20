@@ -4,7 +4,7 @@ sidebar_label: JSON Forms
 description: Create powerful custom forms for the configuration wizard
 ---
 
-![JSON Forms](./assets/jsonforms.png#connector-icon)
+![JSON Forms](./assets/json-forms.png#connector-icon)
 Create powerful custom forms for the configuration wizard
 
 ## Data Sources

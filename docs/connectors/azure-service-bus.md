@@ -4,7 +4,7 @@ sidebar_label: Azure Service Bus
 description: Interact with message queues and publish-subscribe topics (in a namespace)
 ---
 
-![Azure Service Bus](./assets/azureServiceBus.png#connector-icon)
+![Azure Service Bus](./assets/azure-service-bus.png#connector-icon)
 Interact with message queues and publish-subscribe topics (in a namespace)
 
 ## Connections

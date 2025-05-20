@@ -4,7 +4,7 @@ sidebar_label: SAP S/4HANA Cloud
 description: SAP S/4HANA is a multi-faceted cloud based ERP solution. Use the S/4HANA component to manage records within the SAP database.
 ---
 
-![SAP S/4HANA Cloud](./assets/sapS4Hana.png#connector-icon)
+![SAP S/4HANA Cloud](./assets/sap-s-4-hana-cloud.png#connector-icon)
 SAP S/4HANA is a multi-faceted cloud based ERP solution. Use the S/4HANA component to manage records within the SAP database.
 
 ## Connections

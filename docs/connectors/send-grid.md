@@ -4,7 +4,7 @@ sidebar_label: SendGrid
 description: Send emails through SendGrid
 ---
 
-![SendGrid](./assets/sendgrid.png#connector-icon)
+![SendGrid](./assets/send-grid.png#connector-icon)
 Send emails through SendGrid
 
 ## Connections

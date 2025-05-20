@@ -4,7 +4,7 @@ sidebar_label: Microsoft Bot Framework
 description: Manage conversational interactions across platforms using Microsoft Bot Framework
 ---
 
-![Microsoft Bot Framework](./assets/ms-bot-framework.png#connector-icon)
+![Microsoft Bot Framework](./assets/microsoft-bot-framework.png#connector-icon)
 Manage conversational interactions across platforms using Microsoft Bot Framework
 
 ## Connections

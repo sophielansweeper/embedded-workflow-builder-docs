@@ -4,7 +4,7 @@ sidebar_label: NetSuite
 description: Manage NetSuite records
 ---
 
-![NetSuite](./assets/netsuite.png#connector-icon)
+![NetSuite](./assets/net-suite.png#connector-icon)
 Manage NetSuite records
 
 ## Connections

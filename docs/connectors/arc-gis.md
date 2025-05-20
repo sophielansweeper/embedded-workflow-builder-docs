@@ -4,7 +4,7 @@ sidebar_label: ArcGIS
 description: Use the Esri ArcGIS component to manage map layers, and update locations.
 ---
 
-![ArcGIS](./assets/arcgis.png#connector-icon)
+![ArcGIS](./assets/arc-gis.png#connector-icon)
 Use the Esri ArcGIS component to manage map layers, and update locations.
 
 ## Connections

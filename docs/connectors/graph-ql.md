@@ -4,7 +4,7 @@ sidebar_label: GraphQL
 description: Make GraphQL requests (queries and mutations) to a GraphQL-based API
 ---
 
-![GraphQL](./assets/graphql.png#connector-icon)
+![GraphQL](./assets/graph-ql.png#connector-icon)
 Make GraphQL requests (queries and mutations) to a GraphQL-based API
 
 ## Connections

@@ -4,7 +4,7 @@ sidebar_label: HubSpot
 description: Manage records and associations in the HubSpot CRM platform
 ---
 
-![HubSpot](./assets/hubspot.png#connector-icon)
+![HubSpot](./assets/hub-spot.png#connector-icon)
 Manage records and associations in the HubSpot CRM platform
 
 ## Connections

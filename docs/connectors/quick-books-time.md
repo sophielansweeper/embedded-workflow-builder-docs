@@ -4,7 +4,7 @@ sidebar_label: QuickBooks Time
 description: Manage Employee Time Tracking within Intuit QuickBooks Time
 ---
 
-![QuickBooks Time](./assets/quickbooks-time.png#connector-icon)
+![QuickBooks Time](./assets/quick-books-time.png#connector-icon)
 Manage Employee Time Tracking within Intuit QuickBooks Time
 
 ## Connections

@@ -4,7 +4,7 @@ sidebar_label: Microsoft Project
 description: Make queries to reporting data from a Project Web App instance
 ---
 
-![Microsoft Project](./assets/ms-project.png#connector-icon)
+![Microsoft Project](./assets/microsoft-project.png#connector-icon)
 Make queries to reporting data from a Project Web App instance
 
 ## Connections

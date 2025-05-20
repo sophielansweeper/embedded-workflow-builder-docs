@@ -4,7 +4,7 @@ sidebar_label: PagerDuty
 description: PagerDuty is a platform for managing on-call operations. This component supports PagerDuty REST API V2.
 ---
 
-![PagerDuty](./assets/pagerduty.png#connector-icon)
+![PagerDuty](./assets/pager-duty.png#connector-icon)
 PagerDuty is a platform for managing on-call operations. This component supports PagerDuty REST API V2.
 
 ## Connections

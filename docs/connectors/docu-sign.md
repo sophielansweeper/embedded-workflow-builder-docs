@@ -4,7 +4,7 @@ sidebar_label: DocuSign
 description: Use the DocuSign component to manage signature collection and document distribution.
 ---
 
-![DocuSign](./assets/docusign.png#connector-icon)
+![DocuSign](./assets/docu-sign.png#connector-icon)
 Use the DocuSign component to manage signature collection and document distribution.
 
 ## Connections

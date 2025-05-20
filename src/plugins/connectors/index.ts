@@ -16,6 +16,8 @@ handlebars.registerHelper("cleanDefaultForTable", (value: string) => {
   return value.replaceAll("\n", "<br />");
 });
 
+handlebars.registerHelper("kebabCase", kebabCase);
+
 handlebars.registerPartial(
   "inputsTable",
   fs.readFileSync(path.join(__dirname, "templates", "inputsTable.md.hbs"), {

@@ -4,7 +4,7 @@ sidebar_label: Microsoft SQL Server
 description: Query and manage data in a Microsoft SQL Server (MSSQL) Database
 ---
 
-![Microsoft SQL Server](./assets/ms-sql-server.png#connector-icon)
+![Microsoft SQL Server](./assets/microsoft-sql-server.png#connector-icon)
 Query and manage data in a Microsoft SQL Server (MSSQL) Database
 
 ## Connections

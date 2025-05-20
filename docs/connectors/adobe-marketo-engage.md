@@ -4,7 +4,7 @@ sidebar_label: Adobe Marketo Engage
 description: Manage Marketo records
 ---
 
-![Adobe Marketo Engage](./assets/marketo.png#connector-icon)
+![Adobe Marketo Engage](./assets/adobe-marketo-engage.png#connector-icon)
 Manage Marketo records
 
 ## Connections

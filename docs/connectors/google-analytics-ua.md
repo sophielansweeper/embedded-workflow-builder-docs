@@ -4,7 +4,7 @@ sidebar_label: Google Analytics - UA
 description: Manage Google Analytics
 ---
 
-![Google Analytics - UA](./assets/google-analytics.png#connector-icon)
+![Google Analytics - UA](./assets/google-analytics-ua.png#connector-icon)
 Manage Google Analytics
 
 ## Connections

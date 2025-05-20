@@ -4,7 +4,7 @@ sidebar_label: OpenAI
 description: Interact with OpenAI's models including GPT-4, GPT-3.5 Turbo, and DALL·E 3
 ---
 
-![OpenAI](./assets/openai.png#connector-icon)
+![OpenAI](./assets/open-ai.png#connector-icon)
 Interact with OpenAI&#x27;s models including GPT-4, GPT-3.5 Turbo, and DALL·E 3
 
 ## Connections

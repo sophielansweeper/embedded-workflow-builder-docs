@@ -4,7 +4,7 @@ sidebar_label: Microsoft Dynamics 365
 description: Query, create, update or delete Microsoft Dynamics 365 API records
 ---
 
-![Microsoft Dynamics 365](./assets/ms-dynamics.png#connector-icon)
+![Microsoft Dynamics 365](./assets/microsoft-dynamics-365.png#connector-icon)
 Query, create, update or delete Microsoft Dynamics 365 API records
 
 ## Connections

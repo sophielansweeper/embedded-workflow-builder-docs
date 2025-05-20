@@ -4,7 +4,7 @@ sidebar_label: MessagePack
 description: Efficiently serialize or deserialize data into a JSON-like format using msgpack
 ---
 
-![MessagePack](./assets/messagepack.png#connector-icon)
+![MessagePack](./assets/message-pack.png#connector-icon)
 Efficiently serialize or deserialize data into a JSON-like format using msgpack
 
 ## Actions

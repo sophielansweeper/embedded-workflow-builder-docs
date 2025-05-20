@@ -4,7 +4,7 @@ sidebar_label: SAP SuccessFactors
 description: SAP SuccessFactors is a human resources platform that provides cloud-based solutions to manage various HR functions such as business alignment, people performance, recruitment, and learning activities.
 ---
 
-![SAP SuccessFactors](./assets/sap-successfactors.png#connector-icon)
+![SAP SuccessFactors](./assets/sap-success-factors.png#connector-icon)
 SAP SuccessFactors is a human resources platform that provides cloud-based solutions to manage various HR functions such as business alignment, people performance, recruitment, and learning activities.
 
 ## Connections

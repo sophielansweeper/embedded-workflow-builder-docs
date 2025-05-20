@@ -4,7 +4,7 @@ sidebar_label: Microsoft Intune
 description: Use the Microsoft Intune component to manage users, devices, and applications.
 ---
 
-![Microsoft Intune](./assets/ms-intune.png#connector-icon)
+![Microsoft Intune](./assets/microsoft-intune.png#connector-icon)
 Use the Microsoft Intune component to manage users, devices, and applications.
 
 ## Connections

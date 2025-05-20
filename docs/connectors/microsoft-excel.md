@@ -4,7 +4,7 @@ sidebar_label: Microsoft Excel
 description: Parse and build .xlsx files (spreadsheets)
 ---
 
-![Microsoft Excel](./assets/ms-excel.png#connector-icon)
+![Microsoft Excel](./assets/microsoft-excel.png#connector-icon)
 Parse and build .xlsx files (spreadsheets)
 
 ## Connections

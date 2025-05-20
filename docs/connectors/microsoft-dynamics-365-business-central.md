@@ -4,7 +4,7 @@ sidebar_label: Microsoft Dynamics 365 Business Central
 description: Microsoft Dynamics 365 Business Central is a comprehensive enterprise resource planning (ERP) with capabilities including finance, manufacturing, customer relationship management (CRM), supply chains, analytics, and e-commerce.
 ---
 
-![Microsoft Dynamics 365 Business Central](./assets/ms-business-central.png#connector-icon)
+![Microsoft Dynamics 365 Business Central](./assets/microsoft-dynamics-365-business-central.png#connector-icon)
 Microsoft Dynamics 365 Business Central is a comprehensive enterprise resource planning (ERP) with capabilities including finance, manufacturing, customer relationship management (CRM), supply chains, analytics, and e-commerce.
 
 ## Connections

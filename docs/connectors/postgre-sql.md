@@ -4,7 +4,7 @@ sidebar_label: PostgreSQL
 description: Query and manage data in a PostgreSQL database
 ---
 
-![PostgreSQL](./assets/postgres.png#connector-icon)
+![PostgreSQL](./assets/postgre-sql.png#connector-icon)
 Query and manage data in a PostgreSQL database
 
 ## Connections

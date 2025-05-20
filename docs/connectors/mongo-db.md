@@ -4,7 +4,7 @@ sidebar_label: MongoDB
 description: Interact with documents in a MongoDB database
 ---
 
-![MongoDB](./assets/mongo.png#connector-icon)
+![MongoDB](./assets/mongo-db.png#connector-icon)
 Interact with documents in a MongoDB database
 
 ## Connections

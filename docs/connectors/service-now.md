@@ -4,7 +4,7 @@ sidebar_label: ServiceNow
 description: Create records and incidents within ServiceNow
 ---
 
-![ServiceNow](./assets/servicenow.png#connector-icon)
+![ServiceNow](./assets/service-now.png#connector-icon)
 Create records and incidents within ServiceNow
 
 ## Connections

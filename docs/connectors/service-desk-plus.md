@@ -4,7 +4,7 @@ sidebar_label: ServiceDesk Plus
 description: ServiceDesk Plus is a comprehensive service desk software that offers a suite of IT Service management, IT asset management, CBDM, and more.
 ---
 
-![ServiceDesk Plus](./assets/servicedesk-plus.png#connector-icon)
+![ServiceDesk Plus](./assets/service-desk-plus.png#connector-icon)
 ServiceDesk Plus is a comprehensive service desk software that offers a suite of IT Service management, IT asset management, CBDM, and more.
 
 ## Connections

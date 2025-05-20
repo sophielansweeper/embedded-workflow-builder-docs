@@ -4,7 +4,7 @@ sidebar_label: GitHub
 description: Manage users, repositories, licenses, and more on GitHub
 ---
 
-![GitHub](./assets/github.png#connector-icon)
+![GitHub](./assets/git-hub.png#connector-icon)
 Manage users, repositories, licenses, and more on GitHub
 
 ## Connections

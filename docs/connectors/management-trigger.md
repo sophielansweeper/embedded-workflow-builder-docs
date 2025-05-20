@@ -4,7 +4,7 @@ sidebar_label: Management Trigger
 description: The management trigger allows you to invoke a flow as part of a setup or management task.
 ---
 
-![Management Trigger](./assets/management-triggers.png#connector-icon)
+![Management Trigger](./assets/management-trigger.png#connector-icon)
 The management trigger allows you to invoke a flow as part of a setup or management task.
 
 ## Triggers

@@ -4,7 +4,7 @@ sidebar_label: Adobe I/O Events
 description: Adobe I/O Events notifies you when changes occur. Use the Adobe I/O Events component to easily integrate events into your applications using Webhooks.
 ---
 
-![Adobe I/O Events](./assets/adobe-io-events.png#connector-icon)
+![Adobe I/O Events](./assets/adobe-i-o-events.png#connector-icon)
 Adobe I/O Events notifies you when changes occur. Use the Adobe I/O Events component to easily integrate events into your applications using Webhooks.
 
 ## Connections

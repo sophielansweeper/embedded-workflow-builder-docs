@@ -4,7 +4,7 @@ sidebar_label: QuickBooks
 description: Create and manage customers and invoices within Intuit QuickBooks
 ---
 
-![QuickBooks](./assets/quickbooks.png#connector-icon)
+![QuickBooks](./assets/quick-books.png#connector-icon)
 Create and manage customers and invoices within Intuit QuickBooks
 
 ## Connections

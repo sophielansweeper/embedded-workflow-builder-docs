@@ -4,7 +4,7 @@ sidebar_label: Amazon SQS
 description: Send, receive and manage messages within an Amazon (AWS) SQS queue
 ---
 
-![Amazon SQS](./assets/aws-sqs.png#connector-icon)
+![Amazon SQS](./assets/amazon-sqs.png#connector-icon)
 Send, receive and manage messages within an Amazon (AWS) SQS queue
 
 ## Connections

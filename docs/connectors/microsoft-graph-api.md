@@ -4,7 +4,7 @@ sidebar_label: Microsoft Graph API
 description: Interact with the Microsoft Graph API
 ---
 
-![Microsoft Graph API](./assets/ms-graph-api.png#connector-icon)
+![Microsoft Graph API](./assets/microsoft-graph-api.png#connector-icon)
 Interact with the Microsoft Graph API
 
 ## Connections

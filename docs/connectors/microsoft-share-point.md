@@ -4,7 +4,7 @@ sidebar_label: Microsoft SharePoint
 description: Interact with sites, drives, and items connected to your instance of Microsoft SharePoint.
 ---
 
-![Microsoft SharePoint](./assets/ms-sharepoint.png#connector-icon)
+![Microsoft SharePoint](./assets/microsoft-share-point.png#connector-icon)
 Interact with sites, drives, and items connected to your instance of Microsoft SharePoint.
 
 ## Connections

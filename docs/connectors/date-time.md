@@ -4,7 +4,7 @@ sidebar_label: Date/Time
 description: Get and adjust Date/Time values
 ---
 
-![Date/Time](./assets/datetime.png#connector-icon)
+![Date/Time](./assets/date-time.png#connector-icon)
 Get and adjust Date/Time values
 
 ## Actions
