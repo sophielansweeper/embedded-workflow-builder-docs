@@ -64,13 +64,11 @@ async function generateConnectorDocs({
     }
   }
   if (privateConnector) {
-    fetchConnectorIcon(privateConnector);
-    writeConnectorDocsFile(
-      await getPrivateConnector({
-        componentKey: privateConnector,
-      }),
-      connectorTemplate
-    );
+    const connector = await getPrivateConnector({
+      componentKey: privateConnector,
+    });
+    fetchConnectorIcon(connector);
+    writeConnectorDocsFile(connector, connectorTemplate);
   }
 }
 
