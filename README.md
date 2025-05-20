@@ -1,4 +1,19 @@
+<!-- TOC updateOnSave:true -->
+
 # Prismatic Embedded Workflow Builder Documentation
+
+- [Prismatic Embedded Workflow Builder Documentation](#prismatic-embedded-workflow-builder-documentation)
+  - [Deployment options](#deployment-options)
+  - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Fork this repository](#fork-this-repository)
+    - [Install dependencies](#install-dependencies)
+  - [Configure](#configure)
+    - [White-label phrases](#white-label-phrases)
+    - [Add your own favicon and logo (optional)](#add-your-own-favicon-and-logo-optional)
+    - [Extend Docusaurus (optional)](#extend-docusaurus-optional)
+  - [Run locally](#run-locally)
+  - [Build static artifacts](#build-static-artifacts)
 
 Prismatic offers an [embedded workflow builder](https://prismatic.io/docs/embed/workflow-builder/) that you can embed within your application.
 The embedded workflow builder lets your customers build workflows that sync data between your app and the other apps they use.
@@ -77,7 +92,7 @@ Instead, add additional Docusaurus configuration to your `site-config/index.ts` 
 
 Values in your `site-config/index.ts` file will be merged with, and override, default values set in `docusaurus.config.ts`.
 
-## Run
+## Run locally
 
 To run this project locally, run
 
@@ -85,7 +100,7 @@ To run this project locally, run
 npm run start
 ```
 
-## Build
+## Build static artifacts
 
 To compile this project to static HTML/CSS/JS, run
 
