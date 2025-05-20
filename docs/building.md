@@ -1,4 +1,4 @@
 ---
-title: Building
-description: TBD
+title: Building %WORKFLOW_PLURAL%
+description: TODO
 ---
