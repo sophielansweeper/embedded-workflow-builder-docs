@@ -40,6 +40,16 @@ interface Phrases {
    * @example iConnect flows
    */
   "%WORKFLOW_PLURAL%": string;
+  /**
+   * Where your users should be directed to log in to your app
+   * @example https://app.acme.com/login
+   */
+  "%APP_LOGIN_URL": string;
+  /**
+   * White-label OAuth 2.0 callback URL where users will be redirected
+   * @example https://oauth2.integrations.acme.com/callback
+   */
+  "%OAUTH2_CALLBACK_URL": string;
 }
 
 export interface SiteConfig {
@@ -50,7 +60,7 @@ export interface SiteConfig {
   docsSite: {
     /** The base URL of your docs site. example:  https://docs.acme.com */
     url: string;
-    /** The path where your site is hosted. If your docs wille xist in https://docs.acme.com/path/to/docs, enter `/path/to/docs` */
+    /** The path where your site is hosted. If your docs will exist in https://docs.acme.com/path/to/docs, enter `/path/to/docs` */
     baseUrl: `/${string}`;
   };
   /** Docusaurus navbar items and title */
