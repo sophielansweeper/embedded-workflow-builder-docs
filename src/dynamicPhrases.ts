@@ -16,6 +16,11 @@ export const contentProcessPhrases: MarkdownPreprocessor = ({
   for (const [key, replacementValue] of Object.entries(siteConfig.phrases)) {
     content = content.replaceAll(key, replacementValue);
   }
+  // Guard against mistyped phrases
+  const extraneousPhrases = /%[A-Z_]*%/.exec(content);
+  if (extraneousPhrases) {
+    throw new Error(`Found extraneous phrase ${extraneousPhrases[0]}`);
+  }
   return content;
 };
 

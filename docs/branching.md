@@ -10,7 +10,7 @@ Given some information about a previous steps' results, your %WORKFLOW% can foll
 Branch steps are handy when you need to conditionally execute some steps.
 Here are a couple of examples of things you can accomplish with branching:
 
-**Example 1:** The [webhook requests](./triggering.md#webhooks) your %WORKFLOW% receives could contain a "Widget Created", "Widget Updated" or "Widget Deleted" event.
+**Example 1:** The [webhook requests](./triggering.md#universal-webhook-triggers) your %WORKFLOW% receives could contain a "Widget Created", "Widget Updated" or "Widget Deleted" event.
 You need to execute a series of steps depending on which event type was received.
 
 **Example 2:** You want to [upsert](<https://en.wikipedia.org/wiki/Merge_(SQL)>) data into system that doesn't support upsert.

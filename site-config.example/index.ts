@@ -6,12 +6,14 @@ const siteConfig: SiteConfig = {
     baseUrl: "/docs",
   },
   phrases: {
-    "%APP_LOGIN_URL": "https://acme.com/login",
+    "%APP_LOGIN_URL%": "https://acme.com/login",
     "%COMPANY%": "Acme Inc",
     "%COMPANY_POSESSIVE%": "Acme Inc's",
     "%COMPANY_CORE_PRODUCT%": "Widget ERP",
     "%EMBEDDED_WORKFLOW_BUILDER%": "Workflow Builder",
-    "%OAUTH2_CALLBACK_URL": "https://oauth2.integrations.acme.com/callback",
+    "%OAUTH2_CALLBACK_URL%": "https://oauth2.integrations.acme.com/callback",
+    "%NAVIGATING_TO_BUILDER%":
+      "navigate to integrations > workflows and click on 'manage workflows'",
     "%WORKFLOW%": "workflow",
     "%WORKFLOW_PLURAL%": "workflows",
   },
