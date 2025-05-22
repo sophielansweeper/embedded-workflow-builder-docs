@@ -17,8 +17,7 @@
     "postgenerate-public-connector-docs-from-manifest": "npm run format-markdown",
     "generate-private-connector-docs": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --private-connector",
     "postgenerate-private-connector-docs": "npm run format-markdown",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
+    "resize-screenshots": "docusaurus resize-screenshots",
     "typecheck": "tsc"
   },
   "dependencies": {

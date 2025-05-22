@@ -61,7 +61,10 @@ const config: Config = {
     parseFrontMatter: frontMatterProcessPhrases,
     preprocessor: contentProcessPhrases,
   },
-  plugins: [path.resolve(__dirname, "src/plugins/connectors/index.ts")],
+  plugins: [
+    path.resolve(__dirname, "src/plugins/connectors/index.ts"),
+    path.resolve(__dirname, "src/plugins/resize-screenshots/index.ts"),
+  ],
   future: {
     experimental_faster: true,
   },
