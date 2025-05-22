@@ -23,7 +23,7 @@ Authenticate requests to Shopify using an access token.
 Authenticate requests to Shopify using values obtained from the Developer Console. Allows for using a single `domain` input instead of entering separate authorization URL's.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input      | Comments                                                                                                                                                                                              | Default                                                                                                                                                                                                                      |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 Authenticate requests to Shopify using values obtained from the Developer Console.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                                                                                                                                              | Default                                                                                                                                                                                                                      |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

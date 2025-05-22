@@ -14,7 +14,7 @@ Read and manage Microsoft Outlook calendars and email
 OAuth 2.0 Authorization Code Connectivity for Microsoft Outlook
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input               | Comments                                                             | Default                                                                                                                                                                               |
 | ------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -199,44 +199,50 @@ Get the free/busy availability information for a collection of users
 
 List all Calendars for the user
 
-| Input      | Comments                            | Default |
-| ---------- | ----------------------------------- | ------- |
-| Connection |                                     |         |
-| Page Limit | Enter number for desired page size. |         |
-| Page Skip  | Enter number of records to skip.    |         |
+| Input      | Comments                                                                                     | Default |
+| ---------- | -------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                              |         |
+| Page Limit | Enter number for desired page size.                                                          |         |
+| Page Skip  | Enter number of records to skip.                                                             |         |
+| Fetch All  | Turn on to fetch all pages of results. This will ignore the page limit and page skip inputs. | false   |
 
 ### List Events
 
 List all Events for the user
 
-| Input       | Comments                                                                            | Default |
-| ----------- | ----------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                     |         |
-| Calendar ID | Calendar ID to list Events of; will list all events for current user if unspecified |         |
-| Page Limit  | Enter number for desired page size.                                                 |         |
-| Page Skip   | Enter number of records to skip.                                                    |         |
+| Input       | Comments                                                                                     | Default |
+| ----------- | -------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                              |         |
+| Calendar ID | Calendar ID to list Events of; will list all events for current user if unspecified          |         |
+| Page Limit  | Enter number for desired page size.                                                          |         |
+| Page Skip   | Enter number of records to skip.                                                             |         |
+| Fetch All   | Turn on to fetch all pages of results. This will ignore the page limit and page skip inputs. | false   |
 
 ### List Mail Folders
 
 Get the mail folder collection directly under the root folder of the signed-in user, or under the specified parent folder.
 
-| Input            | Comments                                                                        | Default |
-| ---------------- | ------------------------------------------------------------------------------- | ------- |
-| Connection       |                                                                                 |         |
-| Parent Folder ID | List all folders contained within this folder. Omit to list root-level folders. |         |
-| Page Limit       | Enter number for desired page size.                                             |         |
-| Page Skip        | Enter number of records to skip.                                                |         |
+| Input            | Comments                                                                                     | Default |
+| ---------------- | -------------------------------------------------------------------------------------------- | ------- |
+| Connection       |                                                                                              |         |
+| Parent Folder ID | List all folders contained within this folder. Omit to list root-level folders.              |         |
+| Page Limit       | Enter number for desired page size.                                                          |         |
+| Page Skip        | Enter number of records to skip.                                                             |         |
+| Fetch All        | Turn on to fetch all pages of results. This will ignore the page limit and page skip inputs. | false   |
 
 ### List Mail Messages
 
 List mail messages in a user's mailbox
 
-| Input      | Comments                                                    | Default |
-| ---------- | ----------------------------------------------------------- | ------- |
-| Connection |                                                             |         |
-| Folder ID  | The folder to list messages for. Omit to list all messages. |         |
-| Page Limit | Enter number for desired page size.                         |         |
-| Page Skip  | Enter number of records to skip.                            |         |
+| Input      | Comments                                                                                     | Default |
+| ---------- | -------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                              |         |
+| Folder ID  | The folder to list messages for. Omit to list all messages.                                  |         |
+| Search     | A search query to filter messages. Can not be used with filter.                              |         |
+| Filter     | A filter to apply to the messages. Can not be used with search.                              |         |
+| Page Limit | Enter number for desired page size.                                                          |         |
+| Page Skip  | Enter number of records to skip.                                                             |         |
+| Fetch All  | Turn on to fetch all pages of results. This will ignore the page limit and page skip inputs. | false   |
 
 ### List Subscriptions
 
@@ -280,7 +286,6 @@ Send raw HTTP request to Microsoft Outlook
 | Header                  | A list of headers to send with the request.                                                                                                                                                                                      |         |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                                         | json    |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                                              |         |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                                             | false   |
 | Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                                              | 0       |
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                 | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                              | 0       |
@@ -340,3 +345,64 @@ Update existing Event subscription expiration for Microsoft Outlook
 | Connection           |                                                                                                                                                                       |         |
 | Subscription ID      | Subscription ID to manage                                                                                                                                             |         |
 | Expiration Date/Time | Expiration date/time for subscription. If unspecified the default will be the current date/time plus 10070 minutes (close to the maximum permitted by the Graph API). |         |
+
+## Data Sources
+
+### Select Calendar
+
+Select a calendar from the list of calendars
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Event
+
+Select an event from the list of events
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Language
+
+Select a language from the list of supported languages
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Mail Folder
+
+Select a mail folder from the list of folders
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Message
+
+Select a message from the list of messages
+
+| Input      | Comments                                                        | Default |
+| ---------- | --------------------------------------------------------------- | ------- |
+| Connection |                                                                 |         |
+| Folder ID  | The folder to list messages for. Omit to list all messages.     |         |
+| Search     | A search query to filter messages. Can not be used with filter. |         |
+| Filter     | A filter to apply to the messages. Can not be used with search. |         |
+
+### Select Subscription
+
+Select a subscription from the list of subscriptions
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |
+
+### Select Timezone
+
+Select a timezone from the list of supported timezones
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |

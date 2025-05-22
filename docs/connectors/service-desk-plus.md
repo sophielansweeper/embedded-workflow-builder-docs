@@ -14,7 +14,7 @@ ServiceDesk Plus is a comprehensive service desk software that offers a suite of
 This connection allows you to authenticate with ServiceDesk Plus using OAuth 2.0.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                                                                                                                                           | Default                                                           |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |

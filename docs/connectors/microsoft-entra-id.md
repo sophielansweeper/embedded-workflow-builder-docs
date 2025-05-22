@@ -14,7 +14,7 @@ Microsoft Entra ID (Formerly Azure Active Directory) is a cloud-based identity a
 OAuth 2.0 Connectivity for Microsoft Entra ID
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                      | Default                                                                                              |
 | ------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |

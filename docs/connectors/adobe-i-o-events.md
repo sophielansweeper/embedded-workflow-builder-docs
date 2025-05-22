@@ -14,7 +14,7 @@ Adobe I/O Events notifies you when changes occur. Use the Adobe I/O Events compo
 Adobe I/O Connection
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                 | Default                                          |
 | ------------- | ------------------------------------------------------------------------ | ------------------------------------------------ |

@@ -14,7 +14,7 @@ Microsoft Dynamics 365 Business Central is a comprehensive enterprise resource p
 Microsoft Business Central OAuth Connection
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                            | Default                                                          |
 | ------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 OAuth 2.0 Client Credentials Connectivity for Microsoft Business Central
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input               | Comments                                                                         | Default                                           |
 | ------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------- |

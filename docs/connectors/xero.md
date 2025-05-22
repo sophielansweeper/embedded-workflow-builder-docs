@@ -14,7 +14,7 @@ Manage invoices, items, accounts, payments and more objects from your Xero accou
 Authenticate requests to Xero using values obtained from the developer console.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                                                                                                 | Default                                                                       |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 Authenticate requests to Xero using client credentials (Custom Connection).
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                                                                                                 | Default                                                        |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |

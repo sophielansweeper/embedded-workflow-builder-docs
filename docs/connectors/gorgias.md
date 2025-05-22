@@ -24,7 +24,7 @@ Connection to Gorgias using an API Key.
 Connection to Gorgias using OAuth 2.0. Using OAuth2 is mandatory for public applications.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                                                                                                                        | Default                                |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |

@@ -32,7 +32,7 @@ Basic Username and Password connection
 OAuth 2.0 Authorization Code flow
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                | Default |
 | ------------- | ------------------------------------------------------- | ------- |
@@ -48,7 +48,7 @@ Read about how OAuth 2.0 works [here](../connections/oauth2.md).
 OAuth 2.0 Client Credentials flow
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
-Read about how OAuth 2.0 works [here](../connections/oauth2.md).
+Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                | Default |
 | ------------- | ------------------------------------------------------- | ------- |
