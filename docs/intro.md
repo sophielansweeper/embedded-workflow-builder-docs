@@ -1,7 +1,7 @@
 ---
 title: "%COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%"
-description: "Build new %WORKFLOW_PLURAL% using %COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%"
-slug: .
+description: Build new %WORKFLOW_PLURAL% using %COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%
+slug: /
 ---
 
 **%COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%** is a low-code %WORKFLOW% tool your team can use to build %WORKFLOW_PLURAL% that sync data between %COMPANY_CORE_PRODUCT% and the other apps and services you use.

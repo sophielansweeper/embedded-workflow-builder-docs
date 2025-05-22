@@ -1,6 +1,6 @@
 ---
 title: Building %WORKFLOW_PLURAL%
-description: TODO
+description: Build new %WORKFLOW_PLURAL% using %COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%
 ---
 
 TODO: Overall Description

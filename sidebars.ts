@@ -3,7 +3,7 @@ import siteConfig from "./site-config";
 
 const sidebars: SidebarsConfig = {
   docs: [
-    "home",
+    "intro",
     "get-started",
     {
       type: "category",
