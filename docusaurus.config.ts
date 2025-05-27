@@ -66,7 +66,17 @@ const config: Config = {
     path.resolve(__dirname, "src/plugins/resize-screenshots/index.ts"),
   ],
   future: {
-    experimental_faster: true,
+    v4: true,
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      mdxCrossCompilerCache: true,
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+    },
   },
 };
 
