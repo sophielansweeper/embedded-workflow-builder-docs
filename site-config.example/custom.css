@@ -36,6 +36,6 @@ img[src$="#connector-icon"] {
 }
 
 /* Align screenshots center */
-p:has(img[decoding="async"]) {
+p:has(img[src*="assets/images"]) {
   text-align: center;
 }
