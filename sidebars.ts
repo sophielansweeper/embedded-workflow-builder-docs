@@ -15,7 +15,7 @@ const sidebars: SidebarsConfig = {
         "looping",
         "triggering",
         "testing",
-        "publishing",
+        "enabling",
         "oauth2",
         "error-handling",
         "http-requests",
