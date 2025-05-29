@@ -19,7 +19,7 @@ interface Phrases {
    * Possessive version of your company's name
    * @example Acme Inc's
    */
-  "%COMPANY_POSESSIVE%": string;
+  "%COMPANY_POSSESSIVE%": string;
   /**
    * The core product you build
    * @example Widget Tracker

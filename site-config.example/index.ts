@@ -8,7 +8,7 @@ const siteConfig: SiteConfig = {
   phrases: {
     "%APP_LOGIN_URL%": "https://acme.com/login",
     "%COMPANY%": "Acme Inc",
-    "%COMPANY_POSESSIVE%": "Acme Inc's",
+    "%COMPANY_POSSESSIVE%": "Acme Inc's",
     "%COMPANY_CORE_PRODUCT%": "Widget ERP",
     "%EMBEDDED_WORKFLOW_BUILDER%": "Workflow Builder",
     "%OAUTH2_CALLBACK_URL%": "https://oauth2.integrations.acme.com/callback",

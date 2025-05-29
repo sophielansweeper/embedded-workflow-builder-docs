@@ -1,9 +1,9 @@
 ---
 title: Building %WORKFLOW_PLURAL%
-description: Build new %WORKFLOW_PLURAL% using %COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%
+description: Build new %WORKFLOW_PLURAL% using %COMPANY_POSSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%
 ---
 
-%COMPANY_POSESSIVE% %EMBEDDED_WORKFLOW_BUILDER% lets you build %WORKFLOW_PLURAL% that connect %COMPANY_CORE_PRODUCT% to the other apps and services you use.
+%COMPANY_POSSESSIVE% %EMBEDDED_WORKFLOW_BUILDER% lets you build %WORKFLOW_PLURAL% that connect %COMPANY_CORE_PRODUCT% to the other apps and services you use.
 This article describes how to build %WORKFLOW_PLURAL%.
 
 If you have not done so yet, please first review the [Getting Started](./get-started.md) guide.
