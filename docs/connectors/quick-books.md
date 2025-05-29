@@ -29,11 +29,11 @@ Read about how OAuth 2.0 works [here](../oauth2.md).
 
 Perform a batch request
 
-| Input               | Comments                                                                                                                                                                                                                   | Default |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection          |                                                                                                                                                                                                                            |         |
-| Batch Request Items | An array of batch request items to be executed, each conforming to the Prismatic documentation format; see https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/batch for detailed information. |         |
-| Debug Request       | Enabling this flag will log out the current request.                                                                                                                                                                       | false   |
+| Input               | Comments                                                                                                                                                            | Default |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection          |                                                                                                                                                                     |         |
+| Batch Request Items | An array of batch request items to be executed; see https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/batch for detailed information. |         |
+| Debug Request       | Enabling this flag will log out the current request.                                                                                                                | false   |
 
 ### Create a refund receipt
 
@@ -314,16 +314,6 @@ Read one attachable
 
 ### Send a refund receipt
 
-send an existing Refund Receipt to the email saved in QuickBooks
-
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Receipt Id    | Provide a value for the Id of the receipt.           |         |
-| Debug Request | Enabling this flag will log out the current request. | false   |
-
-### Send a refund receipt
-
 Send an existing Refund Receipt in QuickBooks to any email
 
 | Input         | Comments                                             | Default |
@@ -331,6 +321,16 @@ Send an existing Refund Receipt in QuickBooks to any email
 | Connection    |                                                      |         |
 | Receipt Id    | Provide a value for the Id of the receipt.           |         |
 | Email         | Provide a valid email to send the receipt to.        |         |
+| Debug Request | Enabling this flag will log out the current request. | false   |
+
+### Send a refund receipt
+
+send an existing Refund Receipt to the email saved in QuickBooks
+
+| Input         | Comments                                             | Default |
+| ------------- | ---------------------------------------------------- | ------- |
+| Connection    |                                                      |         |
+| Receipt Id    | Provide a value for the Id of the receipt.           |         |
 | Debug Request | Enabling this flag will log out the current request. | false   |
 
 ### Update Attachable

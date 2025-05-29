@@ -192,13 +192,14 @@ List all drives within any given SharePoint site
 
 List all the files from a Drive
 
-| Input      | Comments                                                                 | Default |
-| ---------- | ------------------------------------------------------------------------ | ------- |
-| Connection |                                                                          |         |
-| Drive      | Provide the unique identifier of a SharePoint drive.                     |         |
-| Page Limit | Enter a number amount for the page size.                                 |         |
-| Page Token | Enter the token for the desired page.                                    |         |
-| Fetch All  | If true, it will return all the files from the drive and the subfolders. | false   |
+| Input      | Comments                                                        | Default |
+| ---------- | --------------------------------------------------------------- | ------- |
+| Connection |                                                                 |         |
+| Drive      | Provide the unique identifier of a SharePoint drive.            |         |
+| Page Limit | Enter a number amount for the page size.                        |         |
+| Page Token | Enter the token for the desired page.                           |         |
+| Fetch All  | Set to true to retrieve all results.                            | false   |
+| Recursive  | If true, it will also return all the files from the subfolders. | false   |
 
 ### List Files in Drive (Deprecated)
 

@@ -25,6 +25,84 @@ Receive and validate webhook requests from SendGrid for webhooks you configure.
 
 ## Actions
 
+### Add or Update Contact
+
+Add or update a contact. This can also be used to add contacts to a list.
+
+| Input      | Comments                                                                                      | Default |
+| ---------- | --------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                               |         |
+| List IDs   | Comma-separated IDs of the lists to add the contact to. These lists must already exist.       |         |
+| Contacts   | An array of contact objects to add or update. See SendGrid docs for contact object structure. |         |
+
+### Create List
+
+Create a new contact list
+
+| Input      | Comments                        | Default |
+| ---------- | ------------------------------- | ------- |
+| Connection |                                 |         |
+| List Name  | The name of the list to create. |         |
+
+### Get All Field Definitions
+
+Retrieve all custom field definitions with pagination support
+
+| Input      | Comments                                                 | Default |
+| ---------- | -------------------------------------------------------- | ------- |
+| Connection |                                                          |         |
+| Page Size  | Number of results to return per page (max 100).          |         |
+| Page Token | Token for fetching the next or previous page of results. |         |
+
+### Get All Lists
+
+Retrieve all contact lists with pagination support
+
+| Input      | Comments                                                 | Default |
+| ---------- | -------------------------------------------------------- | ------- |
+| Connection |                                                          |         |
+| Page Size  | Number of results to return per page (max 100).          |         |
+| Page Token | Token for fetching the next or previous page of results. |         |
+
+### Get Contacts by Emails
+
+Retrieve contacts by their email addresses.
+
+| Input      | Comments                                       | Default |
+| ---------- | ---------------------------------------------- | ------- |
+| Connection |                                                |         |
+| Emails     | Comma-separated email addresses to search for. |         |
+
+### Get Import Status
+
+Check the status of a contact import job
+
+| Input      | Comments                                                                                     | Default |
+| ---------- | -------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                              |         |
+| Job ID     | The job ID returned from Import Contacts, Add/Update Contact, or Delete Contacts operations. |         |
+
+### Get List by ID
+
+Retrieve a specific contact list by its ID
+
+| Input                   | Comments                                                 | Default |
+| ----------------------- | -------------------------------------------------------- | ------- |
+| Connection              |                                                          |         |
+| List ID                 | The ID of the list to retrieve.                          |         |
+| Include Sample Contacts | Whether to include a sample of contacts in the response. | false   |
+
+### Initiate Contacts Import
+
+Initiates a CSV contact import. Returns a URL and headers for uploading the CSV file.
+
+| Input          | Comments                                                                                                                                      | Default |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection     |                                                                                                                                               |         |
+| List IDs       | Comma-separated IDs of the lists to add the contact to. These lists must already exist.                                                       |         |
+| Field Mappings | An array of field definition IDs to map the uploaded CSV columns. Use null to skip a column. Get IDs from 'Get All Field Definitions' action. |         |
+| Is Compressed  | Set to true if the CSV file will be gzip-compressed.                                                                                          | false   |
+
 ### Raw Request
 
 Send raw HTTP request to SendGrid
@@ -98,3 +176,13 @@ Send a separate email to each recipient
 | File Type            | The MIME type of the content you are attaching.                                                                                                                                                                    |                 |
 | Content Id           | Provide the content Id of the attachment. This value is only required when you select 'inline'.                                                                                                                    |                 |
 | Multiple Attachments | Provide an array of attachments to send with the email. See https://www.twilio.com/docs/sendgrid/api-reference/mail-send/mail-send#request-body for more information.                                              |                 |
+
+## Data Sources
+
+### SendGrid Contact Lists
+
+Fetch a picklist of contact lists from SendGrid
+
+| Input      | Comments | Default |
+| ---------- | -------- | ------- |
+| Connection |          |         |

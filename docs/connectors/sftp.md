@@ -45,6 +45,16 @@ Private Key connection
 
 ## Actions
 
+### Append File
+
+Append data to an existing file on a SFTP server.
+
+| Input      | Comments                            | Default |
+| ---------- | ----------------------------------- | ------- |
+| Connection |                                     |         |
+| Path       | Path on SFTP server to append file. |         |
+| Data       | Text to append to the file.         |         |
+
 ### Create Directory
 
 Create a new directory. If the recursive flag is set to true, the method will create any directories in the path which do not already exist.
@@ -127,6 +137,6 @@ Write a file to SFTP
 | Input             | Comments                                                                                                                | Default |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------- | ------- |
 | Connection        |                                                                                                                         |         |
-| Path              | Path on SFTP server to write file                                                                                       |         |
-| Data              | Text to write into the file                                                                                             |         |
+| Path              | Path to file on SFTP server.                                                                                            |         |
+| Data              | Text to write into the file.                                                                                            |         |
 | Show Debug Output | Show additional debug output in logs. Note: SFTP is very verbose - expect hundreds of debug lines when this is enabled. | false   |
