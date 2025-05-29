@@ -34,27 +34,27 @@ Read about how OAuth 2.0 works [here](../oauth2.md).
 
 Create a batch of events for one or more profiles.
 
-| Input         | Comments                                                                    | Default |
-| ------------- | --------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                             |         |
-| Events Array  | An array of events to create. Check Prismatic documentation for an example. |         |
-| Debug Request | Enabling this flag will log out the current request.                        | false   |
+| Input         | Comments                                             | Default |
+| ------------- | ---------------------------------------------------- | ------- |
+| Connection    |                                                      |         |
+| Events Array  | An array of events to create.                        |         |
+| Debug Request | Enabling this flag will log out the current request. | false   |
 
 ### Create Campaign
 
 Creates a campaign given a set of parameters, then returns it.
 
-| Input              | Comments                                                                              | Default |
-| ------------------ | ------------------------------------------------------------------------------------- | ------- |
-| Connection         |                                                                                       |         |
-| Campaign Name      | The name of the campaign.                                                             |         |
-| Campaign Messages  | The message(s) to send in the campaign. Check Prismatic documentation for an example. |         |
-| Included Audiences | A list of included audiences.                                                         |         |
-| Excluded Audiences | A list of excluded audiences.                                                         |         |
-| Tracking Options   | The tracking options for the campaign. Check Prismatic documentation for an example.  |         |
-| Send Options       | The send options for the campaign. Check Prismatic documentation for an example.      |         |
-| Send Strategy      | The send strategy for the campaign. Check Prismatic documentation for an example.     |         |
-| Debug Request      | Enabling this flag will log out the current request.                                  | false   |
+| Input              | Comments                                             | Default |
+| ------------------ | ---------------------------------------------------- | ------- |
+| Connection         |                                                      |         |
+| Campaign Name      | The name of the campaign.                            |         |
+| Campaign Messages  | The message(s) to send in the campaign.              |         |
+| Included Audiences | A list of included audiences.                        |         |
+| Excluded Audiences | A list of excluded audiences.                        |         |
+| Tracking Options   | The tracking options for the campaign.               |         |
+| Send Options       | The send options for the campaign.                   |         |
+| Send Strategy      | The send strategy for the campaign.                  |         |
+| Debug Request      | Enabling this flag will log out the current request. | false   |
 
 ### Create Event
 
@@ -64,8 +64,8 @@ Create a new event to track a profiles activity.
 | -------------------- | ------------------------------------------------------------------------------------- | ------- |
 | Connection           |                                                                                       |         |
 | Event Name           | Name of the event.                                                                    |         |
-| Event Profile        | The profile associated with this event. Check Prismatic documentation for an example. |         |
-| Event Properties     | The properties of the event. Check Prismatic documentation for an example.            |         |
+| Event Profile        | The profile associated with this event.                                               |         |
+| Event Properties     | The properties of the event.                                                          |         |
 | Event Time           | When this event occurred. By default, the time the request was received will be used. |         |
 | Event Value          | A numeric, monetary value to associate with this event.                               |         |
 | Event Value Currency | The ISO 4217 currency code of the value associated with the event.                    |         |
@@ -97,21 +97,21 @@ Create a new profile.
 | Organization  | Name of the company or organization within the company for whom the individual works                                                                                                 |         |
 | Title         | Individual's job title                                                                                                                                                               |         |
 | Image         | URL pointing to the location of a profile image                                                                                                                                      |         |
-| Location      | Location information for the profile. Check Prismatic documentation for an example.                                                                                                  |         |
-| Properties    | An object containing key/value pairs for any custom properties assigned to this profile. Check Prismatic documentation for an example.                                               |         |
+| Location      | Location information for the profile.                                                                                                                                                |         |
+| Properties    | An object containing key/value pairs for any custom properties assigned to this profile.                                                                                             |         |
 | Debug Request | Enabling this flag will log out the current request.                                                                                                                                 | false   |
 
 ### Create Segment
 
 Create a segment.
 
-| Input                    | Comments                                                                                  | Default |
-| ------------------------ | ----------------------------------------------------------------------------------------- | ------- |
-| Connection               |                                                                                           |         |
-| Segment Name             | The name of the segment.                                                                  |         |
-| Segment Condition Groups | The condition groups that define the segment. See Prismatic documentation for an example. |         |
-| Is Starred Segment       | Whether the segment is starred.                                                           | false   |
-| Debug Request            | Enabling this flag will log out the current request.                                      | false   |
+| Input                    | Comments                                             | Default |
+| ------------------------ | ---------------------------------------------------- | ------- |
+| Connection               |                                                      |         |
+| Segment Name             | The name of the segment.                             |         |
+| Segment Condition Groups | The condition groups that define the segment.        |         |
+| Is Starred Segment       | Whether the segment is starred.                      | false   |
+| Debug Request            | Enabling this flag will log out the current request. | false   |
 
 ### Create Template
 
@@ -377,37 +377,37 @@ Send raw HTTP request to Klaviyo.
 
 Subscribe one or more profiles to email marketing, SMS marketing, or both.
 
-| Input         | Comments                                                                      | Default |
-| ------------- | ----------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                               |         |
-| Profiles      | Array of profiles to subscribe. Check Prismatic documentation for an example. |         |
-| Debug Request | Enabling this flag will log out the current request.                          | false   |
+| Input         | Comments                                             | Default |
+| ------------- | ---------------------------------------------------- | ------- |
+| Connection    |                                                      |         |
+| Profiles      | Array of profiles to subscribe.                      |         |
+| Debug Request | Enabling this flag will log out the current request. | false   |
 
 ### Unsubscribe Profiles
 
 Unsubscribe one or more profiles to email marketing, SMS marketing, or both.
 
-| Input         | Comments                                                                        | Default |
-| ------------- | ------------------------------------------------------------------------------- | ------- |
-| Connection    |                                                                                 |         |
-| Profiles      | Array of profiles to unsubscribe. Check Prismatic documentation for an example. |         |
-| Debug Request | Enabling this flag will log out the current request.                            | false   |
+| Input         | Comments                                             | Default |
+| ------------- | ---------------------------------------------------- | ------- |
+| Connection    |                                                      |         |
+| Profiles      | Array of profiles to unsubscribe.                    |         |
+| Debug Request | Enabling this flag will log out the current request. | false   |
 
 ### Update Campaign
 
 Update a campaign with the given campaign ID.
 
-| Input              | Comments                                                                             | Default |
-| ------------------ | ------------------------------------------------------------------------------------ | ------- |
-| Connection         |                                                                                      |         |
-| Campaign ID        | The ID of the campaign.                                                              |         |
-| Campaign Name      | The name of the campaign.                                                            |         |
-| Included Audiences | A list of included audiences.                                                        |         |
-| Excluded Audiences | A list of excluded audiences.                                                        |         |
-| Tracking Options   | The tracking options for the campaign. Check Prismatic documentation for an example. |         |
-| Send Options       | The send options for the campaign. Check Prismatic documentation for an example.     |         |
-| Send Strategy      | The send strategy for the campaign. Check Prismatic documentation for an example.    |         |
-| Debug Request      | Enabling this flag will log out the current request.                                 | false   |
+| Input              | Comments                                             | Default |
+| ------------------ | ---------------------------------------------------- | ------- |
+| Connection         |                                                      |         |
+| Campaign ID        | The ID of the campaign.                              |         |
+| Campaign Name      | The name of the campaign.                            |         |
+| Included Audiences | A list of included audiences.                        |         |
+| Excluded Audiences | A list of excluded audiences.                        |         |
+| Tracking Options   | The tracking options for the campaign.               |         |
+| Send Options       | The send options for the campaign.                   |         |
+| Send Strategy      | The send strategy for the campaign.                  |         |
+| Debug Request      | Enabling this flag will log out the current request. | false   |
 
 ### Update Image
 
@@ -448,22 +448,22 @@ Update the profile with the given profile ID.
 | Organization  | Name of the company or organization within the company for whom the individual works                                                                                                 |         |
 | Title         | Individual's job title                                                                                                                                                               |         |
 | Image         | URL pointing to the location of a profile image                                                                                                                                      |         |
-| Location      | Location information for the profile. Check Prismatic documentation for an example.                                                                                                  |         |
-| Properties    | An object containing key/value pairs for any custom properties assigned to this profile. Check Prismatic documentation for an example.                                               |         |
+| Location      | Location information for the profile.                                                                                                                                                |         |
+| Properties    | An object containing key/value pairs for any custom properties assigned to this profile.                                                                                             |         |
 | Debug Request | Enabling this flag will log out the current request.                                                                                                                                 | false   |
 
 ### Update Segment
 
 Update a segment with the given segment ID.
 
-| Input                    | Comments                                                                                  | Default |
-| ------------------------ | ----------------------------------------------------------------------------------------- | ------- |
-| Connection               |                                                                                           |         |
-| Segment ID               | The ID of the segment.                                                                    |         |
-| Segment Name             | The name of the segment.                                                                  |         |
-| Segment Condition Groups | The condition groups that define the segment. See Prismatic documentation for an example. |         |
-| Is Starred Segment       | Whether the segment is starred.                                                           |         |
-| Debug Request            | Enabling this flag will log out the current request.                                      | false   |
+| Input                    | Comments                                             | Default |
+| ------------------------ | ---------------------------------------------------- | ------- |
+| Connection               |                                                      |         |
+| Segment ID               | The ID of the segment.                               |         |
+| Segment Name             | The name of the segment.                             |         |
+| Segment Condition Groups | The condition groups that define the segment.        |         |
+| Is Starred Segment       | Whether the segment is starred.                      |         |
+| Debug Request            | Enabling this flag will log out the current request. | false   |
 
 ### Update Template
 

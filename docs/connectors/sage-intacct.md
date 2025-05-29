@@ -198,7 +198,7 @@ Creates a new project.
 | Project Type        | Project type for the to-be-created object.                                                                                                                 |         |
 | Project Status      | Project status for the to-be-created object.                                                                                                               |         |
 | Status              | Use false for Inactive, true for Active. (Default: true)                                                                                                   | true    |
-| Additional Fields   | Additional fields that are not covered by the standard inputs. Check the Prismatic example at the documentation for possible values.                       |         |
+| Additional Fields   | Additional fields that are not covered by the standard inputs.                                                                                             |         |
 | Debug Payload       | Prints the payload to the logs                                                                                                                             | false   |
 
 ### Create Vendor
@@ -531,20 +531,20 @@ Updates an invoice.
 
 Updates an existing project.
 
-| Input               | Comments                                                                                                                             | Default |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| Connection          |                                                                                                                                      |         |
-| Project ID          | Project ID to update.                                                                                                                |         |
-| Project Name        | Project name for the to-be-updated object.                                                                                           |         |
-| Project Category    | Project category for the to-be-updated object.                                                                                       |         |
-| Project Description | Project description for the to-be-updated object.                                                                                    |         |
-| Parent Project ID   | Parent project ID for the to-be-updated object.                                                                                      |         |
-| Invoice with Parent |                                                                                                                                      |         |
-| Project Type        | Project type for the to-be-updated object.                                                                                           |         |
-| Project Status      | Project status for the to-be-updated object.                                                                                         |         |
-| Status              |                                                                                                                                      |         |
-| Additional Fields   | Additional fields that are not covered by the standard inputs. Check the Prismatic example at the documentation for possible values. |         |
-| Debug Payload       | Prints the payload to the logs                                                                                                       | false   |
+| Input               | Comments                                                       | Default |
+| ------------------- | -------------------------------------------------------------- | ------- |
+| Connection          |                                                                |         |
+| Project ID          | Project ID to update.                                          |         |
+| Project Name        | Project name for the to-be-updated object.                     |         |
+| Project Category    | Project category for the to-be-updated object.                 |         |
+| Project Description | Project description for the to-be-updated object.              |         |
+| Parent Project ID   | Parent project ID for the to-be-updated object.                |         |
+| Invoice with Parent |                                                                |         |
+| Project Type        | Project type for the to-be-updated object.                     |         |
+| Project Status      | Project status for the to-be-updated object.                   |         |
+| Status              |                                                                |         |
+| Additional Fields   | Additional fields that are not covered by the standard inputs. |         |
+| Debug Payload       | Prints the payload to the logs                                 | false   |
 
 ### Update Vendor
 

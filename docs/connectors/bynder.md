@@ -9,9 +9,9 @@ Bynder is a leading digital asset management software that allows users to easil
 
 ## Connections
 
-### Client Credentialls OAuth 2.0
+### Client Credentials OAuth 2.0
 
-Client Credentialls OAuth 2.0
+Client Credentials OAuth 2.0
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
