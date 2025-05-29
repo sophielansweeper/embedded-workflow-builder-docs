@@ -10,6 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "check": "npm run check-spelling && npm run check-markdown",
     "check-spelling": "cspell --config cspell.jsonc \"docs/**/*.md{x,}\"",
     "check-markdown": "prettier --log-level warn --check \"docs/**/*.md\"",
     "format-markdown": "prettier --log-level warn --write \"docs/**/*.md\"",
