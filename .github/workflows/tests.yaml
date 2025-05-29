@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Ensure Prismatic is not mentioned in white-label docs
+        run: ./scripts/check-prismatic-references.sh
       - name: Install dependencies
         run: npm ci
       - name: Check spelling
