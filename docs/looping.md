@@ -50,10 +50,10 @@ If you use a [code step](./custom-code.md) within a loop, you can reference `cur
 ```js title="Example code step referencing a loop's current item"
 module.exports = async (
   { logger },
-  { loopOverContacts: { currentItem, index } }
+  { loopOverContacts: { currentItem, index } },
 ) => {
   logger.info(
-    `User #${index + 1}: ${currentItem.first} ${currentItem.last} from ${currentItem.country}`
+    `User #${index + 1}: ${currentItem.first} ${currentItem.last} from ${currentItem.country}`,
   );
 };
 ```
