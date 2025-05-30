@@ -17,8 +17,7 @@
       "node_modules",
       "build",
       ".docusaurus",
-      "src/plugins/components/exampleManifests",
-      "src/plugins/components/manifests"
+      "src/plugins/connectors/public-connectors-manifest.json"
     ]
   },
   "formatter": {

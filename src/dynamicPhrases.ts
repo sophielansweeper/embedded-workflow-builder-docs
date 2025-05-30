@@ -9,9 +9,7 @@ import type {
 } from "@docusaurus/types/src/config";
 import siteConfig from "../site-config";
 
-export const contentProcessPhrases: MarkdownPreprocessor = ({
-  fileContent,
-}) => {
+export const contentProcessPhrases: MarkdownPreprocessor = ({ fileContent }) => {
   let content = fileContent;
   for (const [key, replacementValue] of Object.entries(siteConfig.phrases)) {
     content = content.replaceAll(key, replacementValue);
@@ -28,9 +26,7 @@ const frontMatterKeys = ["title", "description"];
 
 export const frontMatterProcessPhrases: ParseFrontMatter = async (params) => {
   const result = await params.defaultParseFrontMatter(params);
-  for (const [replacementKey, replacementValue] of Object.entries(
-    siteConfig.phrases,
-  )) {
+  for (const [replacementKey, replacementValue] of Object.entries(siteConfig.phrases)) {
     for (const frontMatterKey of frontMatterKeys) {
       if (typeof result.frontMatter[frontMatterKey] === "string") {
         result.frontMatter[frontMatterKey] = result.frontMatter[

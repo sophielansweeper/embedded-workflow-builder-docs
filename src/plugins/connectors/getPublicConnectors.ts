@@ -28,10 +28,7 @@ export async function getPublicConnectors({
 }: GetPublicConnectorsParams): Promise<Component[]> {
   if (fromManifest) {
     return JSON.parse(
-      fs.readFileSync(
-        path.join(__dirname, "public-connectors-manifest.json"),
-        "utf-8",
-      ),
+      fs.readFileSync(path.join(__dirname, "public-connectors-manifest.json"), "utf-8"),
     );
   }
   const connectors: Component[] = [];
@@ -39,10 +36,7 @@ export async function getPublicConnectors({
 
   let cursor = "";
 
-  const progressBar = new cliProgress.SingleBar(
-    {},
-    cliProgress.Presets.shades_classic,
-  );
+  const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
   console.log("Fetching connector manifests...");
   progressBar.start(1, 0);
 
@@ -58,7 +52,5 @@ export async function getPublicConnectors({
       : "";
   } while (cursor);
   progressBar.stop();
-  return connectors.filter(
-    (connector) => !filteredConnectors.includes(connector.key),
-  );
+  return connectors.filter((connector) => !filteredConnectors.includes(connector.key));
 }

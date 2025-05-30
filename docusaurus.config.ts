@@ -12,10 +12,7 @@ import merge from "lodash.merge";
 import path from "node:path";
 import { themes as prismThemes } from "prism-react-renderer";
 import siteConfig from "./site-config";
-import {
-  contentProcessPhrases,
-  frontMatterProcessPhrases,
-} from "./src/dynamicPhrases";
+import { contentProcessPhrases, frontMatterProcessPhrases } from "./src/dynamicPhrases";
 
 const config: Config = {
   title: `${siteConfig.phrases["%COMPANY%"]} ${siteConfig.phrases["%EMBEDDED_WORKFLOW_BUILDER%"]}`,

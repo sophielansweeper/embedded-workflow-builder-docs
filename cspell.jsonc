@@ -8,20 +8,16 @@
       "languageId": "*",
       "ignoreRegExpList": [
         "/^\\s*```[\\s\\S]*?^\\s*```/gm", // Ignore multi-line code examples
-        "/`.*?`/g", // Ignore inline code examples
-        "/<[\\s\\S]*?>/gm", // Ignore values in HTML tags
-        "/<b>key: [a-zA-Z0-9-]+<\\/b>/g", // Ignore action keys
-        "/<ExampleAccordion[\\s\\S]*?^\\/>/gm", // Ignore output examples
-        "/<ComponentInputsTable[\\s\\S]*?^\\/>/gm", // Ignore input examples
-      ],
-    },
+        "/`.*?`/g" // Ignore inline code examples
+      ]
+    }
   ],
   "dictionaries": ["project-words"],
   "dictionaryDefinitions": [
     {
       "name": "project-words",
       "path": "./dictionary.txt",
-      "noSuggest": true,
-    },
-  ],
+      "noSuggest": true
+    }
+  ]
 }

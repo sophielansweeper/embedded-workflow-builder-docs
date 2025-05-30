@@ -12,9 +12,7 @@ interface GetPrivateConnectorParams {
   componentKey: string;
 }
 
-export async function getPrivateConnector({
-  componentKey,
-}: GetPrivateConnectorParams) {
+export async function getPrivateConnector({ componentKey }: GetPrivateConnectorParams) {
   const prismaticApiClient = createPrismaticApiClient();
   const result = await prismaticApiClient
     .gql<Document>(GET_PRIVATE_COMPONENT)
