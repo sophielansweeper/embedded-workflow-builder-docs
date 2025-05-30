@@ -22,12 +22,12 @@ handlebars.registerPartial(
   "inputsTable",
   fs.readFileSync(path.join(__dirname, "templates", "inputsTable.md.hbs"), {
     encoding: "utf-8",
-  })
+  }),
 );
 
 const writeConnectorDocsFile = (
   connector: Component,
-  connectorTemplate: HandlebarsTemplateDelegate<unknown>
+  connectorTemplate: HandlebarsTemplateDelegate<unknown>,
 ) =>
   fs.writeFileSync(
     path.join(
@@ -37,9 +37,9 @@ const writeConnectorDocsFile = (
       "..",
       "docs",
       "connectors",
-      `${kebabCase(connector.label)}.md`
+      `${kebabCase(connector.label)}.md`,
     ),
-    connectorTemplate(connector)
+    connectorTemplate(connector),
   );
 
 async function generateConnectorDocs({
@@ -50,19 +50,17 @@ async function generateConnectorDocs({
   const connectorTemplate = handlebars.compile(
     fs.readFileSync(path.join(__dirname, "templates", "connector.md.hbs"), {
       encoding: "utf-8",
-    })
+    }),
   );
   if (publicConnectors) {
     const connectors = await getPublicConnectors({ fromManifest });
     fs.writeFileSync(
       path.join(__dirname, "public-connectors-manifest.json"),
-      JSON.stringify(connectors, null, 2)
+      JSON.stringify(connectors, null, 2),
     );
     for (const connector of connectors) {
-      if (connector.key !== "customHttp") {
-        fetchConnectorIcon(connector);
-        writeConnectorDocsFile(connector, connectorTemplate);
-      }
+      fetchConnectorIcon(connector);
+      writeConnectorDocsFile(connector, connectorTemplate);
     }
   }
   if (privateConnector) {
@@ -81,16 +79,16 @@ async function connectorDocsPlugin(context, options) {
       const command = cli.command("generate-connector-docs");
       command
         .description(
-          "Generate connector documentation files for all public connectors or a single private connector."
+          "Generate connector documentation files for all public connectors or a single private connector.",
         )
         .option("--public-connectors", "Generate public connector docs")
         .option(
           "--private-connector <component-key>",
-          "Generate docs for a specific private connector by component key"
+          "Generate docs for a specific private connector by component key",
         )
         .option(
           "--from-manifest",
-          "Generate public connector docs from an existing manifest (saves time pulling the API)"
+          "Generate public connector docs from an existing manifest (saves time pulling the API)",
         )
         .parse(process.argv)
         .action(async () => {

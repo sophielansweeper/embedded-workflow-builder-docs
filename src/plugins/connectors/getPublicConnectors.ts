@@ -5,6 +5,9 @@ import type { TypedDocument } from "graffle";
 import { createPrismaticApiClient } from "./graphqlClient";
 import { type Component, GET_PUBLIC_COMPONENTS } from "./queries";
 
+// Connectors to omit from docs, as they aren't relevant to embedded workflow builder users
+const filteredConnectors = ["customHttp", "jsonforms", "management-triggers"];
+
 interface GetPublicConnectorsParams {
   fromManifest: boolean;
 }
@@ -27,8 +30,8 @@ export async function getPublicConnectors({
     return JSON.parse(
       fs.readFileSync(
         path.join(__dirname, "public-connectors-manifest.json"),
-        "utf-8"
-      )
+        "utf-8",
+      ),
     );
   }
   const connectors: Component[] = [];
@@ -38,7 +41,7 @@ export async function getPublicConnectors({
 
   const progressBar = new cliProgress.SingleBar(
     {},
-    cliProgress.Presets.shades_classic
+    cliProgress.Presets.shades_classic,
   );
   console.log("Fetching connector manifests...");
   progressBar.start(1, 0);
@@ -55,5 +58,7 @@ export async function getPublicConnectors({
       : "";
   } while (cursor);
   progressBar.stop();
-  return connectors;
+  return connectors.filter(
+    (connector) => !filteredConnectors.includes(connector.key),
+  );
 }
