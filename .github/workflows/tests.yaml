@@ -19,8 +19,8 @@ jobs:
         run: npm run check-spelling
       - name: Check markdown formatting
         run: npm run check-markdown
-      - name: Check TypeScript formatting
-        run: npm run check-typescript
+      - name: Check code formatting
+        run: npm run check-js
       - name: Copy example site config
         run: cp -R site-config.example site-config
       - name: Build docs
