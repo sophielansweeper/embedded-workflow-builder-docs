@@ -98,11 +98,11 @@ module.exports = async (context, stepResults) => {
 };
 ```
 
-:::tip Step results are usually objects
-Many components return objects that have multiple keys.
-So, you can reference `stepResults.myStepName.results.someKey`.
-It's rare for a component to return serialized JSON, so there's rarely need to `JSON.parse()` results from a previous step.
-:::
+> **Tip**: Step results are usually objects.
+>
+> Many components return objects that have multiple nested keys.
+> So, you can reference `stepResults.myStepName.results.someKey`.
+> It's rare for a component to return serialized JSON, so there's rarely need to `JSON.parse()` results from a previous step.
 
 Step names are [camelCased](https://en.wikipedia.org/wiki/Camel_case), which means spaces and other special characters are removed from the step name, and all words except the first are capitalized.
 Here are a few examples of step names, and their corresponding step result reference:
@@ -190,15 +190,15 @@ Note that with the `lodash` import above, no file was specified.
 If no file is specified, the `main` file defined in the `npm` package's `package.json` is imported.
 An explicit path was called out for the `pdf-lib` import because the `pdf-lib` package defaults to importing an index file that itself requires other files, and `dist/pdf-lib.js` is a completely independent file that can be imported on its own..
 
-:::warning Downstream dependencies
-In order for an external dependency to be compatible with a code step, all JavaScript code must be compiled into a single file.
-
-For example, [https://unpkg.com/lodash@4.17.20/lodash.js](https://unpkg.com/lodash@4.17.20/lodash.js) contains all of the code necessary to run in a single file.
-[https://app.unpkg.com/lodash@4.17.20/files/flatten.js](https://app.unpkg.com/lodash@4.17.20/files/flatten.js) does not - it has its own `require()` statement and depends on other files.
-The former would work in the code step, the latter would not.
-
-If the external package has its own dependencies that are not compiled in, or if the file you reference has its own `require()` statements, you will see errors.
-:::
+> **Warning**: Downstream dependencies
+>
+> In order for an external dependency to be compatible with a code step, all JavaScript code must be compiled into a single file.
+>
+> For example, [https://unpkg.com/lodash@4.17.20/lodash.js](https://unpkg.com/lodash@4.17.20/lodash.js) contains all of the code necessary to run in a single file.
+> [https://app.unpkg.com/lodash@4.17.20/files/flatten.js](https://app.unpkg.com/lodash@4.17.20/files/flatten.js) does not - it has its own `require()` statement and depends on other files.
+> The former would work in the code step, the latter would not.
+>
+> If the external package has its own dependencies that are not compiled in, or if the file you reference has its own `require()` statements, you will see errors.
 
 ### Requiring built-in NodeJS modules
 

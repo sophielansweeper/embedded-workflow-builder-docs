@@ -180,10 +180,6 @@ Both right and left values must be strings.
 
 The **does not end the string** operator returns the opposite of the **ends with** operator.
 
-:::note Accepted DateTime Formats
-The following three comparison operators accept date/times as ISO strings (like `2021-03-20` or `2021-03-20T11:52:21.881Z`), Unix epoch timestamps in milliseconds (for example, the number `1631568050` represents a time in 2021-09-13), or `Date()` JavaScript objects.
-:::
-
 #### Is after (date/time)
 
 The **is after (date/time)** operator attempts to parse the left and right fields as dates, and evaluates if the left field occurs after the right field.
@@ -193,6 +189,10 @@ The **is after (date/time)** operator attempts to parse the left and right field
 | `"2021-03-20"`               | `"2021-04-13"`               | `false` |                                                                                   |
 | `"2021-03-20T12:50:30.105Z"` | `"2021-03-20T11:52:21.881Z"` | `true`  | When dates are equivalent, time is compared                                       |
 | `"2021-03-20"`               | `1631568050`                 | `false` | `1631568050` is the UNIX epoch time for 2021-09-13, which occurs after 2021-03-05 |
+
+> **Note**: Accepted DateTime Formats
+>
+> The time comparison operators accept date/times as ISO strings (like `2021-03-20` or `2021-03-20T11:52:21.881Z`), Unix epoch timestamps in milliseconds (for example, the number `1631568050` represents a time in 2021-09-13), or `Date()` JavaScript objects.
 
 #### Is before (date/time)
 
