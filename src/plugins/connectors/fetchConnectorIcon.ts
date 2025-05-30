@@ -14,12 +14,12 @@ export const fetchConnectorIcon = async (connector: Component) => {
     "docs",
     "connectors",
     "assets",
-    `${kebabCase(connector.label)}.png`
+    `${kebabCase(connector.label)}.png`,
   );
 
   const metadataResponse = await fetch(
     new URL(connector.iconUrl, PRISMATIC_URL).toString(),
-    { headers: { Authorization: `Bearer ${PRISMATIC_API_KEY}` } }
+    { headers: { Authorization: `Bearer ${PRISMATIC_API_KEY}` } },
   );
   const { url } = await metadataResponse.json();
 

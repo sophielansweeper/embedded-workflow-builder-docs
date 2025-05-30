@@ -29,7 +29,7 @@ const frontMatterKeys = ["title", "description"];
 export const frontMatterProcessPhrases: ParseFrontMatter = async (params) => {
   const result = await params.defaultParseFrontMatter(params);
   for (const [replacementKey, replacementValue] of Object.entries(
-    siteConfig.phrases
+    siteConfig.phrases,
   )) {
     for (const frontMatterKey of frontMatterKeys) {
       if (typeof result.frontMatter[frontMatterKey] === "string") {

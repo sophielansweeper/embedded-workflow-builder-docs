@@ -14,7 +14,7 @@ async function resizeScreenshots() {
     const screenshot = await Jimp.read(screenshotPath);
     if (screenshot.width > MAX_SCREENSHOT_SIZE) {
       console.log(
-        `${screenshotFile} is currently ${screenshot.width} pixels wide. Resizing to ${MAX_SCREENSHOT_SIZE}.`
+        `${screenshotFile} is currently ${screenshot.width} pixels wide. Resizing to ${MAX_SCREENSHOT_SIZE}.`,
       );
       screenshot.resize({ w: MAX_SCREENSHOT_SIZE });
       await screenshot.write(screenshotPath as `${string}.${string}`);

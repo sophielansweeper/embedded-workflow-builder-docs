@@ -21,7 +21,7 @@ export async function getPrivateConnector({
     .send({ componentKey });
   if (result.components.nodes.length !== 1) {
     throw new Error(
-      `A component key of "${componentKey}" did not return exactly one private component`
+      `A component key of "${componentKey}" did not return exactly one private component`,
     );
   }
   return result.components.nodes[0];
