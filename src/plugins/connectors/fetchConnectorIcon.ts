@@ -2,7 +2,6 @@ import path from "node:path";
 import { Jimp } from "jimp";
 import { getPrismaticConnection } from "./graphqlClient";
 import type { Component } from "./queries";
-import { kebabCase } from "change-case";
 
 export const fetchConnectorIcon = async (connector: Component) => {
   const { PRISMATIC_API_KEY, PRISMATIC_URL } = getPrismaticConnection();
@@ -14,7 +13,7 @@ export const fetchConnectorIcon = async (connector: Component) => {
     "docs",
     "connectors",
     "assets",
-    `${kebabCase(connector.label)}.png`,
+    `${connector.key.toLowerCase()}.png`,
   );
 
   const metadataResponse = await fetch(

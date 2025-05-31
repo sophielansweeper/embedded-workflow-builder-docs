@@ -117,6 +117,6 @@ While a little contrived, this %WORKFLOW% demonstrates how to fetch data from a 
 Here are a few things you should try next:
 
 - **Modify the branching logic**: Try branching on different user properties like company name, email domain, or website.
-- **Add external actions**: Instead of just logging, [send emails](./connectors/send-grid.md#send-email) to users, create records in a [database](./connectors/postgre-sql.md#query), or post to a chat system like [Slack](./connectors/slack.md#post-message).
+- **Add external actions**: Instead of just logging, [send emails](./connectors/sendgrid.md#send-email) to users, create records in a [database](./connectors/postgres.md#query), or post to a chat system like [Slack](./connectors/slack.md#post-message).
 - **Add more complex processing**: Parse user data and validate email formats using a [code](./custom-code.md) step, or enrich user information with additional API calls.
 - **Add error handling**: Use [step-level error handling](./error-handling.md#step-level-error-handling) to handle potential errors gracefully.

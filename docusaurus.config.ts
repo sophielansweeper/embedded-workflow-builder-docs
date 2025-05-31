@@ -6,6 +6,7 @@
  * use siteConfig.docusaurusConfig
  */
 
+import type { SidebarItemDoc } from "@docusaurus/plugin-content-docs/src/sidebars/types.js";
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import merge from "lodash.merge";
@@ -34,6 +35,13 @@ const config: Config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
+          // Sort connector docs alphabetically by label
+          async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+            const sidebarItems = (await defaultSidebarItemsGenerator(
+              args,
+            )) as SidebarItemDoc[];
+            return sidebarItems.sort((a, b) => (a.label < b.label ? -1 : 1));
+          },
         },
         blog: false,
         theme: { customCss: "./site-config/custom.css" },

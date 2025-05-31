@@ -2,7 +2,6 @@ import type { CommanderStatic } from "commander";
 import fs from "node:fs";
 import handlebars from "handlebars";
 import path from "node:path";
-import { kebabCase } from "change-case";
 import { getPrivateConnector } from "./getPrivateConnector";
 import { getPublicConnectors } from "./getPublicConnectors";
 import type { Component } from "./queries";
@@ -16,7 +15,7 @@ handlebars.registerHelper("cleanDefaultForTable", (value: string) => {
   return value.replaceAll("\n", "<br />");
 });
 
-handlebars.registerHelper("kebabCase", kebabCase);
+handlebars.registerHelper("lowerCase", (value: string) => value.toLowerCase());
 
 handlebars.registerPartial(
   "inputsTable",
@@ -37,7 +36,7 @@ const writeConnectorDocsFile = (
       "..",
       "docs",
       "connectors",
-      `${kebabCase(connector.label)}.md`,
+      `${connector.key.toLowerCase()}.md`,
     ),
     connectorTemplate(connector),
   );
