@@ -46,10 +46,10 @@ interface Phrases {
    */
   "%APP_LOGIN_URL%": string;
   /**
-   * White-label OAuth 2.0 callback URL where users will be redirected
-   * @example https://oauth2.integrations.acme.com/callback
+   * White-label base URL that will be used to derive OAuth 2.0 callback and webhook URLs
+   * @example integrations.acme.com
    */
-  "%OAUTH2_CALLBACK_URL%": string;
+  "%WHITE_LABEL_BASE_URL%": string;
   /**
    * Instructions to navigate to the embedded workflow builder after logging in.
    * Appears on the top of the /building page

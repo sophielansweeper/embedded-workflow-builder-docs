@@ -1,1 +1,3 @@
 # Words we use in  embedded workflow builder docs that are not in the dictionary. Please 'sort u' this list in vim before committing.
+asana
+hmac

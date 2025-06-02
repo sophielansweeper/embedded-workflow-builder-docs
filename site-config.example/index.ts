@@ -11,7 +11,7 @@ const siteConfig: SiteConfig = {
     "%COMPANY_POSSESSIVE%": "Acme Inc's",
     "%COMPANY_CORE_PRODUCT%": "Widget ERP",
     "%EMBEDDED_WORKFLOW_BUILDER%": "Workflow Builder",
-    "%OAUTH2_CALLBACK_URL%": "https://oauth2.integrations.acme.com/callback",
+    "%WHITE_LABEL_BASE_URL%": "integrations.acme.com",
     "%NAVIGATING_TO_BUILDER%":
       "navigate to integrations > workflows and click on 'manage workflows'",
     "%WORKFLOW%": "workflow",
