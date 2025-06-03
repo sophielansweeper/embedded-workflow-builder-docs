@@ -11,7 +11,7 @@ If you want your %WORKFLOW% to run in response to a webhook request, you can use
 
 ## Selecting a trigger type
 
-When you [create a new %WORKFLOW%](./building.md#creating-a-new-workflow) in the %EMBEDDED_WORKFLOW_BUILDER%, you will be prompted to select a trigger type.
+When you [create a new %WORKFLOW%](./building.md) in the %EMBEDDED_WORKFLOW_BUILDER%, you will be prompted to select a trigger type.
 If you'd like to change the trigger type of an existing %WORKFLOW%, you can do so by clicking on menu to the left of the trigger at the top of the %WORKFLOW% editor, and selecting **Change step action**.
 
 ## Schedule triggers
