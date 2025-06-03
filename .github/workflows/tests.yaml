@@ -28,7 +28,7 @@ jobs:
       - name: Deploy preview
         run: |
           ./node_modules/.bin/netlify \
-            deploy \
+            deploy ${PROD_FLAG} \
             --dir ./build \
             --no-build \
             --site "${NETLIFY_SITE_ID}" \
@@ -36,3 +36,4 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+          PROD_FLAG: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
