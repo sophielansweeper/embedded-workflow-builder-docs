@@ -4,7 +4,7 @@
 
 [![Tests](https://github.com/prismatic-io/embedded-workflow-builder-docs/actions/workflows/tests.yaml/badge.svg)](https://github.com/prismatic-io/embedded-workflow-builder-docs/actions/workflows/tests.yaml)
 
-[Site preview](https://embedded-workflow-builder.netlify.app)
+[![Site preview badge](https://img.shields.io/badge/Site-Preview-blue)](https://embedded-workflow-builder.netlify.app)
 
 - [Prismatic Embedded Workflow Builder Documentation](#prismatic-embedded-workflow-builder-documentation)
   - [Deployment options](#deployment-options)
