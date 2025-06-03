@@ -3,7 +3,7 @@ import type { SiteConfig } from "@site/src/site-config-types";
 const siteConfig: SiteConfig = {
   docsSite: {
     url: "https://docs.acme.com",
-    baseUrl: "/docs",
+    baseUrl: "/",
   },
   phrases: {
     "%APP_LOGIN_URL%": "https://acme.com/login",

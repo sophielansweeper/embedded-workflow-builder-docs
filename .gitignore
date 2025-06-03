@@ -21,3 +21,9 @@ yarn-error.log*
 
 # Site configuration
 site-config
+
+# Local environment variables
+.env
+
+# Local Netlify folder
+.netlify
