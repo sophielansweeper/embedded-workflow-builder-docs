@@ -27,3 +27,6 @@ site-config
 
 # Local Netlify folder
 .netlify
+
+# Branded markdown files
+/branded-docs

@@ -68,6 +68,7 @@ const config: Config = {
   },
   plugins: [
     path.resolve(__dirname, "src/plugins/connectors/index.ts"),
+    path.resolve(__dirname, "src/plugins/generate-branded-markdown/index.ts"),
     path.resolve(__dirname, "src/plugins/resize-screenshots/index.ts"),
   ],
   future: {

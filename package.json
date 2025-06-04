@@ -17,6 +17,7 @@
     "format": "npm run format-markdown && npm run format-js",
     "format-js": "biome format --write",
     "format-markdown": "prettier --log-level warn --write \"docs/**/*.md\"",
+    "generate-branded-markdown": "docusaurus generate-branded-markdown",
     "generate-public-connector-docs": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --public-connectors",
     "postgenerate-public-connector-docs": "npm run format-markdown",
     "generate-public-connector-docs-from-manifest": "PRISMATIC_API_KEY=$(prism me:token) docusaurus generate-connector-docs --public-connectors --from-manifest",
@@ -50,6 +51,7 @@
     "jimp": "^1.6.0",
     "netlify-cli": "^21.5.2",
     "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
     "typescript": "~5.8.3"
   },
   "browserslist": {
