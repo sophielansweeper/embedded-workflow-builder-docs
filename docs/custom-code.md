@@ -98,7 +98,7 @@ module.exports = async (context, stepResults) => {
 };
 ```
 
-> **Tip**: Step results are usually objects.
+> **Tip: Step results are usually objects**
 >
 > Many components return objects that have multiple nested keys.
 > So, you can reference `stepResults.myStepName.results.someKey`.
@@ -190,7 +190,7 @@ Note that with the `lodash` import above, no file was specified.
 If no file is specified, the `main` file defined in the `npm` package's `package.json` is imported.
 An explicit path was called out for the `pdf-lib` import because the `pdf-lib` package defaults to importing an index file that itself requires other files, and `dist/pdf-lib.js` is a completely independent file that can be imported on its own..
 
-> **Warning**: Downstream dependencies
+> **Warning: Downstream dependencies**
 >
 > In order for an external dependency to be compatible with a code step, all JavaScript code must be compiled into a single file.
 >

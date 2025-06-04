@@ -190,7 +190,7 @@ The **is after (date/time)** operator attempts to parse the left and right field
 | `"2021-03-20T12:50:30.105Z"` | `"2021-03-20T11:52:21.881Z"` | `true`  | When dates are equivalent, time is compared                                       |
 | `"2021-03-20"`               | `1631568050`                 | `false` | `1631568050` is the UNIX epoch time for 2021-09-13, which occurs after 2021-03-05 |
 
-> **Note**: Accepted DateTime Formats
+> **Note: Accepted DateTime Formats**
 >
 > The time comparison operators accept date/times as ISO strings (like `2021-03-20` or `2021-03-20T11:52:21.881Z`), Unix epoch timestamps in milliseconds (for example, the number `1631568050` represents a time in 2021-09-13), or `Date()` JavaScript objects.
 

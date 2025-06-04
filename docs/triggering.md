@@ -24,7 +24,7 @@ You can then select the frequency of the trigger, such as "every 5 minutes", "ev
 
 ![Schedule trigger configuration](./assets/triggering/schedule.png)
 
-> **Tip**: Use Cron expressions for advanced scheduling
+> **Tip: Use Cron expressions for advanced scheduling**
 >
 > You can also set up more complex schedules using [cron expressions](https://en.wikipedia.org/wiki/Cron#CRON_expression) to specify exactly when the %WORKFLOW% should run by selecting **Custom** as your **Schedule type**.
 > For example, a custom schedule of `*/5 8-16 * * 1-5` would cause your %WORKFLOW% to run every five minutes during business hours (8:00-16:55), Monday through Friday.
