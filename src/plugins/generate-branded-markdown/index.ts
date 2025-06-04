@@ -13,11 +13,6 @@ async function generateBrandedMarkdownFiles() {
   await rimraf(brandedDocsPath);
   mkdirSync(brandedDocsPath);
 
-  // Copy the assets directory from docs to branded-docs
-  cpSync(path.join(docsPath, "assets"), path.join(brandedDocsPath, "assets"), {
-    recursive: true,
-  });
-
   // Process each markdown file in the docs directory
   const markdownFiles = globSync("**/*.md", { cwd: docsPath });
   for (const markdownFile of markdownFiles) {
@@ -37,6 +32,18 @@ async function generateBrandedMarkdownFiles() {
     // Write the branded content to the target file
     writeFileSync(targetFilePath, brandedContent);
   }
+
+  // Copy the assets directory from docs to branded-docs
+  cpSync(path.join(docsPath, "assets"), path.join(brandedDocsPath, "assets"), {
+    recursive: true,
+  });
+
+  // Copy connector assets directory from docs to branded-docs
+  cpSync(
+    path.join(docsPath, "connectors", "assets"),
+    path.join(brandedDocsPath, "connectors", "assets"),
+    { recursive: true },
+  );
 }
 
 async function resizeScreenshotsPlugin(context, options) {
