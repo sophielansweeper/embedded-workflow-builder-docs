@@ -1,7 +1,6 @@
 # Prismatic Embedded Workflow Builder Documentation
 
 [![Tests](https://github.com/prismatic-io/embedded-workflow-builder-docs/actions/workflows/tests.yaml/badge.svg)](https://github.com/prismatic-io/embedded-workflow-builder-docs/actions/workflows/tests.yaml)
-
 [![Site preview badge](https://img.shields.io/badge/Example-Site_Preview-blue)](https://embedded-workflow-builder.netlify.app)
 
 Prismatic offers an [embedded workflow builder](https://prismatic.io/docs/embed/workflow-builder/) that you can embed within your application.
