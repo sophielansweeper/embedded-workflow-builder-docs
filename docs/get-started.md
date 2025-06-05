@@ -13,11 +13,11 @@ This tutorial will walk you through some basic concepts of %WORKFLOW% developmen
 - Use logical branches to make decisions based on user properties
 - Take different actions based on user characteristics
 
-## Workflow overview
+## %WORKFLOW% overview
 
-The workflow you build here will fetch a list of users from an API, loop over each user, check if they're from a specific geographic region (south or north of the equator), and take different actions based on their location.
+The %WORKFLOW% you build here will fetch a list of users from an API, loop over each user, check if they're from a specific geographic region (south or north of the equator), and take different actions based on their location.
 
-We'll use the JSONPlaceholder API which provides fake user data: `https://jsonplaceholder.typicode.com/users`
+We'll use the JSONPlaceholder API `https://jsonplaceholder.typicode.com/users`, which provides fake user data.
 
 ## Start building
 

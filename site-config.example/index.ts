@@ -14,8 +14,8 @@ const siteConfig: SiteConfig = {
     "%WHITE_LABEL_BASE_URL%": "integrations.acme.com",
     "%NAVIGATING_TO_BUILDER%":
       "navigate to integrations > workflows and click on 'manage workflows'",
-    "%WORKFLOW%": "workflow",
-    "%WORKFLOW_PLURAL%": "workflows",
+    "%WORKFLOW%": "Workflow",
+    "%WORKFLOW_PLURAL%": "Workflows",
   },
   navbar: {
     title: "Acme Docs",

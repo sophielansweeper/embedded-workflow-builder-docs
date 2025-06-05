@@ -3,7 +3,7 @@ title: Custom Code
 description: Write custom JavaScript code snippets to be used in your %WORKFLOW_PLURAL%
 ---
 
-The [code](./connectors/code.md) step allows you write short custom JavaScript functions within your %WORKFLOW%.
+The [code](./connectors/code.md) step allows you to write short custom JavaScript functions within your %WORKFLOW%.
 This is helpful if you have some coding experience and would like to manipulate data with code.
 
 ## Code block structure
@@ -39,7 +39,7 @@ The first parameter of your function (`context`) contains metadata about the cur
 - `executionId` is the ID of the current execution.
 - `invokeUrl` is the URL used to invoke this %WORKFLOW%.
 - `instance` is an object containing an `id` and `name` of your %WORKFLOW%.
-- `startedAt`
+- `startedAt` represents the time at which the execution started, in ISO 8601 format (e.g., `2023-10-01T12:00:00Z`).
 
 You can reference any of these context properties using JavaScript dot notation:
 
@@ -198,7 +198,7 @@ An explicit path was called out for the `pdf-lib` import because the `pdf-lib` p
 > [https://app.unpkg.com/lodash@4.17.20/files/flatten.js](https://app.unpkg.com/lodash@4.17.20/files/flatten.js) does not - it has its own `require()` statement and depends on other files.
 > The former would work in the code step, the latter would not.
 >
-> If the external package has its own dependencies that are not compiled in, or if the file you reference has its own `require()` statements, you will see errors.
+> If the external package has its own dependencies that are not compiled in, or if the file that you loaded has its own `require()` statements, you will see errors.
 
 ### Requiring built-in NodeJS modules
 

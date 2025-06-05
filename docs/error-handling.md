@@ -16,7 +16,7 @@ If an execution fails, you can have the runner automatically retry a few minutes
 The webhook payload that you received will be passed back through your flow again, and your flow will start again at its first step.
 This is handy if your flow is [idempotent](https://en.wikipedia.org/wiki/Idempotence) and you don't know which step might fail.
 
-To configure automatic retry, select the gear icon (%WORKFLOW Details button) on the left side of the canvas, and then select **Configure %WORKFLOW% retry**.
+To configure automatic retry, select the gear icon (%WORKFLOW% Details button) on the left side of the canvas, and then select **Configure %WORKFLOW% retry**.
 You can configure your %WORKFLOW% to retry a certain number of times, waiting some number of minutes between retries.
 
 ![%WORKFLOW%-level error handling](./assets/error-handling/flow-level-error-handling.png)

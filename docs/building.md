@@ -10,7 +10,7 @@ If you have not done so yet, please first review the [Getting Started](./get-sta
 
 ## Creating a new %WORKFLOW%
 
-To create a new %WORKFLOW% first log in to %COMPANY_CORE_PRODUCT% [here](%APP_LOGIN_URL%).
+To create a new %WORKFLOW%, first log in to %COMPANY_CORE_PRODUCT% [here](%APP_LOGIN_URL%).
 Next, %NAVIGATING_TO_BUILDER%.
 Here, you will see all of the %WORKFLOW_PLURAL% that you've built.
 
@@ -67,7 +67,7 @@ An [SFTP - Read File](./connectors/sftp.md#read-file) step will return the conte
 
 Step results take one of three forms:
 
-- A primitive value, like a **string**, **boolean** (true/false), **number**, an **array** of primitives or even a `null` for steps that have nothing to return.
+- A primitive value, like a **string**, **boolean** (true/false), **number**, an **array** of primitives, or even a `null` for steps that have nothing to return.
 - A [JavaScript Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with several key-value pairs.
 
   ```json

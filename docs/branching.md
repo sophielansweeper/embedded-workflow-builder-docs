@@ -13,7 +13,7 @@ Here are a couple of examples of things you can accomplish with branching:
 **Example 1:** The [webhook requests](./triggering.md#universal-webhook-triggers) your %WORKFLOW% receives could contain a "Widget Created", "Widget Updated" or "Widget Deleted" event.
 You need to execute a series of steps depending on which event type was received.
 
-**Example 2:** You want to [upsert](<https://en.wikipedia.org/wiki/Merge_(SQL)>) data into system that doesn't support upsert.
+**Example 2:** You want to [upsert](https://www.sqlite.org/lang_upsert.html) data into system that doesn't support upsert.
 You can check if a record exists, and branch into "add a new record" or "update the existing record" branches depending on if the record exists.
 
 ## Branching on a value
@@ -41,7 +41,7 @@ You can compare step results or static values using [comparison operators](#bran
 ### Branch on expression comparison operators
 
 Comparison operators allow you to compare two properties to one another.
-You can test if the two values are [equal](#equals), if one value is [contained](#contained-in) in the other (assuming the second value is a list), if one timestamp is [before](#is-before-datetime) another timestamp, etc.
+You can test if the two values are [equal](#equals), if one value is [contained](#contained-in) within the other (assuming the second value is a list), if one timestamp is [before](#is-before-datetime) another timestamp, etc.
 
 If your comparison evaluates to `true` (for example, if you use the `equals` operator and both values are `5`), the branch associated with that comparison within your %WORKFLOW% is followed.
 
@@ -156,11 +156,11 @@ The **does not exactly match** operator evaluates if the if the two fields are n
 The **starts the string** operator evaluates if the the right field's value begins with the left field's value.
 Both right and left values must be strings.
 
-| Left Field | Right Field         | Result  | Comments                                                       |
-| ---------- | ------------------- | :-----: | -------------------------------------------------------------- |
-| `"Test"`   | `"Testing Value"`   | `true`  |                                                                |
-| `"test"`   | `"Testing Value"`   | `false` | Comparisons are case-sensitive                                 |
-| `"Test"`   | `"A Testing Value"` | `false` | The right field must start with (not _contain_) the left value |
+| Left Field | Right Field         | Result  | Comments                                                               |
+| ---------- | ------------------- | :-----: | ---------------------------------------------------------------------- |
+| `"Test"`   | `"Testing Value"`   | `true`  |                                                                        |
+| `"test"`   | `"Testing Value"`   | `false` | Comparisons are case-sensitive                                         |
+| `"Test"`   | `"A Testing Value"` | `false` | The right field must start with the left value (not merely contain it) |
 
 #### Does not start the string
 

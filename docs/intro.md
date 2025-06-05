@@ -11,6 +11,6 @@ Using these connectors, you can query for data in a third-party app to import in
 
 If you're syncing data between %COMPANY_CORE_PRODUCT% and a proprietary system you've built, you can leverage the generic [HTTP connector](./connectors/http.md) to make [requests](./http-requests.md) to any API that does not already have a built-in connector.
 
-If you'd like to write code to help solve your problem, you can add JavaScript [code steps](./custom-code.md) to your %WORKFLOW%.
+If you'd like to write code to help solve your problem, you can add JavaScript [code steps](./custom-code.md) to your %WORKFLOW% to manipulate data, make additional requests, or perform any other custom logic you need.
 
 To get started building, check out our [getting started guide](./get-started.md).
