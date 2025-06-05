@@ -160,3 +160,18 @@ Creates a new item, or replaces an existing item with a new item
 | Expression Attribute Values      | Expression attribute values in Amazon DynamoDB are substitutes for the actual values that you want to compare—values that you might not know until runtime. An expression attribute value must begin with a colon (:) and be followed by one or more alphanumeric characters. |         |
 | Expression Attribute Value Types | The DynamoDB data type for each query param. You must specify a type for each Expression Attribute Value you provided.                                                                                                                                                        |         |
 | Connection                       |                                                                                                                                                                                                                                                                               |         |
+
+## Data Sources
+
+### Select AWS Region
+
+Select an AWS region
+
+### Select Table
+
+Select a table from the list of tables
+
+| Input      | Comments                                                                | Default |
+| ---------- | ----------------------------------------------------------------------- | ------- |
+| Connection |                                                                         |         |
+| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1. |         |

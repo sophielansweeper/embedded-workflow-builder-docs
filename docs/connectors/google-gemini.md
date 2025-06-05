@@ -9,16 +9,24 @@ Google Gemini is an offering of advanced AI models developed by Google&#x27;s De
 
 ## Connections
 
-### API Key
+### Google Gemini API
 
 Connect to Google Generative AI (Gemini) using an API key.
 
-| Input         | Comments                                                                                                                                                              | Default |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| API Key       | Your Google AI Studio API key. Get one at [ApiKey](https://makersuite.google.com/app/apikey).                                                                         |         |
-| Use Vertex AI | If true, we will use Vertex AI instead of Gemini API KEY.                                                                                                             | false   |
-| Project ID    | Your Google Cloud project ID. Required if Use Vertex AI is true.                                                                                                      |         |
-| Region        | The region to use for API requests. Required if Use Vertex AI is true. [Get your region here](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations). |         |
+| Input   | Comments                                                                                           | Default |
+| ------- | -------------------------------------------------------------------------------------------------- | ------- |
+| API Key | Your Google AI Studio API key. Generate API keys [here](https://makersuite.google.com/app/apikey). |         |
+
+### Vertex AI API
+
+Connect to Google Generative AI (Gemini) using Vertex AI.
+
+| Input        | Comments                                                                                                                           | Default |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Project ID   | Your Google Cloud project ID.                                                                                                      |         |
+| Region       | The region to use for API requests. [Get your region here](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations). |         |
+| Client Email | The email address of the client you would like to connect to.                                                                      |         |
+| Private Key  | The private key of the client you would like to connect to.                                                                        |         |
 
 ## Actions
 

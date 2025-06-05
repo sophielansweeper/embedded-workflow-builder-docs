@@ -115,8 +115,11 @@ Get a list of messages
 | Connection               | The Connection to use for authorization.                                                                              |         |
 | Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user)                                              |         |
 | Page Token               | If you're looping over pages of results, this is the page token from the result of the previous 'list messages' step. |         |
+| Fetch All                | Turn this On to fetch all pages of results.                                                                           | false   |
 | Query String             | Only return messages matching the specified query. Supports the same query format as the Gmail search box.            |         |
+| Max Results              | The maximum number of results to return.                                                                              |         |
 | Labels                   | Show only messages with labels that match these label IDs                                                             |         |
+| Add Metadata             | Turn this On to add metadata to the messages. This will slow down the response time.                                  | false   |
 
 ### Raw Request
 
@@ -149,6 +152,7 @@ Send a new message
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | Connection               | The Connection to use for authorization.                                                                                                                                                                                                                                                                             |         |
 | To                       |                                                                                                                                                                                                                                                                                                                      |         |
+| From                     | Alias of the sender email address. This is the email address that will be used to send the email.                                                                                                                                                                                                                    |         |
 | CC                       |                                                                                                                                                                                                                                                                                                                      |         |
 | BCC                      |                                                                                                                                                                                                                                                                                                                      |         |
 | Subject                  |                                                                                                                                                                                                                                                                                                                      |         |
@@ -189,3 +193,24 @@ Add or remove labels from a message
 | Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user) |         |
 | Labels to Add            | A list of labels to add (optional)                                       |         |
 | Labels to Remove         | A list of labels to add (optional)                                       |         |
+
+## Data Sources
+
+### Select Label
+
+Select a label from the list of labels
+
+| Input                    | Comments                                                                 | Default |
+| ------------------------ | ------------------------------------------------------------------------ | ------- |
+| Connection               | The Connection to use for authorization.                                 |         |
+| Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user) |         |
+
+### Select Message
+
+Select a message from the list of messages
+
+| Input                    | Comments                                                                                                   | Default |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------- |
+| Connection               | The Connection to use for authorization.                                                                   |         |
+| Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user)                                   |         |
+| Query String             | Only return messages matching the specified query. Supports the same query format as the Gmail search box. |         |
