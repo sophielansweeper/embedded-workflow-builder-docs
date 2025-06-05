@@ -4,6 +4,7 @@ const siteConfig: SiteConfig = {
   docsSite: {
     url: "https://docs.acme.com",
     baseUrl: "/",
+    favicon: "img/example-logo.svg",
   },
   phrases: {
     "%APP_LOGIN_URL%": "https://acme.com/login",
@@ -18,11 +19,11 @@ const siteConfig: SiteConfig = {
     "%WORKFLOW_PLURAL%": "Workflows",
   },
   navbar: {
-    title: "Acme Docs",
-    // logo: {
-    //   src: "img/acme-logo.png",
-    //   alt: "Acme logo",
-    // },
+    title: "Acme Workflow Builder",
+    logo: {
+      src: "img/example-logo.svg",
+      alt: "Acme logo",
+    },
     items: [
       // {
       //   label: "Home",

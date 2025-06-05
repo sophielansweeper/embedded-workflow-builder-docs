@@ -18,7 +18,7 @@ import { contentProcessPhrases, frontMatterProcessPhrases } from "./src/dynamicP
 const config: Config = {
   title: `${siteConfig.phrases["%COMPANY%"]} ${siteConfig.phrases["%EMBEDDED_WORKFLOW_BUILDER%"]}`,
   tagline: `Connect ${siteConfig.phrases["%COMPANY_CORE_PRODUCT%"]} to the other apps you use`,
-  favicon: "img/favicon.ico",
+  favicon: siteConfig.docsSite.favicon,
   url: siteConfig.docsSite.url,
   baseUrl: siteConfig.docsSite.baseUrl,
   onBrokenLinks: "throw", // Throw errors during the build process when links are broken

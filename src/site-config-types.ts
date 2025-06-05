@@ -67,6 +67,8 @@ export interface SiteConfig {
     url: string;
     /** The path where your site is hosted. If your docs will exist in https://docs.acme.com/path/to/docs, enter `/path/to/docs` */
     baseUrl: `/${string}`;
+    /** The path to your favicon, stored in ./static/img/ */
+    favicon?: `${string}.${"svg" | "ico" | "png"}`;
   };
   /** Docusaurus navbar items and title */
   navbar: Partial<Navbar>;
