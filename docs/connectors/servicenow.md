@@ -448,14 +448,3 @@ Uploads a specified binary file as an attachment to a specified record.
 | Table         | Name of the table to attach the file to.                                                       |         |
 | Sys ID        | Sys_id of the record in the table specified in table_name that you want to attach the file to. |         |
 | Debug Request | Enabling this flag will log out the current request.                                           | false   |
-
-## Data Sources
-
-### Select Table
-
-Select a table from the list of tables in ServiceNow. Returns the sys_id of the selected table.
-
-| Input        | Comments                                                            | Default |
-| ------------ | ------------------------------------------------------------------- | ------- |
-| Connection   |                                                                     |         |
-| Instance URL | The URL of the specific ServiceNow instance to use for API requests |         |

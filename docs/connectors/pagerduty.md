@@ -585,37 +585,3 @@ Update a webhook subscription
 | Webhook ID.            | The ID of the webhook.                               |         |
 | Update Webhook Payload | The updated webhook subscription object.             |         |
 | Debug Request          | Enabling this flag will log out the current request. | false   |
-
-## Data Sources
-
-### Select Incident
-
-Retrieve and select an incident.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Service
-
-Retrieve and select a service.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Template
-
-Retrieve and select a template.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select User
-
-Retrieve and select a user.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

@@ -176,13 +176,3 @@ Send a separate email to each recipient
 | File Type            | The MIME type of the content you are attaching.                                                                                                                                                                    |                 |
 | Content Id           | Provide the content Id of the attachment. This value is only required when you select 'inline'.                                                                                                                    |                 |
 | Multiple Attachments | Provide an array of attachments to send with the email. See https://www.twilio.com/docs/sendgrid/api-reference/mail-send/mail-send#request-body for more information.                                              |                 |
-
-## Data Sources
-
-### SendGrid Contact Lists
-
-Fetch a picklist of contact lists from SendGrid
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

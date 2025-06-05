@@ -288,27 +288,3 @@ Updates an existing topic.
 | Schema Settings            | Settings for validating messages published against a schema.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |         |
 | Satisfies PZS              | Output only. Reserved for future use.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | false   |
 | Message Retention Duration | Indicates the minimum duration to retain a message after it is published to the topic. If this field is set, messages published to the topic in the last messageRetentionDuration are always available to subscribers. For instance, it allows any attached subscription to seek to a timestamp that is up to messageRetentionDuration in the past. If this field is not set, message retention is controlled by settings on individual subscriptions. Cannot be more than 31 days or less than 10 minutes. A duration in seconds with up to nine fractional digits, ending with 's'. Example: '1200s'. |         |
-
-## Data Sources
-
-### Fetch subscriptions
-
-Fetch an array of subscriptions
-
-| Input      | Comments                                                                                                                                                                                 | Default |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                                                                                                                          |         |
-| Project ID | Project ID of the datasets to be listed                                                                                                                                                  |         |
-| Page Size  | Optional. The value returned by the last ListTopicsResponse; indicates that this is a continuation of a prior topics.list call, and that the system should return the next page of data. |         |
-| Page Token | Page token, returned by a previous call, to request the next page of results                                                                                                             |         |
-
-### Fetch Topics
-
-Fetch an array of topics
-
-| Input      | Comments                                                                                                                                                                                 | Default |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                                                                                                                          |         |
-| Project ID | Project ID of the datasets to be listed                                                                                                                                                  |         |
-| Page Size  | Optional. The value returned by the last ListTopicsResponse; indicates that this is a continuation of a prior topics.list call, and that the system should return the next page of data. |         |
-| Page Token | Page token, returned by a previous call, to request the next page of results                                                                                                             |         |

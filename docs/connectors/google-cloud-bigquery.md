@@ -635,23 +635,3 @@ Updates information in an existing table.
 | Default Collation           | Optional. The maximum staleness of data that could be returned when the table (or stale MV) is queried. Staleness encoded as a string encoding of sql IntervalValue type.                                                                                                                                                                                                                                                                                                                                                                                               |         |
 | Default Rounding Mode       | Optional. Defines the default rounding mode specification of new tables created within this dataset. During table creation, if this field is specified, the table within this dataset will inherit the default rounding mode of the dataset. Setting the default rounding mode on a table overrides this option. Existing tables in the dataset are unaffected. If columns are defined during that table creation, they will immediately inherit the table's default rounding mode, unless otherwise specified.                                                         |         |
 | Max Staleness               | Optional. Defines the default collation specification of future tables created in the dataset. If a table is created in this dataset without table-level default collation, then the table inherits the dataset default collation, which is applied to the string fields that do not have explicit collation specified. A change to this field affects only tables created afterwards, and does not alter the existing tables. The following values are supported: 'und:ci': undetermined locale, case insensitive.'' empty string. Default to case-sensitive behavior. |         |
-
-## Data Sources
-
-### Fetch Projects Names
-
-Fetch an array of projects names
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Fetch Tables Names
-
-Fetch an array of tables names
-
-| Input      | Comments                                | Default |
-| ---------- | --------------------------------------- | ------- |
-| Connection |                                         |         |
-| Project ID | Project ID of the datasets to be listed |         |
-| Dataset ID | Dataset ID of the requested dataset     |         |

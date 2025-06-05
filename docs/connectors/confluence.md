@@ -417,23 +417,3 @@ Update a page by id.
 | Space Id      | The Space Id.                                        |                                                                                    |
 | Parent Id     | The parent id.                                       |                                                                                    |
 | Debug Request | Enabling this flag will log out the current request. | false                                                                              |
-
-## Data Sources
-
-### List Pages
-
-Returns all pages.
-
-| Input      | Comments                         | Default |
-| ---------- | -------------------------------- | ------- |
-| Connection |                                  |         |
-| Space Id   | The space ID to list pages from. |         |
-
-### List Spaces
-
-Returns all spaces.
-
-| Input        | Comments                 | Default |
-| ------------ | ------------------------ | ------- |
-| Connection   |                          |         |
-| Sort by Name | Sort the spaces by name. | false   |

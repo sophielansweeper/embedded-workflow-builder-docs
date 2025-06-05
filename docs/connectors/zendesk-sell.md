@@ -749,37 +749,3 @@ Create a new lead or update an existing, based on a value of a filter or a set o
 | Custom Field         | Filterable custom field.                                                                                                        |         |
 | Filter               | Filterable custom field.                                                                                                        |         |
 | Inclusive            | Indicates how filters should be combine. true value, the default, uses AND logic. false value uses OR logic to combine filters. |         |
-
-## Data Sources
-
-### Select Account
-
-Select Account
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Pipelines
-
-Select Pipelines
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Products
-
-Select Products
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Stages
-
-Select Stages
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

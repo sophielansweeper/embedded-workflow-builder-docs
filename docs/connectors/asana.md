@@ -880,23 +880,3 @@ Update the information and metadata of the given task
 | Is Liked                                                                                      | This flag will mark the specified task as 'liked' in your Asana account.                                                                                                                                     |         |
 | Due At                                                                                        | Provide an ISO 8601 date string in UTC and should NOT be used together with Due On.                                                                                                                          |         |
 | Due On                                                                                        | The date in which the project is due. This field takes a date with YYYY-MM-DD format and should not be used together with due_at.                                                                            |         |
-
-## Data Sources
-
-### Select Projects
-
-Select a project from a dropdown menu
-
-| Input        | Comments                                   | Default |
-| ------------ | ------------------------------------------ | ------- |
-| Connection   |                                            |         |
-| Workspace ID | The gid of the workspace                   |         |
-| Team ID      | Provide the unique identifier of the team. |         |
-
-### Select Workspace
-
-Select a workspace from a dropdown menu
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

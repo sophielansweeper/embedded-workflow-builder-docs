@@ -166,22 +166,3 @@ Sends an email invitation for a user to sign up for Microsoft Advertising. The i
 | Last Name   | The last name of the user. The last name is limited to 40 characters.                                                                                                                         |           |
 | Lcid        | The locale to use when sending correspondence to the user by email or postal mail.                                                                                                            | EnglishUS |
 | Role Id     | The role that the user has for each customer or list of accounts.                                                                                                                             |           |
-
-## Data Sources
-
-### Select Account ID
-
-Gets the account identifiers that are accessible from the specified customer.
-
-| Input       | Comments | Default |
-| ----------- | -------- | ------- |
-| Connection  |          |         |
-| Customer ID |          |         |
-
-### Select Customer ID
-
-Gets the customer identifiers that are accessible to the current authenticated user.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

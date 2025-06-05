@@ -207,24 +207,3 @@ Update the status of a report.
 | Type       | Specifies to the job that it has to update the status of a list of reports.                                                                                                            | reportStatus                                                                                                                                                   |
 | Status     | The status to change the reports to. At the moment, only Reimbursed is supported. Only reports in the Approved status can be updated to Reimbursed. All other reports will be ignored. | REIMBURSED                                                                                                                                                     |
 | Filters    | The filters to apply to the report list.                                                                                                                                               | <code>{<br /> "type": "reportStatus",<br /> "status": "REIMBURSED",<br /> "filters": {<br /> "reportIDList": "R006AseGxMka,R00bCluvcO4T"<br /> }<br />}</code> |
-
-## Data Sources
-
-### List Cards
-
-Returns all Cards.
-
-| Input      | Comments                                                        | Default        |
-| ---------- | --------------------------------------------------------------- | -------------- |
-| Connection |                                                                 |                |
-| Type       | Specifies to the job that it has to list the Cards of a domain. | domainCardList |
-| Domain     | Specifies to the job that it has to list the Cards of a domain. | domain         |
-
-### List Policies
-
-Returns all Policies.
-
-| Input      | Comments                                                       | Default    |
-| ---------- | -------------------------------------------------------------- | ---------- |
-| Connection |                                                                |            |
-| Type       | Specifies to the job that it has to get a policy summary list. | policyList |

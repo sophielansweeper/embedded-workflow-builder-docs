@@ -408,31 +408,3 @@ Update a batch of projects.
 | ---------- | ------------------------------- | ------- |
 | Connection |                                 |         |
 | Projects   | Array of projects to be updated |         |
-
-## Data Sources
-
-### Fetch Positions
-
-Fetch an array of positions
-
-| Input      | Comments                  | Default |
-| ---------- | ------------------------- | ------- |
-| Connection |                           |         |
-| Page       | The page number to return |         |
-
-### Fetch Projects
-
-Fetch an array of Projects
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Fetch Teams
-
-Fetch an array of teams
-
-| Input      | Comments                  | Default |
-| ---------- | ------------------------- | ------- |
-| Connection |                           |         |
-| Page       | The page number to return |         |

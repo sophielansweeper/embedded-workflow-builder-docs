@@ -206,29 +206,3 @@ Terminate a Databricks cluster by ID
 | Connection    |                                                      |         |
 | Cluster ID    | The unique identifier for the cluster                |         |
 | Debug Request | Enabling this flag will log out the current request. | false   |
-
-## Data Sources
-
-### Select Cluster
-
-Select a Databricks cluster to use
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Node Type
-
-Select a Databricks node type to use
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select SQL Warehouse
-
-Select an SQL Warehouse
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

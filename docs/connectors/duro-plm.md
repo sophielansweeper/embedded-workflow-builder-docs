@@ -91,16 +91,3 @@ Make a generic request to the Duro API
 | Variables         | Variables to pass to the query or mutation           |                                                                                                                                                                                                                                                          |
 | Variables Object  | Variables to pass to the query or mutation           |                                                                                                                                                                                                                                                          |
 | Debug Request     | Enabling this flag will log out the current request. | false                                                                                                                                                                                                                                                    |
-
-## Data Sources
-
-### Select Component
-
-Select a component from a dropdown list
-
-| Input         | Comments                                             | Default |
-| ------------- | ---------------------------------------------------- | ------- |
-| Connection    |                                                      |         |
-| Library Type  | The type of library to query                         |         |
-| First N Items | The number of items to return                        | 5       |
-| Debug Request | Enabling this flag will log out the current request. | false   |

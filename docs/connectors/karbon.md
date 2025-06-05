@@ -231,13 +231,3 @@ Partially update a Work Item by Work Item key
 | Description   | A free form text field to add more information about the Work Item      |         |
 | Deadline Date | The deadline of the workitem as ISO8601 formated datestamp or timestamp |         |
 | Debug Request | Enabling this flag will log out the current request.                    | false   |
-
-## Data Sources
-
-### Select Organization
-
-Select an Organization from a dropdown menu
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

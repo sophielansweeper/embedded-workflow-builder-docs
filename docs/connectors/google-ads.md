@@ -212,23 +212,3 @@ Upload offline click conversions into Google Ads in order to track ads that led 
 | Manager Customer ID | Customer ID of the Google Ads Client account; accepts hyphenated or number forms. When used in conjunction with a sub account as the customer ID, this value is used as the 'login-customer-id' header for the HTTP request. See https://developers.google.com/google-ads/api/docs/concepts/call-structure#cid |         |
 | Validate Only       | If true, the request is validated but not executed. Only errors are returned, not results.                                                                                                                                                                                                                     | false   |
 | Debug Enabled       | If true, the API will perform all upload checks and return errors if any are found. If false, it will perform only basic input validation, skip subsequent upload checks, and return success even if no click was found for the provided userIdentifiers.                                                      | false   |
-
-## Data Sources
-
-### List Accessible Customers
-
-Get a list of accessible customers for the logged in user
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### List Accessible Sub Accounts
-
-Get a list of accessible Sub Accounts for the customer id provided.
-
-| Input                 | Comments                                                                          | Default |
-| --------------------- | --------------------------------------------------------------------------------- | ------- |
-| Customer ID           | Customer ID of the Google Ads Client account; accepts hyphenated or number forms. |         |
-| Customer Client Level | The level of the customer client to retrieve.                                     | 1       |
-| Connection            |                                                                                   |         |

@@ -323,30 +323,3 @@ Update a workspace.
 | Operations    | Operations to perform on the data.                   |         |
 | Connection    |                                                      |         |
 | Debug Request | Enabling this flag will log out the current request. | false   |
-
-## Data Sources
-
-### Select Account Workspaces
-
-Allow a user to select one of their account workspaces
-
-| Input      | Comments                                       | Default |
-| ---------- | ---------------------------------------------- | ------- |
-| Account Id | The unique identifier of the item to retrieve. |         |
-| Connection |                                                |         |
-
-### Select Form
-
-Allow a user to select one of their forms
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Workspaces
-
-Allow a user to select one of their workspaces
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

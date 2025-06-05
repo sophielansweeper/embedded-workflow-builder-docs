@@ -677,29 +677,3 @@ Upload a chunk of a file.
 | Chunks               | Total number of chunks.                                                                                  |         |
 | Multipart Parameters | Parameters for the multipart upload. Use all the fields from the response of the initialise upload call. |         |
 | Debug Request        | Enabling this flag will log out the current request.                                                     | false   |
-
-## Data Sources
-
-### Select Campaign
-
-Select a campaign from the list of campaigns available in Bynder.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Collection
-
-Select a collection from the list of collections available in Bynder.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Job
-
-Select a job from the list of jobs available in Bynder.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

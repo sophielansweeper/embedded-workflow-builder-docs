@@ -540,20 +540,3 @@ Write to an upload stream
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | Upload Stream ID | The ID of the upload stream to write to. Generate this with the 'Create Stream' action.                                                            |         |
 | File Contents    | The contents to write to a file. This can be a string of text, it can be binary data (like an image or PDF) that was generated in a previous step. |         |
-
-## Data Sources
-
-### Select AWS Region
-
-Select an AWS region
-
-### Select Bucket
-
-Choose a bucket from a list
-
-| Input                     | Comments                                                                                                                                                               | Default |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection                | Access keys provide programmatic access to access resources in AWS. See https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html.              |         |
-| Dynamic Access Key ID     | Use this input to authenticate with AWS if you are using a dynamically-generated access key. Otherwise, use the connection to enter a static access key ID.            |         |
-| Dynamic Secret Access Key | Use this input to authenticate with AWS if you are using a dynamically-generated secret access key. Otherwise, use the connection to enter a static secret access key. |         |
-| Dynamic Session Token     | Use this input to authenticate with AWS if you are using a OPTIONAL dynamically-generated session token.                                                               |         |

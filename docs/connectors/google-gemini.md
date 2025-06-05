@@ -155,13 +155,3 @@ Uploads a file asynchronously to the Gemini API.
 | File Name    | The name of the file to get.       |         |
 | Display Name | The display name of the file.      |         |
 | Connection   | Select a Google Gemini connection. |         |
-
-## Data Sources
-
-### Select Model
-
-Select a model from the list of available models.
-
-| Input      | Comments                           | Default |
-| ---------- | ---------------------------------- | ------- |
-| Connection | Select a Google Gemini connection. |         |

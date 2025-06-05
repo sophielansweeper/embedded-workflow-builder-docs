@@ -93,22 +93,3 @@ Sends Measurement Protocol Events to your Google Analytics G4 Account
 | App Instance ID | Your App's instance ID.                                                                                  |         |
 | API Secret      | The API secret for your Google Analytics G4. Generated in the Google Analytics UI                        |         |
 | Events To Send  | The events to send to Google Analytics                                                                   |         |
-
-## Data Sources
-
-### List Accounts
-
-Return a list of accounts accessible by the caller
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### List Properties
-
-List Google Analytics GA4 properties for an account
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-| Account ID |          |         |

@@ -489,37 +489,3 @@ Import an image from a url or file.
 | Image Name    | A name for the image. Defaults to the filename if not provided. If the name matches an existing image, a suffix will be added.                                                                                             |         |
 | File Data     | The contents to write to a file. Binary data generated from a previous step.                                                                                                                                               |         |
 | Debug Request | Enabling this flag will log out the current request.                                                                                                                                                                       | false   |
-
-## Data Sources
-
-### Select Account
-
-Select an account to use.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Campaign
-
-Select a campaign to use.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Profile
-
-Select a profile to use.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Template
-
-Select a template to use.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

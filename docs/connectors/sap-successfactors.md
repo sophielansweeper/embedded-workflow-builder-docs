@@ -340,29 +340,3 @@ Update an existing record in component
 | Record Type ID    | The ID of the record type to retrieve        |         |
 | Additional Inputs | Additional inputs to be passed to the action |         |
 | Connection        |                                              |         |
-
-## Data Sources
-
-### Select Candidate
-
-Select a Candidate from the dropdown list
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Job Application
-
-Select a Job Application from the dropdown list
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Job Requisition
-
-Select a Job Requisition from the dropdown list
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

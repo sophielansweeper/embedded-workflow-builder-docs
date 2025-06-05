@@ -483,33 +483,3 @@ Upload a file to temporary file storage
 | Space ID      | The ID of the space                                                                                                         |         |
 | File Contents | The contents to write to a file. This can be a string of text, it can be binary data that was generated in a previous step. |         |
 | Debug Request | Enabling this flag will log out the current request.                                                                        | false   |
-
-## Data Sources
-
-### Select Environment
-
-Select an environment from a dropdown menu
-
-| Input              | Comments                            | Default |
-| ------------------ | ----------------------------------- | ------- |
-| Connection         |                                     |         |
-| Space ID           | The ID of the space                 |         |
-| Data Source Return | The return value of the data source | id      |
-
-### Select Organization
-
-Select an organization from a dropdown menu
-
-| Input              | Comments                            | Default |
-| ------------------ | ----------------------------------- | ------- |
-| Connection         |                                     |         |
-| Data Source Return | The return value of the data source | id      |
-
-### Select Space
-
-Select a space from a dropdown menu
-
-| Input              | Comments                            | Default |
-| ------------------ | ----------------------------------- | ------- |
-| Connection         |                                     |         |
-| Data Source Return | The return value of the data source | id      |

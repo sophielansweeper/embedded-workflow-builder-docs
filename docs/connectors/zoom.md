@@ -427,13 +427,3 @@ Update the information or metadata of a user by Id
 | Zoom Phone              | Whether the user has the Zoom Phone feature enabled.                                                                                                                             | false                                                                                                                               |
 | About Me                | The user's self-introduction. Hyperlinks or HTML code not allowed in this field.                                                                                                 |                                                                                                                                     |
 | LinkedIn URL            | The user's LinkedIn URL.                                                                                                                                                         |                                                                                                                                     |
-
-## Data Sources
-
-### Select User
-
-A Picklist of Zoom users.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

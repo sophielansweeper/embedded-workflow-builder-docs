@@ -219,13 +219,3 @@ Upload a part of a multipart upload to Google Cloud Storage
 | Part Number        | Uniquely identifies the position of the part within the larger multipart upload. partNumber is an integer with a mimimum value of 1 and a maximum value of 10,000.                                                                                                   |         |
 | Destination Bucket | A Google Cloud Storage 'bucket' is a container where files are stored. The destination bucket indicates the bucket containing the file you want to copy. If you are copying files within a single bucket, list the same bucket as the source and destination bucket. |         |
 | Connection         |                                                                                                                                                                                                                                                                      |         |
-
-## Data Sources
-
-### Select Bucket
-
-Select a Google Cloud Storage bucket from a dropdown menu
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

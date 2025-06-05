@@ -325,16 +325,3 @@ Upload a file to the specified path
 | Path          | This represents the files's path. Include a leading /                                                                                              |         |
 | File Contents | The contents to write to a file. This can be a string of text, it can be binary data (like an image or PDF) that was generated in a previous step. |         |
 | Connection    |                                                                                                                                                    |         |
-
-## Data Sources
-
-### Select File or Folder
-
-Select file or folder from Box account base path
-
-| Input      | Comments                                                                                                        | Default |
-| ---------- | --------------------------------------------------------------------------------------------------------------- | ------- |
-| Limit      | Provide an integer value for the maximum amount of items that will be returned. Provide a value from 1 to 1000. |         |
-| Marker     | Specify the pagination token that's returned by a previous request to retrieve the next page of results         |         |
-| Offset     | The offset of the item at which to begin the response.                                                          |         |
-| Connection |                                                                                                                 |         |

@@ -309,33 +309,3 @@ Updates a file's content by file id
 | File Content | The binary or text body of the file. Some content examples you can store in Google Drive are images, videos, text, and PDF. |         |
 | File Name    | Provide a string for the name of the new file.                                                                              |         |
 | Fields       | Provide a comma separated list of values to be returned in the response.                                                    | \*      |
-
-## Data Sources
-
-### List Files
-
-Lists all available files
-
-| Input      | Comments                                                                                                                                                         | Default |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                                                                         |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
-| Query      | Provide a query to be used in the request. Refer to the Google documentation for examples: https://developers.google.com/drive/api/v3/search-files               |         |
-| Page Size  | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 50.                                                  | 20      |
-
-### List Folders
-
-Lists all available directories
-
-| Input      | Comments                                                                                                                                                         | Default |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection | The Connection to use for authorization.                                                                                                                         |         |
-| Drive ID   | The ID of a shared drive to search for the file in. If not provided, the search will be performed across all drives. Enter 'my-drive' to search only "My Drive". |         |
-
-### Select Drive
-
-Select a drive
-
-| Input      | Comments                                 | Default |
-| ---------- | ---------------------------------------- | ------- |
-| Connection | The Connection to use for authorization. |         |

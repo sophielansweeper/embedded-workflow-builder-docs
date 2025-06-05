@@ -227,13 +227,3 @@ Updates the Webhook Subscription associated with the provided UUID for Gusto.
 | Connection                |                                                                                          |         |
 | Webhook Subscription UUID | The webhook subscription UUID.                                                           |         |
 | Subscription Types        | Types of notifications to receive when entities change. Enter as comma-separated values. |         |
-
-## Data Sources
-
-### Select Company
-
-Allow a user to select one of their companies
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

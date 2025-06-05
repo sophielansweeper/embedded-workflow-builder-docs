@@ -133,31 +133,3 @@ Update record of the specified type
 | Replace                 | Names of sublists on this record. All specified sublists will be replaced instead of added to.                                                                   |                                                                                                                                          |
 | Replace Selected Fields | If enabled, delete all fields, including body fields, specified in the Replace input.                                                                            | false                                                                                                                                    |
 | Debug                   | Enable for additional logging information.                                                                                                                       | false                                                                                                                                    |
-
-## Data Sources
-
-### Select Record
-
-Select a record from a list of records
-
-| Input             | Comments                                                                                                                           | Default |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection        |                                                                                                                                    |         |
-| Record Type       | Record type to perform the action against.                                                                                         |         |
-| Record Field      | Record Field to use as the label for the picklist. If unspecified, the record ID is used.                                          |         |
-| Query             | Query to filter records by. See https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1545222128.html for details. |         |
-| Pagination Limit  | Fetch only this many records at a time.                                                                                            | 1000    |
-| Pagination Offset | Fetch records offset by this value.                                                                                                |         |
-
-### Select SuiteQL
-
-Execute a SuiteQL Query to create a picklist
-
-| Input             | Comments                                                                                                                                             | Default                                                          |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Connection        |                                                                                                                                                      |                                                                  |
-| SuiteQL Payload   | Data payload to send in the action request. See https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_157909186990.html for details. | SELECT email, COUNT(\*) as count FROM transaction GROUP BY email |
-| Key Field         | Items returned field to use as the key for the picklist.                                                                                             |                                                                  |
-| Label Field       | Items returned field to use as the label for the picklist.                                                                                           |                                                                  |
-| Pagination Limit  | Fetch only this many records at a time.                                                                                                              | 1000                                                             |
-| Pagination Offset | Fetch records offset by this value.                                                                                                                  |                                                                  |

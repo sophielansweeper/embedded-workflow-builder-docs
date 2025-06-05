@@ -502,29 +502,3 @@ Updates a user.
 | Is TFA Enforced         | Enforces Two Factor Authentication for the user.               | false   |
 | Connection              |                                                                |         |
 | Debug Request           | Enabling this flag will log out the current request.           | false   |
-
-## Data Sources
-
-### Select Device
-
-Select a device from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Group
-
-Select a group from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Managed Device
-
-Select a managed device from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

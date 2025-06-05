@@ -193,24 +193,3 @@ Add or remove labels from a message
 | Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user) |         |
 | Labels to Add            | A list of labels to add (optional)                                       |         |
 | Labels to Remove         | A list of labels to add (optional)                                       |         |
-
-## Data Sources
-
-### Select Label
-
-Select a label from the list of labels
-
-| Input                    | Comments                                                                 | Default |
-| ------------------------ | ------------------------------------------------------------------------ | ------- |
-| Connection               | The Connection to use for authorization.                                 |         |
-| Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user) |         |
-
-### Select Message
-
-Select a message from the list of messages
-
-| Input                    | Comments                                                                                                   | Default |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------- |
-| Connection               | The Connection to use for authorization.                                                                   |         |
-| Gmail User ID (optional) | A user whose account to query (defaults to currently authenticated user)                                   |         |
-| Query String             | Only return messages matching the specified query. Supports the same query format as the Gmail search box. |         |

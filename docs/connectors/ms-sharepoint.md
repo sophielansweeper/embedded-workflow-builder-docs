@@ -349,31 +349,3 @@ Upload a file to the specified drive or folder's drive
 | File Name  | Provide a string value for the name of the new file.          |         |
 | File Data  | Provide data to be uploaded to your desired SharePoint drive. |         |
 | Folder ID  | Provide the unique identifier of a Sharepoint folder Id.      |         |
-
-## Data Sources
-
-### List Drives from Source
-
-A picklist of files in a given directory
-
-| Input      | Comments                                                                                                                                                                                                                     | Default                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| Connection |                                                                                                                                                                                                                              |                         |
-| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. Replace {siteId} or {driveId} with relevant ID value. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /me/drive/root/children |
-
-### List Folders from Source
-
-A picklist of folders in a given directory
-
-| Input      | Comments                                                                                                                                                                                                                     | Default                 |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| Connection |                                                                                                                                                                                                                              |                         |
-| Directory  | Retrieve the list of Drive resources available for a target User, Group, or Site. Replace {siteId} or {driveId} with relevant ID value. https://learn.microsoft.com/en-us/graph/api/drive-list?view=graph-rest-1.0&tabs=http | /me/drive/root/children |
-
-### List Sites from Sharepoint
-
-A picklist of Sites
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

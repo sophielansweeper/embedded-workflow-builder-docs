@@ -434,29 +434,3 @@ Updates a webhook
 | Webhook MegaSign Conditional Parameters          | Conditions which webhook creator can specify for the payload while creating or updating a webhook. |         |
 | Webhook Widget Conditional Parameters            | Conditions which webhook creator can specify for the payload while creating or updating a webhook. |         |
 | Debug Request                                    | Enabling this flag will log out the current request.                                               | false   |
-
-## Data Sources
-
-### Select Agreements
-
-A picklist of all agreements under this account, separated byName - Display Date
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Group
-
-A picklist of all Acrobat Sign groups under this account.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Users
-
-A picklist of all Acrobat Sign users under this account.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

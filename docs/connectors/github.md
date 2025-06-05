@@ -225,13 +225,3 @@ Get a user
 | ---------- | -------------------------------------- | ------- |
 | Connection |                                        |         |
 | Username   | The handle for the GitHub user account |         |
-
-## Data Sources
-
-### List Repos
-
-List all of the authenticated user's repositories
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

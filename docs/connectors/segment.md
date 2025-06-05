@@ -551,32 +551,3 @@ Updates an existing Warehouse.
 | Settings     | A key-value object that contains instance-specific settings for a Warehouse. You can find the full list of Warehouse metadata and related settings information in the /catalog/warehouses endpoint. |         |
 | Name         | An optional human-readable name to associate with this Warehouse.                                                                                                                                   |         |
 | Enabled      | Enable to allow this Warehouse to receive data.                                                                                                                                                     |         |
-
-## Data Sources
-
-### Fetch Destination
-
-Fetch an array of Destination
-
-| Input      | Comments                              | Default |
-| ---------- | ------------------------------------- | ------- |
-| Connection |                                       |         |
-| Region     | The region of the Segment API to use. | api     |
-
-### Fetch Sources
-
-Fetch an array of Sources
-
-| Input      | Comments                              | Default |
-| ---------- | ------------------------------------- | ------- |
-| Connection |                                       |         |
-| Region     | The region of the Segment API to use. | api     |
-
-### Fetch Warehouses
-
-Fetch an array of Warehouses
-
-| Input      | Comments                              | Default |
-| ---------- | ------------------------------------- | ------- |
-| Connection |                                       |         |
-| Region     | The region of the Segment API to use. | api     |

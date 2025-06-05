@@ -152,35 +152,3 @@ Update call values of rows in a Worksheet
 | Values           | An object where the keys are row numbers and the values are objects where their keys are column names and their values are cell values.                                                                        |         |
 | Store Raw Values | Specifies whether values should be converted as if they were typed into the spreadsheet or whether to store the raw values as provided.                                                                        | false   |
 | Connection       |                                                                                                                                                                                                                |         |
-
-## Data Sources
-
-### Select Column
-
-Select a Column from a Worksheet
-
-| Input           | Comments                                                                                                                                                                                                       | Default |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Spreadsheet ID  | Every spreadsheet is represented by a Spreadsheet resource and has a unique spreadsheetId value, containing letters, numbers, hyphens, or underscores. You can find the spreadsheet ID in a Google Sheets URL. |         |
-| Worksheet Title | Specifies the title of the sheet.                                                                                                                                                                              |         |
-| Connection      |                                                                                                                                                                                                                |         |
-
-### Select Columns
-
-Select Columns from a Worksheet
-
-| Input           | Comments                                                                                                                                                                                                       | Default |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Spreadsheet ID  | Every spreadsheet is represented by a Spreadsheet resource and has a unique spreadsheetId value, containing letters, numbers, hyphens, or underscores. You can find the spreadsheet ID in a Google Sheets URL. |         |
-| Worksheet Title | Specifies the title of the sheet.                                                                                                                                                                              |         |
-| Connection      |                                                                                                                                                                                                                |         |
-
-### Select Worksheet
-
-Select a Worksheet
-
-| Input            | Comments                                                                                                                                                                                                       | Default |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Spreadsheet ID   | Every spreadsheet is represented by a Spreadsheet resource and has a unique spreadsheetId value, containing letters, numbers, hyphens, or underscores. You can find the spreadsheet ID in a Google Sheets URL. |         |
-| Worksheet Return | Select whether to return the Worksheet ID or Name.                                                                                                                                                             | false   |
-| Connection       |                                                                                                                                                                                                                |         |

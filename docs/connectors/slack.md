@@ -458,27 +458,3 @@ Upload a new file to a slack conversation
 | Channels        | Provide a comma separated list of channel IDs that the file will be shared in.                                           |         |
 | Initial Comment | The message text introducing the file in the specified channels when uploaded                                            |         |
 | Thread Reply    | Provide another message's ts value to upload this file as a reply. Never use a reply's ts value, use the parent instead. |         |
-
-## Data Sources
-
-### Select Channel
-
-Select a Slack channel from a dropdown menu (up to 10,000 channels). To select Private Channels, you must access the API as a User and use the 'user_scope' configuration.
-
-| Input                                   | Comments                                           | Default |
-| --------------------------------------- | -------------------------------------------------- | ------- |
-| Connection                              | The connection to use                              |         |
-| Show channel ID in dropdown?            | Show '#my-channel' vs. '#my-channel (ID: C123456)' | false   |
-| Include public channels?                |                                                    | true    |
-| Include private channels?               |                                                    | false   |
-| Include multi-party IM (mpim) channels? |                                                    | false   |
-| Include IM channels?                    |                                                    | false   |
-
-### Select User
-
-Select a User from a dropdown menu (up to 10,000 users)
-
-| Input                     | Comments                                     | Default |
-| ------------------------- | -------------------------------------------- | ------- |
-| Connection                | The connection to use                        |         |
-| Show user ID in dropdown? | Show '#user-id' vs. '#user-id (ID: C123456)' | false   |

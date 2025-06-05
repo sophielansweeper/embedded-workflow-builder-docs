@@ -644,23 +644,3 @@ Upgrade an Installed App to the latest version for given team
 | Team                | Provide an identifier of the given team. This value should be an Id.                  |         |
 | App Installation ID | Provide the Installation ID of the app to remove.                                     |         |
 | Timeout             | The maximum time a client will await a response in milliseconds (defaults to 30000ms) |         |
-
-## Data Sources
-
-### Channel Names
-
-A picklist of channel names
-
-| Input      | Comments                                                             | Default |
-| ---------- | -------------------------------------------------------------------- | ------- |
-| Connection |                                                                      |         |
-| Team       | Provide an identifier of the given team. This value should be an Id. |         |
-
-### Team Names
-
-A picklist of team names
-
-| Input               | Comments                                                                                  | Default |
-| ------------------- | ----------------------------------------------------------------------------------------- | ------- |
-| Connection          |                                                                                           |         |
-| User Principal Name | Provide the principal name or ID of the user. Required for non-delegated App connections. |         |

@@ -194,24 +194,3 @@ Update a record's content inside a given table
 | Record Fields  | A record is the base equivalent of a row in a spreadsheet.                                                                                                                                                   |         |
 | Dynamic Fields | A field for dynamic inputs that can be configured at deploy time with the use of a key value config variable. Please note that if this input is used, then the default 'Record Fields' inputwill be ignored. |         |
 | Connection     |                                                                                                                                                                                                              |         |
-
-## Data Sources
-
-### Select Base
-
-Select an Airtable base
-
-| Input                        | Comments                                                                               | Default |
-| ---------------------------- | -------------------------------------------------------------------------------------- | ------- |
-| Connection                   |                                                                                        |         |
-| Include ID in dropdown menu? | When enabled, the base or table ID will be included next to the dropdown menu options. | false   |
-
-### Select Table
-
-Select a table from a base
-
-| Input                        | Comments                                                                                                                                            | Default |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection                   |                                                                                                                                                     |         |
-| Base ID                      | The ID of the base to interact with. Required if you use an OAuth connection, and optional if you specify base ID with a legacy API Key connection. |         |
-| Include ID in dropdown menu? | When enabled, the base or table ID will be included next to the dropdown menu options.                                                              | false   |

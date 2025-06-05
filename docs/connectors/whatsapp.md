@@ -138,14 +138,3 @@ Upload media to WhatsApp.
 | Phone Number ID | The ID of the phone number to upload media to.                                         |         |
 | File            | The file to upload. This should be a file returned from an action that returns a file. |         |
 | Filename        | The filename to use for the uploaded file.                                             |         |
-
-## Data Sources
-
-### Select Phone
-
-Select a phone number.
-
-| Input                        | Comments                                                               | Default |
-| ---------------------------- | ---------------------------------------------------------------------- | ------- |
-| Connection                   |                                                                        |         |
-| WhatsApp Business Account ID | The ID of the WhatsApp Business Account to retrieve phone numbers for. |         |

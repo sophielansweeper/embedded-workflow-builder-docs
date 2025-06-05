@@ -428,13 +428,3 @@ Partially update (patch) a listings item for a selling partner.
 | Product Type             | The Amazon product type of the listings item.                                                                                                                                                                                                                |         |
 | Issue Locale             | A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: 'en_US', 'fr_CA', 'fr_FR'. Localized messages default to 'en_US' when a localization is not available in the specified locale. |         |
 | Patches                  | One or more JSON Patch operations to perform on the listings item.                                                                                                                                                                                           |         |
-
-## Data Sources
-
-### Fetch Destinations
-
-Fetch an array of Destinations
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

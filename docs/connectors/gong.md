@@ -360,30 +360,3 @@ Updates an existing Gong Meeting
 | Invitees        | A list of email addresses of invitees to the event (not including the organizer).                                                   |         |
 | External ID     | The ID as it is formed on the external system.                                                                                      |         |
 | Title           | The title of the call. This title is available in the Gong system for indexing and search.                                          |         |
-
-## Data Sources
-
-### Fetch Folders
-
-Fetch an array of Folders
-
-| Input        | Comments                                                                                                   | Default |
-| ------------ | ---------------------------------------------------------------------------------------------------------- | ------- |
-| Connection   |                                                                                                            |         |
-| Workspace Id | Optional Workspace identifier, if supplied the API will return only the calls belonging to this workspace. |         |
-
-### Fetch Workspaces
-
-Fetch an array of Workspaces
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select User
-
-Retrieve a specific user.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

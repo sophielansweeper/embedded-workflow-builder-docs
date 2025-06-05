@@ -720,35 +720,3 @@ Edit an existing sales Order by ID
 | Order Priority                            | Order priority.                                                                                                                                                                                                                     |           |
 | Additional Fields                         | Additional fields that are not covered by the standard inputs. See https://developer.columbus.sage.com/docs#/uk/sage200extra/accounts/v1/sop_orders                                                                                 |           |
 | Debug Request                             | Enabling this flag will log out the current request.                                                                                                                                                                                | false     |
-
-## Data Sources
-
-### Select Customer
-
-Select a customer from a dropdown list
-
-| Input      | Comments                                                                                                 | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                                          |         |
-| Site       | The site ID. You can get and reference this value from the 'Get Site and Company Information' action.    |         |
-| Company    | The company ID. You can get and reference this value from the 'Get Site and Company Information' action. |         |
-
-### Select Product Group
-
-Select a product group from a dropdown list
-
-| Input      | Comments                                                                                                 | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                                          |         |
-| Site       | The site ID. You can get and reference this value from the 'Get Site and Company Information' action.    |         |
-| Company    | The company ID. You can get and reference this value from the 'Get Site and Company Information' action. |         |
-
-### Select Tax Code
-
-Select a tax code from a dropdown list
-
-| Input      | Comments                                                                                                 | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                                          |         |
-| Site       | The site ID. You can get and reference this value from the 'Get Site and Company Information' action.    |         |
-| Company    | The company ID. You can get and reference this value from the 'Get Site and Company Information' action. |         |

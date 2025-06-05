@@ -346,26 +346,3 @@ Send a batch of profile updates.
 | Verbose              | If present and equal to 1, Mixpanel will respond with a JSON Object describing the success or failure of the tracking call. The returned object will have two keys: status, with the value 1 on success and 0 on failure, and error, with a string-valued error message if the request wasn't successful. This is useful for debugging during implementation. |         |
 | Redirect             | If present, Mixpanel will serve a redirect to the given url as a response to the request. This is useful to add link tracking in notifications.                                                                                                                                                                                                               |         |
 | Region               | The server location to be used: _ `api` - The default (US) servers used for most projects _ `api-eu` - EU servers if you are enrolled in EU Data Residency                                                                                                                                                                                                    |         |
-
-## Data Sources
-
-### Fetch Funnels
-
-Fetch an array of funnels
-
-| Input             | Comments                                                                                                                                                             | Default |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection        |                                                                                                                                                                      |         |
-| Region and Domain | The server location to be used: _ `mixpanel` - The default (US) servers used for most projects _ `eu.mixpanel` - EU servers if you are enrolled in EU Data Residency |         |
-| Project ID        | Required if using service account (Username and Password) to authenticate request.                                                                                   |         |
-| Workspace ID      | The id of the workspace if applicable.                                                                                                                               |         |
-
-### Fetch Pipelines
-
-Fetch an array of Pipelines
-
-| Input           | Comments                                                                                                                                                                       | Default |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| Connection      |                                                                                                                                                                                |         |
-| Data and Domain | The server location to be used: _ `data.mixpanel` - The default (US) servers used for most projects _ `data-eu.mixpanel` - EU servers if you are enrolled in EU Data Residency |         |
-| Project ID      | Required if using service account (Username and Password) to authenticate request.                                                                                             |         |

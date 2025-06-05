@@ -167,21 +167,3 @@ Send a message to an Amazon SQS Queue
 | Dynamic Access Key ID     | Use this input to authenticate with AWS if you are using a dynamically-generated access key. Otherwise, use the connection to enter a static access key ID.                                                                                                                                                                     |            |
 | Dynamic Secret Access Key | Use this input to authenticate with AWS if you are using a dynamically-generated secret access key. Otherwise, use the connection to enter a static secret access key.                                                                                                                                                          |            |
 | Dynamic Session Token     | Use this input to authenticate with AWS if you are using a OPTIONAL dynamically-generated session token.                                                                                                                                                                                                                        |            |
-
-## Data Sources
-
-### Select AWS Region
-
-Select an AWS region
-
-### Select Queue
-
-Select an SQS queue from a list
-
-| Input                     | Comments                                                                                                                                                               | Default |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection                |                                                                                                                                                                        |         |
-| AWS Region                | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                                                                                |         |
-| Dynamic Access Key ID     | Use this input to authenticate with AWS if you are using a dynamically-generated access key. Otherwise, use the connection to enter a static access key ID.            |         |
-| Dynamic Secret Access Key | Use this input to authenticate with AWS if you are using a dynamically-generated secret access key. Otherwise, use the connection to enter a static secret access key. |         |
-| Dynamic Session Token     | Use this input to authenticate with AWS if you are using a OPTIONAL dynamically-generated session token.                                                               |         |

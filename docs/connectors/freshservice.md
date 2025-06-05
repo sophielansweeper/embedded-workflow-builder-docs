@@ -580,13 +580,3 @@ Update a Ticket.
 | Bypass Mandatory  | To bypass mandatory fields check while updating the ticket except for requester_id, source. Any business rules trying to mandate certain fields will also be bypassed. All fields configured as mandatory upon closing or resolving the ticket will be skipped while updating the ticket. This can only be passed by an admin. |         |
 | Additional Fields | Additional fields that might not be covered by the standard inputs. This is a JSON object. See https://api.freshservice.com/#ticket_attributes for more information.                                                                                                                                                           |         |
 | Debug Request     | Enabling this flag will log out the current request.                                                                                                                                                                                                                                                                           | false   |
-
-## Data Sources
-
-### Select Workspace
-
-Select a workspace from a list of workspaces.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

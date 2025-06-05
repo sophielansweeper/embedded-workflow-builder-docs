@@ -591,27 +591,3 @@ Update an existing webhook.
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Connection |                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                    |
 | JSON Input | For extra fields, see https://developers.docusign.com/docs/esign-rest-api/reference/connect/connectconfigurations/update/ | <code>{<br /> "configurationType": "custom",<br /> "connectId": "123456",<br /> "allowEnvelopePublish": "true",<br /> "allUsers": "true",<br /> "enableLog": "true",<br /> "includeCertificateOfCompletion": "true",<br /> "includeHMAC": "false",<br /> "includeOAuth": "false",<br /> "includeTimeZoneInformation": "true",<br /> "allowSalesforcePublish": "true"<br />}</code> |
-
-## Data Sources
-
-### Select Folder
-
-Select a Folder.
-
-| Input            | Comments                                                                                                                                             | Default |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection       |                                                                                                                                                      |         |
-| Count            | The maximum number of results to return.                                                                                                             |         |
-| Include          | A comma-separated list of folder types to include in the response. Valid values are: envelope_folders, template_folders and shared_template_folders. |         |
-| Include Items    | Indicates whether folder items are included in the response. If this parameter is omitted, the default is false.                                     | false   |
-| Start Position   | The zero-based index of the result from which to start returning results.                                                                            |         |
-| Sub Folder Depth | If missing or any value other than -1, the returned list contains only the top-level folders. A value of -1 returns the complete folder hierarchy.   |         |
-| User Filter      | Narrows down the resulting folder list by the following values: all, owned_by_me and shared_with_me.                                                 |         |
-
-### Select Template
-
-Select a Template.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

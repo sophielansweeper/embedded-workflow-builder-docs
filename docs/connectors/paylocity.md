@@ -259,15 +259,3 @@ Update an Pay Entry Import
 | File Name                    | The name of the file to upload.                      |                                                                                                                                                                                                                                                                                                               |
 | Time Import File Tracking ID | The tracking id of the time import file to retrieve. |                                                                                                                                                                                                                                                                                                               |
 | Pay Entry Input              | The pay entry fields to create or update             | <code>{<br /> "AutoAcknowledge": false,<br /> "Batch": {<br /> "BatchName": "string",<br /> "MergeBatchId": 123<br /> },<br /> "Calendar": {<br /> "CalendarId": 123,<br /> "PayPeriodBeginDate": "2021-01-01",<br /> "PayPeriodEndDate": "2021-01-01",<br /> "CheckDate": "2021-01-01"<br /> }<br />}</code> |
-
-## Data Sources
-
-### List Company Codes
-
-Get All Company Codes for the selected company and resource.
-
-| Input         | Comments                           | Default |
-| ------------- | ---------------------------------- | ------- |
-| Connection    |                                    |         |
-| Company ID    | The id of the company to retrieve. |         |
-| Code Resource | Type of Company Code.              |         |

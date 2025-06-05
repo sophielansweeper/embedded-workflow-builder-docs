@@ -148,13 +148,3 @@ Set a value for an existing message flag
 | Mailbox    | Provide a string value for the name of the mailbox                                      |         |
 | Range      | Provide a range of messages. Alternatively you can specify \* to get the latest message |         |
 | Flags      | For each item, provide a string value to be added to an existing message.               |         |
-
-## Data Sources
-
-### List Mailboxes
-
-Returns a picklist of available mailboxes that users can choose from
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

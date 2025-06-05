@@ -170,13 +170,3 @@ Update the information and metadata of an existing event
 | Remind Before (minutes) | This field is only required if useDefaultReminder is set to false.                                                         |                                                                                                                                                                               |
 | Connection              |                                                                                                                            |                                                                                                                                                                               |
 | Send Updates            | Guests who should receive notifications about the event update (for example, title changes, etc.).                         |                                                                                                                                                                               |
-
-## Data Sources
-
-### Calendars
-
-Get a list of available calendars
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

@@ -273,35 +273,3 @@ Updates a specific webinar.
 | Should Send Seminder Email           | Whether or not to send a reminder email to the registrants.                                                                                                            |         |
 | Should Send Absentee Follow Up Email | Whether or not to send an absentee follow up email to the registrants.                                                                                                 |         |
 | Should Send Attendee Follow Up Email | Whether or not to send an attendee follow up email to the registrants.                                                                                                 |         |
-
-## Data Sources
-
-### Select Organizer
-
-Select a Organizer from the list of available Organizer Keys
-
-| Input       | Comments                                           | Default              |
-| ----------- | -------------------------------------------------- | -------------------- |
-| Connection  |                                                    |                      |
-| Account Key | The key of the account.                            |                      |
-| From Time   | Start of the datetime range in ISO8601 UTC format. | 2025-01-07T00:00:00Z |
-| From Time   | End of the datetime range in ISO8601 UTC format.   | 2025-04-07T23:59:59Z |
-
-### Select Webhook
-
-Select a webhook from a list of available webhooks.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Webinar
-
-Select a webinar from the list of available webinars by your Account Key.
-
-| Input       | Comments                                           | Default              |
-| ----------- | -------------------------------------------------- | -------------------- |
-| Connection  |                                                    |                      |
-| Account Key | The key of the account.                            |                      |
-| From Time   | Start of the datetime range in ISO8601 UTC format. | 2025-01-07T00:00:00Z |
-| From Time   | End of the datetime range in ISO8601 UTC format.   | 2025-04-07T23:59:59Z |

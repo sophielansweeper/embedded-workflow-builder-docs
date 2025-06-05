@@ -399,30 +399,3 @@ Create a new group if it doesn't exist, or update the properties of an existing 
 | Group Types           | The type of group and its membership.                                                                                                                                                                             |         |
 | Additional Properties | Additional properties that are not covered by the other inputs. This should be a JSON object and will be merged with the other inputs. https://learn.microsoft.com/en-us/graph/api/group-upsert                   |         |
 | Debug Request         | Enabling this flag will log out the current request.                                                                                                                                                              | false   |
-
-## Data Sources
-
-### Select Application
-
-Select an application from a picklist.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Group
-
-Select a group from a picklist.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Group Member
-
-Select a group member from a picklist.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-| Group Id   |          |         |

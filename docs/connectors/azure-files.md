@@ -136,13 +136,3 @@ Upload a file under an existing path
 | Path          | An object in Azure Files is a file that is saved in a 'share'. This represents the object's file path. Do not include a leading /                                          |         |
 | File Contents | The contents to write to a file. This can be a string of text, it can be binary data (like an image or PDF) that was generated in a previous step.                         |         |
 | Connection    |                                                                                                                                                                            |         |
-
-## Data Sources
-
-### Select Share
-
-Select an Azure Files share
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

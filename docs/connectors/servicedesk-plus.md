@@ -655,29 +655,3 @@ Update a request task
 | Request Task Actual Start Time      | Date and time at which the task actually got started. See https://www.manageengine.com/products/service-desk/sdpod-v3-api/requests/request_task.html for details.               |         |
 | Additional Fields                   | Additional fields that might not be covered by the standard inputs. See https://www.manageengine.com/products/service-desk/sdpod-v3-api/requests/request_task.html for details. |         |
 | Debug Request                       | Enabling this flag will log out the current request.                                                                                                                            | false   |
-
-## Data Sources
-
-### Select Asset
-
-Select an asset from the list of assets.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Problem
-
-Select a problem from the list of problems.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Request
-
-Select a request from the list of requests.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

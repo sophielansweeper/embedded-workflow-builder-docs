@@ -261,17 +261,3 @@ Send raw HTTP request to Microsoft Dynamics 365
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                                                                                            | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                                                                                         | 0       |
 | Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                                                                                                                               | false   |
-
-## Data Sources
-
-### [CRM] Entity Object Selection
-
-A subset of Dynamics CRM Entity Types.
-
-| Input                               | Comments                                                                                                                        | Default |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection                          |                                                                                                                                 |         |
-| Default Selected Entity Types       | The names of the Entity Types to default in a selected state.                                                                   |         |
-| Entity Type Filter                  | The names or labels of the Entity Types to include; if blank then all types are included. Uses case-insensitive matching.       |         |
-| Include All Custom Entity Types     | When true, will include all Custom Entity Types, even those not included in Record Type Name Filter.                            | true    |
-| Include Only Top Level Record Types | When true, will include only Entity Types that are top-level, meaning not subtypes of other Types, regardless of other filters. | false   |

@@ -119,21 +119,3 @@ Send raw HTTP request to the PDQ API
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                    | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                 | 0       |
 | Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                                                       | false   |
-
-## Data Sources
-
-### Select Device
-
-Select a Device from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Group
-
-Select a Group from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

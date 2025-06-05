@@ -1098,29 +1098,3 @@ List files attached to a person
 | Limit                 | Items shown per page                                                                            |         |
 | Include Deleted Files | When enabled, the list of files will also include deleted files                                 |         |
 | Sort                  | The field names and sorting mode separated by a comma ("field_name_1 ASC", "field_name_2 DESC") |         |
-
-## Data Sources
-
-### Select Deal
-
-Select a Deal from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Organization
-
-Select an Organization from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |
-
-### Select Person
-
-Select a Person from a dropdown menu.
-
-| Input      | Comments | Default |
-| ---------- | -------- | ------- |
-| Connection |          |         |

@@ -517,14 +517,3 @@ Update the information and metadata of a given Ad Set.
 | Fields          | Provide a comma separated list of fields to be returned.                                                                                  | name,account_id,adlabels,adset_schedule,asset_feed_id,attribution_spec,bid_adjustments,bid_amount,bid_constraints,bid_info,billing_event,budget_remaining,campaign,configured_status,created_time,creative_sequence,daily_budget,daily_min_spend_target,daily_spend_cap,destination_type,effective_status,end_time,optimization_goal,optimization_sub_event,pacing_type,promoted_object,recommendations,status,targeting,start_time,targeting_optimization_types,updated_time |
 | Graph Version   | Provide the version of the Graph API to use. Defaults to 22.                                                                              | 22                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Debug Request   | Enabling this flag will log out the current request.                                                                                      | false                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-
-## Data Sources
-
-### Business Names
-
-A picklist of business names
-
-| Input         | Comments                                                     | Default |
-| ------------- | ------------------------------------------------------------ | ------- |
-| Connection    |                                                              |         |
-| Graph Version | Provide the version of the Graph API to use. Defaults to 22. | 22      |
