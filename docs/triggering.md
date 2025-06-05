@@ -80,11 +80,7 @@ Your %WORKFLOW% has two URLs:
 1. A test URL you can use to test your webhook configuration within the %EMBEDDED_WORKFLOW_BUILDER%.
 2. A production URL that is used when your %WORKFLOW% is enabled and running in production.
 
-:::danger
-TODO
-
-Replace this with information about where to find these URLs in the embedded workflow builder.
-:::
+<!-- TODO: Replace this with information about where to find test webhook URLs in the workflow builder -->>
 
 Your %WORKFLOW_PLURAL% URLs will each be unique and will look similar to `https://hooks.%WHITE_LABEL_BASE_URL%/trigger/SW5zEXAMPLE1234567890`
 
