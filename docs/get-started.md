@@ -22,7 +22,7 @@ We'll use the JSONPlaceholder API `https://jsonplaceholder.typicode.com/users`, 
 ## Start building
 
 We'll start by creating a new %WORKFLOW%.
-Log in to %COMPANY_CORE_PRODUCT% [here](%APP_LOGIN_URL%), then %NAVIGATING_TO_BUILDER%.
+Log in to [%COMPANY_CORE_PRODUCT%](%APP_LOGIN_URL%), then %NAVIGATING_TO_BUILDER%.
 
 Create a new %WORKFLOW% by clicking **+ %WORKFLOW%**.
 

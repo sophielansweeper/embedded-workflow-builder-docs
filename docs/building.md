@@ -10,7 +10,7 @@ If you have not done so yet, please first review the [Getting Started](./get-sta
 
 ## Creating a new %WORKFLOW%
 
-To create a new %WORKFLOW%, first log in to %COMPANY_CORE_PRODUCT% [here](%APP_LOGIN_URL%).
+To create a new %WORKFLOW%, first log in to [%COMPANY_CORE_PRODUCT%](%APP_LOGIN_URL%).
 Next, %NAVIGATING_TO_BUILDER%.
 Here, you will see all of the %WORKFLOW_PLURAL% that you've built.
 

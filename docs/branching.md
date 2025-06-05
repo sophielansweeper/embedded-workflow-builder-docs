@@ -257,7 +257,7 @@ The **exists** operator returns the opposite of the `does not exist` operator.
 Multiple expressions can be grouped together with **And** or **Or** clauses, which execute like programming **and** and **or** clauses.
 Take, for example, this programming expression:
 
-```
+```txt
 if ((foo > 500 and bar <= 20) or ("b" in ["a","b","c"]))
 ```
 
