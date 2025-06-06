@@ -40,7 +40,9 @@ const config: Config = {
             const sidebarItems = (await defaultSidebarItemsGenerator(
               args,
             )) as SidebarItemDoc[];
-            return sidebarItems.sort((a, b) => (a.label < b.label ? -1 : 1));
+            return sidebarItems.sort((a, b) =>
+              a.label.toLowerCase() < b.label.toLowerCase() ? -1 : 1,
+            );
           },
         },
         blog: false,
