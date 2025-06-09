@@ -1,4 +1,5 @@
-import { cpSync, globSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { globSync } from "glob"; // ✅ globSync comes from the glob package
 import path from "node:path";
 import type { CommanderStatic } from "commander";
 import { rimraf } from "rimraf";
