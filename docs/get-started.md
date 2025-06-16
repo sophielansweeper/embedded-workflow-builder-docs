@@ -17,7 +17,7 @@ This tutorial will walk you through some basic concepts of %WORKFLOW% developmen
 
 The %WORKFLOW% you build here will fetch a list of users from an API, loop over each user, check if they're from a specific geographic region (south or north of the equator), and take different actions based on their location.
 
-We'll use the JSONPlaceholder API `https://jsonplaceholder.typicode.com/users`, which provides fake user data.
+We'll use the JSONPlaceholder API `https://jsonplaceholder.typicode.com/users`, which provides sample user data.
 
 ## Start building
 
@@ -34,7 +34,7 @@ When prompted, select **Schedule** under **select your trigger** and then config
 ![Configuring a schedule trigger](./assets/get-started/schedule-trigger.png)
 
 **Note**: Your schedule trigger will be active once you finish building and [enable](./enabling.md) your %WORKFLOW%.
-For now, you can test your workflow as you build it by clicking the **Run** button on the bottom left of the canvas.
+For now, you can test your workflow as you build it by clicking the **Run** button at the bottom left of the canvas.
 
 ### Fetch user data from an API
 
@@ -112,7 +112,7 @@ If you toggle **Logs** on in the test runner drawer and increment the **Index** 
 ## Next steps
 
 Congratulations! You created your first %WORKFLOW%!
-While a little contrived, this %WORKFLOW% demonstrates how to fetch data from a third-party, loop over lists of records, and using branching logic.
+While a little contrived, this %WORKFLOW% demonstrates how to fetch data from a third party, loop over lists of records, and use branching logic.
 
 Here are a few things you should try next:
 

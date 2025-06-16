@@ -4,7 +4,7 @@ description: Write custom JavaScript code snippets to be used in your %WORKFLOW_
 ---
 
 The [code](./connectors/code.md) step allows you to write short custom JavaScript functions within your %WORKFLOW%.
-This is helpful if you have some coding experience and would like to manipulate data with code.
+This is helpful if you have some coding experience and want to manipulate data with code.
 
 ## Code block structure
 
@@ -33,12 +33,12 @@ module.exports = myFunction;
 
 The first parameter of your function (`context`) contains metadata about the currently running execution, along with helpful functions for logging:
 
-- `logger` allows you to write out log lines.
+- `logger` allows you to write log lines.
   See [logging](#logging) below.
 - `stepId` is the ID of the current step being executed.
 - `executionId` is the ID of the current execution.
 - `invokeUrl` is the URL used to invoke this %WORKFLOW%.
-- `instance` is an object containing an `id` and `name` of your %WORKFLOW%.
+- `instance` is an object containing the `id` and `name` of your %WORKFLOW%.
 - `startedAt` represents the time at which the execution started, in ISO 8601 format (e.g., `2023-10-01T12:00:00Z`).
 
 You can reference any of these context properties using JavaScript dot notation:
@@ -102,10 +102,10 @@ module.exports = async (context, stepResults) => {
 >
 > Many components return objects that have multiple nested keys.
 > So, you can reference `stepResults.myStepName.results.someKey`.
-> It's rare for a component to return serialized JSON, so there's rarely need to `JSON.parse()` results from a previous step.
+> It's rare for a component to return serialized JSON, so there's rarely a need to `JSON.parse()` results from a previous step.
 
 Step names are [camelCased](https://en.wikipedia.org/wiki/Camel_case), which means spaces and other special characters are removed from the step name, and all words except the first are capitalized.
-Here are a few examples of step names, and their corresponding step result reference:
+Here are a few examples of step names and their corresponding step result reference:
 
 | Step name                  | Code reference                            |
 | -------------------------- | ----------------------------------------- |
@@ -121,7 +121,7 @@ The return value can be an object, string, integer, etc., and will retain its ty
 
 The return value is specified using the `data` key in the return object.
 
-In this example suppose a previous step `Get Users` returned an array of user objects.
+In this example, suppose a previous step `Get Users` returned an array of user objects.
 This step will return an array of the users' names, in all caps:
 
 ```javascript
@@ -138,7 +138,7 @@ The code step's result can be used as input for the next step by referencing `th
 
 ## Making HTTP calls from a code step
 
-The NodeJS [fetch](https://developer.mozilla.org/en-US/docs/Web/API/fetch) API is baked into the code component.
+The Node.js [fetch](https://developer.mozilla.org/en-US/docs/Web/API/fetch) API is built into the code component.
 To make an HTTP call to an API, you can use the `fetch` function:
 
 ```javascript title="Make an HTTP POST request from a code step"
@@ -188,7 +188,7 @@ const { PDFDocument } = require("pdf-lib@1.17.1/dist/pdf-lib.js");
 You can require any file from `npm` using `package[@version][/file]` syntax.
 Note that with the `lodash` import above, no file was specified.
 If no file is specified, the `main` file defined in the `npm` package's `package.json` is imported.
-An explicit path was called out for the `pdf-lib` import because the `pdf-lib` package defaults to importing an index file that itself requires other files, and `dist/pdf-lib.js` is a completely independent file that can be imported on its own..
+An explicit path was called out for the `pdf-lib` import because the `pdf-lib` package defaults to importing an index file that itself requires other files, and `dist/pdf-lib.js` is a completely independent file that can be imported on its own.
 
 > **Warning: Downstream dependencies**
 >
@@ -200,10 +200,10 @@ An explicit path was called out for the `pdf-lib` import because the `pdf-lib` p
 >
 > If the external package has its own dependencies that are not compiled in, or if the file that you loaded has its own `require()` statements, you will see errors.
 
-### Requiring built-in NodeJS modules
+### Requiring built-in Node.js modules
 
-You can also require built-in NodeJS modules, like `crypto` or `path`.
-If the library you specify is built in to NodeJS, the client will _not_ reach out to a CDN, and will instead use the built-in module.
+You can also require built-in Node.js modules, like `crypto` or `path`.
+If the library you specify is built in to Node.js, the client will _not_ reach out to a CDN, and will instead use the built-in module.
 
 ```javascript
 const crypto = require("crypto");

@@ -3,29 +3,29 @@ title: Testing %WORKFLOW_PLURAL%
 description: Test your %WORKFLOW% within the %EMBEDDED_WORKFLOW_BUILDER%
 ---
 
-As you build your %WORKFLOW% you can test it to ensure that it works as expected.
+As you build your %WORKFLOW%, you can test it to ensure that it works as expected.
 This article describes how to test your %WORKFLOW% within the %EMBEDDED_WORKFLOW_BUILDER%.
 
 ## The test runner drawer
 
-The test runner drawer appears on the bottom of the %EMBEDDED_WORKFLOW_BUILDER% when you click **Test** or **Test Runs**.
+The test runner drawer appears at the bottom of the %EMBEDDED_WORKFLOW_BUILDER% when you click **Test** or **Test Runs**.
 Within the drawer, you can see the results of test runs of your %WORKFLOW% (both runs triggered by the **Test** button and runs triggered by a [webhook request](./triggering.md#what-is-a-webhook)).
 
 ## Running a test of your %WORKFLOW%
 
-To run a test of your %WORKFLOW%, click the **Test** button in the bottom of the %EMBEDDED_WORKFLOW_BUILDER%.
+To run a test of your %WORKFLOW%, click the **Test** button at the bottom of the %EMBEDDED_WORKFLOW_BUILDER%.
 This will open the test runner drawer and start a new test run of your %WORKFLOW%.
 You can also click the **Test Runs** button to open the test runner drawer without starting a new test run.
 
 ### Running a test with a webhook request
 
-If your %WORKFLOW% is triggered by a webhook request, you can run a test with a test payload one of two ways:
+If your %WORKFLOW% is triggered by a webhook request, you can run a test with a test payload in one of two ways:
 
-<!-- TODO: Replace this with information about where to find test webhook URLs in the workflow builder -->>
+<!-- TODO: Replace this with information about where to find test webhook URLs in the workflow builder -->
 
 1. Identify your test %WORKFLOW% webhook URL by clicking the **Trigger** step and copying the URL from the **Webhook URL** field in the step's properties.
    Then, use a tool like [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to send a POST request to that URL with a test payload.
-2. Click the **Test Payload** button in the bottom of the %EMBEDDED_WORKFLOW_BUILDER% and specify a payload.
+2. Click the **Test Payload** button at the bottom of the %EMBEDDED_WORKFLOW_BUILDER% and specify a payload.
    The next time you click the **Test** button, the test run will use that payload as the webhook request.
 
 ## Test run results and logs
