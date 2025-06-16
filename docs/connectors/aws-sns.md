@@ -72,34 +72,36 @@ Retrieves the attributes of an Amazon SNS Topic.
 
 ### List Opt Out Numbers
 
-Create an Amazon SNS Topic
+List all opt out numbers
 
-| Input      | Comments                                                                                                | Default |
-| ---------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                 |         |
-| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Connection |                                                                                                         |         |
+| Input      | Comments                                                                                                 | Default |
+| ---------- | -------------------------------------------------------------------------------------------------------- | ------- |
+| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                  |         |
+| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results. |         |
+| Connection |                                                                                                          |         |
 
 ### List Subscriptions
 
 Retrieve the subscriptions of an Amazon SNS Topic
 
-| Input      | Comments                                                                                                | Default |
-| ---------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                 |         |
-| Topic Arn  | An Amazon SNS topic is a logical access point that acts as a communication channel.                     |         |
-| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Connection |                                                                                                         |         |
+| Input      | Comments                                                                                                   | Default |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                            |         |
+| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                    |         |
+| Topic Arn  | An Amazon SNS topic is a logical access point that acts as a communication channel.                        |         |
+| Fetch All  | Turn this on to fetch all paginated subscriptions. If turned off, only 100 subscriptions will be returned. | false   |
+| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results.   |         |
 
 ### List Topics
 
 List available Amazon SNS Topics
 
-| Input      | Comments                                                                                                | Default |
-| ---------- | ------------------------------------------------------------------------------------------------------- | ------- |
-| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                 |         |
-| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results |         |
-| Connection |                                                                                                         |         |
+| Input      | Comments                                                                                                 | Default |
+| ---------- | -------------------------------------------------------------------------------------------------------- | ------- |
+| Connection |                                                                                                          |         |
+| AWS Region | AWS provides services in multiple regions, like us-west-2 or eu-west-1.                                  |         |
+| Fetch All  | Turn this on to fetch all paginated topics. If turned off, only 100 topics will be returned.             | false   |
+| Next Token | Specify the pagination token that's returned by a previous request to retrieve the next page of results. |         |
 
 ### Publish Batch Messages
 
