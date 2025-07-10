@@ -5,21 +5,21 @@ description: Learn about the different types of triggers available in the %EMBED
 
 Triggers allow you to define when a %WORKFLOW% should run. In the %EMBEDDED_WORKFLOW_BUILDER%, you can set up various types of triggers to initiate your workflows based on different events or conditions.
 
-If you would like your %WORKFLOW% to run on a consistent schedule, you can use a [schedule trigger](#schedule-triggers).
-If you want your %WORKFLOW% to run in response to an event in another app, you can use an [app event trigger](#app-event-triggers).
-If you want your %WORKFLOW% to run in response to a webhook request, you can use a [universal webhook trigger](#universal-webhook-triggers).
+If you want your %WORKFLOW% to run on a consistent schedule, use a [schedule trigger](#schedule-triggers).
+If you want your %WORKFLOW% to run in response to an event in another application, use an [app event trigger](#app-event-triggers).
+If you want your %WORKFLOW% to run in response to a webhook request, use a [universal webhook trigger](#universal-webhook-triggers).
 
 ## Selecting a trigger type
 
 When you [create a new %WORKFLOW%](./building.md) in the %EMBEDDED_WORKFLOW_BUILDER%, you will be prompted to select a trigger type.
-If you'd like to change the trigger type of an existing %WORKFLOW%, you can do so by clicking on menu to the left of the trigger at the top of the %WORKFLOW% editor, and selecting **Change step action**.
+To change the trigger type of an existing %WORKFLOW%, click the menu to the left of the trigger at the top of the %WORKFLOW% editor and select **Change step action**.
 
 ## Schedule triggers
 
-Scheduled triggers allow you to run your %WORKFLOW% on a regular cadence (like "every 5 minutes" or "Mondays at 8:00 AM CST").
-This is useful if you have an %WORKFLOW% that should be triggered consistently at a specific time.
+Schedule triggers allow you to run your %WORKFLOW% on a regular cadence (like "every 5 minutes" or "Mondays at 8:00 AM CST").
+This is useful if your %WORKFLOW% should be triggered at a specific time.
 
-To configure a schedule, click the trigger at the top of the %WORKFLOW% editor, and open the **Configure** drawer on the right side of the screen.
+To configure a schedule, click the trigger at the top of the %WORKFLOW% editor and open the **Configure** drawer on the right side of the screen.
 You can then select the frequency of the trigger, such as "every 5 minutes", "every hour", or "every day at a specific time".
 
 ![Schedule trigger configuration](./assets/triggering/schedule.png)
@@ -32,28 +32,28 @@ You can then select the frequency of the trigger, such as "every 5 minutes", "ev
 
 ## App event triggers
 
-App event triggers run when some data changes in a third-party app.
-For example, you may want to be notified when an [Asana Project](./connectors/asana.md#workspace-projects-trigger) is created, updated or deleted, or when a [PagerDuty Incident](./connectors/pagerduty.md#incidents-trigger) occurs.
+App event triggers run when data changes in a third-party application.
+For example, you may want to be notified when an [Asana Project](./connectors/asana.md#workspace-projects-trigger) is created, updated, or deleted, or when a [PagerDuty Incident](./connectors/pagerduty.md#incidents-trigger) occurs.
 
-If the connector you're working with does not have a built-in app event trigger, you can leverage the [universal webhook trigger](#universal-webhook-triggers) to receive event notifications from a third-party app or the [schedule trigger](#schedule-triggers) to periodically check for updates from the third-party.
+If the connector you're working with does not have a built-in app event trigger, you can use the [universal webhook trigger](#universal-webhook-triggers) to receive event notifications from a third-party application, or the [schedule trigger](#schedule-triggers) to periodically check for updates from the third party.
 
 ### App event triggers with webhooks
 
 Some connectors support app event triggers that are powered by webhooks.
-These triggers allow your %WORKFLOW% to run in response to events in the third-party app without needing to poll for updates.
+These triggers allow your %WORKFLOW% to run in response to events in the third-party application without needing to poll for updates.
 
 Webhooks are configured automatically when you [enable](./enabling.md) your workflow in the %EMBEDDED_WORKFLOW_BUILDER%.
-When you enable your %WORKFLOW%, the runner will automatically create a webhook in the third-party app to listen for events.
-When an event occurs, the third-party app will send a request to your %WORKFLOW%'s webhook URL, triggering the %WORKFLOW% to run.
+When you enable your %WORKFLOW%, the runner will automatically create a webhook in the third-party application to listen for events.
+When an event occurs, the third-party application will send a request to your %WORKFLOW%'s webhook URL, triggering the %WORKFLOW% to run.
 
 ### App event triggers with polling
 
-Some apps do not support webhooks, or webhooks configuration is tedious to configure.
-Polling triggers are handy when you want to be notified when data changes in those apps.
+Some applications do not support webhooks, or webhook configuration is tedious.
+Polling triggers are useful when you want to be notified when data changes in those applications.
 
-A polling trigger will poll an external API on a schedule that you set (for example, "every 5 minutes"), and if new data is available since the last time it polled, a full execution will run so your flow can process the data.
+A polling trigger will poll an external API on a schedule that you set (for example, "every 5 minutes"), and if new data is available since the last time it polled, a full execution will run so your %WORKFLOW% can process the data.
 
-If you'd lke to listen for new records in a PostgreSQL database, for example, you can use the [PostgreSQL Polling Trigger](./connectors/postgres.md#triggers) to poll the database for new records every few minutes.
+If you'd like to listen for new records in a PostgreSQL database, for example, you can use the [PostgreSQL Polling Trigger](./connectors/postgres.md#triggers) to poll the database for new records every few minutes.
 
 ## Universal webhook triggers
 
@@ -62,8 +62,8 @@ This is useful if you want to receive real-time notifications from an applicatio
 
 ### What is a webhook?
 
-A **webhook** is an automated message that is sent from one application to another application when certain events occur.
-Webhooks let applications notify one another in real-time when something has changed in one system and can be used to trigger a %WORKFLOW% so the change is reflected in the other system.
+A **webhook** is an automated message sent from one application to another when certain events occur.
+Webhooks let applications notify one another in real time when something has changed in one system and can be used to trigger a %WORKFLOW% so the change is reflected in the other system.
 
 A webhook consists of two main parts:
 
@@ -77,11 +77,10 @@ A webhook consists of two main parts:
 
 Your %WORKFLOW% has two URLs:
 
-1. A test URL you can use to test your webhook configuration within the %EMBEDDED_WORKFLOW_BUILDER%.
-2. A production URL that is used when your %WORKFLOW% is enabled and running in production.
+1. A **Test URL** you can use to test your webhook configuration within the %EMBEDDED_WORKFLOW_BUILDER%.
+2. A **Live URL** that is used when your %WORKFLOW% is [enabled](./enabling.md) and running in production.
 
-<!-- TODO: Replace this with information about where to find test webhook URLs in the workflow builder -->>
-
+Both URLs are available in the **Test** tab of your trigger's configuration drawer.
 Your %WORKFLOW_PLURAL% URLs will each be unique and will look similar to `https://hooks.%WHITE_LABEL_BASE_URL%/trigger/SW5zEXAMPLE1234567890`
 
 ### Webhook request payloads
@@ -95,12 +94,12 @@ To test a webhook request, you can use the test URL in the %EMBEDDED_WORKFLOW_BU
 
 #### Posting data to a webhook URL
 
-Data are typically sent as a JSON object in the request body of the webhook request, though the universal webhook trigger also parses data from the following sources:
+Data is typically sent as a JSON object in the request body of the webhook request, though the universal webhook trigger also parses data from the following sources:
 
-- The **request body** - the JSON (or other) data that is sent to the webhook as an [HTTP request body](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#body).
+- The **request body** - the JSON (or other) data sent to the webhook as an [HTTP request body](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#body).
 - The **request headers** - the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#headers).
 - The **URL path** - The [path to resource](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#path_to_resource) that follows the %WORKFLOW% webhook URL.
-- The **URL parameters** - The [parameters](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters) that follow the `?` in a URL..
+- The **URL parameters** - The [parameters](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters) that follow the `?` in a URL.
 
 Take, for example, this `curl` invocation:
 
@@ -113,17 +112,17 @@ curl \
   --data '{"Payload Key 1":"Payload Value 1","Do Thing?":true,"quantity":123}'
 ```
 
-- The request body - `{"Payload Key 1":"Payload Value 1","Do Thing?":true,"quantity":123}` - is parsed (if JSON) and is accessible to the %WORKFLOW% by referencing the trigger's `results.body.data.KEY-NAME`. Non-JSON payloads (like XML, images, etc) are accessible through `results.rawBody` and can be parsed in subsequent steps that handle that type of data.
+- The request body - `{"Payload Key 1":"Payload Value 1","Do Thing?":true,"quantity":123}` - is parsed (if JSON) and is accessible to the %WORKFLOW% by referencing the trigger's `results.body.data.KEY-NAME`. Non-JSON payloads (like XML, images, etc.) are accessible through `results.rawBody` and can be parsed in subsequent steps that handle that type of data.
 - The request headers are accessible through the trigger's `results.headers.HEADER-NAME`.
-- The url path - `my/custom/path` - is accessible through the trigger's `results.pathFragment`. You can pass that data into the built-in [split string](./connectors/text-manipulation.md#split-string) action and split on the `/` character to split the URL path into an array `['my','custom','path']`.
-- The url parameters - `?param-one=ParamValueOne&param-two=ParamValueTwo` are parsed and accessible through the trigger's `results.queryParameters.PARAMETER-NAME`.
+- The URL path - `my/custom/path` - is accessible through the trigger's `results.pathFragment`. You can pass that data into the built-in [split string](./connectors/text-manipulation.md#split-string) action and split on the `/` character to split the URL path into an array `['my','custom','path']`.
+- The URL parameters - `?param-one=ParamValueOne&param-two=ParamValueTwo` are parsed and accessible through the trigger's `results.queryParameters.PARAMETER-NAME`.
 
 ![Webhook request payload example](./assets/triggering/http-request.png)
 
 #### Posting binary webhook data
 
-If you have binary data (like an image or PDF) that you would like to post as part of your webhook invocation, you can pass that binary data in as part of your request.
-For example, if you have an image, `my-image.png`, you could invoke a test of an %WORKFLOW% with:
+If you have binary data (like an image or PDF) that you would like to post as part of your webhook invocation, you can pass that binary data as part of your request.
+For example, if you have an image, `my-image.png`, you could invoke a test of a %WORKFLOW% with:
 
 ```bash
 curl 'https://hooks.%WHITE_LABEL_BASE_URL%/trigger/SW5zEXAMPLE1234567890' \
@@ -137,7 +136,7 @@ The binary file can be accessed by subsequent steps by referencing `trigger.resu
 #### Posting multipart webhook data
 
 It's useful to be able to post a combination of binary and text data to a %WORKFLOW%.
-For example, you might want to post information about a person, as well as an avatar image of the person, to be processed by an %WORKFLOW%.
+For example, you might want to post information about a person, as well as an avatar image of the person, to be processed by your %WORKFLOW%.
 To do that, use a content type of `multipart/form-data` with your webhook invocation:
 
 ```bash
@@ -154,16 +153,16 @@ The first name in this example is accessible by referencing the trigger's `resul
 
 ### Webhook security
 
-Webhooks are often secured using Hashed Message Authentication Codes (or HMAC) to ensure that the request is coming from an expected source.
+Webhooks are often secured using Hashed Message Authentication Codes (HMAC) to ensure that the request is coming from an expected source.
 You can use the [Hash](./connectors/hash.md#hmac-webhook-trigger) connector's HMAC trigger to implement HMAC security for your webhook requests.
 This trigger will reject any request that is not properly signed with the expected HMAC signature.
 
 ### Synchronous and asynchronous invocations
 
 %WORKFLOW_PLURAL% are configured by default to run **asynchronously**.
-That means that an external app makes a request to a %WORKFLOW% webhook URL, but does not wait around for the %WORKFLOW% to finish running.
+That means that an external application makes a request to a %WORKFLOW% webhook URL, but does not wait for the %WORKFLOW% to finish running.
 
-Sometimes, though, it's handy for an application to get information back from the %WORKFLOW% that was invoked.
+Sometimes, though, it's useful for an application to get information back from the %WORKFLOW% that was invoked.
 In that case, you can choose to run your %WORKFLOW% **synchronously**.
 
 When a %WORKFLOW% is invoked synchronously, the external application makes a request to the %WORKFLOW%'s webhook URL and waits for the %WORKFLOW% to finish running before receiving a response.
@@ -171,7 +170,7 @@ The caller receives an HTTP response with the results of the _last step_ of the 
 
 #### Default asynchronous webhook responses
 
-By default, a %WORKFLOW% runs **asynchronously** and its webhook triggers provides an HTTP code 200 ("OK") response to callers.
+By default, a %WORKFLOW% runs **asynchronously** and its webhook trigger provides an HTTP code 200 ("OK") response to callers.
 The body of the response contains the ID of the execution that was triggered.
 Your request and response might look something like this:
 
@@ -188,13 +187,13 @@ curl \
 
 If you would like to provide a different HTTP status code in response to a webhook request, you have two options:
 
-1. If you'd like to provide a consistent HTTP status code for all asynchronous webhook requests, you can configure the default response code in the %EMBEDDED_WORKFLOW_BUILDER% by clicking on the trigger at the top of the %WORKFLOW% editor, and opening the **Configure** drawer on the right side of the screen.
+1. To provide a consistent HTTP status code for all asynchronous webhook requests, configure the default response code in the %EMBEDDED_WORKFLOW_BUILDER% by clicking on the trigger at the top of the %WORKFLOW% editor and opening the **Configure** drawer on the right side of the screen.
 
    ![Default response code configuration](./assets/triggering/asynchronous-default-status-code.png)
 
-   You can similarly provide a static text response body and response headers within the universal webhook trigger configuration drawer.
+   You can also provide a static text response body and response headers within the universal webhook trigger configuration drawer.
 
-2. If you'd like to provide a dynamic HTTP response dependent on the request, you can write some custom JavaScript code using a [Code Block Trigger](./connectors/code.md#code-block-trigger).
+2. To provide a dynamic HTTP response dependent on the request, write custom JavaScript code using a [Code Block Trigger](./connectors/code.md#code-block-trigger).
 
    ```javascript title="Custom JavaScript code for a trigger"
    module.exports = async ({ logger, configVars }, payload) => {

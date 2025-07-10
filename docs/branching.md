@@ -5,16 +5,16 @@ description: You can create logical branches within your %WORKFLOW% based on con
 
 The [branch](./connectors/branch.md) tool allows you to add branching logic to your %WORKFLOW%.
 Think of **branches** as logical paths that your %WORKFLOW% can take.
-Given some information about a previous steps' results, your %WORKFLOW% can follow one of many paths.
+Given some information about a previous step's results, your %WORKFLOW% can follow one of many paths.
 
-Branch steps are handy when you need to conditionally execute some steps.
-Here are a couple of examples of things you can accomplish with branching:
+Branch steps are useful when you need to conditionally execute certain steps.
+Here are a couple of examples of what you can accomplish with branching:
 
-**Example 1:** The [webhook requests](./triggering.md#universal-webhook-triggers) your %WORKFLOW% receives could contain a "Widget Created", "Widget Updated" or "Widget Deleted" event.
+**Example 1:** The [webhook requests](./triggering.md#universal-webhook-triggers) your %WORKFLOW% receives could contain a "Widget Created", "Widget Updated", or "Widget Deleted" event.
 You need to execute a series of steps depending on which event type was received.
 
-**Example 2:** You want to [upsert](https://www.sqlite.org/lang_upsert.html) data into system that doesn't support upsert.
-You can check if a record exists, and branch into "add a new record" or "update the existing record" branches depending on if the record exists.
+**Example 2:** You want to [upsert](https://www.sqlite.org/lang_upsert.html) data into a system that doesn't support upsert.
+You can check if a record exists and branch into "add a new record" or "update the existing record" branches depending on whether the record exists.
 
 ## Branching on a value
 
@@ -24,16 +24,16 @@ You declare "this step result will have one of these values - follow a branch ba
 
 Consider **Example 1** above.
 
-Suppose the webhook request you receive has a HTTP header, `event` that can be one of three values: `widget-created`, `widget-updated` or `widget-deleted`.
+Suppose the webhook request you receive has an HTTP header, `event`, that can be one of three values: `widget-created`, `widget-updated`, or `widget-deleted`.
 You can look at that value and branch accordingly.
 
 ![Branch on value](./assets/branching/branch-on-value.png)
 
-If your flow receives a `widget-created` event header, it will follow the "Created" branch, etc.
+If your %WORKFLOW% receives a `widget-created` event header, it will follow the "Created" branch, etc.
 
 ## Branching on an expression
 
-The [Branch on Expression](./connectors/branch.md#branch-on-expression) action allows you to create branches within your integration based on more complex inputs.
+The [Branch on Expression](./connectors/branch.md#branch-on-expression) action allows you to create branches within your %WORKFLOW% based on more complex inputs.
 You can compare step results or static values using [comparison operators](#branch-on-expression-comparison-operators) (like "does not equal" or "less than") and follow a branch based on the results of the comparisons.
 
 ![Branch on expression](./assets/branching/branch-on-expression.png)
