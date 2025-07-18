@@ -1,8 +1,4 @@
----
-title: Stop Execution Connector
-sidebar_label: Stop Execution
-description: Stop the execution of an instance
----
+# Stop Execution Connector
 
 ![Stop Execution](./assets/stop-execution.png#connector-icon)
 Stop the execution of an instance

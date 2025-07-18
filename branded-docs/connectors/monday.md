@@ -1,8 +1,4 @@
----
-title: Monday Connector
-sidebar_label: Monday
-description: Manage boards, tasks and workflows within Monday.
----
+# Monday Connector
 
 ![Monday](./assets/monday.png#connector-icon)
 Manage boards, tasks and workflows within Monday.

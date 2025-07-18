@@ -1,8 +1,4 @@
----
-title: ServiceNow Connector
-sidebar_label: ServiceNow
-description: Create records and incidents within ServiceNow
----
+# ServiceNow Connector
 
 ![ServiceNow](./assets/servicenow.png#connector-icon)
 Create records and incidents within ServiceNow

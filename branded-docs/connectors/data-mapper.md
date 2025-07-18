@@ -1,8 +1,4 @@
----
-title: Data Mapper Connector
-sidebar_label: Data Mapper
-description: Map input values to output values using a specified mapping
----
+# Data Mapper Connector
 
 ![Data Mapper](./assets/data-mapper.png#connector-icon)
 Map input values to output values using a specified mapping

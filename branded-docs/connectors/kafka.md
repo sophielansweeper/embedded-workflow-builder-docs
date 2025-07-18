@@ -1,8 +1,4 @@
----
-title: Kafka Connector
-sidebar_label: Kafka
-description: Publish messages to an Apache Kafka event stream
----
+# Kafka Connector
 
 ![Kafka](./assets/kafka.png#connector-icon)
 Publish messages to an Apache Kafka event stream

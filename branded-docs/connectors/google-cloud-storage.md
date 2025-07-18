@@ -1,8 +1,4 @@
----
-title: Google Cloud Storage Connector
-sidebar_label: Google Cloud Storage
-description: Manage files in a Google Cloud Platform (GCP) Cloud Storage bucket
----
+# Google Cloud Storage Connector
 
 ![Google Cloud Storage](./assets/google-cloud-storage.png#connector-icon)
 Manage files in a Google Cloud Platform (GCP) Cloud Storage bucket

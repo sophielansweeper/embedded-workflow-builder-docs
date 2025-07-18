@@ -1,8 +1,4 @@
----
-title: Freshservice Connector
-sidebar_label: Freshservice
-description: Use the Freshservice component to manage tickets, problems, agents, and more.
----
+# Freshservice Connector
 
 ![Freshservice](./assets/freshservice.png#connector-icon)
 Use the Freshservice component to manage tickets, problems, agents, and more.

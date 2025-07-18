@@ -1,8 +1,4 @@
----
-title: Active Directory Connector
-sidebar_label: Active Directory
-description: Connect to an Active Directory server.
----
+# Active Directory Connector
 
 ![Active Directory](./assets/ldap.png#connector-icon)
 Connect to an Active Directory server.

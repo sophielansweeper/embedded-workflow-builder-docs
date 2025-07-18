@@ -1,8 +1,4 @@
----
-title: Greenhouse Connector
-sidebar_label: Greenhouse
-description: Interact with the Greenhouse API
----
+# Greenhouse Connector
 
 ![Greenhouse](./assets/greenhouse.png#connector-icon)
 Interact with the Greenhouse API

@@ -1,8 +1,4 @@
----
-title: Azure Blob Storage Connector
-sidebar_label: Azure Blob Storage
-description: Manage files and folders within Azure Blob Storage
----
+# Azure Blob Storage Connector
 
 ![Azure Blob Storage](./assets/azure-blob.png#connector-icon)
 Manage files and folders within Azure Blob Storage

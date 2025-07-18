@@ -1,8 +1,4 @@
----
-title: PDQ Connector
-sidebar_label: PDQ
-description: PDQ provides a suite of management tools to automate software deployment, manage patches, and track inventory across a company’s networks. Use the PDQ component to manage deployments, devices, groups, and packages.
----
+# PDQ Connector
 
 ![PDQ](./assets/pdq.png#connector-icon)
 PDQ provides a suite of management tools to automate software deployment, manage patches, and track inventory across a company’s networks. Use the PDQ component to manage deployments, devices, groups, and packages.

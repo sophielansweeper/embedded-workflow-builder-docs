@@ -1,8 +1,4 @@
----
-title: Microsoft Graph API Connector
-sidebar_label: Microsoft Graph API
-description: Interact with the Microsoft Graph API
----
+# Microsoft Graph API Connector
 
 ![Microsoft Graph API](./assets/ms-graph-api.png#connector-icon)
 Interact with the Microsoft Graph API

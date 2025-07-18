@@ -1,8 +1,4 @@
----
-title: ADP Workforce Now Connector
-sidebar_label: ADP Workforce Now
-description: ADP Workforce Now is a comprehensive solution for managing HR, payroll, and labor management. Designed to help navigate compliance and drive productivity, engagement, and growth.
----
+# ADP Workforce Now Connector
 
 ![ADP Workforce Now](./assets/adp-workforce-now.png#connector-icon)
 ADP Workforce Now is a comprehensive solution for managing HR, payroll, and labor management. Designed to help navigate compliance and drive productivity, engagement, and growth.

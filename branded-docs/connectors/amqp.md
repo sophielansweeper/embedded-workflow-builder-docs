@@ -1,8 +1,4 @@
----
-title: AMQP Connector
-sidebar_label: AMQP
-description: Send and receive messages on an AMQP-based message broker
----
+# AMQP Connector
 
 ![AMQP](./assets/amqp.png#connector-icon)
 Send and receive messages on an AMQP-based message broker

@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Get Started
 description: Start building your own %WORKFLOW_PLURAL%
 ---
 

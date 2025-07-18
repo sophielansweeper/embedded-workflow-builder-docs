@@ -1,8 +1,4 @@
----
-title: Code Connector
-sidebar_label: Code
-description: Author and run your own code
----
+# Code Connector
 
 ![Code](./assets/code.png#connector-icon)
 Author and run your own code

@@ -1,8 +1,4 @@
----
-title: JSONata Connector
-sidebar_label: JSONata
-description: Transform data using the JSONata query and transformation language
----
+# JSONata Connector
 
 ![JSONata](./assets/jsonata.png#connector-icon)
 Transform data using the JSONata query and transformation language

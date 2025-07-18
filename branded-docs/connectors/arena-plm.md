@@ -1,8 +1,4 @@
----
-title: Arena PLM Connector
-sidebar_label: Arena PLM
-description: Interact with items and resources in Arena PLM
----
+# Arena PLM Connector
 
 ![Arena PLM](./assets/arena-plm.png#connector-icon)
 Interact with items and resources in Arena PLM

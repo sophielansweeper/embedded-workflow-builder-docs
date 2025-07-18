@@ -1,8 +1,4 @@
----
-title: Box Connector
-sidebar_label: Box
-description: Manage files stored in Box
----
+# Box Connector
 
 ![Box](./assets/box.png#connector-icon)
 Manage files stored in Box
@@ -226,7 +222,8 @@ List all webhooks configured in Box, including those for other integrations
 | Connection                  |                                                                                                                 |         |
 | Limit                       | Provide an integer value for the maximum amount of items that will be returned. Provide a value from 1 to 1000. |         |
 | Marker                      | Specify the pagination token that's returned by a previous request to retrieve the next page of results         |         |
-| Show only instance webhooks | Show only webhooks that point to this instance                                                                  | true    |
+| Fetch All                   | Set to true to retrieve all results.                                                                            | false   |
+| Show Only Instance Webhooks | Show only webhooks that point to this instance                                                                  | true    |
 
 ### Move Object
 

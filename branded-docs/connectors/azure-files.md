@@ -1,8 +1,4 @@
----
-title: Azure Files Connector
-sidebar_label: Azure Files
-description: Manage files and folders within Azure Files
----
+# Azure Files Connector
 
 ![Azure Files](./assets/azure-files.png#connector-icon)
 Manage files and folders within Azure Files

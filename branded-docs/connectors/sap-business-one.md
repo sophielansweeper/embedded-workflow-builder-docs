@@ -1,8 +1,4 @@
----
-title: SAP Business One Connector
-sidebar_label: SAP Business One
-description: SAP Business One is an integrated enterprise resource planning (ERP) solution designed for organizations to manage their entire operations. Use the component to manage entities and actions from accounting, financials, inventory and more.
----
+# SAP Business One Connector
 
 ![SAP Business One](./assets/sap-business-one.png#connector-icon)
 SAP Business One is an integrated enterprise resource planning (ERP) solution designed for organizations to manage their entire operations. Use the component to manage entities and actions from accounting, financials, inventory and more.

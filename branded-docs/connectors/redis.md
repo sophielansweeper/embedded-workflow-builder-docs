@@ -1,8 +1,4 @@
----
-title: Redis Connector
-sidebar_label: Redis
-description: Manage items in a Redis database
----
+# Redis Connector
 
 ![Redis](./assets/redis.png#connector-icon)
 Manage items in a Redis database

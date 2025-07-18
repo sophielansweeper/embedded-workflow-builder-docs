@@ -1,5 +1,5 @@
 ---
-title: Looping
+title: Loop
 description: The loop step allows you to iterate over an array of items or records
 ---
 

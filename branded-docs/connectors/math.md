@@ -1,8 +1,4 @@
----
-title: Math Connector
-sidebar_label: Math
-description: Perform common math operations on numbers or lists of numbers
----
+# Math Connector
 
 ![Math](./assets/math.png#connector-icon)
 Perform common math operations on numbers or lists of numbers

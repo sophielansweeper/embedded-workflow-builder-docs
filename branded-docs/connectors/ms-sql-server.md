@@ -1,8 +1,4 @@
----
-title: Microsoft SQL Server Connector
-sidebar_label: Microsoft SQL Server
-description: Query and manage data in a Microsoft SQL Server (MSSQL) Database
----
+# Microsoft SQL Server Connector
 
 ![Microsoft SQL Server](./assets/ms-sql-server.png#connector-icon)
 Query and manage data in a Microsoft SQL Server (MSSQL) Database

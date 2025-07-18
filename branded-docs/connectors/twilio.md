@@ -1,8 +1,4 @@
----
-title: Twilio Connector
-sidebar_label: Twilio
-description: Send SMS messages through Twilio
----
+# Twilio Connector
 
 ![Twilio](./assets/twilio.png#connector-icon)
 Send SMS messages through Twilio

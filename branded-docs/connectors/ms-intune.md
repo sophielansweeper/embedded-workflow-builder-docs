@@ -1,8 +1,4 @@
----
-title: Microsoft Intune Connector
-sidebar_label: Microsoft Intune
-description: Use the Microsoft Intune component to manage users, devices, and applications.
----
+# Microsoft Intune Connector
 
 ![Microsoft Intune](./assets/ms-intune.png#connector-icon)
 Use the Microsoft Intune component to manage users, devices, and applications.

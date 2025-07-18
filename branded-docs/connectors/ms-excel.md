@@ -1,8 +1,4 @@
----
-title: Microsoft Excel Connector
-sidebar_label: Microsoft Excel
-description: Parse and build .xlsx files (spreadsheets)
----
+# Microsoft Excel Connector
 
 ![Microsoft Excel](./assets/ms-excel.png#connector-icon)
 Parse and build .xlsx files (spreadsheets)

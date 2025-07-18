@@ -1,8 +1,4 @@
----
-title: Collection Tools Connector
-sidebar_label: Collection Tools
-description: Common collection operations
----
+# Collection Tools Connector
 
 ![Collection Tools](./assets/collection-tools.png#connector-icon)
 Common collection operations

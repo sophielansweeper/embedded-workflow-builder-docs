@@ -1,8 +1,4 @@
----
-title: WhatsApp Connector
-sidebar_label: WhatsApp
-description: WhatsApp is a messaging app that allows users to send texts, make voice and video calls, and share media.
----
+# WhatsApp Connector
 
 ![WhatsApp](./assets/whatsapp.png#connector-icon)
 WhatsApp is a messaging app that allows users to send texts, make voice and video calls, and share media.

@@ -1,14 +1,11 @@
----
-title: HTTP Requests
-description: If you'd like to send data to an app that doesn't have a built-in connector, use the generic HTTP connector
----
+# HTTP Requests
 
-Connectors are the building blocks of your Workflow and allow you to connect to third-party apps and services.
-If you want to send data to an app that doesn't have a built-in connector, you can use the generic [HTTP Connector](./connectors/http.md) to make HTTP requests to that app's API.
+Connectors are the building blocks of your Workflow and allow you to connect to third-party applications and services.
+If you want to send data to an application that doesn't have a built-in connector, you can use the generic [HTTP Connector](./connectors/http.md) to make HTTP requests to that application's API.
 
 > **Tip: Use raw request actions for built-in connectors**
 >
-> If you are integrating with an app that has a built-in connector, but you need to access an endpoint that does not have a dedicated action, you can generally use the connector's "Raw Request" action to send an authenticated request to that app.
+> If you are integrating with an application that has a built-in connector, but you need to access an endpoint that does not have a dedicated action, you can generally use the connector's "Raw Request" action to send an authenticated request to that application.
 > Most built-in connectors contain a "Raw Request" action, like [Slack](./connectors/slack.md#raw-request), [Hubspot](./connectors/hubspot.md#raw-request), etc.
 
 ## HTTP verbs
@@ -45,7 +42,7 @@ Below are examples of how to send data in these formats.
 
 JSON (JavaScript Object Notation) is the most widely used data format for interacting with APIs.
 To send JSON data in an HTTP request, first generate a JavaScript or JSON payload in a previous step.
-If you are adapt at coding, you can use the [Code](./custom-code.md) connector to generate a JavaScript object.
+If you are adept at coding, you can use the [Code](./custom-code.md) connector to generate a JavaScript object.
 
 > **Tip: Create objects using the Collection Tools connector**
 >
@@ -61,7 +58,7 @@ Be sure to set the **Content-Type** header to `application/json` in the **Header
 
 ### Sending non-JSON data
 
-If you need to send data in another stringified format, like XML or CSV data, you can do so by passing the stringified data into the **Body** input of your HTTP request step.
+If you need to send data in another stringified format, like XML or CSV, you can do so by passing the stringified data into the **Body** input of your HTTP request step.
 Make sure to set the **Content-Type** header to the appropriate value for the format you are sending (e.g., `application/xml` for XML data).
 
 ### Sending form data
@@ -81,7 +78,7 @@ That would add a file named `myFile.txt` with the content `Hello, World!` to the
 ### Sending GraphQL requests
 
 While [GraphQL](https://graphql.org/) requests are, at their core, HTTP POST requests of JSON data, it's often helpful to serialize the GraphQL query and variables automatically.
-Reach for the generic [GraphQL](./connectors/graphql.md) connector to send GraphQL requests as you would HTTP requests.
+Use the generic [GraphQL](./connectors/graphql.md) connector to send GraphQL requests as you would HTTP requests.
 
 Your query can contain GraphQL [variables](https://graphql.org/learn/queries/#variables), which are passed in the **Variables** input.
 

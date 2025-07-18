@@ -1,8 +1,4 @@
----
-title: Slack Connector
-sidebar_label: Slack
-description: Send messages to Slack channels and users
----
+# Slack Connector
 
 ![Slack](./assets/slack.png#connector-icon)
 Send messages to Slack channels and users

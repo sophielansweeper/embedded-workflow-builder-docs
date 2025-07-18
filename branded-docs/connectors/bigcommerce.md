@@ -1,8 +1,4 @@
----
-title: BigCommerce Connector
-sidebar_label: BigCommerce
-description: BigCommerce is a SaaS ecommerce platform. Use the Bigcommerce component to manage your Products, Brands, Categories and more.
----
+# BigCommerce Connector
 
 ![BigCommerce](./assets/bigcommerce.png#connector-icon)
 BigCommerce is a SaaS ecommerce platform. Use the Bigcommerce component to manage your Products, Brands, Categories and more.

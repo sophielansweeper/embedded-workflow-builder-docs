@@ -1,8 +1,4 @@
----
-title: Postmark Connector
-sidebar_label: Postmark
-description: The Postmark component is used as a developer friendly email delivery service
----
+# Postmark Connector
 
 ![Postmark](./assets/postmark.png#connector-icon)
 The Postmark component is used as a developer friendly email delivery service

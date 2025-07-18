@@ -1,8 +1,4 @@
----
-title: Amazon DynamoDB Connector
-sidebar_label: Amazon DynamoDB
-description: Create, update, fetch, or delete items in an Amazon (AWS) DynamoDB database
----
+# Amazon DynamoDB Connector
 
 ![Amazon DynamoDB](./assets/aws-dynamodb.png#connector-icon)
 Create, update, fetch, or delete items in an Amazon (AWS) DynamoDB database

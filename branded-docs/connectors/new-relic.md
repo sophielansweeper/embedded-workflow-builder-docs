@@ -1,8 +1,4 @@
----
-title: New Relic Connector
-sidebar_label: New Relic
-description: Easily manage metrics, logs, and events
----
+# New Relic Connector
 
 ![New Relic](./assets/new-relic.png#connector-icon)
 Easily manage metrics, logs, and events

@@ -1,8 +1,4 @@
----
-title: Karbon Connector
-sidebar_label: Karbon
-description: Karbon is a collaborative practice management platform for accounting firms.
----
+# Karbon Connector
 
 ![Karbon](./assets/karbon.png#connector-icon)
 Karbon is a collaborative practice management platform for accounting firms.

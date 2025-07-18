@@ -1,8 +1,4 @@
----
-title: DeepSeek Connector
-sidebar_label: DeepSeek
-description: DeepSeek is an AI developer of large language models (LLM) focused on providing high performance models.
----
+# DeepSeek Connector
 
 ![DeepSeek](./assets/deepseek.png#connector-icon)
 DeepSeek is an AI developer of large language models (LLM) focused on providing high performance models.

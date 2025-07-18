@@ -1,8 +1,4 @@
----
-title: Anthropic Connector
-sidebar_label: Anthropic
-description: Interact with Anthropic's Claude models
----
+# Anthropic Connector
 
 ![Anthropic](./assets/anthropic.png#connector-icon)
 Interact with Anthropic&#x27;s Claude models

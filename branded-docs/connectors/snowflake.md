@@ -1,8 +1,4 @@
----
-title: Snowflake Connector
-sidebar_label: Snowflake
-description: Snowflake is a cloud data platform. Use the Snowflake component to access and update data in a Snowflake Database.
----
+# Snowflake Connector
 
 ![Snowflake](./assets/snowflake.png#connector-icon)
 Snowflake is a cloud data platform. Use the Snowflake component to access and update data in a Snowflake Database.

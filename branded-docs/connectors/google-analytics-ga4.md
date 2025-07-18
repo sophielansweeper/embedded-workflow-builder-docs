@@ -1,8 +1,4 @@
----
-title: Google Analytics - GA4 Connector
-sidebar_label: Google Analytics - GA4
-description: Manage Google Analytics GA4 accounts and data
----
+# Google Analytics - GA4 Connector
 
 ![Google Analytics - GA4](./assets/google-analytics-ga4.png#connector-icon)
 Manage Google Analytics GA4 accounts and data

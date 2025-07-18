@@ -1,8 +1,4 @@
----
-title: Pretty Good Privacy Connector
-sidebar_label: Pretty Good Privacy
-description: Create and translate encrypted messages
----
+# Pretty Good Privacy Connector
 
 ![Pretty Good Privacy](./assets/pgp.png#connector-icon)
 Create and translate encrypted messages

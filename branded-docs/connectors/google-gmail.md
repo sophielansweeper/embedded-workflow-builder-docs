@@ -1,8 +1,4 @@
----
-title: Gmail Connector
-sidebar_label: Gmail
-description: Manage Messages in Google's email service
----
+# Gmail Connector
 
 ![Gmail](./assets/google-gmail.png#connector-icon)
 Manage Messages in Google&#x27;s email service

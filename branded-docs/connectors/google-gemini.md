@@ -1,8 +1,4 @@
----
-title: Google Gemini Connector
-sidebar_label: Google Gemini
-description: Google Gemini is an offering of advanced AI models developed by Google's DeepMind. Use the component to generate chats, images, and videos.
----
+# Google Gemini Connector
 
 ![Google Gemini](./assets/google-gemini.png#connector-icon)
 Google Gemini is an offering of advanced AI models developed by Google&#x27;s DeepMind. Use the component to generate chats, images, and videos.

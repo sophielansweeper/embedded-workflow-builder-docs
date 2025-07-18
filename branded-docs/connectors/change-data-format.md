@@ -1,8 +1,4 @@
----
-title: Change Data Format Connector
-sidebar_label: Change Data Format
-description: Change data from one format to another
----
+# Change Data Format Connector
 
 ![Change Data Format](./assets/change-data-format.png#connector-icon)
 Change data from one format to another

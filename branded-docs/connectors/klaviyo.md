@@ -1,8 +1,4 @@
----
-title: Klaviyo Connector
-sidebar_label: Klaviyo
-description: Klaviyo is a cloud based email marketing solution that enables e-commerce businesses to create, send, and analyze email and SMS campaigns.
----
+# Klaviyo Connector
 
 ![Klaviyo](./assets/klaviyo.png#connector-icon)
 Klaviyo is a cloud based email marketing solution that enables e-commerce businesses to create, send, and analyze email and SMS campaigns.

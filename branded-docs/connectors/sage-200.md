@@ -1,8 +1,4 @@
----
-title: Sage 200 Connector
-sidebar_label: Sage 200
-description: Sage 200 is an online business management solution designed to help businesses manage their finances, customers, and business insight in one solution.
----
+# Sage 200 Connector
 
 ![Sage 200](./assets/sage-200.png#connector-icon)
 Sage 200 is an online business management solution designed to help businesses manage their finances, customers, and business insight in one solution.

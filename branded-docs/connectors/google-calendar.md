@@ -1,8 +1,4 @@
----
-title: Google Calendar Connector
-sidebar_label: Google Calendar
-description: Manage calendars and events in Google Calendar
----
+# Google Calendar Connector
 
 ![Google Calendar](./assets/google-calendar.png#connector-icon)
 Manage calendars and events in Google Calendar

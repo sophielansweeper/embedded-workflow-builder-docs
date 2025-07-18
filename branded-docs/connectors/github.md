@@ -1,8 +1,4 @@
----
-title: GitHub Connector
-sidebar_label: GitHub
-description: Manage users, repositories, licenses, and more on GitHub
----
+# GitHub Connector
 
 ![GitHub](./assets/github.png#connector-icon)
 Manage users, repositories, licenses, and more on GitHub

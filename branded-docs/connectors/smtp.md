@@ -1,8 +1,4 @@
----
-title: SMTP Connector
-sidebar_label: SMTP
-description: Send emails through an SMTP server
----
+# SMTP Connector
 
 ![SMTP](./assets/smtp.png#connector-icon)
 Send emails through an SMTP server

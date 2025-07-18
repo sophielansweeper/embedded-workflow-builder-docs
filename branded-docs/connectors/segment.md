@@ -1,8 +1,4 @@
----
-title: Segment Connector
-sidebar_label: Segment
-description: Segment is a customer data platform (CDP) service that simplifies collecting and using data from users of your digital properties (websites, apps, etc.) Use the Segment component to manage your Sources, Warehouses, and Destinations.
----
+# Segment Connector
 
 ![Segment](./assets/segment.png#connector-icon)
 Segment is a customer data platform (CDP) service that simplifies collecting and using data from users of your digital properties (websites, apps, etc.) Use the Segment component to manage your Sources, Warehouses, and Destinations.

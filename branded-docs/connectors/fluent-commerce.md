@@ -1,8 +1,4 @@
----
-title: Fluent Commerce Connector
-sidebar_label: Fluent Commerce
-description: Manage orders within Fluent Commerce
----
+# Fluent Commerce Connector
 
 ![Fluent Commerce](./assets/fluent-commerce.png#connector-icon)
 Manage orders within Fluent Commerce

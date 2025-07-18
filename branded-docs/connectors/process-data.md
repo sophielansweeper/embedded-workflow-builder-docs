@@ -1,8 +1,4 @@
----
-title: Process Data Connector
-sidebar_label: Process Data
-description: Process data sets
----
+# Process Data Connector
 
 ![Process Data](./assets/process-data.png#connector-icon)
 Process data sets

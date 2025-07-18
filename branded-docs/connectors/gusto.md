@@ -1,8 +1,4 @@
----
-title: Gusto Connector
-sidebar_label: Gusto
-description: Manage payroll, benefits, and human resource within Gusto
----
+# Gusto Connector
 
 ![Gusto](./assets/gusto.png#connector-icon)
 Manage payroll, benefits, and human resource within Gusto

@@ -1,8 +1,4 @@
----
-title: Azure OpenAI Service Connector
-sidebar_label: Azure OpenAI Service
-description: Interact with OpenAI models, including Chat GPT and DALL·E
----
+# Azure OpenAI Service Connector
 
 ![Azure OpenAI Service](./assets/azure-openai-service.png#connector-icon)
 Interact with OpenAI models, including Chat GPT and DALL·E

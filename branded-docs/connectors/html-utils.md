@@ -1,8 +1,4 @@
----
-title: HTML Utils Connector
-sidebar_label: HTML Utils
-description: Helpful HTML-related functions for building HTML documents and HTML-based emails.
----
+# HTML Utils Connector
 
 ![HTML Utils](./assets/html-utils.png#connector-icon)
 Helpful HTML-related functions for building HTML documents and HTML-based emails.

@@ -1,8 +1,4 @@
----
-title: ServiceDesk Plus Connector
-sidebar_label: ServiceDesk Plus
-description: ServiceDesk Plus is a comprehensive service desk software that offers a suite of IT Service management, IT asset management, CBDM, and more.
----
+# ServiceDesk Plus Connector
 
 ![ServiceDesk Plus](./assets/servicedesk-plus.png#connector-icon)
 ServiceDesk Plus is a comprehensive service desk software that offers a suite of IT Service management, IT asset management, CBDM, and more.

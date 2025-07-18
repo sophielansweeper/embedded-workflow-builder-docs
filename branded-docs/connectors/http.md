@@ -1,8 +1,4 @@
----
-title: HTTP Connector
-sidebar_label: HTTP
-description: Make HTTP requests to URLs such as REST APIs, Webhooks, etc
----
+# HTTP Connector
 
 ![HTTP](./assets/http.png#connector-icon)
 Make HTTP requests to URLs such as REST APIs, Webhooks, etc

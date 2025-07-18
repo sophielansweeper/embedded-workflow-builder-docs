@@ -1,8 +1,4 @@
----
-title: Amazon SES Connector
-sidebar_label: Amazon SES
-description: Send Emails through Amazon (AWS) SES
----
+# Amazon SES Connector
 
 ![Amazon SES](./assets/aws-ses.png#connector-icon)
 Send Emails through Amazon (AWS) SES

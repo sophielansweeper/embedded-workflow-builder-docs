@@ -1,8 +1,4 @@
----
-title: Frontify Connector
-sidebar_label: Frontify
-description: Frontify is a comprehensive brand management platform that enables organizations to create, manage, and distribute brand assets, guidelines, and digital content across teams and channels, streamlining brand consistency and collaboration.
----
+# Frontify Connector
 
 ![Frontify](./assets/frontify.png#connector-icon)
 Frontify is a comprehensive brand management platform that enables organizations to create, manage, and distribute brand assets, guidelines, and digital content across teams and channels, streamlining brand consistency and collaboration.

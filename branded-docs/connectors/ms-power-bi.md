@@ -1,8 +1,4 @@
----
-title: Microsoft Power BI Connector
-sidebar_label: Microsoft Power BI
-description: Interact with and modify Power BI datasets
----
+# Microsoft Power BI Connector
 
 ![Microsoft Power BI](./assets/ms-power-bi.png#connector-icon)
 Interact with and modify Power BI datasets

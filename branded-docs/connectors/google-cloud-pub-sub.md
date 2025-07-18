@@ -1,8 +1,4 @@
----
-title: Google Cloud Pub/Sub Connector
-sidebar_label: Google Cloud Pub/Sub
-description: Google Cloud Pub/Sub provides messaging between applications. Publisher applications can send messages to a 'topic' and other applications can subscribe to that topic to receive the messages.
----
+# Google Cloud Pub/Sub Connector
 
 ![Google Cloud Pub/Sub](./assets/google-cloud-pub-sub.png#connector-icon)
 Google Cloud Pub/Sub provides messaging between applications. Publisher applications can send messages to a &#x27;topic&#x27; and other applications can subscribe to that topic to receive the messages.

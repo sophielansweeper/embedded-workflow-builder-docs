@@ -1,8 +1,4 @@
----
-title: Mixpanel Connector
-sidebar_label: Mixpanel
-description: Mixpanel is a SaaS event analytics platform that can track user interactions with web and mobile applications. Data collected can be used to build custom reports and measure user engagement and retention.
----
+# Mixpanel Connector
 
 ![Mixpanel](./assets/mixpanel.png#connector-icon)
 Mixpanel is a SaaS event analytics platform that can track user interactions with web and mobile applications. Data collected can be used to build custom reports and measure user engagement and retention.

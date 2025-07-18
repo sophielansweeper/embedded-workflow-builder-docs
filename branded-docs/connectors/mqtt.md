@@ -1,8 +1,4 @@
----
-title: MQTT Connector
-sidebar_label: MQTT
-description: Interact with an MQTT Queue
----
+# MQTT Connector
 
 ![MQTT](./assets/mqtt.png#connector-icon)
 Interact with an MQTT Queue

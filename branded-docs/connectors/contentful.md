@@ -1,8 +1,4 @@
----
-title: Contentful Connector
-sidebar_label: Contentful
-description: Use the Contentful component to manage Spaces, Environments, Organizations and more.
----
+# Contentful Connector
 
 ![Contentful](./assets/contentful.png#connector-icon)
 Use the Contentful component to manage Spaces, Environments, Organizations and more.

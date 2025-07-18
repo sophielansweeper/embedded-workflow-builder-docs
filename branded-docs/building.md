@@ -1,9 +1,6 @@
----
-title: Building Workflows
-description: Build new Workflows using Lansweeper's Flow Builder
----
+# Build Workflows
 
-Lansweeper's Flow Builder lets you build Workflows that connect Lansweeper Platform to the other apps and services you use.
+Lansweeper's Flow Builder lets you build Workflows that connect Lansweeper Platform to other applications and services you use.
 This article describes how to build Workflows.
 
 If you have not done so yet, please first review the [Getting Started](./get-started.md) guide.
@@ -22,29 +19,29 @@ Actions, like downloading a file from an [SFTP server](./connectors/sftp.md) or 
 Steps are executed in order, and results from one step can be used as inputs for subsequent steps.
 
 Steps are run in order from top to bottom, and you can add conditional logic to your Workflow with [branching](./branching.md), or run a series of steps within a [loop](./looping.md).
-If one step throws an error, your Workflow stops running until it is invoked again (though, you can decide how to [handle errors](./error-handling.md)).
+If one step throws an error, your Workflow stops running until it is invoked again (though you can decide how to [handle errors](./error-handling.md)).
 
 ### The trigger step
 
 The first step of your Workflow is the **trigger** step, which determines when your Workflow will run.
-The [triggers](./triggering.md) article details how triggers work, and how to invoke your Workflow.
+The [triggers](./triggering.md) article details how triggers work and how to invoke your Workflow.
 
-### Adding steps to a Workflow
+### Adding steps to your Workflow
 
-To add a step to an Workflow, click the **+** icon underneath the trigger or another action.
+To add a step to your Workflow, click the **+** icon underneath the trigger or another action.
 
-Select the connector and action you would like to add to your integration.
+Select the connector and action you would like to add to your Workflow.
 For example, you can choose the **Amazon DynamoDB** connector, and then select the **Query Items** action.
 
 ![Add a step to a Workflow](./assets/building/add-step.png)
 
 ### Changing step names and descriptions
 
-By default steps are uniquely named after the action they invoke (so, they're named things like **CSV to JSON**, or **Delete Object**).
+By default, steps are uniquely named after the action they invoke (so, they're named things like **CSV to JSON** or **Delete Object**).
 To override that default name, click the step and open the **Details** tab in the step configuration drawer.
 
 Like using descriptive variable names in a computer program, renaming steps allows you to give your steps descriptive names.
-Rather than `HTTP - PUT` you could give your step a name like **Update Record in Acme**.
+Rather than `HTTP - PUT`, you could give your step a name like **Update Record in Acme**.
 We recommend giving your steps descriptive names and descriptions so your team members can read through your Workflows and understand their purpose more readily.
 
 ![Rename a step](./assets/building/rename-step.png)
@@ -52,7 +49,7 @@ We recommend giving your steps descriptive names and descriptions so your team m
 ## Passing data between steps
 
 As your Workflow runs, each step generates a [step result](#step-results).
-The results of one step can be fed into subsequent steps through [step inputs](#step-inputs)
+The results of one step can be fed into subsequent steps through [step inputs](#step-inputs).
 
 ### Step results
 
@@ -103,7 +100,7 @@ The trigger step's result contains two major things:
 
 ![Referencing trigger step result](./assets/building/trigger-step-result.png)
 
-Other steps in your flow can reference both the metadata and webhook request data contained in your trigger's result.
+Other steps in your Workflow can reference both the metadata and webhook request data contained in your trigger's result.
 
 ### Step inputs
 

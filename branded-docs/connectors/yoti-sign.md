@@ -1,8 +1,4 @@
----
-title: Yoti Sign Connector
-sidebar_label: Yoti Sign
-description: Yoti Sign is a digital identity and e-signature solution that allows users to verify their identity and sign documents electronically and securely.
----
+# Yoti Sign Connector
 
 ![Yoti Sign](./assets/yoti-sign.png#connector-icon)
 Yoti Sign is a digital identity and e-signature solution that allows users to verify their identity and sign documents electronically and securely.

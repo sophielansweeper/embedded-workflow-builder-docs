@@ -1,8 +1,4 @@
----
-title: Smartsheet Connector
-sidebar_label: Smartsheet
-description: Interact with the Smartsheet API
----
+# Smartsheet Connector
 
 ![Smartsheet](./assets/smartsheet.png#connector-icon)
 Interact with the Smartsheet API

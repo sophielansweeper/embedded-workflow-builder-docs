@@ -1,8 +1,4 @@
----
-title: ShipStation Connector
-sidebar_label: ShipStation
-description: ShipStation is an ecommerce shipping software solution.
----
+# ShipStation Connector
 
 ![ShipStation](./assets/shipstation.png#connector-icon)
 ShipStation is an ecommerce shipping software solution.

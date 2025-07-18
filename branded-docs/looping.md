@@ -1,14 +1,11 @@
----
-title: Looping
-description: The loop step allows you to iterate over an array of items or records
----
+# Loop
 
-For many Workflows it's handy to be able to loop over an array of items, or to loop a certain number of times.
+For many Workflows, it's useful to be able to loop over an array of items or to loop a certain number of times.
 If your Workflow processes files on an SFTP server, for example, you might want to loop over an array of files on the server.
 If your Workflow sends alerts to users, you might want to loop over an array of users.
 
 The [loop](./connectors/loop.md) connector allows you to loop over an array of items, or you can loop a predetermined number of times.
-After adding a **loop** step to your integration, you can then add steps within the loop that will execute over and over again.
+After adding a **loop** step to your Workflow, you can then add steps within the loop that will execute repeatedly.
 
 ## Looping over arrays of records
 
@@ -22,7 +19,7 @@ Imagine you have a step that returns an array of records:
 ]
 ```
 
-A loop step can then be configured to loop over those record by referencing the `results` of the **List Contacts** step:
+A loop step can then be configured to loop over those records by referencing the `results` of the **List Contacts** step:
 
 ![Loop step reference results](./assets/looping/loop-step-reference-results.png)
 
@@ -71,12 +68,12 @@ for (let index = 0; index < SOME_NUMBER; index++) {
 }
 ```
 
-Like [looping over arrays](#looping-over-arrays-of-records), **Loop N Times** provides a `currentItem` and `index`, which both represent the same thing (a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) count of the current loop iteration.
+Like [looping over arrays](#looping-over-arrays-of-records), **Loop N Times** provides a `currentItem` and `index`, which both represent the same thing (a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) count of the current loop iteration).
 So, the first loop iteration `index` will be `0`, the second iteration will have an `index` of `1`, etc.
 
 ## Return values of loops
 
-A loop will collect the results of the **last** step within the loop, and will save those results as an array.
+A loop will collect the results of the **last** step within the loop and will save those results as an array.
 
 For example, if the last step of a loop returns a string like this:
 

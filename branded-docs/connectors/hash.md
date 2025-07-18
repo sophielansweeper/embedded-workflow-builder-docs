@@ -1,8 +1,4 @@
----
-title: Hash Connector
-sidebar_label: Hash
-description: Compute hashes of strings using common hash functions
----
+# Hash Connector
 
 ![Hash](./assets/hash.png#connector-icon)
 Compute hashes of strings using common hash functions

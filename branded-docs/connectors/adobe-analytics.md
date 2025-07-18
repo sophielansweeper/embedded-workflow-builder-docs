@@ -1,8 +1,4 @@
----
-title: Adobe Analytics Connector
-sidebar_label: Adobe Analytics
-description: Manage companies, report suites, metrics, dimensions and more within Adobe Analytics.
----
+# Adobe Analytics Connector
 
 ![Adobe Analytics](./assets/adobe-analytics.png#connector-icon)
 Manage companies, report suites, metrics, dimensions and more within Adobe Analytics.

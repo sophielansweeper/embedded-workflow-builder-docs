@@ -1,8 +1,4 @@
----
-title: Odoo Connector
-sidebar_label: Odoo
-description: Manage records in an Odoo database
----
+# Odoo Connector
 
 ![Odoo](./assets/odoo.png#connector-icon)
 Manage records in an Odoo database

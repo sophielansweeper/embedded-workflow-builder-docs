@@ -1,8 +1,4 @@
----
-title: Zip Connector
-sidebar_label: Zip
-description: Provides utility methods for working with zip files
----
+# Zip Connector
 
 ![Zip](./assets/zip.png#connector-icon)
 Provides utility methods for working with zip files

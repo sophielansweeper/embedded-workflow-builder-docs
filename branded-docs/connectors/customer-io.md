@@ -1,8 +1,4 @@
----
-title: Customer.io Connector
-sidebar_label: Customer.io
-description: Manage customers on the Customer.io platform
----
+# Customer.io Connector
 
 ![Customer.io](./assets/customer-io.png#connector-icon)
 Manage customers on the Customer.io platform

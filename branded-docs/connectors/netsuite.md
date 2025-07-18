@@ -1,8 +1,4 @@
----
-title: NetSuite Connector
-sidebar_label: NetSuite
-description: Manage NetSuite records
----
+# NetSuite Connector
 
 ![NetSuite](./assets/netsuite.png#connector-icon)
 Manage NetSuite records

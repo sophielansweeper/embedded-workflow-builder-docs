@@ -1,8 +1,4 @@
----
-title: IMAP Connector
-sidebar_label: IMAP
-description: Interact with your IMAP email account
----
+# IMAP Connector
 
 ![IMAP](./assets/imap.png#connector-icon)
 Interact with your IMAP email account

@@ -1,8 +1,4 @@
----
-title: Microsoft SharePoint Connector
-sidebar_label: Microsoft SharePoint
-description: Interact with sites, drives, and items connected to your instance of Microsoft SharePoint.
----
+# Microsoft SharePoint Connector
 
 ![Microsoft SharePoint](./assets/ms-sharepoint.png#connector-icon)
 Interact with sites, drives, and items connected to your instance of Microsoft SharePoint.
@@ -26,11 +22,43 @@ Read about how OAuth 2.0 works [here](../oauth2.md).
 
 ## Triggers
 
+### Site Changes
+
+Periodically retrieves changes from all drives of a site on a configured schedule.
+
+| Input      | Comments                                            | Default |
+| ---------- | --------------------------------------------------- | ------- |
+| Connection |                                                     |         |
+| Site Id    | Provide the unique identifier of a SharePoint site. |         |
+
 ### Webhook
 
 Receive and validate webhook requests from Sharepoint for webhooks you configure.
 
 ## Actions
+
+### Check Item Exists
+
+Check if a file or folder exists in a SharePoint drive
+
+| Input      | Comments                                                            | Default |
+| ---------- | ------------------------------------------------------------------- | ------- |
+| Connection |                                                                     |         |
+| Site Id    | Provide the id of the site to check the item in.                    |         |
+| Drive      | Provide the id of the drive to check the item in.                   |         |
+| Item Path  | Provide the path to the file or folder, relative to the drive root. |         |
+
+### Create a Folder
+
+Create a Folder in a Drive
+
+| Input          | Comments                                                      | Default |
+| -------------- | ------------------------------------------------------------- | ------- |
+| Connection     |                                                               |         |
+| Site Id        | Provide the id of the site to create the folder in.           |         |
+| Drive          | Provide the id of the drive to create the folder in.          |         |
+| Parent Item Id | Provide the id of the parent element to create the folder in. |         |
+| Folder Name    | Provide the name of the new folder.                           |         |
 
 ### Create a Subscription
 
@@ -244,6 +272,16 @@ List all Followed Sites
 | Page Token | Enter the token for the desired page.    |         |
 | Fetch All  | Set to true to retrieve all results.     | false   |
 
+### List Items
+
+List Items in a Folder
+
+| Input      | Comments                                           | Default |
+| ---------- | -------------------------------------------------- | ------- |
+| Connection |                                                    |         |
+| Drive      | Provide the id of the drive to list the items in.  |         |
+| Folder ID  | Provide the id of the folder to list the items in. |         |
+
 ### List Items in Site List
 
 Return all items inside the given site list
@@ -295,6 +333,17 @@ List all available Subscriptions
 | Connection                  |                                                           |         |
 | Show Instance Subscriptions | Show only subscriptions for this Instance's Subscriptions | true    |
 
+### Move a File
+
+Move a File in a Drive
+
+| Input                 | Comments                                                          | Default |
+| --------------------- | ----------------------------------------------------------------- | ------- |
+| Connection            |                                                                   |         |
+| Drive                 | Provide the id of the drive to move the file in.                  |         |
+| Item Id               | Provide the id of the file to move.                               |         |
+| Destination Parent Id | Provide the Id of the destination parent element to move file to. |         |
+
 ### Raw Request
 
 Send raw HTTP request to Microsoft Sharepoint
@@ -316,6 +365,28 @@ Send raw HTTP request to Microsoft Sharepoint
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.                                             | false   |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                                                          | 0       |
 | Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                                                                | false   |
+
+### Rename a Folder
+
+Rename a Folder in a Drive
+
+| Input       | Comments                                             | Default |
+| ----------- | ---------------------------------------------------- | ------- |
+| Connection  |                                                      |         |
+| Site Id     | Provide the id of the site to rename the folder in.  |         |
+| Drive       | Provide the id of the drive to rename the folder in. |         |
+| Folder ID   | Provide the id of the folder to rename.              |         |
+| Folder Name | Provide the new name of the folder.                  |         |
+
+### Search Items
+
+Search for items across all drives in a SharePoint site
+
+| Input      | Comments                                           | Default |
+| ---------- | -------------------------------------------------- | ------- |
+| Connection |                                                    |         |
+| Site Id    | Provide the id of the site to search the items in. |         |
+| Query      | Provide the query to search for items by name.     |         |
 
 ### Update File
 

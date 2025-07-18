@@ -1,8 +1,4 @@
----
-title: Meta Ads Connector
-sidebar_label: Meta Ads
-description: Interact with ads and adsets in your Meta Ads account.
----
+# Meta Ads Connector
 
 ![Meta Ads](./assets/facebook-marketing.png#connector-icon)
 Interact with ads and adsets in your Meta Ads account.

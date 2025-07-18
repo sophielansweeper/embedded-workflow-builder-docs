@@ -1,8 +1,4 @@
----
-title: Asana Connector
-sidebar_label: Asana
-description: Manage users, projects, and teams in your Asana workspace
----
+# Asana Connector
 
 ![Asana](./assets/asana.png#connector-icon)
 Manage users, projects, and teams in your Asana workspace

@@ -1,8 +1,4 @@
----
-title: Google Cloud BigQuery Connector
-sidebar_label: Google Cloud BigQuery
-description: BigQuery is Google Cloud's fully managed, petabyte-scale, and cost-effective analytics data warehouse that lets you run analytics over vast amounts of data in near real time.
----
+# Google Cloud BigQuery Connector
 
 ![Google Cloud BigQuery](./assets/google-cloud-bigquery.png#connector-icon)
 BigQuery is Google Cloud&#x27;s fully managed, petabyte-scale, and cost-effective analytics data warehouse that lets you run analytics over vast amounts of data in near real time.

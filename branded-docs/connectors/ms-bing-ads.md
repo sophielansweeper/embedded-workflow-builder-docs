@@ -1,8 +1,4 @@
----
-title: Microsoft Bing Ads Connector
-sidebar_label: Microsoft Bing Ads
-description: Manage Microsoft Bing Ad Customer Services
----
+# Microsoft Bing Ads Connector
 
 ![Microsoft Bing Ads](./assets/ms-bing-ads.png#connector-icon)
 Manage Microsoft Bing Ad Customer Services

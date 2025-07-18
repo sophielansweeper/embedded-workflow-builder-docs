@@ -1,8 +1,4 @@
----
-title: HiBob Connector
-sidebar_label: HiBob
-description: HiBob is an HR platform for people management, performance, and engagement.
----
+# HiBob Connector
 
 ![HiBob](./assets/hibob.png#connector-icon)
 HiBob is an HR platform for people management, performance, and engagement.

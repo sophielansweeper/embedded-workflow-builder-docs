@@ -1,8 +1,4 @@
----
-title: MessagePack Connector
-sidebar_label: MessagePack
-description: Efficiently serialize or deserialize data into a JSON-like format using msgpack
----
+# MessagePack Connector
 
 ![MessagePack](./assets/messagepack.png#connector-icon)
 Efficiently serialize or deserialize data into a JSON-like format using msgpack

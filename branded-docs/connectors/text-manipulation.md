@@ -1,8 +1,4 @@
----
-title: Text Manipulation Connector
-sidebar_label: Text Manipulation
-description: Perform common operations on strings and arrays of strings
----
+# Text Manipulation Connector
 
 ![Text Manipulation](./assets/text-manipulation.png#connector-icon)
 Perform common operations on strings and arrays of strings

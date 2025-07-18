@@ -1,8 +1,4 @@
----
-title: Microsoft Teams Connector
-sidebar_label: Microsoft Teams
-description: Manage the teams, groups, channels, and messages associated with your Microsoft Teams account
----
+# Microsoft Teams Connector
 
 ![Microsoft Teams](./assets/ms-teams.png#connector-icon)
 Manage the teams, groups, channels, and messages associated with your Microsoft Teams account
@@ -11,7 +7,7 @@ Manage the teams, groups, channels, and messages associated with your Microsoft 
 
 ### Incoming Webhook
 
-Use Incoming Webhooks to send messages
+Use Incoming Webhooks to send messages to Microsoft Teams.
 
 | Input       | Comments                                      | Default |
 | ----------- | --------------------------------------------- | ------- |
@@ -39,13 +35,13 @@ OAuth 2.0 Authorization Code Connectivity for Microsoft Teams
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
 
-| Input               | Comments                                                           | Default                                                                                                                                                                                                                                                        |
-| ------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorize URL       | The OAuth 2.0 Authorization URL for Microsoft Teams                | https://login.microsoftonline.com/common/oauth2/v2.0/authorize                                                                                                                                                                                                 |
-| Token URL           | The OAuth 2.0 Token URL for Microsoft Teams                        | https://login.microsoftonline.com/common/oauth2/v2.0/token                                                                                                                                                                                                     |
-| Scopes              | Microsoft Teams permission scopes are set on the OAuth application | https://graph.microsoft.com/Team.ReadBasic.All https://graph.microsoft.com/Team.Create https://graph.microsoft.com/Group.ReadWrite.All https://graph.microsoft.com/TeamMember.ReadWrite.All https://graph.microsoft.com/ChannelMessage.Read.All offline_access |
-| Client ID           |                                                                    |                                                                                                                                                                                                                                                                |
-| Client secret value |                                                                    |                                                                                                                                                                                                                                                                |
+| Input               | Comments                                                           | Default                                                                                                                                                                                                                                                                                                           |
+| ------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorize URL       | The OAuth 2.0 Authorization URL for Microsoft Teams                | https://login.microsoftonline.com/common/oauth2/v2.0/authorize                                                                                                                                                                                                                                                    |
+| Token URL           | The OAuth 2.0 Token URL for Microsoft Teams                        | https://login.microsoftonline.com/common/oauth2/v2.0/token                                                                                                                                                                                                                                                        |
+| Scopes              | Microsoft Teams permission scopes are set on the OAuth application | https://graph.microsoft.com/Team.ReadBasic.All https://graph.microsoft.com/Team.Create https://graph.microsoft.com/Group.ReadWrite.All https://graph.microsoft.com/TeamMember.ReadWrite.All https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/VirtualEvent.ReadWrite offline_access |
+| Client ID           |                                                                    |                                                                                                                                                                                                                                                                                                                   |
+| Client secret value |                                                                    |                                                                                                                                                                                                                                                                                                                   |
 
 ### OAuth 2.0 Client Credentials
 
@@ -148,6 +144,23 @@ Create a new team
 | Allow Giphy                           | This flag will enable the use of Giphy content in your team.                          | false   |
 | Giphy Content Rating                  |                                                                                       |         |
 | Timeout                               | The maximum time a client will await a response in milliseconds (defaults to 30000ms) |         |
+
+### Create Webinar
+
+Create a new Microsoft Teams Webinar.
+
+| Input                               | Comments                                                        | Default |
+| ----------------------------------- | --------------------------------------------------------------- | ------- |
+| Connection                          |                                                                 |         |
+| Display Name                        | Provide a string value for the display name of the webinar.     |         |
+| Description Content Type            | The content type for the webinar description.                   |         |
+| Description Content                 | The description content for the webinar.                        |         |
+| Start Date                          | The start date and time for the webinar.                        |         |
+| End Date                            | The end date and time for the webinar.                          |         |
+| Time Zone                           | The time zone for the webinar.                                  |         |
+| Audience                            |                                                                 |         |
+| Co-Organizers                       |                                                                 |         |
+| Attendee Email Notification Enabled | Enable or disable attendee email notifications for the webinar. | false   |
 
 ### Create Webinar Registration
 
@@ -271,20 +284,20 @@ Get a webinar
 
 Get a Session Attendance Report for a given Webinar
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Webinar ID  |                                                                                                                   |         |
-| Session ID  |                                                                                                                   |         |
-| Report ID   |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
-| Expand      | Expand returned entities, uses the OData V4 query language.                                                       |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Webinar ID  |                                                                                                                  |         |
+| Session ID  |                                                                                                                  |         |
+| Report ID   |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
+| Expand      | Expand returned entities, uses the OData V4 query language.                                                      |         |
 
 ### Install App
 
@@ -301,20 +314,21 @@ Add an Installed App to given team
 
 List all Attendance Records for a given Attendance Report
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Webinar ID  |                                                                                                                   |         |
-| Session ID  |                                                                                                                   |         |
-| Report ID   |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
-| Expand      | Expand returned entities, uses the OData V4 query language.                                                       |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| Webinar ID  |                                                                                                                  |         |
+| Session ID  |                                                                                                                  |         |
+| Report ID   |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
+| Expand      | Expand returned entities, uses the OData V4 query language.                                                      |         |
 
 ### List Catalog Apps
 
@@ -323,6 +337,7 @@ Retrieve the list of apps in the catalog
 | Input      | Comments                                                                              | Default |
 | ---------- | ------------------------------------------------------------------------------------- | ------- |
 | Connection |                                                                                       |         |
+| Fetch All  | Set to true to retrieve all results.                                                  | false   |
 | Filter     | Filters results (rows), uses the OData V4 query language.                             |         |
 | Select     | Filters properties (columns), uses the OData V4 query language.                       |         |
 | Expand     | Expand returned entities, uses the OData V4 query language.                           |         |
@@ -332,18 +347,18 @@ Retrieve the list of apps in the catalog
 
 List all of the messages in a given channel
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Team        | Provide an identifier of the given team. This value should be an Id.                                              |         |
-| Channel Id  | Provide a string value for the channel Id                                                                         |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Team        | Provide an identifier of the given team. This value should be an Id.                                             |         |
+| Channel Id  | Provide a string value for the channel Id                                                                        |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Channels
 
@@ -352,6 +367,7 @@ Retrieve the list of channels in a given team
 | Input      | Comments                                                                              | Default |
 | ---------- | ------------------------------------------------------------------------------------- | ------- |
 | Connection |                                                                                       |         |
+| Fetch All  | Set to true to retrieve all results.                                                  | false   |
 | Team       | Provide an identifier of the given team. This value should be an Id.                  |         |
 | Timeout    | The maximum time a client will await a response in milliseconds (defaults to 30000ms) |         |
 | Filter     | Filters results (rows), uses the OData V4 query language.                             |         |
@@ -374,75 +390,93 @@ Retrieve the list of installed apps in a given team
 
 List the teams you have joined
 
-| Input               | Comments                                                                                  | Default |
-| ------------------- | ----------------------------------------------------------------------------------------- | ------- |
-| Connection          |                                                                                           |         |
-| User Principal Name | Provide the principal name or ID of the user. Required for non-delegated App connections. |         |
-| Timeout             | The maximum time a client will await a response in milliseconds (defaults to 30000ms)     |         |
+| Input               | Comments                                                                                                         | Default |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection          |                                                                                                                  |         |
+| Fetch All           | Set to true to retrieve all results.                                                                             | false   |
+| User Principal Name | Provide the principal name or ID of the user. Required for non-delegated App connections.                        |         |
+| Timeout             | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Filter              | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Top                 | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset         | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Select              | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Team Members
 
 List all the members in a team
 
-| Input      | Comments                                                                              | Default |
-| ---------- | ------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                       |         |
-| Team       | Provide an identifier of the given team. This value should be an Id.                  |         |
-| Timeout    | The maximum time a client will await a response in milliseconds (defaults to 30000ms) |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| Team        | Provide an identifier of the given team. This value should be an Id.                                             |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Teams
 
 List all teams
 
-| Input      | Comments                                                                              | Default |
-| ---------- | ------------------------------------------------------------------------------------- | ------- |
-| Connection |                                                                                       |         |
-| Timeout    | The maximum time a client will await a response in milliseconds (defaults to 30000ms) |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Teams Apps
 
 List apps from the Microsoft Teams app catalog
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Users
 
 List all users
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List User's Teams
 
 List all teams containing the provided user
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| User Id     | Provide a string value for the Id of the user.                                                                    |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| User Id     | Provide a string value for the Id of the user.                                                                   |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Webinar Registrations
 
@@ -457,52 +491,53 @@ List all Registrations for a given Webinar
 
 List all webinars
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Role        |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
-| Expand      | Expand returned entities, uses the OData V4 query language.                                                       |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Role        |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
+| Expand      | Expand returned entities, uses the OData V4 query language.                                                      |         |
 
 ### List Webinar Session Attendance Reports
 
 List all Session Attendance Reports for a given Webinar
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Webinar ID  |                                                                                                                   |         |
-| Session ID  |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Fetch All   | Set to true to retrieve all results.                                                                             | false   |
+| Webinar ID  |                                                                                                                  |         |
+| Session ID  |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
 
 ### List Webinar Sessions
 
 List all Sessions for a given Webinar
 
-| Input       | Comments                                                                                                          | Default |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection  |                                                                                                                   |         |
-| Webinar ID  |                                                                                                                   |         |
-| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                             |         |
-| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset | Provide an integer value for the page offset for the given object's results.                                      |         |
-| Filter      | Filters results (rows), uses the OData V4 query language.                                                         |         |
-| Order By    | Order results (rows), uses the OData V4 query language.                                                           |         |
-| Search      | Returns results based on search criteria.                                                                         |         |
-| Select      | Filters properties (columns), uses the OData V4 query language.                                                   |         |
-| Expand      | Expand returned entities, uses the OData V4 query language.                                                       |         |
+| Input       | Comments                                                                                                         | Default |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection  |                                                                                                                  |         |
+| Webinar ID  |                                                                                                                  |         |
+| Timeout     | The maximum time a client will await a response in milliseconds (defaults to 30000ms)                            |         |
+| Top         | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 100. |         |
+| Page Offset | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Filter      | Filters results (rows), uses the OData V4 query language.                                                        |         |
+| Order By    | Order results (rows), uses the OData V4 query language.                                                          |         |
+| Search      | Returns results based on search criteria.                                                                        |         |
+| Select      | Filters properties (columns), uses the OData V4 query language.                                                  |         |
+| Expand      | Expand returned entities, uses the OData V4 query language.                                                      |         |
 
 ### Publish Webinar
 
@@ -525,15 +560,15 @@ Send raw HTTP request to Microsoft Teams
 | Data                    | The HTTP body payload to send to the URL.                                                                                                                                                                   |         |
 | Form Data               | The Form Data to be sent as a multipart form upload.                                                                                                                                                        |         |
 | File Data               | File Data to be sent as a multipart form upload.                                                                                                                                                            |         |
+| File Data File Names    | File names to apply to the file data inputs. Keys must match the file data keys above.                                                                                                                      |         |
 | Query Parameter         | A list of query parameters to send with the request. This is the portion at the end of the URL similar to ?key1=value1&key2=value2.                                                                         |         |
 | Header                  | A list of headers to send with the request.                                                                                                                                                                 |         |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                    | json    |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                         |         |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                        | false   |
-| Retry Delay (ms)        | The delay in milliseconds between retries.                                                                                                                                                                  | 0       |
-| Retry On All Errors     | If true, retries on all erroneous responses regardless of type.                                                                                                                                             | false   |
-| Max Retry Count         | The maximum number of retries to attempt.                                                                                                                                                                   | 0       |
-| Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries.                                                                                                                            | false   |
+| Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                         | 0       |
+| Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.            | false   |
+| Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                         | 0       |
+| Use Exponential Backoff | Specifies whether to use a pre-defined exponential backoff strategy for retries. When enabled, 'Retry Delay (ms)' is ignored.                                                                               | false   |
 
 ### Remove Installed App
 

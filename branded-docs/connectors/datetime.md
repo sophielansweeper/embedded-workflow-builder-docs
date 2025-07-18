@@ -1,8 +1,4 @@
----
-title: Date/Time Connector
-sidebar_label: Date/Time
-description: Get and adjust Date/Time values
----
+# Date/Time Connector
 
 ![Date/Time](./assets/datetime.png#connector-icon)
 Get and adjust Date/Time values

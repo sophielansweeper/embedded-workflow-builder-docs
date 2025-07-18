@@ -1,8 +1,4 @@
----
-title: Branch Connector
-sidebar_label: Branch
-description: Choose which step to execute next based on a condition or value
----
+# Branch Connector
 
 ![Branch](./assets/branch.png#connector-icon)
 Choose which step to execute next based on a condition or value

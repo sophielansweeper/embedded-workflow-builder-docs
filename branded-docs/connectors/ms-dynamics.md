@@ -1,8 +1,4 @@
----
-title: Microsoft Dynamics 365 Connector
-sidebar_label: Microsoft Dynamics 365
-description: Query, create, update or delete Microsoft Dynamics 365 API records
----
+# Microsoft Dynamics 365 Connector
 
 ![Microsoft Dynamics 365](./assets/ms-dynamics.png#connector-icon)
 Query, create, update or delete Microsoft Dynamics 365 API records

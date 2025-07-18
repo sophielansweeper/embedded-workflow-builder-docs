@@ -1,8 +1,4 @@
----
-title: Notion Connector
-sidebar_label: Notion
-description: Manage Notion pages, databases, and users
----
+# Notion Connector
 
 ![Notion](./assets/notion.png#connector-icon)
 Manage Notion pages, databases, and users

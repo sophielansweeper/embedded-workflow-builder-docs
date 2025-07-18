@@ -1,8 +1,4 @@
----
-title: Qlik Connector
-sidebar_label: Qlik
-description: Qlik is a business analytics platform. Use the Qlik component to manage your Data Sets, Assets, and Apps.
----
+# Qlik Connector
 
 ![Qlik](./assets/qlik.png#connector-icon)
 Qlik is a business analytics platform. Use the Qlik component to manage your Data Sets, Assets, and Apps.

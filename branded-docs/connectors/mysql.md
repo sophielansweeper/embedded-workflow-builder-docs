@@ -1,8 +1,4 @@
----
-title: MySQL Connector
-sidebar_label: MySQL
-description: Query and manage data in a MySQL Database
----
+# MySQL Connector
 
 ![MySQL](./assets/mysql.png#connector-icon)
 Query and manage data in a MySQL Database

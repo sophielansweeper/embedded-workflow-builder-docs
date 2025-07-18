@@ -1,8 +1,4 @@
----
-title: SOAP Connector
-sidebar_label: SOAP
-description: Interact with a SOAP-based API
----
+# SOAP Connector
 
 ![SOAP](./assets/soap.png#connector-icon)
 Interact with a SOAP-based API

@@ -1,8 +1,4 @@
----
-title: WooCommerce Connector
-sidebar_label: WooCommerce
-description: Easily manage your customers, orders, and products in your WooCommerce platform
----
+# WooCommerce Connector
 
 ![WooCommerce](./assets/woo-commerce.png#connector-icon)
 Easily manage your customers, orders, and products in your WooCommerce platform

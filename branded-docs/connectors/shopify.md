@@ -1,8 +1,4 @@
----
-title: Shopify Connector
-sidebar_label: Shopify
-description: Manage customers, products, and orders in your Shopify platform
----
+# Shopify Connector
 
 ![Shopify](./assets/shopify.png#connector-icon)
 Manage customers, products, and orders in your Shopify platform

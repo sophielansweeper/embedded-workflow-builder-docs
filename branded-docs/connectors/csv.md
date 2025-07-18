@@ -1,8 +1,4 @@
----
-title: CSV Connector
-sidebar_label: CSV
-description: Build and parse CSV files to and from JavaScript arrays
----
+# CSV Connector
 
 ![CSV](./assets/csv.png#connector-icon)
 Build and parse CSV files to and from JavaScript arrays

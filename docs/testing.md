@@ -1,5 +1,5 @@
 ---
-title: Testing %WORKFLOW_PLURAL%
+title: Test %WORKFLOW_PLURAL%
 description: Test your %WORKFLOW% within the %EMBEDDED_WORKFLOW_BUILDER%
 ---
 

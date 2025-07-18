@@ -1,8 +1,4 @@
----
-title: Log Connector
-sidebar_label: Log
-description: Write out a log message
----
+# Log Connector
 
 ![Log](./assets/log.png#connector-icon)
 Write out a log message

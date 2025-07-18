@@ -1,8 +1,4 @@
----
-title: Result Placeholder Connector
-sidebar_label: Result Placeholder
-description: Generate a step output
----
+# Result Placeholder Connector
 
 ![Result Placeholder](./assets/result-placeholder.png#connector-icon)
 Generate a step output

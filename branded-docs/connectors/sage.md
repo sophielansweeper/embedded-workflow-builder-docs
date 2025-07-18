@@ -1,8 +1,4 @@
----
-title: Sage Accounting Connector
-sidebar_label: Sage Accounting
-description: Manage contacts and others connected to your Sage account.
----
+# Sage Accounting Connector
 
 ![Sage Accounting](./assets/sage.png#connector-icon)
 Manage contacts and others connected to your Sage account.

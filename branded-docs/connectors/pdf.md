@@ -1,8 +1,4 @@
----
-title: PDF Connector
-sidebar_label: PDF
-description: Search and extract data from PDF documents
----
+# PDF Connector
 
 ![PDF](./assets/pdf.png#connector-icon)
 Search and extract data from PDF documents

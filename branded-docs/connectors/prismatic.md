@@ -1,8 +1,4 @@
----
-title: Prismatic Connector
-sidebar_label: Prismatic
-description: Interact with the Prismatic internal API
----
+# Prismatic Connector
 
 ![Prismatic](./assets/prismatic.png#connector-icon)
 Interact with the Prismatic internal API

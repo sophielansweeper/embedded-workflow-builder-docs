@@ -1,10 +1,4 @@
----
-title: Google Docs Connector
-sidebar_label: Google Docs
-description:
-  Google Docs is an online word processor included as part of the free, web-based Google Docs Editors suite.
-  Use the Google Docs component to create, and collaborate on online documents.
----
+# Google Docs Connector
 
 ![Google Docs](./assets/google-docs.png#connector-icon)
 Google Docs is an online word processor included as part of the free, web-based Google Docs Editors suite.

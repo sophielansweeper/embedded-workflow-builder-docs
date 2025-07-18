@@ -1,5 +1,5 @@
 ---
-title: Building %WORKFLOW_PLURAL%
+title: Build %WORKFLOW_PLURAL%
 description: Build new %WORKFLOW_PLURAL% using %COMPANY_POSSESSIVE% %EMBEDDED_WORKFLOW_BUILDER%
 ---
 

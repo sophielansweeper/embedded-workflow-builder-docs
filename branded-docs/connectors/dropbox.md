@@ -1,8 +1,4 @@
----
-title: Dropbox Connector
-sidebar_label: Dropbox
-description: Manage files stored in Dropbox
----
+# Dropbox Connector
 
 ![Dropbox](./assets/dropbox.png#connector-icon)
 Manage files stored in Dropbox

@@ -1,8 +1,4 @@
----
-title: Sleep Connector
-sidebar_label: Sleep
-description: Pause execution for a specific amount of time
----
+# Sleep Connector
 
 ![Sleep](./assets/sleep.png#connector-icon)
 Pause execution for a specific amount of time

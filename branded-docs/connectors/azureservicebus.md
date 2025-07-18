@@ -1,8 +1,4 @@
----
-title: Azure Service Bus Connector
-sidebar_label: Azure Service Bus
-description: Interact with message queues and publish-subscribe topics (in a namespace)
----
+# Azure Service Bus Connector
 
 ![Azure Service Bus](./assets/azureservicebus.png#connector-icon)
 Interact with message queues and publish-subscribe topics (in a namespace)

@@ -1,8 +1,4 @@
----
-title: Xero Connector
-sidebar_label: Xero
-description: Manage invoices, items, accounts, payments and more objects from your Xero account.
----
+# Xero Connector
 
 ![Xero](./assets/xero.png#connector-icon)
 Manage invoices, items, accounts, payments and more objects from your Xero account.

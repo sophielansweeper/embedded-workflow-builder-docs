@@ -1,8 +1,4 @@
----
-title: Mailchimp Connector
-sidebar_label: Mailchimp
-description: Interact with email campaign lists and e-commerce resources.
----
+# Mailchimp Connector
 
 ![Mailchimp](./assets/mailchimp.png#connector-icon)
 Interact with email campaign lists and e-commerce resources.

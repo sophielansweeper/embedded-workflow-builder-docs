@@ -1,8 +1,4 @@
----
-title: Workday (Beta) Connector
-sidebar_label: Workday (Beta)
-description: Workday HCM is a single, cloud-based solution for workforce planning, talent management, and payroll processes.
----
+# Workday (Beta) Connector
 
 ![Workday (Beta)](./assets/workday.png#connector-icon)
 Workday HCM is a single, cloud-based solution for workforce planning, talent management, and payroll processes.

@@ -1,8 +1,4 @@
----
-title: Microsoft Project Connector
-sidebar_label: Microsoft Project
-description: Make queries to reporting data from a Project Web App instance
----
+# Microsoft Project Connector
 
 ![Microsoft Project](./assets/ms-project.png#connector-icon)
 Make queries to reporting data from a Project Web App instance

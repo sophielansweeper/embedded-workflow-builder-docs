@@ -1,8 +1,4 @@
----
-title: ClickUp Connector
-sidebar_label: ClickUp
-description: Use the ClickUp component to manage users, projects, and teams in your ClickUp workspace.
----
+# ClickUp Connector
 
 ![ClickUp](./assets/click-up.png#connector-icon)
 Use the ClickUp component to manage users, projects, and teams in your ClickUp workspace.

@@ -1,8 +1,4 @@
----
-title: Sage HR Connector
-sidebar_label: Sage HR
-description: Sage HR is all inclusive Human Resource management solution. Use the Sage HR component to manage Employees, Teams, Projects, and more.
----
+# Sage HR Connector
 
 ![Sage HR](./assets/sage-hr.png#connector-icon)
 Sage HR is all inclusive Human Resource management solution. Use the Sage HR component to manage Employees, Teams, Projects, and more.

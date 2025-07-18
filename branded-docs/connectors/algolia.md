@@ -1,8 +1,4 @@
----
-title: Algolia Connector
-sidebar_label: Algolia
-description: Algolia is an advanced AI search platform.
----
+# Algolia Connector
 
 ![Algolia](./assets/algolia.png#connector-icon)
 Algolia is an advanced AI search platform.

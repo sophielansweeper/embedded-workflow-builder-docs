@@ -1,8 +1,4 @@
----
-title: UUID Connector
-sidebar_label: UUID
-description: Generate UUIDs and GUIDs
----
+# UUID Connector
 
 ![UUID](./assets/uuid.png#connector-icon)
 Generate UUIDs and GUIDs

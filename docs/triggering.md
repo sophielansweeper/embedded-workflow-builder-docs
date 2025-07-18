@@ -1,5 +1,5 @@
 ---
-title: Triggering %WORKFLOW_PLURAL%
+title: Trigger %WORKFLOW_PLURAL%
 description: Learn about the different types of triggers available in the %EMBEDDED_WORKFLOW_BUILDER% and how to configure them for your %WORKFLOW_PLURAL%.
 ---
 

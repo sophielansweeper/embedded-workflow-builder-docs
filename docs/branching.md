@@ -1,5 +1,5 @@
 ---
-title: Branching
+title: Branch
 description: You can create logical branches within your %WORKFLOW% based on conditional logic
 ---
 

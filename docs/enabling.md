@@ -1,5 +1,5 @@
 ---
-title: Enabling %WORKFLOW_PLURAL%
+title: Enable %WORKFLOW_PLURAL%
 description: After testing your %WORKFLOW% you can enable it
 ---
 

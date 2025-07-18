@@ -1,8 +1,4 @@
----
-title: PostgreSQL Connector
-sidebar_label: PostgreSQL
-description: Query and manage data in a PostgreSQL database
----
+# PostgreSQL Connector
 
 ![PostgreSQL](./assets/postgres.png#connector-icon)
 Query and manage data in a PostgreSQL database

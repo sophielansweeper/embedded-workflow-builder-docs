@@ -1,8 +1,4 @@
----
-title: Intercom Connector
-sidebar_label: Intercom
-description: Manage companies, contacts and tags on the Intercom platform
----
+# Intercom Connector
 
 ![Intercom](./assets/intercom.png#connector-icon)
 Manage companies, contacts and tags on the Intercom platform

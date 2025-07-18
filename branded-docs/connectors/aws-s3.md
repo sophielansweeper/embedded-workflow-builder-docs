@@ -1,8 +1,4 @@
----
-title: Amazon S3 Connector
-sidebar_label: Amazon S3
-description: Manage files within an Amazon (AWS) S3 bucket
----
+# Amazon S3 Connector
 
 ![Amazon S3](./assets/aws-s3.png#connector-icon)
 Manage files within an Amazon (AWS) S3 bucket

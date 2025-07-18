@@ -1,8 +1,4 @@
----
-title: Google Drive Connector
-sidebar_label: Google Drive
-description: Manage files in Google Drive
----
+# Google Drive Connector
 
 ![Google Drive](./assets/google-drive.png#connector-icon)
 Manage files in Google Drive

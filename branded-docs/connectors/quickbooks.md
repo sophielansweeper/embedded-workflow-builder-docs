@@ -1,8 +1,4 @@
----
-title: QuickBooks Connector
-sidebar_label: QuickBooks
-description: Create and manage customers and invoices within Intuit QuickBooks
----
+# QuickBooks Connector
 
 ![QuickBooks](./assets/quickbooks.png#connector-icon)
 Create and manage customers and invoices within Intuit QuickBooks

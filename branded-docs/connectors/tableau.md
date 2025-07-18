@@ -1,8 +1,4 @@
----
-title: Tableau Connector
-sidebar_label: Tableau
-description: Manage projects and workbooks in your Tableau site
----
+# Tableau Connector
 
 ![Tableau](./assets/tableau.png#connector-icon)
 Manage projects and workbooks in your Tableau site

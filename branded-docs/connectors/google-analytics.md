@@ -1,8 +1,4 @@
----
-title: Google Analytics - UA Connector
-sidebar_label: Google Analytics - UA
-description: Manage Google Analytics
----
+# Google Analytics - UA Connector
 
 ![Google Analytics - UA](./assets/google-analytics.png#connector-icon)
 Manage Google Analytics

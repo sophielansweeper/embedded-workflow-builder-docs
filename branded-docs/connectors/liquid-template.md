@@ -1,8 +1,4 @@
----
-title: Liquid Template Connector
-sidebar_label: Liquid Template
-description: Transform data using a provided Liquid Template
----
+# Liquid Template Connector
 
 ![Liquid Template](./assets/liquid-template.png#connector-icon)
 Transform data using a provided Liquid Template

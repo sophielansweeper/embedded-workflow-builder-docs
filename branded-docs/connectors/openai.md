@@ -1,8 +1,4 @@
----
-title: OpenAI Connector
-sidebar_label: OpenAI
-description: Interact with OpenAI's models including GPT-4, GPT-3.5 Turbo, and DALL·E 3
----
+# OpenAI Connector
 
 ![OpenAI](./assets/openai.png#connector-icon)
 Interact with OpenAI&#x27;s models including GPT-4, GPT-3.5 Turbo, and DALL·E 3

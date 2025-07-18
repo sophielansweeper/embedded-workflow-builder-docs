@@ -1,8 +1,4 @@
----
-title: AWS Lambda Connector
-sidebar_label: AWS Lambda
-description: List and invoke AWS Lambda functions
----
+# AWS Lambda Connector
 
 ![AWS Lambda](./assets/aws-lambda.png#connector-icon)
 List and invoke AWS Lambda functions

@@ -1,8 +1,4 @@
----
-title: Bill Connector
-sidebar_label: Bill
-description: Use the Bill component to manage Bank Accounts, Invoices, Bills, and more.
----
+# Bill Connector
 
 ![Bill](./assets/bill.png#connector-icon)
 Use the Bill component to manage Bank Accounts, Invoices, Bills, and more.
