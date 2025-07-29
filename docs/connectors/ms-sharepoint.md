@@ -9,20 +9,52 @@ Interact with sites, drives, and items connected to your instance of Microsoft S
 
 ## Connections
 
-### Microsoft SharePoint OAuth 2.0
+### Client Credentials
 
 Authenticates actions in the Microsoft SharePoint component.
 
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
 
-| Input         | Comments                                                                          | Default                                                        |
-| ------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Authorize URL | Provide a tenant specific OAuth 2.0 authorize endpoint.                           | https://login.microsoftonline.com/common/oauth2/v2.0/authorize |
-| Token URL     | Provide a tenant specific OAuth 2.0 token endpoint.                               | https://login.microsoftonline.com/common/oauth2/v2.0/token     |
-| Scopes        | Space separated OAuth 2.0 permission scopes                                       | Sites.ReadWrite.All Sites.Manage.All offline_access            |
-| Client ID     | Client Id of your Azure application                                               |                                                                |
-| Client Secret | Client Secret generated under 'Certificates & Secrets' in your Azure application. |                                                                |
+| Input                       | Comments                                                                                                                                                                                                                             | Default                              |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| Base URL                    | The base URL for the Microsoft Graph API. Depending on your cloud environment, you can choose the correct one [here](https://learn.microsoft.com/en-us/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). | https://graph.microsoft.com          |
+| Microsoft Entra ID Endpoint | The Microsoft Entra ID endpoint for the Microsoft Graph API. You can find this in the Azure portal or [here](https://learn.microsoft.com/en-us/graph/deployments#app-registration-and-token-service-root-endpoints).                 | https://login.microsoftonline.com    |
+| Tenant                      | The tenant ID or name for the Microsoft Graph API. This is the ID or name of the tenant that you are connecting to.                                                                                                                  |                                      |
+| Client ID                   | Client Id of your Azure application.                                                                                                                                                                                                 |                                      |
+| Client Secret               | Client Secret generated under 'Certificates & Secrets' in your Azure application.                                                                                                                                                    |                                      |
+| Scopes                      | Microsoft SharePoint Scopes.                                                                                                                                                                                                         | https://graph.microsoft.com/.default |
+
+### Microsoft SharePoint OAuth 2.0 (Deprecated)
+
+Authenticates actions in the Microsoft SharePoint component.
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../oauth2.md).
+
+| Input         | Comments                                                                                                                                                                                                                             | Default                                                        |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| Base URL      | The base URL for the Microsoft Graph API. Depending on your cloud environment, you can choose the correct one [here](https://learn.microsoft.com/en-us/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). | https://graph.microsoft.com                                    |
+| Authorize URL | Provide a tenant specific OAuth 2.0 authorize endpoint.                                                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/v2.0/authorize |
+| Token URL     | Provide a tenant specific OAuth 2.0 token endpoint.                                                                                                                                                                                  | https://login.microsoftonline.com/common/oauth2/v2.0/token     |
+| Scopes        | Space separated OAuth 2.0 permission scopes.                                                                                                                                                                                         | Sites.ReadWrite.All Sites.Manage.All offline_access            |
+| Client ID     | Client Id of your Azure application.                                                                                                                                                                                                 |                                                                |
+| Client Secret | Client Secret generated under 'Certificates & Secrets' in your Azure application.                                                                                                                                                    |                                                                |
+
+### OAuth 2.0 Authorization Code
+
+OAuth 2.0 Authorization Code Connectivity for Microsoft Outlook.
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../oauth2.md).
+
+| Input               | Comments                                                                                                                                                                                                                                                                                 | Default                                             |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Base URL            | The base URL for the Microsoft Graph API. Depending on your cloud environment, you can choose the correct one [here](https://learn.microsoft.com/en-us/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).                                                     | https://graph.microsoft.com                         |
+| Tenant URL          | The tenant URL for the Microsoft Graph API. This is the URL of the tenant that you are connecting to. You can find this in the Azure portal or [here](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-national-cloud#microsoft-entra-authentication-endpoints). | login.microsoftonline.com/common                    |
+| Scopes              | Microsoft SharePoint permission scopes are set on the OAuth application.                                                                                                                                                                                                                 | Sites.ReadWrite.All Sites.Manage.All offline_access |
+| Client ID           | Client Id of your Azure application.                                                                                                                                                                                                                                                     |                                                     |
+| Client secret value | Client Secret generated under 'Certificates & Secrets' in your Azure application.                                                                                                                                                                                                        |                                                     |
 
 ## Triggers
 
