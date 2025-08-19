@@ -1,10 +1,10 @@
 ---
-title: ION Connector
-sidebar_label: ION
+title: First Resonance ION Connector
+sidebar_label: First Resonance ION
 description: Interact with ION's data and services through ION's GraphQL API.
 ---
 
-![ION](./assets/first-resonance.png#connector-icon)
+![First Resonance ION](./assets/first-resonance.png#connector-icon)
 Interact with ION&#x27;s data and services through ION&#x27;s GraphQL API.
 
 ## Connections
