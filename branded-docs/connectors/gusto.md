@@ -5,14 +5,6 @@ Manage payroll, benefits, and human resource within Gusto
 
 ## Connections
 
-### Gusto API Key
-
-Retrieve this from the Gusto dashboard.
-
-| Input     | Comments                                          | Default |
-| --------- | ------------------------------------------------- | ------- |
-| API Token | This token is required for webhook subscriptions. |         |
-
 ### Gusto OAuth 2.0 Connection
 
 Connect to Gusto via OAuth 2.0
@@ -186,7 +178,7 @@ Send raw HTTP request to Gusto
 | Input                   | Comments                                                                                                                                                                                                | Default    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | Connection              |                                                                                                                                                                                                         |            |
-| API Version             |                                                                                                                                                                                                         | 2023-04-01 |
+| API Version             | The API version to use.                                                                                                                                                                                 | 2025-06-15 |
 | URL                     | Input the path only (/provision), The base URL is already included (https://api.gusto.com/v1). For example, to connect to https://api.gusto.com/v1/provision, only /provision is entered in this field. |            |
 | Method                  | The HTTP method to use.                                                                                                                                                                                 |            |
 | Data                    | The HTTP body payload to send to the URL.                                                                                                                                                               |            |
@@ -197,7 +189,6 @@ Send raw HTTP request to Gusto
 | Header                  | A list of headers to send with the request.                                                                                                                                                             |            |
 | Response Type           | The type of data you expect in the response. You can request json, text, or binary data.                                                                                                                | json       |
 | Timeout                 | The maximum time that a client will await a response to its request                                                                                                                                     |            |
-| Debug Request           | Enabling this flag will log out the current request.                                                                                                                                                    | false      |
 | Retry Delay (ms)        | The delay in milliseconds between retries. This is used when 'Use Exponential Backoff' is disabled.                                                                                                     | 0          |
 | Retry On All Errors     | If true, retries on all erroneous responses regardless of type. This is helpful when retrying after HTTP 429 or other 3xx or 4xx errors. Otherwise, only retries on HTTP 5xx and network errors.        | false      |
 | Max Retry Count         | The maximum number of retries to attempt. Specify 0 for no retries.                                                                                                                                     | 0          |

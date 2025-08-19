@@ -133,6 +133,7 @@ Returns all messages in the given mailbox
 | From                 | Filter email messages by sender                    |         |
 | To                   | Filter email messages by recipient                 |         |
 | Read / Unread Filter |                                                    | all     |
+| Filter Options       | Extra parameters to filter the search results      |         |
 
 ### Set Flags
 

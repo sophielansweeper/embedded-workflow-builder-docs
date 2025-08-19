@@ -9,11 +9,11 @@ Manage Tickets and users in Zendesk
 
 Authenticates requests to Zendesk using a generated API token.
 
-| Input              | Comments                                                                                                      | Default |
-| ------------------ | ------------------------------------------------------------------------------------------------------------- | ------- |
-| Zendesk Sub Domain | Your Zendesk domain. (e.g. if your zendesk URL is https://acme-inc.zendesk.com, then your domain is acme-inc) |         |
-| Username           | Your Zendesk username. (Email address used to login to Zendesk)                                               |         |
-| API Token          | Your generated API token from Zendesk.                                                                        |         |
+| Input              | Comments                                                                                                               | Default |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------- |
+| Zendesk Sub Domain | Your Zendesk sub domain. (e.g. if your Zendesk URL is https://acme-inc.zendesk.com, then your sub domain is acme-inc). |         |
+| Username           | Your Zendesk username. (Email address used to login to Zendesk).                                                       |         |
+| API Token          | Your generated API token from Zendesk.                                                                                 |         |
 
 ### OAuth 2.0
 
@@ -22,12 +22,12 @@ Authenticates requests to Zendesk using an OAuth 2.0 connection.
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
 
-| Input          | Comments                                                                                                      | Default    |
-| -------------- | ------------------------------------------------------------------------------------------------------------- | ---------- |
-| Zendesk Domain | Your Zendesk domain. (e.g. if your zendesk URL is https://acme-inc.zendesk.com, then your domain is acme-inc) |            |
-| Scopes         |                                                                                                               | read write |
-| Client ID      |                                                                                                               |            |
-| Client Secret  |                                                                                                               |            |
+| Input              | Comments                                                                                                               | Default    |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Zendesk Sub Domain | Your Zendesk sub domain. (e.g. if your Zendesk URL is https://acme-inc.zendesk.com, then your sub domain is acme-inc). |            |
+| Scopes             |                                                                                                                        | read write |
+| Client ID          |                                                                                                                        |            |
+| Client Secret      |                                                                                                                        |            |
 
 ### OAuth2 (Deprecated)
 
@@ -38,8 +38,8 @@ Read about how OAuth 2.0 works [here](../oauth2.md).
 
 | Input         | Comments                                                                            | Default                                                          |
 | ------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Authorize URL | The OAuth 2.0 Authorization URL for Zendesk                                         | https://YOUR-ZENDESK-DOMAIN.zendesk.com/oauth/authorizations/new |
-| Token URL     | The OAuth 2.0 Token URL for Zendesk                                                 | https://YOUR-ZENDESK-DOMAIN.zendesk.com/oauth/tokens             |
+| Authorize URL | The OAuth 2.0 Authorization URL for Zendesk.                                        | https://YOUR-ZENDESK-DOMAIN.zendesk.com/oauth/authorizations/new |
+| Token URL     | The OAuth 2.0 Token URL for Zendesk.                                                | https://YOUR-ZENDESK-DOMAIN.zendesk.com/oauth/tokens             |
 | Scopes        | A space-delimited set of one or more scopes to get the user's permission to access. | read write                                                       |
 | Client ID     |                                                                                     |                                                                  |
 | Client Secret |                                                                                     |                                                                  |

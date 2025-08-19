@@ -103,9 +103,10 @@ Fetch items that have a certain column value. This version of the action is bein
 
 List all available boards in your Monday account
 
-| Input        | Comments                                                                                                          | Default |
-| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| Connection   |                                                                                                                   |         |
-| Result Limit | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 1000. |         |
-| Page Offset  | Provide an integer value for the page offset for the given object's results.                                      |         |
-| API Version  | Provide the version of the API you want to use. If none provided, the default 2025-04 version will be used.       |         |
+| Input        | Comments                                                                                                         | Default |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection   |                                                                                                                  |         |
+| Result Limit | Provide an integer value for the maximum amount of results that will be returned. Provide a value from 1 to 500. |         |
+| Page Offset  | Provide an integer value for the page offset for the given object's results.                                     |         |
+| Fetch All    | Turn on to fetch all items from the board. This will ignore the Result Limit and Page Offset inputs.             | false   |
+| API Version  | Provide the version of the API you want to use. If none provided, the default 2025-04 version will be used.      |         |

@@ -9,11 +9,12 @@ Create, update, fetch, or delete items in an Amazon (AWS) DynamoDB database
 
 Connect to AWS using an assumed role
 
-| Input             | Comments                     | Default |
-| ----------------- | ---------------------------- | ------- |
-| Role ARN          | An AWS IAM Role ARN          |         |
-| Access Key ID     | An AWS IAM Access Key ID     |         |
-| Secret Access Key | An AWS IAM Secret Access Key |         |
+| Input             | Comments                                                                                                                                                                                                                                                      | Default |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Role ARN          | An AWS IAM Role ARN                                                                                                                                                                                                                                           |         |
+| Access Key ID     | An AWS IAM Access Key ID                                                                                                                                                                                                                                      |         |
+| Secret Access Key | An AWS IAM Secret Access Key                                                                                                                                                                                                                                  |         |
+| External ID       | Provides enhanced security measures to the connection. Optional, but recommended. Please check [AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_third-party.html#id_roles_third-party_external-id) for more information. |         |
 
 ### DynamoDB Access Key and Secret
 

@@ -49,15 +49,26 @@ Get notified to this flow when the specified resource changes.
 
 ## Actions
 
-### Add Group Members
+### Add Group Member
 
-Add a member to a security or Microsoft 365 group.
+Add a single member to a security or Microsoft 365 group.
 
 | Input      | Comments                                            | Default |
 | ---------- | --------------------------------------------------- | ------- |
 | Connection |                                                     |         |
 | Group Id   | The unique identifier of a MS365 or Security group. |         |
-| Member Ids | The unique identifiers of members.                  |         |
+| Member Id  | The unique identifier of a member.                  |         |
+
+### Add Group Members
+
+Add members to a security or Microsoft 365 group.
+
+| Input              | Comments                                                                                                             | Default |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ------- |
+| Connection         |                                                                                                                      |         |
+| Group Id           | The unique identifier of a MS365 or Security group.                                                                  |         |
+| Member Ids         | The unique identifiers of members. Comma separated. You must fill either this input or the Dynamic member IDs input. |         |
+| Dynamic Member Ids | The unique identifiers of members. You must fill either this input or the member IDs input.                          |         |
 
 ### Assign Device Compliance Policy
 

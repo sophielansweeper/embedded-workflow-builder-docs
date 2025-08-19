@@ -12,10 +12,23 @@ OAuth 2.0 flow
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
 
-| Input         | Comments                               | Default |
-| ------------- | -------------------------------------- | ------- |
-| Client ID     | Client Identifier of your app for Zoom |         |
-| Client Secret | Client Secret of your app for Zoom     |         |
+| Input         | Comments                                | Default |
+| ------------- | --------------------------------------- | ------- |
+| Client ID     | Client Identifier of your app for Zoom. |         |
+| Client Secret | Client Secret of your app for Zoom.     |         |
+
+### Server to Server
+
+Server to Server connection
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../oauth2.md).
+
+| Input         | Comments                                                  | Default |
+| ------------- | --------------------------------------------------------- | ------- |
+| Client ID     | Client Identifier of your server to server app for Zoom.  |         |
+| Client Secret | Client Secret of your server to server app for Zoom.      |         |
+| Account ID    | Account Identifier of your server to server app for Zoom. |         |
 
 ## Triggers
 

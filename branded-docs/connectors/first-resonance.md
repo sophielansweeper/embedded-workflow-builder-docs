@@ -1,6 +1,6 @@
-# ION Connector
+# First Resonance ION Connector
 
-![ION](./assets/first-resonance.png#connector-icon)
+![First Resonance ION](./assets/first-resonance.png#connector-icon)
 Interact with ION&#x27;s data and services through ION&#x27;s GraphQL API.
 
 ## Connections
