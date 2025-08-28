@@ -13,6 +13,17 @@ Create and manage customers and invoices within Intuit QuickBooks
 
 Authenticate requests to QuickBooks using values obtained from the Developer Console.
 
+QuickBooks uses OAuth 2.0 to authenticate requests against the QuickBooks Online API.
+
+1. To configure an OAuth 2.0 credential through QuickBooks, you will need to [create an app](https://www.developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground#get-the-access-token) within the Intuit developer portal.
+1. When you create your app, be sure to enter the OAuth callback URL `https://oauth2.%WHITE_LABEL_BASE_URL%/callback`.
+   1. Consult QuickBooks to determine the proper OAuth Scopes to assign.
+1. Once the app has been created, you will be provided with a **Client ID** and **Client Secret**.
+1. Now, configure OAuth 2.0 settings.
+1. Create a new credential of type **OAuth 2.0 - Authorization Code**.
+1. Enter the **Client ID** and **Client Secret** that you received from the Intuit developer portal.
+1. Set **Scopes** to any of the values in [this list.](https://developer.intuit.com/app/developer/qbo/docs/learn/scopes)
+
 This connection uses OAuth 2.0, a common authentication mechanism for integrations.
 Read about how OAuth 2.0 works [here](../oauth2.md).
 
@@ -63,7 +74,7 @@ Create a new Sales Receipt in QuickBooks
 | Connection               |                                                                                                                                                                                                                                                                                                                                                  |         |
 | Line Items               | For each list item, provide a JavaScript Object that represents an individual line item. Please follow the shape provided in the example. For more information on the line item object refer to the QuickBooks documentation: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/salesreceipt#create-a-salesreceipt |         |
 | Custom Fields            | Specify any optional custom fields to be attached. A custom field is a JavaScript Object that consists of a DefinitionId: String, Type: String, and Name: String. If you don't want to supply any custom fields, simply provide an empty JavaScript Array []                                                                                     |         |
-| Apply Tax After Discount | Specify weather or not to apply tax after discount.                                                                                                                                                                                                                                                                                              | false   |
+| Apply Tax After Discount | Specify whether or not to apply tax after discount.                                                                                                                                                                                                                                                                                              | false   |
 | Create Time              | Provide a date time value for the point in time this record was created                                                                                                                                                                                                                                                                          |         |
 | Customer Id              | Provide a value for the Id of the customer you would like to attach to the receipt.                                                                                                                                                                                                                                                              |         |
 | Customer Name            | Provide a value for the name of the customer that will show on the receipt.                                                                                                                                                                                                                                                                      |         |
