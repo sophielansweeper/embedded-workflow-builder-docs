@@ -8,6 +8,7 @@
       "**/*.json",
       "**/*.jsonc",
       "**/*.jsx",
+      "**/*.mjs",
       "**/*.ts",
       "**/*.tsx",
       "!**/node_modules",
