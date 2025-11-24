@@ -15,7 +15,7 @@ Instead, you enter your credentials on a Google, Dropbox, etc. page and the OAut
 The [OAuth 2.0 framework](https://oauth.net/2/) supports several **grant types**, two of which are common in Workflows:
 
 1. Most common is the [Authorization Code grant type](#oauth-20-authorization-code).
-   When you configure a connector, you click a "Connect to (App Name)" button.
+   When you configure a connector, you click a "Connect to [App Name]" button.
    After logging in to the external application and consenting to give Lansweeper permissions to your account, you'll return here with an **auth code** which we'll use to access your data.
 2. The [Client Credentials grant type](#oauth-20-client-credentials) is also common in Workflows.
    Sometimes called the **machine to machine** (M2M) grant type, this process is a little more involved.
@@ -26,7 +26,7 @@ The [OAuth 2.0 framework](https://oauth.net/2/) supports several **grant types**
 
 At a high level, the OAuth 2.0 Authorization Code flow works like this:
 
-1. You will click a "Connect to (App Name)" button in your Workflow.
+1. You will click a "Connect to [App Name]" button in your Workflow.
    We send you to the third-party application's "consent screen" with our client ID and a list of permissions we want to access. The client ID is a unique identifier for Lansweeper in the third-party application—it's how the third-party application knows to say "do you want to give Lansweeper access to your data?".
 1. You log in to the third-party application and consent to give us access to your data.
 1. The third-party application redirects you back to Lansweeper with an **authorization code**.

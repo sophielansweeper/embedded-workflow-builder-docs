@@ -1,23 +1,23 @@
 # BambooHR Connector
 
 ![BambooHR](./assets/bamboohr.png#connector-icon)
-Manage employees and HR data in the BambooHR platform
+Manage Employees in BambooHR
 
 ## Connections
 
-### API Key
+### Bamboo API Key
 
-Authenticate with BambooHR using an API key
+Bamboo API Key
 
 Bamboo HR API keys can be used for testing an integration, but for production integrations, please use OAuth 2.0.
 
 To generate an API key, log in to Bamboo HR, click your user profile image on the upper-right and then click **API Keys**.
 Click **Add New Key**, and take note of the API key that is generated - it will be a ~40 character alphanumeric string.
 
-| Input          | Comments                                                                        | Default |
-| -------------- | ------------------------------------------------------------------------------- | ------- |
-| API Key        | Your BambooHR API key. You can generate this in your BambooHR account settings. |         |
-| Company Domain | The MYCOMPANY portion of your https://MYCOMPANY.bamboohr.com instance           |         |
+| Input          | Comments                                                              | Default |
+| -------------- | --------------------------------------------------------------------- | ------- |
+| API Key        | Bamboo API Key                                                        |         |
+| Company Domain | The MYCOMPANY portion of your https://MYCOMPANY.bamboohr.com instance |         |
 
 ## Triggers
 
