@@ -9,17 +9,17 @@ Choose which step to execute next based on a condition or value
 
 ## Actions
 
-### Branch on Expression
+### If Condition is Met
 
-Choose which step to execute next based on a condition
+Branch on Expression. Choose which step to execute next based on a condition.
 
 | Input     | Comments                                             | Default |
 | --------- | ---------------------------------------------------- | ------- |
 | Condition | The set of conditions to satisfy in order to branch. |         |
 
-### Branch on Value
+### If Value Equals
 
-Choose which step to execute next based on a value.
+Branch on value. Choose which step to execute next based on a value.
 
 | Input                | Comments                                                                                                        | Default |
 | -------------------- | --------------------------------------------------------------------------------------------------------------- | ------- |

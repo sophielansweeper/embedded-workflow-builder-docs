@@ -7,7 +7,7 @@ For many %WORKFLOW_PLURAL%, it's useful to be able to loop over an array of item
 If your %WORKFLOW% processes files on an SFTP server, for example, you might want to loop over an array of files on the server.
 If your %WORKFLOW% sends alerts to users, you might want to loop over an array of users.
 
-The [loop](./connectors/loop.md) connector allows you to loop over an array of items, or you can loop a predetermined number of times.
+The [loop](./connectors/loop.md) connector allows you to loop over each item in an array, or you can loop a predetermined number of times.
 After adding a **loop** step to your %WORKFLOW%, you can then add steps within the loop that will execute repeatedly.
 
 ## Looping over arrays of records
@@ -22,7 +22,7 @@ Imagine you have a step that returns an array of records:
 ]
 ```
 
-A loop step can then be configured to loop over those records by referencing the `results` of the **List Contacts** step:
+A loop step can then be configured to loop for each record by referencing the `results` of the **List Contacts** step:
 
 ![Loop step reference results](./assets/looping/loop-step-reference-results.png)
 
@@ -63,9 +63,9 @@ module.exports = async (
 ## Looping a certain number of times
 
 Sometimes you'll want to loop a set number of times.
-For those situations, a [loop N times](./connectors/loop.md#loop-n-times) action can help.
+For those situations, a [Repeat X Times](./connectors/loop.md#repeat-x-times) action can help.
 
-Programmatically, the **Loop N Times** action is similar to a `for` loop like this:
+Programmatically, the **Repeat X Times** action is similar to a `for` loop like this:
 
 ```js
 for (let index = 0; index < SOME_NUMBER; index++) {
@@ -73,7 +73,7 @@ for (let index = 0; index < SOME_NUMBER; index++) {
 }
 ```
 
-Like [looping over arrays](#looping-over-arrays-of-records), **Loop N Times** provides a `currentItem` and `index`, which both represent the same thing (a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) count of the current loop iteration).
+Like [looping over arrays](#looping-over-arrays-of-records), **Repeat X Times** provides a `currentItem` and `index`, which both represent the same thing (a [zero-indexed](https://en.wikipedia.org/wiki/Zero-based_numbering) count of the current loop iteration).
 So, the first loop iteration `index` will be `0`, the second iteration will have an `index` of `1`, etc.
 
 ## Return values of loops
